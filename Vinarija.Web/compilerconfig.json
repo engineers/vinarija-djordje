@@ -14,5 +14,9 @@
   {
     "outputFile": "assets/style/_variables.css",
     "inputFile": "assets/style/_variables.less"
+  },
+  {
+    "outputFile": "assets/style/temp.css",
+    "inputFile": "assets/style/temp.less"
   }
 ]
