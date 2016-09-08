@@ -916,6 +916,17 @@ section.footer .copyright {
   font-family: 'Tenor Sans';
   cursor: pointer;
 }
+.home-page .hover-section .first-img .news .more-arrow,
+.home-page .hover-section .second-img .news .more-arrow,
+.home-page .hover-section .third-img .news .more-arrow,
+.home-page .hover-section .fourth-img .news .more-arrow,
+.home-page .hover-section .fifth-img .news .more-arrow {
+  width: 20px;
+  height: 17px;
+  margin-left: 15px;
+  background: url('../images/sprite.svg') -372px -35px no-repeat;
+  cursor: pointer;
+}
 .home-page .hover-section .second-img .news,
 .home-page .hover-section .fourth-img .news {
   position: relative;
@@ -1051,6 +1062,7 @@ section.footer .copyright {
   width: 500px;
   height: 438px;
   background: url('../images/calendar-img.jpg') center center no-repeat;
+  background-size: cover;
 }
 /*#endregion*/
 /*#region Winery*/
@@ -1486,4 +1498,6 @@ section.footer .copyright {
 .wines-page .wine-selection .white-wine .wine-position .read-more-box .read-more {
   font-size: 16px;
 }
+/*#endregion*/
+/*#region*/
 /*#endregion*/
