@@ -47,6 +47,12 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
            controller: 'WinesController',
            templateUrl: '/views/wines.html',
            pageName: 'Вина',
+       })
+       .state('layout.territory', {
+           url: '/делиблатска-пешчара',
+           controller: 'TerritoryController',
+           templateUrl: '/views/territory.html',
+           pageName: 'Делиблатска пешчара'
        });
 
     $locationProvider.html5Mode(true);
