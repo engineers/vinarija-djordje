@@ -1,0 +1,15 @@
+{
+  "name": "VinarijaDjordje",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-sanitize": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-google-maps": "^2.3.3",
+    "lodash": "^4.13.1",
+    "angular-simple-logger": "^0.1.7",
+    "jquery": "^2.2.1",
+    "slick-carousel": "^1.6.0"
+  }
+}
