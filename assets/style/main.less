@@ -31,7 +31,7 @@ body {
     margin: 0;
     line-height: 1;
     font-size: 14px;
-    font-family: 'tenor_sansregular';
+    font-family: 'Tenor Sans';
 }
 
 ol, ul {
@@ -235,6 +235,7 @@ button::-moz-focus-inner {
         text-transform: uppercase;
         color: #333;
         cursor: pointer;
+        font-family: 'Tenor Sans';
     }
 }
 
@@ -1566,9 +1567,104 @@ section.footer {
 /*#region Wines*/
 .wines-page {
     .wine-selection {
+        position: relative;
+
+        .stamp-wine {
+            width: 230px;
+            height: 230px;
+            background: url('../images/stamp izbor vina.svg') center center no-repeat;
+            position: absolute;
+            z-index: 4;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 44%;
+        }
+
         .red-wine {
             width: 50%;
             height: 1080px;
+            background: url('../images/wines.jpg') center center no-repeat;
+            background-size: cover;
+
+            .logo {
+                width: 160px;
+                height: 110px;
+                margin: 50px 0 0 75px;
+                background: url('../images/logo.svg') center center no-repeat;
+            }
+
+            .wine-position {
+                position: relative;
+                top: 29%;
+                transform: translateY(-28%);
+
+                .title {
+                    margin-right: 175px;
+                    margin-bottom: -25px;
+                    text-align: right;
+                    color: @grey;
+                    font-size: 36px;
+                    font-family: 'Minion Pro-Regular';
+                }
+
+                .red-bottle {
+                    height: 210px;
+                    width: 810px;
+                    background: url('../images/choose-wine-red.png') center center no-repeat;
+                }
+
+                .read-more-box {
+                    justify-content: flex-end;
+                    margin-right: 150px;
+                    margin-top: -10px;
+
+                    .vertical-line {
+                        background-color: @grey;
+                    }
+
+                    .read-more {
+                        color: @grey;
+                        font-size: 16px;
+                        font-family: 'Tenor Sans';
+                    }
+                }
+            }
+        }
+
+        .white-wine {
+            width: 50%;
+            height: 1080px;
+            background-color: #fbf9f0;
+
+            .wine-position {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+
+                .title {
+                    margin-bottom: -45px;
+                    margin-left: 200px;
+                    color: #444;
+                    font-size: 36px;
+                    font-family: 'Minion Pro-Regular';
+                }
+
+                .white-bottle {
+                    height: 240px;
+                    width: 810px;
+                    margin-left: 141px;
+                    background: url('../images/choose-wine-white.png') center center no-repeat;
+                }
+
+                .read-more-box {
+                    margin-left: 150px;
+                    margin-top: -30px;
+
+                    .read-more {
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
