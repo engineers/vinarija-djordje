@@ -13,43 +13,43 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             pageName: 'Layout'
         })
         .state('layout.home', {
-            url: '/почетна',
+            url: '/pocetna',
             controller: 'HomeController',
             templateUrl: '/views/home.html',
             pageName: 'Почетна',
         })
        .state('layout.visit-winery', {
-           url: '/посета-винарији',
+           url: '/poseta-vinariji',
            controller: 'VisitWineryController',
            templateUrl: '/views/visit-winery.html',
            pageName: 'Посета винарији',
        })
        .state('layout.winery', {
-           url: '/винарија',
+           url: '/vinarija',
            controller: 'WineryController',
            templateUrl: '/views/winery.html',
            pageName: 'Винарија',
        })
        .state('layout.actualities', {
-           url: '/актуелности',
+           url: '/aktuelnosti',
            controller: 'ActualitiesController',
            templateUrl: '/views/actualities.html',
            pageName: 'Актуелности',
        })
        .state('layout.vineyards', {
-           url: '/виногради',
+           url: '/vinogradi',
            controller: 'VineyardsController',
            templateUrl: '/views/vineyards.html',
            pageName: 'Виногради',
        })
        .state('layout.wines', {
-           url: '/вина',
+           url: '/vina',
            controller: 'WinesController',
            templateUrl: '/views/wines.html',
            pageName: 'Вина',
        })
        .state('layout.territory', {
-           url: '/делиблатска-пешчара',
+           url: '/deliblatska-pescara',
            controller: 'TerritoryController',
            templateUrl: '/views/territory.html',
            pageName: 'Делиблатска пешчара'
