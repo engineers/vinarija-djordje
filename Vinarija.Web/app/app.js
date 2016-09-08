@@ -53,6 +53,18 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
            controller: 'TerritoryController',
            templateUrl: '/views/territory.html',
            pageName: 'Делиблатска пешчара'
+       })
+       .state('layout.red-wines', {
+           url: '/crvena-vina',
+           controller: 'RedWinesController',
+           templateUrl: '/views/red-wines.html',
+           pageName: 'Црвена вина',
+       })
+       .state('layout.white-wines', {
+           url: '/bela-vina',
+           controller: 'WhiteWinesController',
+           templateUrl: '/views/white-wines.html',
+           pageName: 'Бела вина',
        });
 
     $locationProvider.html5Mode(true);
@@ -61,6 +73,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
 app.run(function ($rootScope, $state) {
 
     $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+
+        $rootScope.$state = $state;
 
         if (toState.pageName) {
             document.title = 'Винарија Ђорђе | ' + toState.pageName;

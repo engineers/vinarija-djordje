@@ -294,7 +294,7 @@ h3 {
 }
 h5 {
   font-size: 28px;
-  font-family: nk124regular;
+  font-family: 'NK124';
   color: #888;
 }
 /*#endregion*/
@@ -627,7 +627,7 @@ section.footer .copyright {
 .visit-winery-page section.about .subtitle {
   margin-bottom: 88px;
   font-size: 28px;
-  font-family: 'nk124regular';
+  font-family: 'NK124';
   color: #8a8a8a;
 }
 .visit-winery-page section.about p {
@@ -1093,7 +1093,7 @@ section.footer .copyright {
   margin-bottom: 25px;
   font-size: 28px;
   color: #888;
-  font-family: nk124regular;
+  font-family: 'NK124';
 }
 .winery-page .text-part .content {
   width: 81%;
@@ -1272,7 +1272,7 @@ section.footer .copyright {
   margin-bottom: 50px;
   color: #888;
   font-size: 28px;
-  font-family: NK124;
+  font-family: 'NK124';
 }
 .vineyards-page .vineyards .content {
   width: 60%;
@@ -1307,7 +1307,7 @@ section.footer .copyright {
   margin-bottom: 35px;
   font-size: 28px;
   color: #888;
-  font-family: NK124;
+  font-family: 'NK124';
   text-align: right;
 }
 .vineyards-page .vineyards-white-sort .text-part .white-wine-position .sort-wine {
@@ -1350,7 +1350,7 @@ section.footer .copyright {
   margin-bottom: 35px;
   font-size: 28px;
   color: #888;
-  font-family: NK124;
+  font-family: 'NK124';
 }
 .vineyards-page .vineyards-black-sort .text-part .black-wine-position .sort-wine .sort {
   margin-bottom: 35px;
@@ -1391,7 +1391,7 @@ section.footer .copyright {
   margin-bottom: 35px;
   font-size: 28px;
   color: #888;
-  font-family: NK124;
+  font-family: 'NK124';
   text-align: right;
 }
 .vineyards-page .land .text-part .land-position .content {
@@ -1414,6 +1414,7 @@ section.footer .copyright {
 /*#region Wines*/
 .wines-page .wine-selection {
   position: relative;
+  height: 100%;
 }
 .wines-page .wine-selection .stamp-wine {
   width: 230px;
@@ -1427,7 +1428,7 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .red-wine {
   width: 50%;
-  height: 1080px;
+  height: 100%;
   background: url('../images/wines.jpg') center center no-repeat;
   background-size: cover;
 }
@@ -1470,7 +1471,7 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .white-wine {
   width: 50%;
-  height: 1080px;
+  height: 100%;
   background-color: #fbf9f0;
 }
 .wines-page .wine-selection .white-wine .wine-position {
@@ -1499,5 +1500,5 @@ section.footer .copyright {
   font-size: 16px;
 }
 /*#endregion*/
-/*#region*/
+/*#region Red wines*/
 /*#endregion*/

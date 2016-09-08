@@ -1,13 +1,13 @@
 ﻿<div class="wines-page">
-    <section class="wine-selection">
+    <section class="wine-selection" set-height>
         <div class="stamp-wine"></div>
         <div class="flex">
-            <div class="red-wine">
+            <div class="red-wine" set-height>
                 <div class="logo"></div>
                 <div class="wine-position">
                     <div class="title">Црвена Вина</div>
                     <div class="red-bottle"></div>
-                    <div class="read-more-box flex">
+                    <div class="read-more-box flex" ui-sref="layout.red-wines">
                         <div class="vertical-line"></div>
                         <div class="read-more">прочитај још</div>
                         <div class="vertical-line"></div>
@@ -15,11 +15,11 @@
                 </div>
             </div>
 
-            <div class="white-wine">
+            <div class="white-wine" set-height>
                 <div class="wine-position">
                     <div class="title">Бела Вина</div>
                     <div class="white-bottle"></div>
-                    <div class="read-more-box flex">
+                    <div class="read-more-box flex"  ui-sref="layout.white-wines">
                         <div class="vertical-line"></div>
                         <div class="read-more">прочитај још</div>
                         <div class="vertical-line"></div>
@@ -29,3 +29,5 @@
         </div>
     </section>
 </div>
+
+<div ui-view></div>
