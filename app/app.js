@@ -52,11 +52,9 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
     $locationProvider.html5Mode(true);
 });
 
-app.run(function ($rootScope, $state, $anchorScroll) {
+app.run(function ($rootScope, $state) {
 
     $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
-
-        $anchorScroll(top);
 
         if (toState.pageName) {
             document.title = 'Винарија Ђорђе | ' + toState.pageName;
