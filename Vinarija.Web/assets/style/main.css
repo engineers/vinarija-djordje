@@ -122,8 +122,8 @@ a {
   font-style: normal;
 }
 @font-face {
-  font-family: 'tenor_sansregular';
-  src: url('../fonts/tenorsans-regular-webfont.woff2') format('woff2'), url('../fonts/tenorsans-regular-webfont.woff') format('woff');
+  font-family: 'TenorSans';
+  src: url('../fonts/TenorSans.eot?#iefix') format('embedded-opentype'), url('../fonts/TenorSans.woff') format('woff'), url('../fonts/TenorSans.ttf') format('truetype'), url('../fonts/TenorSans.svg#TenorSans') format('svg');
   font-weight: normal;
   font-style: normal;
 }
