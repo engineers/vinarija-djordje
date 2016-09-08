@@ -1684,3 +1684,138 @@ section.footer {
 
 /*#region Red wines*/
 /*#endregion*/
+
+
+
+.hamburger-menu {
+    display: block;
+
+    .menu-nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 8;
+    }
+
+    .hamburger-nav {
+        .hamburger-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 80%;
+            overflow: scroll;
+            z-index: 8;
+            background-color: @w;
+            width: 0;
+            .transition(width, .4s);
+            box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.09);
+
+            &.open-menu {
+                width: 85%;
+            }
+
+            ul {
+                position: relative;
+                left: 0;
+                top: 20%;
+                width: 70%;
+
+                li {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.hamburger-btn {
+    display: block;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    z-index: 8;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+
+    span {
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: @w;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+        -webkit-transition: .4s ease-in-out;
+        -moz-transition: .4s ease-in-out;
+        -o-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+
+    span:nth-child(1) {
+        top: 0;
+    }
+
+    span:nth-child(2),
+    span:nth-child(3) {
+        top: 8px;
+    }
+
+    span:nth-child(4) {
+        top: 16px;
+    }
+}
+
+.open {
+    span:nth-child(1) {
+        top: 8px;
+        width: 0;
+        left: 50%;
+    }
+
+    span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    span:nth-child(4) {
+        top: 8px;
+        width: 0;
+        left: 50%;
+    }
+}

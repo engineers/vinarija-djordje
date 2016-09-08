@@ -4,6 +4,49 @@
         <div class="flex">
             <div class="red-wine" set-height>
                 <div class="logo"></div>
+                <div class="hamburger-menu">
+                    <div ng-show="hamburgerMenu" class="menu-nav-overlay" ng-click="showMenu()"></div>
+                    <nav class="hamburger-nav">
+                        <div class="hamburger-container" ng-class="{'open-menu': hamburgerMenu}">
+                            <ul ng-click="showMenu()">
+                                <li class="flex">
+                                    <div class="grey-line"></div>
+                                    <a scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home">почетна</a>
+                                </li>
+                                <li class="flex">
+                                    <div class="grey-line"></div>
+                                    <a ui-sref="layout.wines">вина</a>
+                                </li>
+                                <li class="flex">
+                                    <div class="grey-line"></div>
+                                    <a scroll-to-section section-to-scroll="winery-page" time="5000" state="layout.winery">винарија</a>
+                                </li>
+                                <li class="flex">
+                                    <div class="grey-line"></div>
+                                    <a scroll-to-section section-to-scroll="vineyards-page" time="5000" state="layout.vineyards">виногради</a>
+                                </li>
+                                <li class="flex">
+                                    <div class="grey-line"></div>
+                                    <a scroll-to-section section-to-scroll="visit-winery-page" time="5000" state="layout.visit-winery">посета винарији</a>
+                                </li>
+                                <li class="flex">
+                                    <div class="grey-line"></div>
+                                    <a scroll-to-section section-to-scroll="actualities-page" time="5000" state="layout.actualities">актуелности</a>
+                                </li>
+                                <li class="flex">
+                                    <div class="grey-line"></div>
+                                    <a scroll-to-section section-to-scroll="territory-page" time="5000" state="layout.territory">делиблатска пешчара</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="hamburger-btn" ng-click="showMenu()" ng-class="{'open': hamburgerMenu}">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
                 <div class="wine-position">
                     <div class="title">Црвена Вина</div>
                     <div class="red-bottle"></div>
@@ -19,7 +62,7 @@
                 <div class="wine-position">
                     <div class="title">Бела Вина</div>
                     <div class="white-bottle"></div>
-                    <div class="read-more-box flex"  ui-sref="layout.white-wines">
+                    <div class="read-more-box flex" ui-sref="layout.white-wines">
                         <div class="vertical-line"></div>
                         <div class="read-more">прочитај још</div>
                         <div class="vertical-line"></div>
