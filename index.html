@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="vinarija">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Vinarija Đorđe</title>
+    <base href="/">
+    <link href="/node_modules/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link href="/node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+    <link href="/assets/style/main.css" rel="stylesheet" />
+    <link href="/assets/style/responsive.css" rel="stylesheet" />
+</head>
+<body ng-cloak>
+    <div ui-view></div>
+
+    <!-- Vendor scripts -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/node_modules/lodash/lodash.min.js"></script>
+    <script src="/node_modules/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="/node_modules/angular-google-maps/dist/angular-google-maps.js"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+
+    <!--Module-->
+    <script src="/app/app.js"></script>
+
+    <!--Directives-->
+    <script src="/app/directives/setHeight.js"></script>
+    <script src="/app/directives/slickCarousel.js"></script>
+
+    <!--Services-->
+
+    <!--Controllers-->
+    <script src="/app/controllers/LayoutController.js"></script>
+    <script src="/app/controllers/HomeController.js"></script>
+    <script src="/app/controllers/VisitWineryController.js"></script>
+    <script src="/app/controllers/WineryController.js"></script>
+    <script src="/app/controllers/ActualitiesController.js"></script>
+    <script src="/app/controllers/VineyardsController.js"></script>
+    <script src="/app/controllers/WinesController.js"></script>
+
+    <!--Google map-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_jbSAEp3gr2lzt21RZABqDUbMgxe2Z64"></script>
+</body>
+</html>
