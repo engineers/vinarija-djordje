@@ -104,7 +104,7 @@ body {
   margin: 0;
   line-height: 1;
   font-size: 14px;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 ol,
 ul {
@@ -258,7 +258,7 @@ button::-moz-focus-inner {
   background-color: #000;
   color: #fff;
   font-size: 16px;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
   cursor: pointer;
   border: none;
   outline: none;
@@ -284,7 +284,7 @@ button::-moz-focus-inner {
   text-transform: uppercase;
   color: #333;
   cursor: pointer;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 h3 {
   font-size: 36px;
@@ -582,7 +582,7 @@ section.footer .footer-container .contact-form .send-btn {
   border: none;
   outline: none;
   font-size: 16px;
-  font-family: 'tenor_sansregular';
+  font-family: 'TenorSans';
 }
 section.footer .footer-container .contact-form .send-btn {
   height: 40px;
@@ -596,7 +596,7 @@ section.footer .footer-container .contact-form .send-btn {
 }
 section.footer .footer-container .contact-form .send-btn .send-text {
   font-size: 16px;
-  font-family: 'tenor_sansregular';
+  font-family: 'TenorSans';
 }
 section.footer .footer-container .contact-form .send-btn .send-img {
   width: 25px;
@@ -785,7 +785,7 @@ section.footer .copyright {
   font-size: 20px;
   color: #888;
   text-transform: uppercase;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 .home-page .red-wine .description .descr-part .black-btn {
   margin-left: 140px;
@@ -832,7 +832,7 @@ section.footer .copyright {
   font-size: 20px;
   color: #888;
   text-transform: uppercase;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 .home-page .white-wine .description .descr-part .black-btn {
   float: right;
@@ -902,7 +902,7 @@ section.footer .copyright {
   margin: 0 20px 30px;
   font-size: 18px;
   color: #fff;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 .home-page .hover-section .first-img .news .view-more,
 .home-page .hover-section .second-img .news .view-more,
@@ -913,7 +913,7 @@ section.footer .copyright {
   font-size: 16px;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
   cursor: pointer;
 }
 .home-page .hover-section .first-img .news .more-arrow,
@@ -1100,7 +1100,7 @@ section.footer .copyright {
   margin-bottom: 20px;
   font-size: 18px;
   color: #333;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
   line-height: 22px;
 }
 .winery-page .text-part .logo {
@@ -1167,7 +1167,7 @@ section.footer .copyright {
   font-size: 18px;
   text-align: center;
   line-height: 21px;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 .winery-page .welcome-to-winary .position-content .read-more-box {
   justify-content: center;
@@ -1281,7 +1281,7 @@ section.footer .copyright {
   color: #333;
   line-height: 21px;
   font-size: 18px;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 .vineyards-page .vineyards .content.second {
   margin-bottom: 230px;
@@ -1317,7 +1317,7 @@ section.footer .copyright {
   margin-bottom: 35px;
   font-size: 18px;
   color: #333;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
   text-transform: uppercase;
 }
 .vineyards-page .vineyards-white-sort .text-part .white-wine-position .red-line {
@@ -1356,7 +1356,7 @@ section.footer .copyright {
   margin-bottom: 35px;
   font-size: 18px;
   color: #333;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
   text-transform: uppercase;
 }
 .vineyards-page .vineyards-black-sort .text-part .black-wine-position .red-line {
@@ -1401,7 +1401,7 @@ section.footer .copyright {
   line-height: 21px;
   font-size: 18px;
   color: #333;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
   text-align: right;
 }
 .vineyards-page .land .land-img {
@@ -1440,8 +1440,8 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .red-wine .wine-position {
   position: relative;
-  top: 29%;
-  transform: translateY(-28%);
+  top: 32%;
+  transform: translateY(-32%);
 }
 .wines-page .wine-selection .red-wine .wine-position .title {
   margin-right: 175px;
@@ -1467,7 +1467,7 @@ section.footer .copyright {
 .wines-page .wine-selection .red-wine .wine-position .read-more-box .read-more {
   color: #8a8a8a;
   font-size: 16px;
-  font-family: 'Tenor Sans';
+  font-family: 'TenorSans';
 }
 .wines-page .wine-selection .white-wine {
   width: 50%;
@@ -1476,8 +1476,8 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .white-wine .wine-position {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 52%;
+  transform: translateY(-52%);
 }
 .wines-page .wine-selection .white-wine .wine-position .title {
   margin-bottom: -45px;

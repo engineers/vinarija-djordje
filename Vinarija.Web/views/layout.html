@@ -1,4 +1,4 @@
-﻿<section class="intro" set-height ng-show="!$state.includes('layout.wines')">
+﻿<section class="intro" set-height ng-show="!$state.includes('layout.wines') && !$state.includes('layout.red-wines') && !$state.includes('layout.white-wines')">
     <img class="main-logo" src="../assets/images/logo.svg" />
     <img class="logo-headline" src="../assets/images/headline-logo.png" />
 
@@ -47,7 +47,7 @@
 
 <div ui-view></div>
 
-<section class="footer" ng-show="!$state.includes('layout.wines')">
+<section class="footer" ng-show="!$state.includes('layout.wines') && !$state.includes('layout.red-wines') && !$state.includes('layout.white-wines')">
     <div class="footer-container flex">
         <div>
             <a target="_blank" href="https://www.google.rs/maps/place/44%C2%B059'41.9%22N+20%C2%B056'25.2%22E/@44.9949618,20.9381543,642m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d44.994958!4d20.940343?hl=en">
