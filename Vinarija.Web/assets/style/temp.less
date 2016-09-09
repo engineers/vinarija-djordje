@@ -43,7 +43,8 @@
         }
     }
 
-    .flora {
+    .flora,
+    .climate {
         width: 100%;
         height: 733px;
 
@@ -90,6 +91,60 @@
             height: 733px;
             background: url('../images/flora-background.jpg') center center no-repeat;
             background-size: cover;
+        }
+    }
+
+    .climate {
+        .right-box {
+            background: url('../images/../images/climate-background.jpg') center center no-repeat;
+        }
+    }
+
+    .fauna {
+        width: 100%;
+        height: 733px;
+
+        .left-box {
+            width: 50%;
+            height: 733px;
+            background: url('../images/fauna-background.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .right-box {
+            position: relative;
+            width: 50%;
+            height: 733px;
+
+            .text-wrapper {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 110px;
+
+                .title {
+                    margin-bottom: 10px;
+                    font-size: 36px;
+                    font-family: 'Minion Pro-Regular';
+                    color: #333;
+                }
+
+                .subtitle {
+                    margin-bottom: 25px;
+                    font-size: 28px;
+                    font-family: 'NK124';
+                    color: #888;
+                }
+
+                p {
+                    width: 81%;
+                    margin-bottom: 20px;
+                    line-height: 22px;
+                    font-size: 18px;
+                    font-family: 'TenorSans';
+                    color: #333;
+                }
+            }
         }
     }
 }
