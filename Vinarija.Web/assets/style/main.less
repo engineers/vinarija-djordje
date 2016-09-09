@@ -200,9 +200,12 @@ button::-moz-focus-inner {
 }
 
 .stamp-big {
-    width: 100%;
-    height: 170px;
-    background: url('../images/stamp-big.svg') center center no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 490px;
+    height: 440px;
+    background: url('../images/stamp-big.svg') top left no-repeat;
 }
 
 .black-btn {
@@ -255,6 +258,27 @@ button::-moz-focus-inner {
     }
 }
 
+.back-arrow-red {
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    width: 45px;
+    height: 35px;
+    background: url('../images/sprite.svg') -98px -128px no-repeat;
+    cursor: pointer;
+}
+
+
+.back-arrow-black {
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    width: 45px;
+    height: 35px;
+    background: url('../images/sprite.svg') -28px -128px no-repeat;
+    cursor: pointer;
+}
+
 h3 {
     font-size: 36px;
     text-transform: uppercase;
@@ -278,6 +302,7 @@ section.intro {
         top: 50px;
         left: 75px;
         z-index: 1;
+        cursor: pointer;
     }
 
     .logo-headline {
@@ -467,7 +492,7 @@ section.footer {
             }
 
             .second-colum {
-                width: 180px;
+                width: 225px;
             }
 
             p,
@@ -645,29 +670,33 @@ section.footer {
         padding: 105px 0 125px;
         background: #fbf9f0 url('../../assets/images/about-watermark.png') center 50px no-repeat;
 
-        h3 {
-            margin: 0;
-            color: #333333;
-            font-size: 36px;
-            text-transform: uppercase;
-            font-family: 'Minion Pro-Regular';
-        }
+        .default-wrapper {
+            width: 68%;
 
-        .subtitle {
-            margin-bottom: 88px;
-            font-size: 28px;
-            font-family: 'NK124';
-            color: @grey;
-        }
+            h3 {
+                margin: 0;
+                color: #333333;
+                font-size: 36px;
+                text-transform: uppercase;
+                font-family: 'Minion Pro-Regular';
+            }
 
-        p {
-            margin-bottom: 30px;
-            font-size: 18px;
-            color: @grey;
-            line-height: 22px;
+            .subtitle {
+                margin-bottom: 88px;
+                font-size: 28px;
+                font-family: 'NK124';
+                color: @grey;
+            }
 
-            &:last-child {
-                margin-bottom: 0;
+            p {
+                margin-bottom: 30px;
+                font-size: 18px;
+                color: @grey;
+                line-height: 22px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -680,6 +709,7 @@ section.footer {
         .temp-map {
             height: 600px;
             background: url('../../assets/images/temp-map.jpg') center center no-repeat;
+            background-size: cover;
         }
 
         .temp-logo {
@@ -726,6 +756,7 @@ section.footer {
                 line-height: 21px;
                 color: #8a8a8a;
                 font-size: 16px;
+                font-family: 'TenorSans';
             }
         }
 
@@ -769,9 +800,17 @@ section.footer {
                 padding-left: 25px;
                 line-height: 24px;
 
+                .line1 {
+                    margin-bottom: 8px;
+                    font-size: 24px;
+                    color: #333;
+                    font-family: 'NK124';
+                }
+
                 .line2 {
-                    font-style: italic;
-                    font-weight: 400;
+                    font-size: 22px;
+                    color: #333;
+                    font-family: 'Minion Pro-600-Semibold';
                 }
             }
         }
@@ -837,6 +876,12 @@ section.footer {
                 h3 {
                     margin-left: 140px;
                     margin-bottom: 65px;
+                    text-transform: initial;
+                    font-family: 'Minion Pro-Regular';
+
+                    span {
+                        font-family: 'Minion Pro-bold-Bold';
+                    }
                 }
 
                 .type {
@@ -890,6 +935,12 @@ section.footer {
                     text-align: right;
                     margin-right: 140px;
                     margin-bottom: 65px;
+                    text-transform: initial;
+                    font-family: 'Minion Pro-Regular';
+
+                    span {
+                        font-family: 'Minion Pro-bold-Bold';
+                    }
                 }
 
                 .types {
@@ -1204,6 +1255,7 @@ section.footer {
         .logo {
             width: 132px;
             height: 110px;
+            cursor: pointer;
             background: url('../images/contact-card-logo.svg') center center no-repeat;
         }
     }
@@ -1326,7 +1378,7 @@ section.footer {
         }
 
         .calendar-news {
-            width: 30%;
+            width: 35%;
 
             .title {
                 margin-bottom: 30px;
@@ -1342,6 +1394,51 @@ section.footer {
                 color: #888;
                 line-height: 21px;
             }
+
+            .news-popup {
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100%;
+                overflow: auto;
+                z-index: 8;
+                background-color: #fbf9f0;
+                width: 0;
+
+                &.open-menu {
+                    width: 100%;
+                }
+
+                .popup-content {
+                    justify-content: space-between;
+                    padding: 190px 75px 0 0;
+
+                    .calendar {
+                        width: 230px;
+                        margin-left: 0;
+
+                        .date {
+                            margin-top: -30px;
+                            text-align: center;
+                        }
+                    }
+
+                    .all-text {
+                        width: 60%;
+
+                        .first-row {
+                            margin-right: 65px;
+                            width: 47%;
+                            float: left;
+                        }
+
+                        .second-row {
+                            width: 47%;
+                            float: left;
+                        }
+                    }
+                }
+            }
         }
 
         .calendar-img {
@@ -1350,26 +1447,32 @@ section.footer {
 
             &.first {
                 background: url('../images/calendar-img.jpg') center center no-repeat;
+                background-size: cover;
             }
 
             &.second {
                 background: url('../images/actualities2.jpg') center center no-repeat;
+                background-size: cover;
             }
 
             &.third {
                 background: url('../images/actualities3.jpg') center center no-repeat;
+                background-size: cover;
             }
 
             &.fourth {
                 background: url('../images/actualities4.jpg') center center no-repeat;
+                background-size: cover;
             }
 
             &.fifth {
                 background: url('../images/actualities5.jpg') center center no-repeat;
+                background-size: cover;
             }
 
             &.sixth {
                 background: url('../images/actualities6.jpg') center center no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -1604,16 +1707,19 @@ section.footer {
             background-size: cover;
 
             .logo {
+                position: absolute;
                 width: 160px;
                 height: 110px;
                 margin: 50px 0 0 75px;
+                z-index: 10;
+                cursor: pointer;
                 background: url('../images/logo.svg') center center no-repeat;
             }
 
             .wine-position {
                 position: relative;
-                top: 32%;
-                transform: translateY(-32%);
+                top: 50%;
+                transform: translateY(-47%);
 
                 .title {
                     margin-right: 175px;
@@ -1655,8 +1761,8 @@ section.footer {
 
             .wine-position {
                 position: relative;
-                top: 52%;
-                transform: translateY(-52%);
+                top: 50%;
+                transform: translateY(-46%);
 
                 .title {
                     margin-bottom: -45px;
@@ -1704,7 +1810,7 @@ section.footer {
     .hamburger-nav {
         .hamburger-container {
             position: fixed;
-            top: 38%;
+            top: 0;
             left: 0;
             height: 100%;
             overflow: auto;
@@ -1715,14 +1821,14 @@ section.footer {
             box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.09);
 
             &.open-menu {
-                width: 20%;
+                width: 25%;
             }
 
             ul {
-                position: relative;
-                left: 10%;
-                top: 10%;
-                width: 100%;
+                position: absolute;
+                left: 73px;
+                top: 40%;
+                width: auto;
 
                 li {
                     display: -webkit-box;
@@ -1737,8 +1843,19 @@ section.footer {
                     color: #8a8a8a;
                     font-family: 'Minion Pro-Regular';
 
+                    &:hover {
+                        .grey-line {
+                            display: table;
+                            margin-top: 23px;
+                        }
+                    }
+
                     a {
                         color: #8a8a8a;
+
+                        &:hover {
+                            color: #e2e1e1;
+                        }
                     }
                 }
             }
@@ -1801,6 +1918,7 @@ section.footer {
     position: absolute;
     left: 73px;
     top: 35%;
+    z-index: 10;
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
@@ -1839,8 +1957,9 @@ section.footer {
 
 /*#endregion*/
 
-/*#region Red wines*/
-.red-wine-page {
+/*#region Red wines and White wines page*/
+.red-wine-page,
+.white-wine-page {
     height: 100%;
 
     .logo {
@@ -1849,6 +1968,7 @@ section.footer {
         height: 110px;
         margin: 50px 0 0 75px;
         z-index: 5;
+        cursor: pointer;
         background: url('../images/logo.svg') center center no-repeat;
     }
 
@@ -1887,7 +2007,7 @@ section.footer {
         }
 
         .sort-bottle {
-            width: 250px;
+            width: 215px;
             height: 100%;
             background: url('../images/freska-crvena.png') center center no-repeat;
         }
@@ -1910,11 +2030,99 @@ section.footer {
     }
 
     .sort-content {
+        position: relative;
         width: 50%;
         height: 100%;
         background-color: #fbf9f0;
 
-        .f-img {
+        .f-red {
+            position: absolute;
+            top: 17%;
+            left: 5%;
+            width: 300px;
+            height: 300px;
+            background: url('../images/F-red.svg') center border-box no-repeat;
+        }
+
+        .content-position {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 135px;
+            width: 72%;
+
+            .name-wine {
+                margin-bottom: 14px;
+                font-size: 36px;
+                color: #333;
+                font-family: 'Minion Pro-Regular';
+            }
+
+            .subtitle {
+                margin-bottom: 25px;
+                font-size: 28px;
+                color: #888;
+                font-family: 'NK124';
+            }
+
+            .text {
+                margin-bottom: 25px;
+                font-size: 18px;
+                color: #333;
+                font-family: 'TenorSans';
+                line-height: 21px;
+            }
+
+            .temperature,
+            .alcohol-percentage {
+                align-items: flex-end;
+            }
+
+            .degrees {
+                margin: 100px 0 40px 25px;
+            }
+
+            .temp {
+                margin: 100px 0 40px 0;
+            }
+
+            .degrees,
+            .percentage {
+                font-size: 36px;
+                color: @red;
+                font-family: 'NK124';
+            }
+
+            .alcohol {
+                margin-bottom: 0;
+            }
+
+            .percentage {
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+.white-wine-page {
+    .sort-content {
+        .f-white {
+            position: absolute;
+            top: 17%;
+            left: 5%;
+            width: 300px;
+            height: 300px;
+            background: url('../images/F-white.svg') center center no-repeat;
+        }
+    }
+
+    .red-sort {
+        background: url('../images/white-sort.jpg') center center no-repeat;
+        background-size: cover;
+
+        .sort-bottle {
+            width: 330px;
+            background: url('../images/freska-bela.png') center center no-repeat;
         }
     }
 }
