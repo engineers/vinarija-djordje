@@ -494,7 +494,7 @@ section.footer .footer-container .pages .first-colum {
   margin-right: 65px;
 }
 section.footer .footer-container .pages .second-colum {
-  width: 180px;
+  width: 225px;
 }
 section.footer .footer-container .pages p,
 section.footer .footer-container .pages .page-name {
@@ -819,6 +819,11 @@ section.footer .copyright {
 .home-page .red-wine .description .descr-part h3 {
   margin-left: 140px;
   margin-bottom: 65px;
+  text-transform: initial;
+  font-family: 'Minion Pro-Regular';
+}
+.home-page .red-wine .description .descr-part h3 span {
+  font-family: 'Minion Pro-bold-Bold';
 }
 .home-page .red-wine .description .descr-part .type {
   margin-bottom: 30px;
@@ -862,6 +867,11 @@ section.footer .copyright {
   text-align: right;
   margin-right: 140px;
   margin-bottom: 65px;
+  text-transform: initial;
+  font-family: 'Minion Pro-Regular';
+}
+.home-page .white-wine .description .descr-part h3 span {
+  font-family: 'Minion Pro-bold-Bold';
 }
 .home-page .white-wine .description .descr-part .types {
   justify-content: flex-end;
@@ -1728,7 +1738,7 @@ section.footer .copyright {
   left: 50%;
 }
 /*#endregion*/
-/*#region Red wines; White wines page*/
+/*#region Red wines and White wines page*/
 .red-wine-page,
 .white-wine-page {
   height: 100%;
