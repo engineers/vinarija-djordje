@@ -599,6 +599,7 @@ section.footer {
                 height: 70px;
                 padding-top: 10px;
                 resize: none;
+                overflow: auto;
             }
 
             ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -1547,7 +1548,7 @@ section.footer {
 
         .content {
             width: 60%;
-            margin-bottom: 25px;
+            padding-bottom: 25px;
             text-align: center;
             color: #333;
             line-height: 21px;
@@ -1555,7 +1556,7 @@ section.footer {
             font-family: 'TenorSans';
 
             &.second {
-                margin-bottom: 230px;
+                padding-bottom: 230px;
             }
         }
     }
@@ -2315,3 +2316,22 @@ section.footer {
 }
 
 /*#endregion*/
+
+/*FF*/
+@-moz-document url-prefix() {
+    section.footer {
+        .footer-container {
+            .contact-form {
+                .send-btn {
+                    .send-img {
+                        float: right;
+                    }
+
+                    .send-text {
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -583,6 +583,7 @@ section.footer .footer-container .contact-form textarea {
   height: 70px;
   padding-top: 10px;
   resize: none;
+  overflow: auto;
 }
 section.footer .footer-container .contact-form ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -1400,7 +1401,7 @@ section.footer .copyright {
 }
 .vineyards-page .vineyards .content {
   width: 60%;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   text-align: center;
   color: #333;
   line-height: 21px;
@@ -1408,7 +1409,7 @@ section.footer .copyright {
   font-family: 'TenorSans';
 }
 .vineyards-page .vineyards .content.second {
-  margin-bottom: 230px;
+  padding-bottom: 230px;
 }
 .vineyards-page .vineyards-white-sort .text-part {
   width: 50%;
@@ -2066,3 +2067,12 @@ section.footer .copyright {
   color: #333;
 }
 /*#endregion*/
+/*FF*/
+@-moz-document url-prefix() {
+  section.footer .footer-container .contact-form .send-btn .send-img {
+    float: right;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-text {
+    float: left;
+  }
+}
