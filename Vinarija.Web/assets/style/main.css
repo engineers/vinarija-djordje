@@ -1439,15 +1439,17 @@ section.footer .copyright {
   background-size: cover;
 }
 .wines-page .wine-selection .red-wine .logo {
+  position: absolute;
   width: 160px;
   height: 110px;
   margin: 50px 0 0 75px;
+  z-index: 10;
   background: url('../images/logo.svg') center center no-repeat;
 }
 .wines-page .wine-selection .red-wine .wine-position {
   position: relative;
-  top: 32%;
-  transform: translateY(-32%);
+  top: 50%;
+  transform: translateY(-47%);
 }
 .wines-page .wine-selection .red-wine .wine-position .title {
   margin-right: 175px;
@@ -1521,7 +1523,7 @@ section.footer .copyright {
 }
 .hamburger-menu .hamburger-nav .hamburger-container {
   position: fixed;
-  top: 38%;
+  top: 0;
   left: 0;
   height: 100%;
   overflow: auto;
@@ -1535,12 +1537,12 @@ section.footer .copyright {
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.09);
 }
 .hamburger-menu .hamburger-nav .hamburger-container.open-menu {
-  width: 20%;
+  width: 25%;
 }
 .hamburger-menu .hamburger-nav .hamburger-container ul {
   position: relative;
-  left: 10%;
-  top: 10%;
+  left: 19%;
+  top: 40%;
   width: 100%;
 }
 .hamburger-menu .hamburger-nav .hamburger-container ul li {
@@ -1609,6 +1611,7 @@ section.footer .copyright {
   position: absolute;
   left: 73px;
   top: 35%;
+  z-index: 10;
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
