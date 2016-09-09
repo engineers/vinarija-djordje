@@ -240,6 +240,8 @@ button::-moz-focus-inner {
 }
 
 .read-more-box {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
 
     .vertical-line {
@@ -423,6 +425,7 @@ section.footer {
     background-color: @b;
 
     .footer-container {
+        -webkit-justify-content: space-between;
         justify-content: space-between;
         padding: 95px 75px 0 75px;
 
@@ -521,6 +524,8 @@ section.footer {
 
         .contact-info {
             .contact-box {
+                -ms-flex-align: center;
+                -webkit-align-items: center;
                 align-items: center;
             }
 
@@ -633,7 +638,10 @@ section.footer {
                 height: 40px;
                 margin-bottom: 0;
                 padding-right: 15px;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
                 align-items: center;
+                -webkit-justify-content: space-between;
                 justify-content: space-between;
                 background-color: @red;
                 color: @w;
@@ -762,11 +770,18 @@ section.footer {
 
         .contact-info-wrapper {
             height: 290px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             vertical-align: initial;
+            -webkit-justify-content: space-between;
             justify-content: space-between;
             width: 1030px;
             margin: 0 auto;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
             align-items: center;
 
             .icon {
@@ -944,6 +959,7 @@ section.footer {
                 }
 
                 .types {
+                    -webkit-justify-content: flex-end;
                     justify-content: flex-end;
                     margin-right: 140px;
                 }
@@ -1132,12 +1148,20 @@ section.footer {
 
         .prev-arrow {
             left: 140px;
-            background: url('../images/sprite.svg') -28px -272px no-repeat;
+            background: url('../images/sprite.svg') -269px -272px no-repeat;
+
+            &:hover {
+                background: url('../images/sprite.svg') -28px -272px no-repeat;
+            }
         }
 
         .next-arrow {
             right: 140px;
-            background: url('../images/sprite.svg') -153px -272px no-repeat;
+            background: url('../images/sprite.svg') -394px -272px no-repeat;
+
+            &:hover {
+                background: url('../images/sprite.svg') -153px -272px no-repeat;
+            }
         }
     }
 
@@ -1344,8 +1368,15 @@ section.footer {
 .actualities-page {
     .ivent-calendar {
         height: 438px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
         align-items: center;
         background-color: #fbf9f0;
 
@@ -1410,6 +1441,7 @@ section.footer {
                 }
 
                 .popup-content {
+                    -webkit-justify-content: space-between;
                     justify-content: space-between;
                     padding: 190px 75px 0 0;
 
@@ -1556,6 +1588,7 @@ section.footer {
                 }
 
                 .sort-wine {
+                    -webkit-justify-content: flex-end;
                     justify-content: flex-end;
 
                     .sort {
@@ -1737,6 +1770,7 @@ section.footer {
                 }
 
                 .read-more-box {
+                    -webkit-justify-content: flex-end;
                     justify-content: flex-end;
                     margin-right: 150px;
                     margin-top: -10px;
@@ -1976,7 +2010,10 @@ section.footer {
         position: relative;
         width: 50%;
         height: 100%;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
         align-items: center;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
         background: url('../images/red-sort.jpg') center center no-repeat;
         background-size: cover;
@@ -2075,6 +2112,8 @@ section.footer {
 
             .temperature,
             .alcohol-percentage {
+                -ms-flex-align: flex-end;
+                -webkit-align-items: flex-end;
                 align-items: flex-end;
             }
 
