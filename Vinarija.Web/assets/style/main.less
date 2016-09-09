@@ -44,8 +44,6 @@ a {
 /*#endregion */
 
 /*#region fonts */
-
-
 @font-face {
     font-family: 'NK124';
     src: url('../fonts/NK124.eot?#iefix') format('embedded-opentype'), url('../fonts/NK124.otf') format('opentype'), url('../fonts/NK124.woff') format('woff'), url('../fonts/NK124.ttf') format('truetype'), url('../fonts/NK124.svg#NK124') format('svg');
@@ -201,6 +199,12 @@ button::-moz-focus-inner {
     background: url('../images/stamp-title.svg') center center no-repeat;
 }
 
+.stamp-big {
+    width: 100%;
+    height: 170px;
+    background: url('../images/stamp-big.svg') center center no-repeat;
+}
+
 .black-btn {
     width: 300px;
     height: 65px;
@@ -220,6 +224,16 @@ button::-moz-focus-inner {
     height: 1px;
     margin: 6px 10px 0 0;
     background-color: @red;
+}
+
+.grey-line {
+    display: none;
+    position: absolute;
+    left: -74px;
+    width: 60px;
+    height: 1px;
+    margin: 6px 10px 0 0;
+    background-color: @w;
 }
 
 .read-more-box {
@@ -351,16 +365,6 @@ section.intro {
             &:hover {
                 color: @grey-white;
             }
-        }
-
-        .grey-line {
-            display: none;
-            position: absolute;
-            left: -74px;
-            width: 60px;
-            height: 1px;
-            margin: 6px 10px 0 0;
-            background-color: @w;
         }
     }
 
@@ -638,7 +642,7 @@ section.footer {
 .visit-winery-page {
     section.about {
         text-align: center;
-        padding: 120px 0 125px;
+        padding: 105px 0 125px;
         background: #fbf9f0 url('../../assets/images/about-watermark.png') center 50px no-repeat;
 
         h3 {
@@ -711,6 +715,7 @@ section.footer {
                 margin: 15px 0;
                 font-size: 20px;
                 color: #333333;
+                font-family: 'NK124';
 
                 span {
                     text-transform: uppercase;
@@ -1835,4 +1840,231 @@ section.footer {
 /*#endregion*/
 
 /*#region Red wines*/
+.red-wine-page {
+    height: 100%;
+
+    .logo {
+        position: absolute;
+        width: 160px;
+        height: 110px;
+        margin: 50px 0 0 75px;
+        z-index: 5;
+        background: url('../images/logo.svg') center center no-repeat;
+    }
+
+    .red-sort {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        background: url('../images/red-sort.jpg') center center no-repeat;
+        background-size: cover;
+
+        .name-position {
+            .grey-line {
+                display: table;
+                left: 0;
+                width: 55px;
+                height: 2px;
+                margin-top: 12px;
+            }
+
+            .name {
+                margin-left: 73px;
+                font-size: 36px;
+                color: @w;
+                font-family: 'Minion Pro-Regular';
+                text-transform: uppercase;
+            }
+
+            .harvest {
+                margin: 10px 0 0 73px;
+                font-size: 22px;
+                font-family: 'NK124';
+                color: #888;
+            }
+        }
+
+        .sort-bottle {
+            width: 250px;
+            height: 100%;
+            background: url('../images/freska-crvena.png') center center no-repeat;
+        }
+
+        .all-sorts {
+            .name {
+                margin: 20px 110px 20px 0;
+                font-size: 18px;
+                color: #888;
+                font-family: 'TenorSans';
+            }
+
+            .grey-line {
+                margin-top: 30px;
+                display: table;
+                left: 96%;
+                width: 40px;
+            }
+        }
+    }
+
+    .sort-content {
+        width: 50%;
+        height: 100%;
+        background-color: #fbf9f0;
+
+        .f-img {
+        }
+    }
+}
+/*#endregion*/
+
+/*#region Territory*/
+.territory-page {
+    .info {
+        position: relative;
+        width: 100%;
+        height: 740px;
+        background: url('../images/territory-background.jpg') center center no-repeat;
+        background-size: cover;
+
+        .text-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%);
+            margin-left: 110px;
+
+            .title {
+                margin-bottom: 10px;
+                font-size: 36px;
+                font-family: 'Minion Pro-Regular';
+                color: #333;
+            }
+
+            .subtitle {
+                margin-bottom: 25px;
+                font-size: 28px;
+                font-family: 'NK124';
+                color: #888;
+            }
+
+            p {
+                width: 81%;
+                margin-bottom: 20px;
+                line-height: 22px;
+                font-size: 18px;
+                font-family: 'TenorSans';
+                color: #333;
+            }
+        }
+    }
+
+    .flora,
+    .climate {
+        width: 100%;
+        height: 733px;
+
+        .left-box {
+            position: relative;
+            width: 50%;
+            height: 733px;
+
+            .text-wrapper {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-right: 110px;
+                text-align: right;
+
+                .title {
+                    margin-bottom: 10px;
+                    font-size: 36px;
+                    font-family: 'Minion Pro-Regular';
+                    color: #333;
+                }
+
+                .subtitle {
+                    margin-bottom: 25px;
+                    font-size: 28px;
+                    font-family: 'NK124';
+                    color: #888;
+                }
+
+                p {
+                    width: 81%;
+                    margin-bottom: 20px;
+                    line-height: 22px;
+                    text-align: right;
+                    font-size: 18px;
+                    font-family: 'TenorSans';
+                    color: #333;
+                }
+            }
+        }
+
+        .right-box {
+            width: 50%;
+            height: 733px;
+            background: url('../images/flora-background.jpg') center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .climate {
+        .right-box {
+            background: url('../images/../images/climate-background.jpg') center center no-repeat;
+        }
+    }
+
+    .fauna {
+        width: 100%;
+        height: 733px;
+
+        .left-box {
+            width: 50%;
+            height: 733px;
+            background: url('../images/fauna-background.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .right-box {
+            position: relative;
+            width: 50%;
+            height: 733px;
+
+            .text-wrapper {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 110px;
+
+                .title {
+                    margin-bottom: 10px;
+                    font-size: 36px;
+                    font-family: 'Minion Pro-Regular';
+                    color: #333;
+                }
+
+                .subtitle {
+                    margin-bottom: 25px;
+                    font-size: 28px;
+                    font-family: 'NK124';
+                    color: #888;
+                }
+
+                p {
+                    width: 81%;
+                    margin-bottom: 20px;
+                    line-height: 22px;
+                    font-size: 18px;
+                    font-family: 'TenorSans';
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
 /*#endregion*/

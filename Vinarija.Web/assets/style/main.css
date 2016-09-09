@@ -251,6 +251,11 @@ button::-moz-focus-inner {
   margin: 0 auto;
   background: url('../images/stamp-title.svg') center center no-repeat;
 }
+.stamp-big {
+  width: 100%;
+  height: 170px;
+  background: url('../images/stamp-big.svg') center center no-repeat;
+}
 .black-btn {
   width: 300px;
   height: 65px;
@@ -269,6 +274,15 @@ button::-moz-focus-inner {
   height: 1px;
   margin: 6px 10px 0 0;
   background-color: #bf1e2e;
+}
+.grey-line {
+  display: none;
+  position: absolute;
+  left: -74px;
+  width: 60px;
+  height: 1px;
+  margin: 6px 10px 0 0;
+  background-color: #fff;
 }
 .read-more-box {
   align-items: center;
@@ -376,15 +390,6 @@ section.intro nav a {
 }
 section.intro nav a:hover {
   color: #e2e1e1;
-}
-section.intro nav .grey-line {
-  display: none;
-  position: absolute;
-  left: -74px;
-  width: 60px;
-  height: 1px;
-  margin: 6px 10px 0 0;
-  background-color: #fff;
 }
 section.intro .slick-dots {
   display: block;
@@ -614,7 +619,7 @@ section.footer .copyright {
 /*#region Visit the Winery*/
 .visit-winery-page section.about {
   text-align: center;
-  padding: 120px 0 125px;
+  padding: 105px 0 125px;
   background: #fbf9f0 url('../images/about-watermark.png') center 50px no-repeat;
 }
 .visit-winery-page section.about h3 {
@@ -679,6 +684,7 @@ section.footer .copyright {
   margin: 15px 0;
   font-size: 20px;
   color: #333333;
+  font-family: 'NK124';
 }
 .visit-winery-page section.contact .contact-card .name span {
   text-transform: uppercase;
@@ -1634,4 +1640,196 @@ section.footer .copyright {
 }
 /*#endregion*/
 /*#region Red wines*/
+.red-wine-page {
+  height: 100%;
+}
+.red-wine-page .logo {
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  margin: 50px 0 0 75px;
+  z-index: 5;
+  background: url('../images/logo.svg') center center no-repeat;
+}
+.red-wine-page .red-sort {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: url('../images/red-sort.jpg') center center no-repeat;
+  background-size: cover;
+}
+.red-wine-page .red-sort .name-position .grey-line {
+  display: table;
+  left: 0;
+  width: 55px;
+  height: 2px;
+  margin-top: 12px;
+}
+.red-wine-page .red-sort .name-position .name {
+  margin-left: 73px;
+  font-size: 36px;
+  color: #fff;
+  font-family: 'Minion Pro-Regular';
+  text-transform: uppercase;
+}
+.red-wine-page .red-sort .name-position .harvest {
+  margin: 10px 0 0 73px;
+  font-size: 22px;
+  font-family: 'NK124';
+  color: #888;
+}
+.red-wine-page .red-sort .sort-bottle {
+  width: 250px;
+  height: 100%;
+  background: url('../images/freska-crvena.png') center center no-repeat;
+}
+.red-wine-page .red-sort .all-sorts .name {
+  margin: 20px 110px 20px 0;
+  font-size: 18px;
+  color: #888;
+  font-family: 'TenorSans';
+}
+.red-wine-page .red-sort .all-sorts .grey-line {
+  margin-top: 30px;
+  display: table;
+  left: 96%;
+  width: 40px;
+}
+.red-wine-page .sort-content {
+  width: 50%;
+  height: 100%;
+  background-color: #fbf9f0;
+}
+/*#endregion*/
+/*#region Territory*/
+.territory-page .info {
+  position: relative;
+  width: 100%;
+  height: 740px;
+  background: url('../images/territory-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+.territory-page .info .text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  margin-left: 110px;
+}
+.territory-page .info .text-wrapper .title {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Minion Pro-Regular';
+  color: #333;
+}
+.territory-page .info .text-wrapper .subtitle {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-family: 'NK124';
+  color: #888;
+}
+.territory-page .info .text-wrapper p {
+  width: 81%;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: 'TenorSans';
+  color: #333;
+}
+.territory-page .flora,
+.territory-page .climate {
+  width: 100%;
+  height: 733px;
+}
+.territory-page .flora .left-box,
+.territory-page .climate .left-box {
+  position: relative;
+  width: 50%;
+  height: 733px;
+}
+.territory-page .flora .left-box .text-wrapper,
+.territory-page .climate .left-box .text-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 110px;
+  text-align: right;
+}
+.territory-page .flora .left-box .text-wrapper .title,
+.territory-page .climate .left-box .text-wrapper .title {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Minion Pro-Regular';
+  color: #333;
+}
+.territory-page .flora .left-box .text-wrapper .subtitle,
+.territory-page .climate .left-box .text-wrapper .subtitle {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-family: 'NK124';
+  color: #888;
+}
+.territory-page .flora .left-box .text-wrapper p,
+.territory-page .climate .left-box .text-wrapper p {
+  width: 81%;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: right;
+  font-size: 18px;
+  font-family: 'TenorSans';
+  color: #333;
+}
+.territory-page .flora .right-box,
+.territory-page .climate .right-box {
+  width: 50%;
+  height: 733px;
+  background: url('../images/flora-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+.territory-page .climate .right-box {
+  background: url('../images/climate-background.jpg') center center no-repeat;
+}
+.territory-page .fauna {
+  width: 100%;
+  height: 733px;
+}
+.territory-page .fauna .left-box {
+  width: 50%;
+  height: 733px;
+  background: url('../images/fauna-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+.territory-page .fauna .right-box {
+  position: relative;
+  width: 50%;
+  height: 733px;
+}
+.territory-page .fauna .right-box .text-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 110px;
+}
+.territory-page .fauna .right-box .text-wrapper .title {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Minion Pro-Regular';
+  color: #333;
+}
+.territory-page .fauna .right-box .text-wrapper .subtitle {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-family: 'NK124';
+  color: #888;
+}
+.territory-page .fauna .right-box .text-wrapper p {
+  width: 81%;
+  margin-bottom: 20px;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: 'TenorSans';
+  color: #333;
+}
 /*#endregion*/
