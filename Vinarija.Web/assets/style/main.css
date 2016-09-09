@@ -300,6 +300,24 @@ button::-moz-focus-inner {
   cursor: pointer;
   font-family: 'TenorSans';
 }
+.back-arrow-red {
+  position: absolute;
+  top: 50px;
+  right: 75px;
+  width: 45px;
+  height: 35px;
+  background: url('../images/sprite.svg') -98px -128px no-repeat;
+  cursor: pointer;
+}
+.back-arrow-black {
+  position: absolute;
+  top: 50px;
+  right: 75px;
+  width: 45px;
+  height: 35px;
+  background: url('../images/sprite.svg') -28px -128px no-repeat;
+  cursor: pointer;
+}
 h3 {
   font-size: 36px;
   text-transform: uppercase;
@@ -319,6 +337,7 @@ section.intro .main-logo {
   top: 50px;
   left: 75px;
   z-index: 1;
+  cursor: pointer;
 }
 section.intro .logo-headline {
   position: absolute;
@@ -652,6 +671,7 @@ section.footer .copyright {
 .visit-winery-page section.contact .temp-map {
   height: 600px;
   background: url('../images/temp-map.jpg') center center no-repeat;
+  background-size: cover;
 }
 .visit-winery-page section.contact .temp-logo {
   width: 42px;
@@ -693,6 +713,7 @@ section.footer .copyright {
   line-height: 21px;
   color: #8a8a8a;
   font-size: 16px;
+  font-family: 'TenorSans';
 }
 .visit-winery-page section.contact .contact-info-wrapper {
   height: 290px;
@@ -731,9 +752,16 @@ section.footer .copyright {
   padding-left: 25px;
   line-height: 24px;
 }
+.visit-winery-page section.contact .contact-info-wrapper .text .line1 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: #333;
+  font-family: 'NK124';
+}
 .visit-winery-page section.contact .contact-info-wrapper .text .line2 {
-  font-style: italic;
-  font-weight: 400;
+  font-size: 22px;
+  color: #333;
+  font-family: 'Minion Pro-600-Semibold';
 }
 /*#endregion*/
 /*#region Home*/
@@ -1112,6 +1140,7 @@ section.footer .copyright {
 .winery-page .text-part .logo {
   width: 132px;
   height: 110px;
+  cursor: pointer;
   background: url('../images/contact-card-logo.svg') center center no-repeat;
 }
 .winery-page .winery-location {
@@ -1444,6 +1473,7 @@ section.footer .copyright {
   height: 110px;
   margin: 50px 0 0 75px;
   z-index: 10;
+  cursor: pointer;
   background: url('../images/logo.svg') center center no-repeat;
 }
 .wines-page .wine-selection .red-wine .wine-position {
@@ -1484,8 +1514,8 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .white-wine .wine-position {
   position: relative;
-  top: 52%;
-  transform: translateY(-52%);
+  top: 50%;
+  transform: translateY(-46%);
 }
 .wines-page .wine-selection .white-wine .wine-position .title {
   margin-bottom: -45px;
@@ -1540,10 +1570,10 @@ section.footer .copyright {
   width: 25%;
 }
 .hamburger-menu .hamburger-nav .hamburger-container ul {
-  position: relative;
-  left: 19%;
+  position: absolute;
+  left: 73px;
   top: 40%;
-  width: 100%;
+  width: auto;
 }
 .hamburger-menu .hamburger-nav .hamburger-container ul li {
   display: -webkit-box;
@@ -1558,8 +1588,15 @@ section.footer .copyright {
   color: #8a8a8a;
   font-family: 'Minion Pro-Regular';
 }
+.hamburger-menu .hamburger-nav .hamburger-container ul li:hover .grey-line {
+  display: table;
+  margin-top: 23px;
+}
 .hamburger-menu .hamburger-nav .hamburger-container ul li a {
   color: #8a8a8a;
+}
+.hamburger-menu .hamburger-nav .hamburger-container ul li a:hover {
+  color: #e2e1e1;
 }
 .hamburger-btn {
   display: block;
@@ -1642,19 +1679,23 @@ section.footer .copyright {
   left: 50%;
 }
 /*#endregion*/
-/*#region Red wines*/
-.red-wine-page {
+/*#region Red wines; White wines page*/
+.red-wine-page,
+.white-wine-page {
   height: 100%;
 }
-.red-wine-page .logo {
+.red-wine-page .logo,
+.white-wine-page .logo {
   position: absolute;
   width: 160px;
   height: 110px;
   margin: 50px 0 0 75px;
   z-index: 5;
+  cursor: pointer;
   background: url('../images/logo.svg') center center no-repeat;
 }
-.red-wine-page .red-sort {
+.red-wine-page .red-sort,
+.white-wine-page .red-sort {
   position: relative;
   width: 50%;
   height: 100%;
@@ -1663,47 +1704,139 @@ section.footer .copyright {
   background: url('../images/red-sort.jpg') center center no-repeat;
   background-size: cover;
 }
-.red-wine-page .red-sort .name-position .grey-line {
+.red-wine-page .red-sort .name-position .grey-line,
+.white-wine-page .red-sort .name-position .grey-line {
   display: table;
   left: 0;
   width: 55px;
   height: 2px;
   margin-top: 12px;
 }
-.red-wine-page .red-sort .name-position .name {
+.red-wine-page .red-sort .name-position .name,
+.white-wine-page .red-sort .name-position .name {
   margin-left: 73px;
   font-size: 36px;
   color: #fff;
   font-family: 'Minion Pro-Regular';
   text-transform: uppercase;
 }
-.red-wine-page .red-sort .name-position .harvest {
+.red-wine-page .red-sort .name-position .harvest,
+.white-wine-page .red-sort .name-position .harvest {
   margin: 10px 0 0 73px;
   font-size: 22px;
   font-family: 'NK124';
   color: #888;
 }
-.red-wine-page .red-sort .sort-bottle {
+.red-wine-page .red-sort .sort-bottle,
+.white-wine-page .red-sort .sort-bottle {
   width: 250px;
   height: 100%;
   background: url('../images/freska-crvena.png') center center no-repeat;
 }
-.red-wine-page .red-sort .all-sorts .name {
+.red-wine-page .red-sort .all-sorts .name,
+.white-wine-page .red-sort .all-sorts .name {
   margin: 20px 110px 20px 0;
   font-size: 18px;
   color: #888;
   font-family: 'TenorSans';
 }
-.red-wine-page .red-sort .all-sorts .grey-line {
+.red-wine-page .red-sort .all-sorts .grey-line,
+.white-wine-page .red-sort .all-sorts .grey-line {
   margin-top: 30px;
   display: table;
   left: 96%;
   width: 40px;
 }
-.red-wine-page .sort-content {
+.red-wine-page .sort-content,
+.white-wine-page .sort-content {
+  position: relative;
   width: 50%;
   height: 100%;
   background-color: #fbf9f0;
+}
+.red-wine-page .sort-content .f-red,
+.white-wine-page .sort-content .f-red {
+  position: absolute;
+  top: 17%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background: url('../images/F-red.svg') center border-box no-repeat;
+}
+.red-wine-page .sort-content .content-position,
+.white-wine-page .sort-content .content-position {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 135px;
+  width: 72%;
+}
+.red-wine-page .sort-content .content-position .name-wine,
+.white-wine-page .sort-content .content-position .name-wine {
+  margin-bottom: 14px;
+  font-size: 36px;
+  color: #333;
+  font-family: 'Minion Pro-Regular';
+}
+.red-wine-page .sort-content .content-position .subtitle,
+.white-wine-page .sort-content .content-position .subtitle {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #888;
+  font-family: 'NK124';
+}
+.red-wine-page .sort-content .content-position .text,
+.white-wine-page .sort-content .content-position .text {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #333;
+  font-family: 'TenorSans';
+  line-height: 21px;
+}
+.red-wine-page .sort-content .content-position .temperature,
+.white-wine-page .sort-content .content-position .temperature,
+.red-wine-page .sort-content .content-position .alcohol-percentage,
+.white-wine-page .sort-content .content-position .alcohol-percentage {
+  align-items: flex-end;
+}
+.red-wine-page .sort-content .content-position .degrees,
+.white-wine-page .sort-content .content-position .degrees {
+  margin: 100px 0 40px 25px;
+}
+.red-wine-page .sort-content .content-position .temp,
+.white-wine-page .sort-content .content-position .temp {
+  margin: 100px 0 40px 0;
+}
+.red-wine-page .sort-content .content-position .degrees,
+.white-wine-page .sort-content .content-position .degrees,
+.red-wine-page .sort-content .content-position .percentage,
+.white-wine-page .sort-content .content-position .percentage {
+  font-size: 36px;
+  color: #bf1e2e;
+  font-family: 'NK124';
+}
+.red-wine-page .sort-content .content-position .alcohol,
+.white-wine-page .sort-content .content-position .alcohol {
+  margin-bottom: 0;
+}
+.red-wine-page .sort-content .content-position .percentage,
+.white-wine-page .sort-content .content-position .percentage {
+  margin-left: 25px;
+}
+.white-wine-page .sort-content .f-white {
+  position: absolute;
+  top: 17%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background: url('../images/F-white.svg') center center no-repeat;
+}
+.white-wine-page .red-sort {
+  background: url('../images/white-sort.jpg') center center no-repeat;
+  background-size: cover;
+}
+.white-wine-page .red-sort .sort-bottle {
+  background: url('../images/freska-bela.png') center center no-repeat;
 }
 /*#endregion*/
 /*#region Territory*/
