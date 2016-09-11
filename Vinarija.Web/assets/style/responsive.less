@@ -1,5 +1,55 @@
 ﻿@import "_variables.less";
 
+@media screen and (max-width: 1600px) {
+    .home-page {
+        .red-wine {
+            .bottle {
+                .bottle-img {
+                    width: 90%;
+                    background-position: center right;
+                }
+            }
+
+            .description {
+                .descr-part {
+                    h3,
+                    .red-line,
+                    .black-btn {
+                        margin-left: 10%;
+                    }
+
+                    .black-btn {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        .white-wine {
+            .description {
+                .descr-part {
+                    h3,
+                    .types,
+                    .black-btn {
+                        margin-right: 10%;
+                    }
+
+                    .black-btn {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        .ivent-calendar {
+            .calendar,
+            .calendar-news {
+                margin-left: 5%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1400px) {
     section.intro {
         .logo-headline {
@@ -21,12 +71,147 @@
             }
         }
     }
+
+    .home-page {
+        .white-wine {
+            .bottle {
+                .bottle-img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .red-wine-page,
+    .white-wine-page {
+        .red-sort {
+            .all-sorts {
+                .name {
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        .sort-content {
+            .content-position {
+                left: 10%;
+            }
+        }
+    }
+
+    .territory-page {
+        .fauna {
+            .right-box {
+                .text-wrapper {
+                    margin-left: 5%;
+
+                    p {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+
+        .flora,
+        .climate {
+            .left-box {
+                .text-wrapper {
+                    margin-right: 5%;
+
+                    p {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1300px) {
+    .default-wrapper {
+        width: 90%;
+    }
+
     section.footer {
         .footer-container {
             flex-wrap: wrap;
+        }
+    }
+
+    .home-page {
+        .ivent-calendar {
+            .calendar,
+            .calendar-news {
+                margin-left: 3%;
+            }
+
+            .calendar-img {
+                width: 38%;
+            }
+        }
+    }
+
+    .winery-page {
+        .text-part {
+            .position {
+                margin-left: 10%;
+            }
+        }
+
+        .winery-location {
+            .position {
+                margin-right: 10%;
+            }
+        }
+    }
+
+    .vineyards-page {
+        .land {
+            .text-part {
+                .land-position {
+                    margin-right: 10%;
+
+                    .content {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .visit-winery-page {
+        section.contact {
+            .contact-info-wrapper {
+                width: 90%;
+            }
+        }
+    }
+
+    .actualities-page {
+        .ivent-calendar {
+            .calendar {
+                margin-left: 3%;
+            }
+        }
+
+        .second-section,
+        .fourth-section,
+        .sixth-section {
+            .calendar {
+                margin-right: 3%;
+            }
+        }
+    }
+
+    .territory-page {
+        .info {
+            .text-wrapper {
+                margin: 0;
+
+                p {
+                    width: 90%;
+                }
+            }
         }
     }
 }

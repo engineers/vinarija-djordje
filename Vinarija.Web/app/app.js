@@ -1,4 +1,4 @@
-﻿var app = angular.module('vinarija', ['ui.router', 'ngSanitize', 'uiGmapgoogle-maps']);
+﻿var app = angular.module('vinarija', ['ui.router', 'ngSanitize']); //'uiGmapgoogle-maps'
 
 app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
     $urlRouterProvider.otherwise(function ($injector) {

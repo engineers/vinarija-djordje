@@ -899,6 +899,7 @@ section.footer .copyright {
   font-size: 20px;
   color: #888;
   text-transform: uppercase;
+  text-align: right;
   font-family: 'TenorSans';
 }
 .home-page .white-wine .description .descr-part .black-btn {
@@ -1582,8 +1583,8 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .red-wine .wine-position .red-bottle {
   height: 210px;
-  width: 810px;
-  background: url('../images/choose-wine-red.png') center center no-repeat;
+  width: 80%;
+  background: url('../images/choose-wine-red.png') center right no-repeat;
 }
 .wines-page .wine-selection .red-wine .wine-position .read-more-box {
   -webkit-justify-content: flex-end;
@@ -1608,6 +1609,7 @@ section.footer .copyright {
   position: relative;
   top: 50%;
   transform: translateY(-46%);
+  overflow: hidden;
 }
 .wines-page .wine-selection .white-wine .wine-position .title {
   margin-bottom: -45px;
@@ -1824,7 +1826,7 @@ section.footer .copyright {
 }
 .red-wine-page .red-sort .sort-bottle,
 .white-wine-page .red-sort .sort-bottle {
-  width: 215px;
+  width: 345px;
   height: 100%;
   background: url('../images/freska-crvena.png') center center no-repeat;
 }
