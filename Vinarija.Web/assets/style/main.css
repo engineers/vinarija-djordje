@@ -623,6 +623,7 @@ section.footer .footer-container .contact-form .send-btn {
   font-family: 'TenorSans';
 }
 section.footer .footer-container .contact-form .send-btn {
+  position: relative;
   height: 40px;
   margin-bottom: 0;
   padding-right: 15px;
@@ -647,6 +648,13 @@ section.footer .footer-container .contact-form .send-btn .send-img {
 section.footer .footer-container .contact-form .send-btn[disabled="disabled"] {
   cursor: default;
   background-color: #671019;
+}
+section.footer .footer-container .contact-form .send-btn img {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
 }
 section.footer .footer-container .contact-form .message {
   margin-top: 10px;

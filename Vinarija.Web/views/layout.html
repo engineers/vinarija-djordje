@@ -142,7 +142,8 @@
                       required />
             <button class="send-btn flex" ng-disabled="contactForm.$invalid" ng-click="contact()">
                 <div class="send-text">Пошаљи</div>
-                <div class="send-img"></div>
+                <div class="send-img" ng-show="!loader"></div>
+                <img src="../assets/images/loader.gif" alt="" ng-show="loader" />
             </button>
             <div class="message">{{contactMessage}}</div>
         </div>

@@ -644,6 +644,7 @@ section.footer {
             }
 
             .send-btn {
+                position: relative;
                 height: 40px;
                 margin-bottom: 0;
                 padding-right: 15px;
@@ -670,6 +671,14 @@ section.footer {
                 &[disabled="disabled"] {
                     cursor: default;
                     background-color: darken(@red, 20%);
+                }
+
+                img {
+                    position: absolute;
+                    top: 5px;
+                    right: 15px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
