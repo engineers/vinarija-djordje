@@ -21,15 +21,25 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Vinarija.Web", "Vinarija.We
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "63082"
+		SlnRelativePath = "Vinarija.Web\"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Api", "Contact.Api\Contact.Api.csproj", "{D3A50C65-1313-44B0-9FE4-FB90D5C9E67B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{83B80C36-CEBC-4D34-932D-66BF18B6FDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{83B80C36-CEBC-4D34-932D-66BF18B6FDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B80C36-CEBC-4D34-932D-66BF18B6FDCE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B80C36-CEBC-4D34-932D-66BF18B6FDCE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{D3A50C65-1313-44B0-9FE4-FB90D5C9E67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A50C65-1313-44B0-9FE4-FB90D5C9E67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A50C65-1313-44B0-9FE4-FB90D5C9E67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A50C65-1313-44B0-9FE4-FB90D5C9E67B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

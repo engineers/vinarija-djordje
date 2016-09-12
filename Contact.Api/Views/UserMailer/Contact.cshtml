@@ -1,0 +1,21 @@
+﻿<div>
+    Contact form
+</div>
+
+@{
+    var message = ViewBag.Message as Contact.Api.Models.MailModel;
+}
+
+<div>
+    <ul>
+        <li>
+            Name: <b>@message.Name</b>
+        </li>
+        <li>
+            E-mail: <b>@message.Email</b>
+        </li>
+        <li>
+            Message: <b>@message.Message</b>
+        </li>
+    </ul>
+</div>
