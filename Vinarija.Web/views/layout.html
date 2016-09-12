@@ -123,21 +123,24 @@
             </a>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form" ng-form="contactForm">
             <p>контакт</p>
             <input type="text"
                    placeholder="Ваше име"
                    name="name"
+                   ng-model="message.name"
                    required />
             <input type="text"
                    placeholder="Ваш емаил"
                    name="email"
+                   ng-model="message.email"
                    required />
             <textarea type="text"
                       placeholder="Ваша порука"
                       name="message"
+                      ng-model="message.body"
                       required />
-            <button class="send-btn flex">
+            <button class="send-btn flex" ng-disabled="contactForm.$invalid" ng-click="contact()">
                 <div class="send-text">Пошаљи</div>
                 <div class="send-img"></div>
             </button>

@@ -85,5 +85,5 @@ app.run(function ($rootScope, $state) {
 });
 
 app.constant('config', {
-    baseAddress: 'http://localhost:4857/api/'
+    baseAddress: 'http://enginee.rs:8122/api/'
 });
