@@ -15,6 +15,8 @@ namespace Contact.Api.Controllers
         [HttpPost]
         public HttpResponseMessage Contact(MailModel model)
         {
+            if (!ModelState.IsValid) return Request.CreateResponse(HttpStatusCode.BadRequest);
+
             if (Request.Headers.Authorization.ToString() != ConfigurationManager.AppSettings["AuthorizationHeader"])
             {
                 return Request.CreateResponse(HttpStatusCode.Unauthorized);
