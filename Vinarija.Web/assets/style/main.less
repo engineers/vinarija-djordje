@@ -385,14 +385,19 @@ section.intro {
                     display: table;
                 }
             }
-        }
 
-        a {
-            color: @grey;
+            a {
+                color: @grey;
 
-            &:hover,
+                &:hover {
+                    color: @grey-white;
+                }
+            }
+
             &.selected {
-                color: @grey-white;
+                a {
+                    color: @grey-white;
+                }
             }
         }
     }
