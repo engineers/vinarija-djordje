@@ -1805,20 +1805,6 @@ section.footer .copyright {
   background: url('../images/red-sort.jpg') center center no-repeat;
   background-size: cover;
 }
-.red-wine-page .red-sort .all-sorts .name,
-.white-wine-page .red-sort .all-sorts .name {
-  margin: 20px 110px 20px 0;
-  font-size: 18px;
-  color: #888;
-  font-family: 'TenorSans';
-}
-.red-wine-page .red-sort .all-sorts .grey-line,
-.white-wine-page .red-sort .all-sorts .grey-line {
-  margin-top: 30px;
-  display: table;
-  left: 96%;
-  width: 40px;
-}
 .red-wine-page .scroll-down,
 .white-wine-page .scroll-down {
   position: absolute;
@@ -1901,6 +1887,23 @@ section.footer .copyright {
   width: 345px;
   height: 700px;
   background: url('../images/freska-bela.png') center center no-repeat;
+}
+.all-sorts {
+  position: relative;
+  left: 38%;
+  top: 17%;
+}
+.all-sorts .name {
+  margin: 20px 110px 20px 0;
+  font-size: 18px;
+  color: #888;
+  font-family: 'TenorSans';
+}
+.all-sorts .grey-line {
+  margin-top: 30px;
+  display: table;
+  left: 10%;
+  width: 40px;
 }
 #fullpage .fp-completely .name-position {
   opacity: 1;
