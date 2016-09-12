@@ -517,7 +517,8 @@ section.footer {
                 color: @grey;
                 cursor: pointer;
 
-                &:hover {
+                &:hover,
+                &.selected {
                     color: @w;
                 }
             }
@@ -1887,7 +1888,8 @@ section.footer {
                     color: #8a8a8a;
                     font-family: 'Minion Pro-Regular';
 
-                    &:hover {
+                    &:hover,
+                    &.selected {
                         .grey-line {
                             display: table;
                             margin-top: 23px;
@@ -1898,6 +1900,12 @@ section.footer {
                         color: #8a8a8a;
 
                         &:hover {
+                            color: #e2e1e1;
+                        }
+                    }
+
+                    &.selected {
+                        a {
                             color: #e2e1e1;
                         }
                     }
