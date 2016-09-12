@@ -2122,26 +2122,43 @@ section.footer {
 .all-sorts {
     position: relative;
     left: 38%;
-    top: 17%;
+    top: 21%;
+    opacity: 0.1;
+    transition: opacity .5s;
 
     .name {
         margin: 20px 110px 20px 0;
         font-size: 18px;
         color: #888;
         font-family: 'TenorSans';
+
+        &.name-active {
+            color: @w;
+        }
     }
 
     .grey-line {
         margin-top: 30px;
         display: table;
-        left: 10%;
+        left: 190px;
         width: 40px;
+        background-color: #888;
+
+        &.red-line-active {
+            left: 150px;
+            width: 80px;
+            background-color: red;
+        }
     }
 }
 
 #fullpage {
     .fp-completely {
         .name-position {
+            opacity: 1;
+        }
+
+        .all-sorts {
             opacity: 1;
         }
     }
@@ -2151,7 +2168,7 @@ section.footer {
     opacity: 0.1;
     transition: opacity .5s;
     position: relative;
-    top: 25%;
+    top: 29%;
 
     .grey-line {
         display: table;
@@ -2184,6 +2201,7 @@ section.footer {
     .content-position {
         position: relative;
         left: 135px;
+        bottom: 50px;
         width: 72%;
 
         .name-wine {

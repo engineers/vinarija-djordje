@@ -1893,7 +1893,9 @@ section.footer .copyright {
 .all-sorts {
   position: relative;
   left: 38%;
-  top: 17%;
+  top: 21%;
+  opacity: 0.1;
+  transition: opacity .5s;
 }
 .all-sorts .name {
   margin: 20px 110px 20px 0;
@@ -1901,20 +1903,32 @@ section.footer .copyright {
   color: #888;
   font-family: 'TenorSans';
 }
+.all-sorts .name.name-active {
+  color: #fff;
+}
 .all-sorts .grey-line {
   margin-top: 30px;
   display: table;
-  left: 10%;
+  left: 190px;
   width: 40px;
+  background-color: #888;
+}
+.all-sorts .grey-line.red-line-active {
+  left: 150px;
+  width: 80px;
+  background-color: red;
 }
 #fullpage .fp-completely .name-position {
+  opacity: 1;
+}
+#fullpage .fp-completely .all-sorts {
   opacity: 1;
 }
 .name-position {
   opacity: 0.1;
   transition: opacity .5s;
   position: relative;
-  top: 25%;
+  top: 29%;
 }
 .name-position .grey-line {
   display: table;
@@ -1943,6 +1957,7 @@ section.footer .copyright {
 .change-text .content-position {
   position: relative;
   left: 135px;
+  bottom: 50px;
   width: 72%;
 }
 .change-text .content-position .name-wine {
