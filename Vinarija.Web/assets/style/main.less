@@ -379,7 +379,8 @@ section.intro {
             margin: 22px 0;
             cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &.selected {
                 .grey-line {
                     display: table;
                 }
@@ -389,7 +390,8 @@ section.intro {
         a {
             color: @grey;
 
-            &:hover {
+            &:hover,
+            &.selected {
                 color: @grey-white;
             }
         }
@@ -1017,7 +1019,7 @@ section.footer {
                 bottom: 0;
                 width: 100%;
                 height: 265px;
-                background: url('../images/news-bck.png') center center no-repeat;
+                background: url('../images/news-bck.png') bottom center no-repeat;
 
                 .news-title {
                     margin: 100px 0 20px 20px;
@@ -1461,7 +1463,7 @@ section.footer {
                         width: 60%;
 
                         .first-row {
-                            margin-right: 65px;
+                            margin-right: 6%;
                             width: 47%;
                             float: left;
                         }
@@ -1906,7 +1908,7 @@ section.footer {
     height: 20px;
     position: absolute;
     left: 0;
-    top: 35%;
+    top: 30%;
     z-index: 8;
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -1954,7 +1956,7 @@ section.footer {
 .label {
     position: absolute;
     left: 73px;
-    top: 35%;
+    top: 30%;
     z-index: 10;
     font-size: 18px;
     color: #fff;
@@ -1998,6 +2000,8 @@ section.footer {
 .red-wine-page,
 .white-wine-page {
     height: 100%;
+    position: fixed;
+    width: 100%;
 
     .logo {
         position: absolute;
@@ -2021,36 +2025,7 @@ section.footer {
         background: url('../images/red-sort.jpg') center center no-repeat;
         background-size: cover;
 
-        .name-position {
-            .grey-line {
-                display: table;
-                left: 0;
-                width: 55px;
-                height: 2px;
-                margin-top: 12px;
-            }
 
-            .name {
-                margin-left: 73px;
-                font-size: 36px;
-                color: @w;
-                font-family: 'Minion Pro-Regular';
-                text-transform: uppercase;
-            }
-
-            .harvest {
-                margin: 10px 0 0 73px;
-                font-size: 22px;
-                font-family: 'NK124';
-                color: #888;
-            }
-        }
-
-        .sort-bottle {
-            width: 345px;
-            height: 100%;
-            background: url('../images/freska-crvena.png') center center no-repeat;
-        }
 
         .all-sorts {
             .name {
@@ -2069,6 +2044,49 @@ section.footer {
         }
     }
 
+    .scroll-down {
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        transform: translateX(-25%);
+        height: 96px;
+
+        .empty-circle {
+            width: 18px;
+            height: 18px;
+            margin: 0 auto;
+            border: 1px solid #888;
+            border-radius: 50px;
+
+            .full-circle {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                margin: 0 auto;
+                display: table;
+                background-color: #888;
+                border-radius: 50px;
+            }
+        }
+
+        .text {
+            margin: 10px 0;
+            color: #888;
+            font-size: 14px;
+            font-family: 'TenorSans';
+        }
+
+        .vertical-line {
+            margin: 0 auto;
+            display: table;
+            width: 1px;
+            height: 40px;
+            background-color: #888;
+        }
+    }
+
     .sort-content {
         position: relative;
         width: 50%;
@@ -2083,65 +2101,134 @@ section.footer {
             height: 300px;
             background: url('../images/F-red.svg') center border-box no-repeat;
         }
+    }
+}
 
-        .content-position {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 135px;
-            width: 72%;
+.freska-crvena {
+    position: fixed;
+    top: 8%;
+    left: 24%;
+    transform: translateX(-25%);
+    width: 345px !important;
 
-            .name-wine {
-                margin-bottom: 14px;
-                font-size: 36px;
-                color: #333;
-                font-family: 'Minion Pro-Regular';
-            }
+    .freska-crvena-bottle {
+        width: 345px;
+        height: 700px;
+        background: url('../images/freska-crvena.png') center center no-repeat;
+    }
+}
 
-            .subtitle {
-                margin-bottom: 25px;
-                font-size: 28px;
-                color: #888;
-                font-family: 'NK124';
-            }
+.portugizer {
+    position: fixed;
+    top: 59%;
+    left: 22%;
+    transform: translateX(-22%);
+    width: 345px !important;
 
-            .text {
-                margin-bottom: 25px;
-                font-size: 18px;
-                color: #333;
-                font-family: 'TenorSans';
-                line-height: 21px;
-            }
+    .portugizer-bottle {
+        width: 345px;
+        height: 700px;
+        background: url('../images/freska-bela.png') center center no-repeat;
+    }
+}
 
-            .temperature,
-            .alcohol-percentage {
-                -ms-flex-align: flex-end;
-                -webkit-align-items: flex-end;
-                align-items: flex-end;
-            }
+#fullpage {
+    .fp-completely {
+        .name-position {
+            opacity: 1;
+        }
+    }
+}
 
-            .degrees {
-                margin: 100px 0 40px 25px;
-            }
+.name-position {
+    opacity: 0.1;
+    transition: opacity .5s;
+    position: relative;
+    top: 25%;
 
-            .temp {
-                margin: 100px 0 40px 0;
-            }
+    .grey-line {
+        display: table;
+        left: 0;
+        width: 55px;
+        height: 2px;
+        margin-top: 12px;
+    }
 
-            .degrees,
-            .percentage {
-                font-size: 36px;
-                color: @red;
-                font-family: 'NK124';
-            }
+    .name {
+        margin-left: 73px;
+        font-size: 36px;
+        color: @w;
+        font-family: 'Minion Pro-Regular';
+        text-transform: uppercase;
+    }
 
-            .alcohol {
-                margin-bottom: 0;
-            }
+    .harvest {
+        margin: 10px 0 0 73px;
+        font-size: 22px;
+        font-family: 'NK124';
+        color: #888;
+    }
+}
 
-            .percentage {
-                margin-left: 25px;
-            }
+.change-text {
+    width: 50%;
+    float: right;
+
+    .content-position {
+        position: relative;
+        left: 135px;
+        width: 72%;
+
+        .name-wine {
+            margin-bottom: 14px;
+            font-size: 36px;
+            color: #333;
+            font-family: 'Minion Pro-Regular';
+        }
+
+        .subtitle {
+            margin-bottom: 25px;
+            font-size: 28px;
+            color: #888;
+            font-family: 'NK124';
+        }
+
+        .text {
+            margin-bottom: 25px;
+            font-size: 18px;
+            color: #333;
+            font-family: 'TenorSans';
+            line-height: 21px;
+        }
+
+        .temperature,
+        .alcohol-percentage {
+            -ms-flex-align: flex-end;
+            -webkit-align-items: flex-end;
+            align-items: flex-end;
+        }
+
+        .degrees {
+            margin: 100px 0 40px 25px;
+        }
+
+        .temp {
+            margin: 100px 0 40px 0;
+        }
+
+        .degrees,
+        .percentage {
+            font-size: 36px;
+            color: @red;
+            font-family: 'NK124';
+        }
+
+        .alcohol {
+            margin-bottom: 0;
+        }
+
+        .percentage {
+            margin-left: 25px;
         }
     }
 }

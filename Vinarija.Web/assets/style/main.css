@@ -406,13 +406,15 @@ section.intro nav li {
   margin: 22px 0;
   cursor: pointer;
 }
-section.intro nav li:hover .grey-line {
+section.intro nav li:hover .grey-line,
+section.intro nav li.selected .grey-line {
   display: table;
 }
 section.intro nav a {
   color: #8a8a8a;
 }
-section.intro nav a:hover {
+section.intro nav a:hover,
+section.intro nav a.selected {
   color: #e2e1e1;
 }
 section.intro .slick-dots {
@@ -950,7 +952,7 @@ section.footer .copyright {
   bottom: 0;
   width: 100%;
   height: 265px;
-  background: url('../images/news-bck.png') center center no-repeat;
+  background: url('../images/news-bck.png') bottom center no-repeat;
 }
 .home-page .hover-section .first-img .news .news-title,
 .home-page .hover-section .second-img .news .news-title,
@@ -1332,7 +1334,7 @@ section.footer .copyright {
   width: 60%;
 }
 .actualities-page .ivent-calendar .calendar-news .news-popup .popup-content .all-text .first-row {
-  margin-right: 65px;
+  margin-right: 6%;
   width: 47%;
   float: left;
 }
@@ -1698,7 +1700,7 @@ section.footer .copyright {
   height: 20px;
   position: absolute;
   left: 0;
-  top: 35%;
+  top: 30%;
   z-index: 8;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -1741,7 +1743,7 @@ section.footer .copyright {
 .label {
   position: absolute;
   left: 73px;
-  top: 35%;
+  top: 30%;
   z-index: 10;
   font-size: 18px;
   color: #fff;
@@ -1777,6 +1779,8 @@ section.footer .copyright {
 .red-wine-page,
 .white-wine-page {
   height: 100%;
+  position: fixed;
+  width: 100%;
 }
 .red-wine-page .logo,
 .white-wine-page .logo {
@@ -1801,35 +1805,6 @@ section.footer .copyright {
   background: url('../images/red-sort.jpg') center center no-repeat;
   background-size: cover;
 }
-.red-wine-page .red-sort .name-position .grey-line,
-.white-wine-page .red-sort .name-position .grey-line {
-  display: table;
-  left: 0;
-  width: 55px;
-  height: 2px;
-  margin-top: 12px;
-}
-.red-wine-page .red-sort .name-position .name,
-.white-wine-page .red-sort .name-position .name {
-  margin-left: 73px;
-  font-size: 36px;
-  color: #fff;
-  font-family: 'Minion Pro-Regular';
-  text-transform: uppercase;
-}
-.red-wine-page .red-sort .name-position .harvest,
-.white-wine-page .red-sort .name-position .harvest {
-  margin: 10px 0 0 73px;
-  font-size: 22px;
-  font-family: 'NK124';
-  color: #888;
-}
-.red-wine-page .red-sort .sort-bottle,
-.white-wine-page .red-sort .sort-bottle {
-  width: 345px;
-  height: 100%;
-  background: url('../images/freska-crvena.png') center center no-repeat;
-}
 .red-wine-page .red-sort .all-sorts .name,
 .white-wine-page .red-sort .all-sorts .name {
   margin: 20px 110px 20px 0;
@@ -1843,6 +1818,49 @@ section.footer .copyright {
   display: table;
   left: 96%;
   width: 40px;
+}
+.red-wine-page .scroll-down,
+.white-wine-page .scroll-down {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transform: translateX(-25%);
+  height: 96px;
+}
+.red-wine-page .scroll-down .empty-circle,
+.white-wine-page .scroll-down .empty-circle {
+  width: 18px;
+  height: 18px;
+  margin: 0 auto;
+  border: 1px solid #888;
+  border-radius: 50px;
+}
+.red-wine-page .scroll-down .empty-circle .full-circle,
+.white-wine-page .scroll-down .empty-circle .full-circle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  display: table;
+  background-color: #888;
+  border-radius: 50px;
+}
+.red-wine-page .scroll-down .text,
+.white-wine-page .scroll-down .text {
+  margin: 10px 0;
+  color: #888;
+  font-size: 14px;
+  font-family: 'TenorSans';
+}
+.red-wine-page .scroll-down .vertical-line,
+.white-wine-page .scroll-down .vertical-line {
+  margin: 0 auto;
+  display: table;
+  width: 1px;
+  height: 40px;
+  background-color: #888;
 }
 .red-wine-page .sort-content,
 .white-wine-page .sort-content {
@@ -1860,66 +1878,109 @@ section.footer .copyright {
   height: 300px;
   background: url('../images/F-red.svg') center border-box no-repeat;
 }
-.red-wine-page .sort-content .content-position,
-.white-wine-page .sort-content .content-position {
+.freska-crvena {
+  position: fixed;
+  top: 8%;
+  left: 24%;
+  transform: translateX(-25%);
+  width: 345px !important;
+}
+.freska-crvena .freska-crvena-bottle {
+  width: 345px;
+  height: 700px;
+  background: url('../images/freska-crvena.png') center center no-repeat;
+}
+.portugizer {
+  position: fixed;
+  top: 59%;
+  left: 22%;
+  transform: translateX(-22%);
+  width: 345px !important;
+}
+.portugizer .portugizer-bottle {
+  width: 345px;
+  height: 700px;
+  background: url('../images/freska-bela.png') center center no-repeat;
+}
+#fullpage .fp-completely .name-position {
+  opacity: 1;
+}
+.name-position {
+  opacity: 0.1;
+  transition: opacity .5s;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 25%;
+}
+.name-position .grey-line {
+  display: table;
+  left: 0;
+  width: 55px;
+  height: 2px;
+  margin-top: 12px;
+}
+.name-position .name {
+  margin-left: 73px;
+  font-size: 36px;
+  color: #fff;
+  font-family: 'Minion Pro-Regular';
+  text-transform: uppercase;
+}
+.name-position .harvest {
+  margin: 10px 0 0 73px;
+  font-size: 22px;
+  font-family: 'NK124';
+  color: #888;
+}
+.change-text {
+  width: 50%;
+  float: right;
+}
+.change-text .content-position {
+  position: relative;
   left: 135px;
   width: 72%;
 }
-.red-wine-page .sort-content .content-position .name-wine,
-.white-wine-page .sort-content .content-position .name-wine {
+.change-text .content-position .name-wine {
   margin-bottom: 14px;
   font-size: 36px;
   color: #333;
   font-family: 'Minion Pro-Regular';
 }
-.red-wine-page .sort-content .content-position .subtitle,
-.white-wine-page .sort-content .content-position .subtitle {
+.change-text .content-position .subtitle {
   margin-bottom: 25px;
   font-size: 28px;
   color: #888;
   font-family: 'NK124';
 }
-.red-wine-page .sort-content .content-position .text,
-.white-wine-page .sort-content .content-position .text {
+.change-text .content-position .text {
   margin-bottom: 25px;
   font-size: 18px;
   color: #333;
   font-family: 'TenorSans';
   line-height: 21px;
 }
-.red-wine-page .sort-content .content-position .temperature,
-.white-wine-page .sort-content .content-position .temperature,
-.red-wine-page .sort-content .content-position .alcohol-percentage,
-.white-wine-page .sort-content .content-position .alcohol-percentage {
+.change-text .content-position .temperature,
+.change-text .content-position .alcohol-percentage {
   -ms-flex-align: flex-end;
   -webkit-align-items: flex-end;
   align-items: flex-end;
 }
-.red-wine-page .sort-content .content-position .degrees,
-.white-wine-page .sort-content .content-position .degrees {
+.change-text .content-position .degrees {
   margin: 100px 0 40px 25px;
 }
-.red-wine-page .sort-content .content-position .temp,
-.white-wine-page .sort-content .content-position .temp {
+.change-text .content-position .temp {
   margin: 100px 0 40px 0;
 }
-.red-wine-page .sort-content .content-position .degrees,
-.white-wine-page .sort-content .content-position .degrees,
-.red-wine-page .sort-content .content-position .percentage,
-.white-wine-page .sort-content .content-position .percentage {
+.change-text .content-position .degrees,
+.change-text .content-position .percentage {
   font-size: 36px;
   color: #bf1e2e;
   font-family: 'NK124';
 }
-.red-wine-page .sort-content .content-position .alcohol,
-.white-wine-page .sort-content .content-position .alcohol {
+.change-text .content-position .alcohol {
   margin-bottom: 0;
 }
-.red-wine-page .sort-content .content-position .percentage,
-.white-wine-page .sort-content .content-position .percentage {
+.change-text .content-position .percentage {
   margin-left: 25px;
 }
 .white-wine-page .sort-content .f-white {
