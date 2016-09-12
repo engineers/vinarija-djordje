@@ -1069,15 +1069,95 @@ section.footer .copyright {
   outline: none;
 }
 .home-page .slider-home-page .home-slider.first {
-  background: url('../images/home-slider1.jpg') center center no-repeat;
+  background: url('../images/slider/1.jpg') center center no-repeat;
   background-size: cover;
 }
 .home-page .slider-home-page .home-slider.second {
-  background: url('../images/slide3.jpg') center center no-repeat;
+  background: url('../images/slider/2.jpg') center center no-repeat;
   background-size: cover;
 }
 .home-page .slider-home-page .home-slider.third {
-  background: url('../images/slide2.jpg') center center no-repeat;
+  background: url('../images/slider/3.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.fourth {
+  background: url('../images/slider/4.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.fifth {
+  background: url('../images/slider/5.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.sixth {
+  background: url('../images/slider/6.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.seventh {
+  background: url('../images/slider/8.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.eighth {
+  background: url('../images/slider/9.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.ninth {
+  background: url('../images/slider/10.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.tenth {
+  background: url('../images/slider/11.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.eleventh {
+  background: url('../images/slider/12.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.twelfth {
+  background: url('../images/slider/13.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.thirteenth {
+  background: url('../images/slider/14.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.fourteenth {
+  background: url('../images/slider/15.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.fifteenth {
+  background: url('../images/slider/16.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.sixteenth {
+  background: url('../images/slider/17.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.seventeenth {
+  background: url('../images/slider/18.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.eighteenth {
+  background: url('../images/slider/19.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.nineteenth {
+  background: url('../images/slider/20.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.twentieth {
+  background: url('../images/slider/21.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.twenty-first {
+  background: url('../images/slider/22.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.twenty-second {
+  background: url('../images/slider/23.jpg') center center no-repeat;
+  background-size: cover;
+}
+.home-page .slider-home-page .home-slider.twenty-third {
+  background: url('../images/slider/7.jpg') center center no-repeat;
   background-size: cover;
 }
 .home-page .slider-home-page .prev-arrow,
