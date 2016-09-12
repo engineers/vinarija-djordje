@@ -1878,19 +1878,45 @@ section.footer .copyright {
   height: 100%;
   background-color: #fbf9f0;
 }
-.red-wine-page .sort-content .f-red,
-.white-wine-page .sort-content .f-red {
+.letter-position {
   position: absolute;
-  top: 17%;
-  left: 5%;
   width: 300px;
   height: 300px;
+}
+.letter-position.f-red {
+  top: 20%;
+  left: 53%;
   background: url('../images/F-red.svg') center border-box no-repeat;
+}
+.letter-position.letter-portugizer {
+  top: 16%;
+  left: 55%;
+  background: url('../images/portugizer-stamp.svg') center border-box no-repeat;
+}
+.letter-position.f-white {
+  top: 22%;
+  left: 53%;
+  background: url('../images/F-white.svg') center center no-repeat;
+}
+.letter-position.sardone-letter {
+  top: 25%;
+  left: 54%;
+  background: url('../images/sardone-stamp.svg') center center no-repeat;
+}
+.letter-position.traminac-letter {
+  top: 26%;
+  left: 55%;
+  background: url('../images/tramirac-stamp.svg') center center no-repeat;
+}
+.letter-position.sovinjon-letter {
+  top: 28%;
+  left: 53%;
+  background: url('../images/sovinjon-stamp.svg') center center no-repeat;
 }
 .freska-crvena {
   position: fixed;
-  top: 8%;
-  left: 24%;
+  top: 9%;
+  left: 22%;
   transform: translateX(-25%);
   width: 345px !important;
 }
@@ -1902,19 +1928,19 @@ section.footer .copyright {
 .portugizer {
   position: fixed;
   top: 59%;
-  left: 22%;
+  left: 21%;
   transform: translateX(-22%);
   width: 345px !important;
 }
 .portugizer .portugizer-bottle {
   width: 345px;
   height: 700px;
-  background: url('../images/freska-bela.png') center center no-repeat;
+  background: url('../images/portugizer.png') center center no-repeat;
 }
 .freska-bela {
   position: fixed;
-  top: 5%;
-  left: 22%;
+  top: 4.5%;
+  left: 21%;
   transform: translateX(-22%);
   width: 345px !important;
 }
@@ -1925,39 +1951,39 @@ section.footer .copyright {
 }
 .sardone {
   position: fixed;
-  top: 31%;
-  left: 22%;
+  top: 29.5%;
+  left: 21%;
   transform: translateX(-22%);
   width: 345px !important;
 }
 .sardone .sardone-bottle {
   width: 345px;
   height: 700px;
-  background: url('../images/freska-bela.png') center center no-repeat;
+  background: url('../images/sardone.png') center center no-repeat;
 }
 .traminac {
   position: fixed;
-  top: 57%;
-  left: 22%;
+  top: 54%;
+  left: 21%;
   transform: translateX(-22%);
   width: 345px !important;
 }
 .traminac .traminac-bottle {
   width: 345px;
   height: 700px;
-  background: url('../images/freska-bela.png') center center no-repeat;
+  background: url('../images/traminac.png') center center no-repeat;
 }
 .sovinjon {
   position: fixed;
-  top: 81%;
-  left: 22%;
+  top: 79%;
+  left: 21%;
   transform: translateX(-22%);
   width: 345px !important;
 }
 .sovinjon .sovinjon-bottle {
   width: 345px;
   height: 700px;
-  background: url('../images/freska-bela.png') center center no-repeat;
+  background: url('../images/sovinjon.png') center center no-repeat;
 }
 .all-sorts {
   position: relative;
@@ -2003,7 +2029,7 @@ section.footer .copyright {
   opacity: 0.1;
   transition: opacity .5s;
   position: relative;
-  top: 29%;
+  top: 31%;
 }
 .name-position .grey-line {
   display: table;
@@ -2013,6 +2039,7 @@ section.footer .copyright {
   margin-top: 12px;
 }
 .name-position .name {
+  width: 290px;
   margin-left: 73px;
   font-size: 36px;
   color: #fff;
@@ -2077,14 +2104,6 @@ section.footer .copyright {
 }
 .change-text .content-position .percentage {
   margin-left: 25px;
-}
-.white-wine-page .sort-content .f-white {
-  position: absolute;
-  top: 17%;
-  left: 5%;
-  width: 300px;
-  height: 300px;
-  background: url('../images/F-white.svg') center center no-repeat;
 }
 .white-wine-page .red-sort {
   background: url('../images/white-sort.jpg') center center no-repeat;
