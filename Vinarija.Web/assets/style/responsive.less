@@ -50,6 +50,19 @@
     }
 }
 
+@media screen and (max-width: 1500px) {
+    .red-wine-page,
+    .white-wine-page {
+        .red-sort {
+            .all-sorts {
+                .name {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1400px) {
     section.intro {
         .logo-headline {
@@ -84,14 +97,6 @@
 
     .red-wine-page,
     .white-wine-page {
-        .red-sort {
-            .all-sorts {
-                .name {
-                    margin-right: 40px;
-                }
-            }
-        }
-
         .sort-content {
             .content-position {
                 left: 10%;
@@ -151,6 +156,26 @@
         }
     }
 
+    .red-wine-page,
+    .white-wine-page {
+        .red-sort {
+            .sort-bottle {
+                height: 80%;
+                background-size: cover;
+            }
+        }
+
+        .sort-content {
+            .content-position {
+                .temp,
+                .degrees {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
     .winery-page {
         .text-part {
             .position {
@@ -205,12 +230,33 @@
 
     .territory-page {
         .info {
+            background-position: center left;
+
             .text-wrapper {
                 margin: 0;
 
                 p {
                     width: 90%;
                 }
+            }
+        }
+    }
+
+    .wines-page {
+        .wine-selection {
+            .red-wine,
+            .white-wine {
+                .wine-position {
+                    top: 60%;
+                }
+            }
+        }
+    }
+
+    .hamburger-menu {
+        .hamburger-nav {
+            .hamburger-container.open-menu {
+                width: 33%;
             }
         }
     }
