@@ -13,7 +13,7 @@
 
     <nav>
         <ul>
-            <li class="flex">
+            <li class="flex" ng-class="{'selected' : $state.includes('layout.home')}">
                 <div class="grey-line"></div>
                 <a scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home">почетна</a>
             </li>

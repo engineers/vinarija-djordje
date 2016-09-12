@@ -410,11 +410,13 @@ section.intro nav li:hover .grey-line,
 section.intro nav li.selected .grey-line {
   display: table;
 }
-section.intro nav a {
+section.intro nav li a {
   color: #8a8a8a;
 }
-section.intro nav a:hover,
-section.intro nav a.selected {
+section.intro nav li a:hover {
+  color: #e2e1e1;
+}
+section.intro nav li.selected a {
   color: #e2e1e1;
 }
 section.intro .slick-dots {
