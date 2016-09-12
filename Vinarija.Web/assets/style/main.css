@@ -616,7 +616,7 @@ section.footer .footer-container .contact-form .send-btn {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #222222;
-  color: #434343;
+  color: #fff;
   border: none;
   outline: none;
   font-size: 16px;
@@ -643,6 +643,14 @@ section.footer .footer-container .contact-form .send-btn .send-img {
   width: 25px;
   height: 25px;
   background: url('../images/sprite.svg') -319px -33px no-repeat;
+}
+section.footer .footer-container .contact-form .send-btn[disabled="disabled"] {
+  cursor: default;
+  background-color: #671019;
+}
+section.footer .footer-container .contact-form .message {
+  margin-top: 10px;
+  color: #fff;
 }
 section.footer .copyright {
   margin-top: 120px;

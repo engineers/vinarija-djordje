@@ -636,7 +636,7 @@ section.footer {
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
                 background-color: @dark-grey;
-                color: @text-grey;
+                color: @w;
                 border: none;
                 outline: none;
                 font-size: 16px;
@@ -666,6 +666,16 @@ section.footer {
                     height: 25px;
                     background: url('../images/sprite.svg') -319px -33px no-repeat;
                 }
+
+                &[disabled="disabled"] {
+                    cursor: default;
+                    background-color: darken(@red, 20%);
+                }
+            }
+
+            .message {
+                margin-top: 10px;
+                color: #fff;
             }
         }
     }
