@@ -1,4 +1,4 @@
-﻿app.controller('WhiteWinesController', function ($scope, $timeout) {
+﻿app.controller('WhiteWinesController', function ($scope, $timeout, $state) {
 
     $(document).ready(function () {
         if ($('html').hasClass("fp-enabled")) {
@@ -6,5 +6,9 @@
         }
         $('#fullpage-white').fullpage();
     });
+
+    $scope.changeState = function () {
+        $state.go('layout.wines');
+    };
 
 });

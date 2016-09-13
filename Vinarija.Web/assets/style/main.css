@@ -313,6 +313,7 @@ button::-moz-focus-inner {
   height: 35px;
   background: url('../images/sprite.svg') -98px -128px no-repeat;
   cursor: pointer;
+  z-index: 999999;
 }
 .back-arrow-black {
   position: absolute;
@@ -322,6 +323,7 @@ button::-moz-focus-inner {
   height: 35px;
   background: url('../images/sprite.svg') -28px -128px no-repeat;
   cursor: pointer;
+  z-index: 999999;
 }
 h3 {
   font-size: 36px;
