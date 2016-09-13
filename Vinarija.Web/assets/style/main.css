@@ -272,6 +272,9 @@ button::-moz-focus-inner {
   outline: none;
   text-transform: uppercase;
 }
+.black-btn:hover {
+  background-color: #bf1e2e;
+}
 .red-line {
   width: 18px;
   height: 1px;
@@ -304,6 +307,9 @@ button::-moz-focus-inner {
   color: #333;
   cursor: pointer;
   font-family: 'TenorSans';
+}
+.read-more-box .read-more:hover {
+  color: #bf1e2e;
 }
 .back-arrow-red {
   position: absolute;
@@ -435,11 +441,14 @@ section.intro .slick-dots li button:before {
   color: #8a8a8a;
 }
 section.intro .slick-dots li.slick-active button:before {
-  content: 'O';
-  top: -3px;
+  content: ' ';
+  top: 1px;
+  left: 2px;
   opacity: 1;
-  color: #8a8a8a;
-  font-size: 20px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #8a8a8a;
+  border-radius: 50px;
 }
 /*#endregion*/
 /*#region Footer*/
@@ -776,6 +785,9 @@ section.footer .copyright {
   vertical-align: middle;
   border: 2px solid #DCDCD8;
   border-radius: 50%;
+}
+.visit-winery-page section.contact .contact-info-wrapper .icon:hover {
+  border: 2px solid #bf1e2e;
 }
 .visit-winery-page section.contact .contact-info-wrapper .icon .envelope {
   width: 48px;
@@ -1433,6 +1445,7 @@ section.footer .copyright {
 }
 .actualities-page .ivent-calendar .calendar-news .news-popup .popup-content .all-text {
   width: 60%;
+  z-index: 5;
 }
 .actualities-page .ivent-calendar .calendar-news .news-popup .popup-content .all-text .first-row {
   margin-right: 6%;
@@ -1686,7 +1699,7 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .red-wine .wine-position .red-bottle {
   height: 210px;
-  width: 80%;
+  width: 85%;
   background: url('../images/choose-wine-red.png') center right no-repeat;
 }
 .wines-page .wine-selection .red-wine .wine-position .read-more-box {
@@ -1694,6 +1707,12 @@ section.footer .copyright {
   justify-content: flex-end;
   margin-right: 150px;
   margin-top: -10px;
+}
+.wines-page .wine-selection .red-wine .wine-position .read-more-box:hover .vertical-line {
+  background-color: #bf1e2e;
+}
+.wines-page .wine-selection .red-wine .wine-position .read-more-box:hover .read-more {
+  color: #bf1e2e;
 }
 .wines-page .wine-selection .red-wine .wine-position .read-more-box .vertical-line {
   background-color: #8a8a8a;
@@ -1722,7 +1741,7 @@ section.footer .copyright {
   font-family: 'Minion Pro-Regular';
 }
 .wines-page .wine-selection .white-wine .wine-position .white-bottle {
-  height: 240px;
+  height: 260px;
   width: 810px;
   margin-left: 141px;
   background: url('../images/choose-wine-white.png') center center no-repeat;

@@ -220,6 +220,10 @@ button::-moz-focus-inner {
     border: none;
     outline: none;
     text-transform: uppercase;
+
+    &:hover {
+        background-color: @red;
+    }
 }
 
 .red-line {
@@ -257,6 +261,10 @@ button::-moz-focus-inner {
         color: #333;
         cursor: pointer;
         font-family: 'TenorSans';
+
+        &:hover {
+            color: @red;
+        }
     }
 }
 
@@ -419,11 +427,14 @@ section.intro {
     }
 
     .slick-dots li.slick-active button:before {
-        content: 'O';
-        top: -3px;
+        content: ' ';
+        top: 1px;
+        left: 2px;
         opacity: 1;
-        color: #8a8a8a;
-        font-size: 20px;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #8a8a8a;
+        border-radius: 50px;
     }
 }
 /*#endregion*/
@@ -820,6 +831,10 @@ section.footer {
                 vertical-align: middle;
                 border: 2px solid #DCDCD8;
                 border-radius: 50%;
+
+                &:hover {
+                    border: 2px solid #bf1e2e;
+                }
 
                 .envelope {
                     width: 48px;
@@ -1587,6 +1602,7 @@ section.footer {
 
                     .all-text {
                         width: 60%;
+                        z-index: 5;
 
                         .first-row {
                             margin-right: 6%;
@@ -1895,7 +1911,7 @@ section.footer {
 
                 .red-bottle {
                     height: 210px;
-                    width: 80%;
+                    width: 85%;
                     background: url('../images/choose-wine-red.png') center right no-repeat;
                 }
 
@@ -1904,6 +1920,16 @@ section.footer {
                     justify-content: flex-end;
                     margin-right: 150px;
                     margin-top: -10px;
+
+                    &:hover {
+                        .vertical-line {
+                            background-color: @red;
+                        }
+
+                        .read-more {
+                            color: @red;
+                        }
+                    }
 
                     .vertical-line {
                         background-color: @grey;
@@ -1938,7 +1964,7 @@ section.footer {
                 }
 
                 .white-bottle {
-                    height: 240px;
+                    height: 260px;
                     width: 810px;
                     margin-left: 141px;
                     background: url('../images/choose-wine-white.png') center center no-repeat;
