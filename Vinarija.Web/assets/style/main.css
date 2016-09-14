@@ -463,11 +463,7 @@ section.footer .footer-container {
 section.footer .footer-container .social-icons {
   margin-top: 70px;
 }
-section.footer .footer-container .social-icons .facebook,
-section.footer .footer-container .social-icons .twitter,
-section.footer .footer-container .social-icons .vine,
-section.footer .footer-container .social-icons .linkedIn,
-section.footer .footer-container .social-icons .instagram {
+section.footer .footer-container .social-icons .facebook {
   height: 21px;
   margin-right: 15px;
   cursor: pointer;
@@ -478,35 +474,6 @@ section.footer .footer-container .social-icons .facebook {
 }
 section.footer .footer-container .social-icons .facebook:hover {
   background: url('../images/sprite.svg') -341px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .twitter {
-  width: 16px;
-  background: url('../images/sprite.svg') -161px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .twitter:hover {
-  background: url('../images/sprite.svg') -381px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .vine {
-  width: 17px;
-  background: url('../images/sprite.svg') -76px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .vine:hover {
-  background: url('../images/sprite.svg') -296px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .linkedIn {
-  width: 17px;
-  background: url('../images/sprite.svg') -205px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .linkedIn:hover {
-  background: url('../images/sprite.svg') -425px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .instagram {
-  width: 20px;
-  margin-right: 0;
-  background: url('../images/sprite.svg') -27px -81px no-repeat;
-}
-section.footer .footer-container .social-icons .instagram:hover {
-  background: url('../images/sprite.svg') -247px -81px no-repeat;
 }
 section.footer .footer-container .pages .first-colum {
   margin-right: 65px;
@@ -689,7 +656,7 @@ section.footer .copyright {
   width: 68%;
 }
 .visit-winery-page section.about .default-wrapper h3 {
-  margin: 0;
+  margin-bottom: 30px;
   color: #333333;
   font-size: 36px;
   text-transform: uppercase;
@@ -1275,7 +1242,7 @@ section.footer .copyright {
   margin-left: 110px;
 }
 .winery-page .text-part .title {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 36px;
   color: #333;
   font-family: 'Minion Pro-Regular';
@@ -1295,9 +1262,10 @@ section.footer .copyright {
   line-height: 22px;
 }
 .winery-page .text-part .logo {
+  position: relative;
+  left: 0;
   width: 132px;
   height: 110px;
-  cursor: pointer;
   background: url('../images/contact-card-logo.svg') center center no-repeat;
 }
 .winery-page .winery-location {
@@ -1362,6 +1330,7 @@ section.footer .copyright {
   font-family: 'TenorSans';
 }
 .winery-page .welcome-to-winary .position-content .read-more-box {
+  -webkit-justify-content: center;
   justify-content: center;
 }
 /*#endregion*/
@@ -1538,11 +1507,11 @@ section.footer .copyright {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  float: right;
-  margin-right: 115px;
+  float: left;
+  margin-left: 115px;
 }
 .vineyards-page .vineyards-white-sort .text-part .white-wine-position .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 36px;
   color: #333;
   font-family: 'Minion Pro-Regular';
@@ -1552,11 +1521,7 @@ section.footer .copyright {
   font-size: 28px;
   color: #888;
   font-family: 'NK124';
-  text-align: right;
-}
-.vineyards-page .vineyards-white-sort .text-part .white-wine-position .sort-wine {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
+  text-align: left;
 }
 .vineyards-page .vineyards-white-sort .text-part .white-wine-position .sort-wine .sort {
   margin-bottom: 35px;
@@ -1567,7 +1532,7 @@ section.footer .copyright {
 }
 .vineyards-page .vineyards-white-sort .text-part .white-wine-position .red-line {
   width: 35px;
-  margin: 9px 0 0 15px;
+  margin: 9px 15px 0 0px;
 }
 .vineyards-page .vineyards-white-sort .white-wine-img {
   width: 50%;
@@ -1583,10 +1548,11 @@ section.footer .copyright {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 115px;
+  margin-right: 115px;
+  float: right;
 }
 .vineyards-page .vineyards-black-sort .text-part .black-wine-position .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 36px;
   color: #333;
   font-family: 'Minion Pro-Regular';
@@ -1596,6 +1562,11 @@ section.footer .copyright {
   font-size: 28px;
   color: #888;
   font-family: 'NK124';
+  text-align: right;
+}
+.vineyards-page .vineyards-black-sort .text-part .black-wine-position .sort-wine {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 .vineyards-page .vineyards-black-sort .text-part .black-wine-position .sort-wine .sort {
   margin-bottom: 35px;
@@ -1606,7 +1577,7 @@ section.footer .copyright {
 }
 .vineyards-page .vineyards-black-sort .text-part .black-wine-position .red-line {
   width: 35px;
-  margin: 9px 15px 0 0;
+  margin: 9px 0 0 15px;
 }
 .vineyards-page .vineyards-black-sort .black-wine-img {
   width: 50%;
@@ -1626,7 +1597,7 @@ section.footer .copyright {
   margin-right: 115px;
 }
 .vineyards-page .land .text-part .land-position .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 36px;
   text-align: right;
   color: #333;
@@ -1679,9 +1650,10 @@ section.footer .copyright {
 }
 .wines-page .wine-selection .red-wine .logo {
   position: absolute;
-  width: 160px;
-  height: 110px;
-  margin: 50px 0 0 75px;
+  top: 50px;
+  left: 75px;
+  width: 159px;
+  height: 105px;
   z-index: 10;
   cursor: pointer;
   background: url('../images/logo.svg') center center no-repeat;
@@ -1902,21 +1874,21 @@ section.footer .copyright {
 }
 /*#endregion*/
 /*#region Red wines and White wines page*/
+.logo {
+  position: absolute;
+  width: 159px;
+  height: 105px;
+  top: 50px;
+  left: 75px;
+  z-index: 5;
+  cursor: pointer;
+  background: url('../images/logo.svg') center center no-repeat;
+}
 .red-wine-page,
 .white-wine-page {
   height: 100%;
   position: fixed;
   width: 100%;
-}
-.red-wine-page .logo,
-.white-wine-page .logo {
-  position: absolute;
-  width: 160px;
-  height: 110px;
-  margin: 50px 0 0 75px;
-  z-index: 5;
-  cursor: pointer;
-  background: url('../images/logo.svg') center center no-repeat;
 }
 .red-wine-page .red-sort,
 .white-wine-page .red-sort {
@@ -2090,8 +2062,10 @@ section.footer .copyright {
 }
 .all-sorts {
   position: relative;
-  left: 37%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 21%;
+  width: 500px;
   opacity: 0.1;
   transition: opacity .5s;
 }
@@ -2268,7 +2242,7 @@ section.footer .copyright {
 }
 .territory-page .flora .left-box .text-wrapper .title,
 .territory-page .climate .left-box .text-wrapper .title {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-family: 'Minion Pro-Regular';
   color: #333;
@@ -2322,7 +2296,7 @@ section.footer .copyright {
   margin-left: 110px;
 }
 .territory-page .fauna .right-box .text-wrapper .title {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-family: 'Minion Pro-Regular';
   color: #333;

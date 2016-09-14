@@ -451,11 +451,7 @@ section.footer {
         .social-icons {
             margin-top: 70px;
 
-            .facebook,
-            .twitter,
-            .vine,
-            .linkedIn,
-            .instagram {
+            .facebook {
                 height: 21px;
                 margin-right: 15px;
                 cursor: pointer;
@@ -467,43 +463,6 @@ section.footer {
 
                 &:hover {
                     background: url('../images/sprite.svg') -341px -81px no-repeat;
-                }
-            }
-
-            .twitter {
-                width: 16px;
-                background: url('../images/sprite.svg') -161px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -381px -81px no-repeat;
-                }
-            }
-
-            .vine {
-                width: 17px;
-                background: url('../images/sprite.svg') -76px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -296px -81px no-repeat;
-                }
-            }
-
-            .linkedIn {
-                width: 17px;
-                background: url('../images/sprite.svg') -205px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -425px -81px no-repeat;
-                }
-            }
-
-            .instagram {
-                width: 20px;
-                margin-right: 0;
-                background: url('../images/sprite.svg') -27px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -247px -81px no-repeat;
                 }
             }
         }
@@ -722,7 +681,7 @@ section.footer {
             width: 68%;
 
             h3 {
-                margin: 0;
+                margin-bottom: 30px;
                 color: #333333;
                 font-size: 36px;
                 text-transform: uppercase;
@@ -1403,7 +1362,7 @@ section.footer {
         }
 
         .title {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             font-size: 36px;
             color: #333;
             font-family: 'Minion Pro-Regular';
@@ -1426,9 +1385,10 @@ section.footer {
         }
 
         .logo {
+            position: relative;
+            left: 0;
             width: 132px;
             height: 110px;
-            cursor: pointer;
             background: url('../images/contact-card-logo.svg') center center no-repeat;
         }
     }
@@ -1506,6 +1466,7 @@ section.footer {
             }
 
             .read-more-box {
+                -webkit-justify-content: center;
                 justify-content: center;
             }
         }
@@ -1719,11 +1680,63 @@ section.footer {
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
-                float: right;
-                margin-right: 115px;
+                float: left;
+                margin-left: 115px;
 
                 .title {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
+                    font-size: 36px;
+                    color: #333;
+                    font-family: 'Minion Pro-Regular';
+                }
+
+                .subtitle {
+                    margin-bottom: 35px;
+                    font-size: 28px;
+                    color: #888;
+                    font-family: 'NK124';
+                    text-align: left;
+                }
+
+                .sort-wine {
+                    .sort {
+                        margin-bottom: 35px;
+                        font-size: 18px;
+                        color: #333;
+                        font-family: 'TenorSans';
+                        text-transform: uppercase;
+                    }
+                }
+
+                .red-line {
+                    width: 35px;
+                    margin: 9px 15px 0 0px;
+                }
+            }
+        }
+
+        .white-wine-img {
+            width: 50%;
+            height: 732px;
+            background: url('../images/vineyards2.jpg') center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .vineyards-black-sort {
+        .text-part {
+            width: 50%;
+            height: 732px;
+
+            .black-wine-position {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-right: 115px;
+                float: right;
+
+                .title {
+                    margin-bottom: 30px;
                     font-size: 36px;
                     color: #333;
                     font-family: 'Minion Pro-Regular';
@@ -1757,56 +1770,6 @@ section.footer {
             }
         }
 
-        .white-wine-img {
-            width: 50%;
-            height: 732px;
-            background: url('../images/vineyards2.jpg') center center no-repeat;
-            background-size: cover;
-        }
-    }
-
-    .vineyards-black-sort {
-        .text-part {
-            width: 50%;
-            height: 732px;
-
-            .black-wine-position {
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
-                margin-left: 115px;
-
-                .title {
-                    margin-bottom: 20px;
-                    font-size: 36px;
-                    color: #333;
-                    font-family: 'Minion Pro-Regular';
-                }
-
-                .subtitle {
-                    margin-bottom: 35px;
-                    font-size: 28px;
-                    color: #888;
-                    font-family: 'NK124';
-                }
-
-                .sort-wine {
-                    .sort {
-                        margin-bottom: 35px;
-                        font-size: 18px;
-                        color: #333;
-                        font-family: 'TenorSans';
-                        text-transform: uppercase;
-                    }
-                }
-
-                .red-line {
-                    width: 35px;
-                    margin: 9px 15px 0 0;
-                }
-            }
-        }
-
         .black-wine-img {
             width: 50%;
             height: 732px;
@@ -1828,7 +1791,7 @@ section.footer {
                 margin-right: 115px;
 
                 .title {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     font-size: 36px;
                     text-align: right;
                     color: #333;
@@ -1891,9 +1854,10 @@ section.footer {
 
             .logo {
                 position: absolute;
-                width: 160px;
-                height: 110px;
-                margin: 50px 0 0 75px;
+                top: 50px;
+                left: 75px;
+                width: 159px;
+                height: 105px;
                 z-index: 10;
                 cursor: pointer;
                 background: url('../images/logo.svg') center center no-repeat;
@@ -2160,21 +2124,22 @@ section.footer {
 /*#endregion*/
 
 /*#region Red wines and White wines page*/
+.logo {
+    position: absolute;
+    width: 159px;
+    height: 105px;
+    top: 50px;
+    left: 75px;
+    z-index: 5;
+    cursor: pointer;
+    background: url('../images/logo.svg') center center no-repeat;
+}
+
 .red-wine-page,
 .white-wine-page {
     height: 100%;
     position: fixed;
     width: 100%;
-
-    .logo {
-        position: absolute;
-        width: 160px;
-        height: 110px;
-        margin: 50px 0 0 75px;
-        z-index: 5;
-        cursor: pointer;
-        background: url('../images/logo.svg') center center no-repeat;
-    }
 
     .red-sort {
         position: relative;
@@ -2368,8 +2333,10 @@ section.footer {
 
 .all-sorts {
     position: relative;
-    left: 37%;
+    left: 50%;
+    transform: translateX(-50%);
     top: 21%;
+    width: 500px;
     opacity: 0.1;
     transition: opacity .5s;
 
@@ -2585,7 +2552,7 @@ section.footer {
                 text-align: right;
 
                 .title {
-                    margin-bottom: 10px;
+                    margin-bottom: 30px;
                     font-size: 36px;
                     font-family: 'Minion Pro-Regular';
                     color: #333;
@@ -2647,7 +2614,7 @@ section.footer {
                 margin-left: 110px;
 
                 .title {
-                    margin-bottom: 10px;
+                    margin-bottom: 30px;
                     font-size: 36px;
                     font-family: 'Minion Pro-Regular';
                     color: #333;
