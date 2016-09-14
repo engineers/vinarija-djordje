@@ -16,29 +16,24 @@ namespace Vinarija.Core
         /// <summary>
         /// Gets the user by specified email and password.
         /// </summary>
-        /// <param name="username">The username.</param>
+        /// <param name="email">The email.</param>
         /// <param name="password">The password.</param>
         /// <returns></returns>
         /// <exception cref="ValidationException">Wrong password!
         /// or
         /// Account not confirmed! Please, check your e-mail for confirmation.</exception>
-        public UserModel Login(string username, string password)
+        public User Login(string email, string password)
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                //UserModel user = uow.AdminUserRepository.Find(u => u.Username.ToLower().Trim() == username.ToLower().Trim()).FirstOrDefault();
-                //ValidationHelper.ValidateNotNull(user);
+                User user = uow.UserRepository.Find(u => u.Email.ToLower().Trim() == email.ToLower().Trim()).FirstOrDefault();
+                ValidationHelper.ValidateNotNull(user);
 
-                //if (!PasswordHelper.ValidatePassword(password, user.Password))
-                //{
-                //    throw new ValidationException("Wrong password!");
-                //}
-
-                //if (!user.Active)
-                //{
-                //    throw new ValidationException("Account not active!");
-                //}
-
+                if (!PasswordHelper.ValidatePassword(password, user.Password))
+                {
+                    throw new ValidationException("Wrong password!");
+                }
+              
                 return user;
             }
         }

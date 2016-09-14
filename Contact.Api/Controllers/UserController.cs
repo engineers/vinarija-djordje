@@ -10,6 +10,7 @@ using System.Web.Http;
 using Vinarija.Api.Helpers;
 using Vinarija.Api.Models;
 using Vinarija.Common.Exceptions;
+using Vinarija.Entities;
 
 namespace Vinarija.Api.Controllers
 {
@@ -19,7 +20,7 @@ namespace Vinarija.Api.Controllers
         [HttpPost]
         public object Login(UserLoginModel model)
         {
-            //User user = UserManager.Login(model.Username, model.Password, model.WebLogin);
+            User user = UserManager.Login(model.Email, model.Password);
             //dynamic rights = RoleManager.GetRightsObject(user.Role);
             return new { };
             //return new { User = user, Rights = rights, Token = CreateLoginToken(user) };

@@ -21,6 +21,7 @@ namespace Vinarija.Data
 
         private PostRepository blogRepository;
         private PostImageRepository postImageRepository;
+        private UserRepository userRepository;
 
         #endregion Fields
 
@@ -51,6 +52,15 @@ namespace Vinarija.Data
             get
             {
                 return postImageRepository ?? (postImageRepository = new PostImageRepository(DataContext));
+            }
+
+        }
+
+        public UserRepository UserRepository
+        {
+            get
+            {
+                return userRepository ?? (userRepository = new UserRepository(DataContext));
             }
         }
 
