@@ -8,7 +8,7 @@ using Contact.Api.Models;
 using Contact.Api.Mailers;
 using System.Configuration;
 
-namespace Contact.Api.Controllers
+namespace Vinarija.Api.Controllers
 {
     public class MailController : ApiController
     {
