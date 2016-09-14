@@ -22,12 +22,12 @@ namespace Vinarija.Api.Controllers
             }
         }
 
-        private PostManager blogManager;
-        public PostManager BlogManager
+        private PostManager postManager;
+        public PostManager PostManager
         {
             get
             {
-                return blogManager ?? (blogManager = new PostManager());
+                return postManager ?? (postManager = new PostManager());
             }
         }
 

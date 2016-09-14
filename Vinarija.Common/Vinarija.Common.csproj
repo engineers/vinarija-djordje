@@ -47,6 +47,7 @@
     <Compile Include="Helpers\PasswordHelper.cs" />
     <Compile Include="Helpers\ValidationHelper.cs" />
     <Compile Include="Models\PostPageModel.cs" />
+    <Compile Include="Models\PostModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
