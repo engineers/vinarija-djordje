@@ -28,7 +28,7 @@ namespace Vinarija.Api.Controllers
             if (httpRequest.Files.Count == 0) throw new ValidationException("You did not select a file!");
 
             HttpPostedFile postedFile = httpRequest.Files[0];
-            string rootFolder = HttpContext.Current.Server.MapPath($"~/Content/Gallery{folderPath}/");
+            string rootFolder = HttpContext.Current.Server.MapPath($"~/Content/Gallery/");
             string extension = Path.GetExtension(postedFile.FileName);
 
             //GalleryManager.AddImage(postedFile.InputStream, rootFolder, postedFile.FileName);
