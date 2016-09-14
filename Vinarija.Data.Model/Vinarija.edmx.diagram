@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="VinarijaModel.Post" Width="1.5" PointX="0.75" PointY="1" />
         <EntityTypeShape EntityType="VinarijaModel.PostImage" Width="1.5" PointX="3" PointY="1.25" />
         <AssociationConnector Association="VinarijaModel.FK_BlogImage_Blog" />
+        <EntityTypeShape EntityType="VinarijaModel.User" Width="1.5" PointX="3.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -29,5 +29,6 @@ namespace Vinarija.Data.Model
         public virtual DbSet<Gallery> Galleries { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<PostImage> PostImages { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

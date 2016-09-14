@@ -50,6 +50,9 @@
       <DependentUpon>Vinarija.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs">
+      <DependentUpon>Vinarija.tt</DependentUpon>
+    </Compile>
     <Compile Include="Vinarija.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

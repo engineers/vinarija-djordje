@@ -26,8 +26,20 @@ namespace Vinarija.Core
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                UserModel userModel = new UserModel();
-                return userModel;
+                //UserModel user = uow.AdminUserRepository.Find(u => u.Username.ToLower().Trim() == username.ToLower().Trim()).FirstOrDefault();
+                //ValidationHelper.ValidateNotNull(user);
+
+                //if (!PasswordHelper.ValidatePassword(password, user.Password))
+                //{
+                //    throw new ValidationException("Wrong password!");
+                //}
+
+                //if (!user.Active)
+                //{
+                //    throw new ValidationException("Account not active!");
+                //}
+
+                return user;
             }
         }
     }
