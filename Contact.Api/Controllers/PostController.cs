@@ -9,7 +9,6 @@ using System.Web.Http;
 using Vinarija.Api.Helpers;
 using Vinarija.Api.Models;
 using Vinarija.Common.Exceptions;
-using Vinarija.Common.Models.PostModel;
 using Vinarija.Common.Models.PostPageModel;
 using Vinarija.Entities;
 
@@ -26,6 +25,8 @@ namespace Vinarija.Api.Controllers
             return postPageModel;
         }
 
+        
+        [ValidateModel]
         [TokenAuthorize]
         [HttpPost]
         public Post Add(PostModel input)
@@ -34,7 +35,7 @@ namespace Vinarija.Api.Controllers
             {
                 Active = false,
                 Content = input.Content,
-                Date = input.Date,
+                Date = input.Date.Value,
                 DateCreated = DateTime.UtcNow,
                 Title = input.Title
             };
@@ -44,6 +45,7 @@ namespace Vinarija.Api.Controllers
             return post;
         }
 
+        [ValidateModel]
         [TokenAuthorize]
         [HttpPut]
         public Post Update(PostModel input)
@@ -52,11 +54,21 @@ namespace Vinarija.Api.Controllers
             {
                 Id = input.Id.Value,
                 Content = input.Content,
-                Date = input.Date,
+                Date = input.Date.Value,
                 Title = input.Title
             };
 
             post = PostManager.Update(post);
+
+            return post;
+        }
+
+        [ValidateModel]
+        [TokenAuthorize]
+        [HttpPatch]
+        public Post ActiveDeactive(PostActiveDeactiveModel model)
+        {
+            Post post = PostManager.ActiveDeactive(model.PostId.Value, model.Active.Value);
 
             return post;
         }

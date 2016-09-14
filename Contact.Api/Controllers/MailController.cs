@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Contact.Api.Models;
 using Contact.Api.Mailers;
 using System.Configuration;
+using Vinarija.Api.Models;
 
 namespace Vinarija.Api.Controllers
 {

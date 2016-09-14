@@ -81,5 +81,22 @@ namespace Vinarija.Core
                 }
             }
         }
+
+        public Post ActiveDeactive(int postId, bool active)
+        {
+            using (UnitOfWork uow = new UnitOfWork())
+            {
+                
+                Post postFromDB = uow.PostRepository.GetById(postId);
+                ValidationHelper.ValidateNotNull(postFromDB);
+
+                postFromDB.Active = active;
+                uow.PostRepository.Update(postFromDB);
+
+                uow.Save();
+
+                return postFromDB;
+            }
+        }
     }
 }

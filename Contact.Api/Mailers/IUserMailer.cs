@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Mvc.Mailer;
-using Contact.Api.Models;
+using Vinarija.Api.Models;
 
 namespace Contact.Api.Mailers
 {
