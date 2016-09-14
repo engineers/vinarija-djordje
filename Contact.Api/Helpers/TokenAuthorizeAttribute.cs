@@ -43,6 +43,7 @@ namespace Vinarija.Api.Helpers
 
                 try
                 {
+                    tokenString = tokenString.Replace("Bearer ", "");
                     user = JWT.JsonWebToken.DecodeToObject<UserJwtModel>(tokenString, secretKey);
                 }
                 catch (JWT.SignatureVerificationException)

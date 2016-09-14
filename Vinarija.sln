@@ -38,6 +38,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Core", "Vinarija.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Common", "Vinarija.Common\Vinarija.Common.csproj", "{5DAF2E82-9538-4312-83A9-F89F78655700}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Vinarija.Cms", "Vinarija.Cms\", "{53600FE5-5A00-4150-94C5-3443CA3459DB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_32851"
+		Debug.AspNetCompiler.PhysicalPath = "Vinarija.Cms\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32851\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_32851"
+		Release.AspNetCompiler.PhysicalPath = "Vinarija.Cms\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32851\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "32851"
+		SlnRelativePath = "Vinarija.Cms\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +99,10 @@ Global
 		{5DAF2E82-9538-4312-83A9-F89F78655700}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DAF2E82-9538-4312-83A9-F89F78655700}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DAF2E82-9538-4312-83A9-F89F78655700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53600FE5-5A00-4150-94C5-3443CA3459DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53600FE5-5A00-4150-94C5-3443CA3459DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53600FE5-5A00-4150-94C5-3443CA3459DB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{53600FE5-5A00-4150-94C5-3443CA3459DB}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

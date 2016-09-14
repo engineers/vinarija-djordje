@@ -1,0 +1,35 @@
+﻿<div layout="row" flex>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" ng-cloak>
+        <div layout="column" layout-fill flex>
+            <md-toolbar class="md-hue-2 md-whiteframe-z1" layout="row" layout-align="center center">
+                <h1 class="md-toolbar-tools">Vinarija Đorđević</h1>
+                <md-button href class="md-icon-button" ng-click="close()" hide-gt-md aria-label="Close">
+                    <i class="fa fa-angle-double-left md-title"></i>
+                </md-button>
+            </md-toolbar>
+            <md-content flex layout="column" layout-wrap>
+                <md-button type="button" class="md-primary sidenav-btn" ui-sref="layout.blog" ui-sref-active="md-raised">Blog postovi</md-button>
+                <md-button type="button" class="md-primary sidenav-btn" ui-sref="layout.gallerz" ui-sref-active="md-raised">Galerija</md-button>
+            </md-content>
+        </div>
+    </md-sidenav>
+
+    <div layout="column" flex>
+        <md-toolbar class="md-hue-2 site-content-toolbar md-whiteframe-z1" layout="row" layout-align="start center" ng-cloak>
+            <div class="md-toolbar-tools docs-toolbar-tools" flex>
+                <md-button href class="md-icon-button" ng-click="toggle()" hide-gt-md aria-label="Close">
+                    <i class="fa fa-bars"></i>
+                </md-button>
+                <div layout="row" flex layout-align="end center">
+                    <md-button class="site-content-toolbar-button normal-case fill-height" 
+                               md-position-mode="target-right target" 
+                               href
+                               ng-click="logout()">
+                        Izloguj se &nbsp;<i class="fa fa-power-off" aria-hidden="true"></i>
+                    </md-button>
+                </div>
+            </div>
+        </md-toolbar>
+        <md-content layout-padding class="md-sidenav-left md-whiteframe-z1" ui-view layout="column" flex overflow-x="hidden"></md-content>
+    </div>
+</div>
