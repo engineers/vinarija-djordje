@@ -27,19 +27,6 @@
             $timeout(function () {
                 initiateSlider();
             }, 200);
-
-            //$(window).bind('resize', function () {
-            //    if ($(window).width() < 935) {
-            //        if (scope.initialized) {
-            //            scope.initialized = false;
-            //            initiateSlider();
-            //        }
-            //    }
-            //    else if (element.hasClass('slick-initialized')) {
-            //        scope.initialized = true;
-            //        element.slick('unslick');
-            //    }
-            //});
         }
     }
 });

@@ -910,8 +910,10 @@ section.footer {
                 margin: 210px 0;
                 width: 1100px;
                 height: 280px;
-                background: url('../images/red-wine.png') center center no-repeat;
-                background-size: cover;
+
+                &.freska {
+                    background: url('../images/red-wine.png') center left no-repeat;
+                }
             }
         }
 
@@ -968,8 +970,10 @@ section.footer {
                 width: 1100px;
                 height: 280px;
                 margin: 210px 0;
-                background: url('../images/white-wine.png') center center no-repeat;
-                background-size: cover;
+
+                &.freska-white {
+                    background: url('../images/white-wine.png') center right no-repeat;
+                }
             }
         }
 
@@ -1965,13 +1969,13 @@ section.footer {
 
                 .white-bottle {
                     height: 260px;
-                    width: 810px;
-                    margin-left: 141px;
+                    width: 809px;
+                    margin-left: 151px;
                     background: url('../images/choose-wine-white.png') center center no-repeat;
                 }
 
                 .read-more-box {
-                    margin-left: 150px;
+                    margin-left: 154px;
                     margin-top: -30px;
 
                     .read-more {
@@ -2530,7 +2534,6 @@ section.footer {
         width: 100%;
         height: 740px;
         background: url('../images/territory-background.jpg') center center no-repeat;
-        background-size: cover;
 
         .text-wrapper {
             position: absolute;
@@ -2688,5 +2691,36 @@ section.footer {
                 }
             }
         }
+    }
+}
+
+/*IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .name-position {
+        position: absolute;
+        top: 48%;
+    }
+
+    .all-sorts {
+        position: absolute;
+        left: 37%;
+        top: 47%;
+    }
+}
+
+/*Microsoft Edge*/
+@supports
+
+(-ms-ime-align:auto) {
+
+    .name-position {
+        position: absolute;
+        top: 48%;
+    }
+
+    .all-sorts {
+        position: absolute;
+        left: 37%;
+        top: 47%;
     }
 }

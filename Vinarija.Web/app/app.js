@@ -76,6 +76,10 @@ app.run(function ($rootScope, $state) {
 
         $rootScope.$state = $state;
 
+        if ((!($state.current.name == 'layout.red-wines') || !($state.current.name == 'layout.white-wines')) && $('html').hasClass("fp-enabled")) {
+            $.fn.fullpage.destroy('all');
+        };
+
         if (toState.pageName) {
             document.title = 'Винарија Ђорђе | ' + toState.pageName;
         }
