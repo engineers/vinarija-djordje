@@ -156,7 +156,7 @@
     <Compile Include="Mailers\UserMailer.cs" />
     <Compile Include="Models\UserLoginModel.cs" />
     <Compile Include="Models\MailModel.cs" />
-    <Compile Include="Models\UserJwtM.cs" />
+    <Compile Include="Models\UserJwtModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

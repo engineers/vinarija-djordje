@@ -9,7 +9,19 @@ namespace Contact.Api
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            var json = config.Formatters.JsonFormatter;
+
+            // Solve reference loop problem
+            json.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+
+            // Use camel case for json serialization
+            json.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver();
+
+            // Serialize enums as strings
+            json.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+
+            // Remove xml formatter
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
 
             // Web API routes
             config.MapHttpAttributeRoutes();

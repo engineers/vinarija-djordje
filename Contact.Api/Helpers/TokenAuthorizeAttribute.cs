@@ -39,11 +39,11 @@ namespace Vinarija.Api.Helpers
 
                 // Validate JWT token
                 var secretKey = WebConfigurationManager.AppSettings["JwtSecret"];
-                UserJwtM user;
+                UserJwtModel user;
 
                 try
                 {
-                    user = JWT.JsonWebToken.DecodeToObject<UserJwtM>(tokenString, secretKey);
+                    user = JWT.JsonWebToken.DecodeToObject<UserJwtModel>(tokenString, secretKey);
                 }
                 catch (JWT.SignatureVerificationException)
                 {
@@ -53,12 +53,6 @@ namespace Vinarija.Api.Helpers
                 if (user.ExpirationDate < DateTime.UtcNow)
                 {
                     throw new AuthenticationException("Token expired! Please, login again");
-                }
-
-                // Validate roles
-                if (Roles != null && !Roles.Split(',').ToList().Any(r => r == user.Role))
-                {
-                    throw new AuthenticationException("You do not have permission to access this resource!");
                 }
 
                 // Add current user to base controller

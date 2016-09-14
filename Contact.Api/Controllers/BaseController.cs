@@ -11,7 +11,7 @@ namespace Vinarija.Api.Controllers
 {
     public class BaseController : ApiController
     {
-        public UserJwtM CurrentUser { get; set; }
+        public UserJwtModel CurrentUser { get; set; }
 
         private UserManager userManager;
         public UserManager UserManager

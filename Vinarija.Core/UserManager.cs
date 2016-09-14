@@ -22,7 +22,7 @@ namespace Vinarija.Core
         /// <exception cref="ValidationException">Wrong password!
         /// or
         /// Account not confirmed! Please, check your e-mail for confirmation.</exception>
-        public User Login(string email, string password)
+        public UserModel Login(string email, string password)
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
@@ -33,8 +33,14 @@ namespace Vinarija.Core
                 {
                     throw new ValidationException("Wrong password!");
                 }
-              
-                return user;
+
+                UserModel userModel = new UserModel {
+                    Email = user.Email,
+                    FullName = user.FullName,
+                    Id = user.Id
+                };
+
+                return userModel;
             }
         }
     }
