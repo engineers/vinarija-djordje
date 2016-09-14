@@ -6,11 +6,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using Vinarija.Api.Helpers;
 using Vinarija.Api.Models;
 using Vinarija.Common.Exceptions;
 
 namespace Vinarija.Api.Controllers
 {
+    [TokenAuthorize]
     public class GalleryController : BaseController
     {
         /// <summary>

@@ -22,6 +22,7 @@ namespace Vinarija.Data
         private PostRepository blogRepository;
         private PostImageRepository postImageRepository;
         private UserRepository userRepository;
+        private GalleryRepository galleryRepository;
 
         #endregion Fields
 
@@ -61,6 +62,14 @@ namespace Vinarija.Data
             get
             {
                 return userRepository ?? (userRepository = new UserRepository(DataContext));
+            }
+        }
+
+        public GalleryRepository GalleryRepository
+        {
+            get
+            {
+                return galleryRepository ?? (galleryRepository = new GalleryRepository(DataContext));
             }
         }
 

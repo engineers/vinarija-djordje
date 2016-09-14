@@ -30,6 +30,15 @@ namespace Vinarija.Api.Controllers
                 return blogManager ?? (blogManager = new PostManager());
             }
         }
+
+        private GalleryManager galleryManager;
+        public GalleryManager GalleryManager
+        {
+            get
+            {
+                return galleryManager ?? (galleryManager = new GalleryManager());
+            }
+        }
     }
 
 }
