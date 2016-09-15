@@ -34,7 +34,41 @@
         $scope.uploader.queue = [];
     };
 
+    $scope.sortableOptions = {
+        update: function (e, ui) { },
+        start: function (e, ui) {
+        },
+        stop: function (e, ui) { },
+        axis: 'y',
+        helper: function (e, ui) {
+            ui.children().each(function () {
+                $(this).width($(this).width());
+            });
+            return ui;
+        },
+        handle: '.fa-bars'
+    };
+
     loadData();
+
+    $scope.removeImage = function (ev, image) {
+        $scope.removeImage = function (image) {
+            var confirm = $mdDialog.confirm()
+           .title('Brisanje slie')
+           .textContent('Da li ste sigurni da želite da obrišete sliku?')
+           .ariaLabel('Brisanje')
+           .targetEvent(ev)
+           .ok('Da')
+           .cancel('Ne');
+            $mdDialog.show(confirm).then(function () {
+                galleryService.removeImage(image.id).then(function () {
+                    loadData();
+                    $scope.$emit('toast', { message: 'Slika uspešno obrisana!', type: 'success' });
+                });
+            });
+        };
+        
+    };
 
     $scope.cancelUpload = function () {
         $scope.uploader.queue = [];

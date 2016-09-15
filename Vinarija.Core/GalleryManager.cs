@@ -49,5 +49,18 @@ namespace Vinarija.Core
                 }
             }
         }
+
+        public void removeImage(string filePath, int imageId)
+        {
+            using (UnitOfWork uow = new UnitOfWork())
+            {
+                Gallery gallery = uow.GalleryRepository.GetById(imageId);
+                if (gallery != null)
+                {
+                    uow.GalleryRepository.Delete(imageId);
+                    if (File.Exists(filePath + "\\" + gallery.FilePath)) File.Delete(filePath + "\\" + gallery.FilePath);
+                }
+            }
+        }
     }
 }

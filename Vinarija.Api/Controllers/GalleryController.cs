@@ -36,5 +36,14 @@ namespace Vinarija.Api.Controllers
 
             GalleryManager.AddImage(rootFolder, postedFile.InputStream, (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds + "_" + postedFile.FileName);
         }
+
+        [TokenAuthorize]
+        [HttpDelete]
+        public void RemoveImage(int imageId)
+        {
+            string filePath = HttpContext.Current.Server.MapPath($"~/Content/Gallery/");
+
+            GalleryManager.removeImage(filePath, imageId);
+        }
     }
 }
