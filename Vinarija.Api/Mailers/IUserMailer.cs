@@ -5,7 +5,7 @@ using System.Web;
 using Mvc.Mailer;
 using Vinarija.Api.Models;
 
-namespace Contact.Api.Mailers
+namespace Vinarija.Api.Mailers
 {
     public interface IUserMailer
     {

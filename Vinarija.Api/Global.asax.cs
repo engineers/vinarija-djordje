@@ -9,7 +9,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Vinarija.Api.Helpers;
 
-namespace Contact.Api
+namespace Vinarija.Api
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

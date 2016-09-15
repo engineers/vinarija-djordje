@@ -52,7 +52,7 @@
       <Name>Vinarija.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Vinarija.Data\Vinarija.Data.csproj">
-      <Project>{537874a1-790c-48da-8ef6-fcbf5edc1858}</Project>
+      <Project>{a7fa128a-b097-4f45-97a9-2638c036a7aa}</Project>
       <Name>Vinarija.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Vinarija.Entities\Vinarija.Entities.csproj">

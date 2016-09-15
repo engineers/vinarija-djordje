@@ -24,15 +24,13 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Vinarija.Web", "Vinarija.We
 		SlnRelativePath = "Vinarija.Web\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Api", "Contact.Api\Vinarija.Api.csproj", "{D3A50C65-1313-44B0-9FE4-FB90D5C9E67B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Api", "Vinarija.Api\Vinarija.Api.csproj", "{D3A50C65-1313-44B0-9FE4-FB90D5C9E67B}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Vinarija.Data.Sql", "Vinarija.Data.Sql\Vinarija.Data.Sql.sqlproj", "{58966B7C-7D25-4592-8CF0-363B976706A2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Data.Model", "Vinarija.Data.Model\Vinarija.Data.Model.csproj", "{02463EA7-8A91-43B4-9308-8EF62AEFFDFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Entities", "Vinarija.Entities\Vinarija.Entities.csproj", "{8E26B250-BB44-44BA-B846-B22D2FD328AC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Data", "Vinarija.Data\Vinarija.Data.csproj", "{537874A1-790C-48DA-8EF6-FCBF5EDC1858}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Core", "Vinarija.Core\Vinarija.Core.csproj", "{76428493-465E-4C6E-AF76-24AD340A67F0}"
 EndProject
@@ -58,6 +56,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Vinarija.Cms", "Vinarija.Cm
 		VWDPort = "32851"
 		SlnRelativePath = "Vinarija.Cms\"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vinarija.Data", "Vinarija.Data\Vinarija.Data.csproj", "{A7FA128A-B097-4F45-97A9-2638C036A7AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +87,6 @@ Global
 		{8E26B250-BB44-44BA-B846-B22D2FD328AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E26B250-BB44-44BA-B846-B22D2FD328AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E26B250-BB44-44BA-B846-B22D2FD328AC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{537874A1-790C-48DA-8EF6-FCBF5EDC1858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{537874A1-790C-48DA-8EF6-FCBF5EDC1858}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{537874A1-790C-48DA-8EF6-FCBF5EDC1858}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{537874A1-790C-48DA-8EF6-FCBF5EDC1858}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76428493-465E-4C6E-AF76-24AD340A67F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{76428493-465E-4C6E-AF76-24AD340A67F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76428493-465E-4C6E-AF76-24AD340A67F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -103,6 +99,10 @@ Global
 		{53600FE5-5A00-4150-94C5-3443CA3459DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53600FE5-5A00-4150-94C5-3443CA3459DB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{53600FE5-5A00-4150-94C5-3443CA3459DB}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A7FA128A-B097-4F45-97A9-2638C036A7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7FA128A-B097-4F45-97A9-2638C036A7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7FA128A-B097-4F45-97A9-2638C036A7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7FA128A-B097-4F45-97A9-2638C036A7AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
