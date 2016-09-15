@@ -349,7 +349,7 @@ section.intro .main-logo {
   position: absolute;
   top: 50px;
   left: 75px;
-  z-index: 1;
+  z-index: 5;
   cursor: pointer;
 }
 section.intro .logo-headline {
@@ -464,16 +464,14 @@ section.footer .footer-container .social-icons {
   margin-top: 70px;
 }
 section.footer .footer-container .social-icons .facebook {
-  height: 21px;
+  height: 53px;
+  width: 53px;
   margin-right: 15px;
+  background: url(../images/sprite.svg) -230px -191px no-repeat;
   cursor: pointer;
 }
-section.footer .footer-container .social-icons .facebook {
-  width: 11px;
-  background: url('../images/sprite.svg') -121px -81px no-repeat;
-}
 section.footer .footer-container .social-icons .facebook:hover {
-  background: url('../images/sprite.svg') -341px -81px no-repeat;
+  background: url(../images/sprite.svg) -299px -191px no-repeat;
 }
 section.footer .footer-container .pages .first-colum {
   margin-right: 65px;
@@ -1048,7 +1046,7 @@ section.footer .copyright {
 }
 .home-page .slider-home-page .home-slider {
   width: 100%;
-  height: 1050px;
+  height: 100%;
   outline: none;
 }
 .home-page .slider-home-page .home-slider.first {
@@ -1282,6 +1280,9 @@ section.footer .copyright {
 }
 .winery-page .winery-location .position .content {
   width: 100%;
+}
+.winery-page .location-section {
+  direction: rtl;
 }
 .winery-page .location {
   width: 50%;
@@ -1556,6 +1557,7 @@ section.footer .copyright {
   font-size: 36px;
   color: #333;
   font-family: 'Minion Pro-Regular';
+  text-align: right;
 }
 .vineyards-page .vineyards-black-sort .text-part .black-wine-position .subtitle {
   margin-bottom: 35px;
@@ -1729,10 +1731,15 @@ section.footer .copyright {
 }
 /*#endregion*/
 /*#region Hamburger menu*/
-.hamburger-menu {
+section.intro .hamburger-menu-mobile {
+  display: none;
+}
+.hamburger-menu,
+.hamburger-menu-mobile {
   display: block;
 }
-.hamburger-menu .menu-nav-overlay {
+.hamburger-menu .menu-nav-overlay,
+.hamburger-menu-mobile .menu-nav-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1741,7 +1748,10 @@ section.footer .copyright {
   background: rgba(0, 0, 0, 0.1);
   z-index: 8;
 }
-.hamburger-menu .hamburger-nav .hamburger-container {
+.hamburger-menu .hamburger-nav .hamburger-container,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -1756,16 +1766,25 @@ section.footer .copyright {
   transition: width 0.4s linear;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.09);
 }
-.hamburger-menu .hamburger-nav .hamburger-container.open-menu {
+.hamburger-menu .hamburger-nav .hamburger-container.open-menu,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container.open-menu,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container.open-menu,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container.open-menu {
   width: 25%;
 }
-.hamburger-menu .hamburger-nav .hamburger-container ul {
+.hamburger-menu .hamburger-nav .hamburger-container ul,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container ul,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container ul,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul {
   position: absolute;
   left: 73px;
   top: 40%;
   width: auto;
 }
-.hamburger-menu .hamburger-nav .hamburger-container ul li {
+.hamburger-menu .hamburger-nav .hamburger-container ul li,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container ul li,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container ul li,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1779,17 +1798,32 @@ section.footer .copyright {
   font-family: 'Minion Pro-Regular';
 }
 .hamburger-menu .hamburger-nav .hamburger-container ul li:hover .grey-line,
-.hamburger-menu .hamburger-nav .hamburger-container ul li.selected .grey-line {
+.hamburger-menu-mobile .hamburger-nav .hamburger-container ul li:hover .grey-line,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container ul li:hover .grey-line,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li:hover .grey-line,
+.hamburger-menu .hamburger-nav .hamburger-container ul li.selected .grey-line,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container ul li.selected .grey-line,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container ul li.selected .grey-line,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li.selected .grey-line {
   display: table;
   margin-top: 23px;
 }
-.hamburger-menu .hamburger-nav .hamburger-container ul li a {
+.hamburger-menu .hamburger-nav .hamburger-container ul li a,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container ul li a,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container ul li a,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li a {
   color: #8a8a8a;
 }
-.hamburger-menu .hamburger-nav .hamburger-container ul li a:hover {
+.hamburger-menu .hamburger-nav .hamburger-container ul li a:hover,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container ul li a:hover,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container ul li a:hover,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li a:hover {
   color: #e2e1e1;
 }
-.hamburger-menu .hamburger-nav .hamburger-container ul li.selected a {
+.hamburger-menu .hamburger-nav .hamburger-container ul li.selected a,
+.hamburger-menu-mobile .hamburger-nav .hamburger-container ul li.selected a,
+.hamburger-menu .hamburger-nav-mobile .hamburger-container ul li.selected a,
+.hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li.selected a {
   color: #e2e1e1;
 }
 .hamburger-btn {
@@ -2165,10 +2199,10 @@ section.footer .copyright {
   align-items: flex-end;
 }
 .change-text .content-position .degrees {
-  margin: 100px 0 40px 25px;
+  margin: 15px 0 40px 25px;
 }
 .change-text .content-position .temp {
-  margin: 100px 0 40px 0;
+  margin: 15px 0 40px 0;
 }
 .change-text .content-position .degrees,
 .change-text .content-position .percentage {
@@ -2182,6 +2216,9 @@ section.footer .copyright {
 .change-text .content-position .percentage {
   margin-left: 25px;
 }
+.change-text .content-position .read-more-box {
+  margin-top: 40px;
+}
 .white-wine-page .red-sort {
   background: url('../images/white-sort.jpg') center center no-repeat;
   background-size: cover;
@@ -2193,6 +2230,7 @@ section.footer .copyright {
   width: 100%;
   height: 740px;
   background: url('../images/territory-background.jpg') center center no-repeat;
+  background-size: cover;
 }
 .territory-page .info .text-wrapper {
   position: absolute;
@@ -2277,6 +2315,7 @@ section.footer .copyright {
 .territory-page .fauna {
   width: 100%;
   height: 733px;
+  direction: rtl;
 }
 .territory-page .fauna .left-box {
   width: 50%;
@@ -2296,6 +2335,9 @@ section.footer .copyright {
   margin-left: 110px;
 }
 .territory-page .fauna .right-box .text-wrapper .title {
+  width: 81%;
+  float: left;
+  text-align: left;
   margin-bottom: 30px;
   font-size: 36px;
   font-family: 'Minion Pro-Regular';
@@ -2314,6 +2356,7 @@ section.footer .copyright {
   font-size: 18px;
   font-family: 'TenorSans';
   color: #333;
+  text-align: left;
 }
 /*#endregion*/
 /*FF*/

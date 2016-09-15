@@ -182,24 +182,78 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  section.footer .copyright {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
   section.footer .footer-container .contact-form {
     width: 100%;
+  }
+  section.footer .footer-container .contact-form p {
+    margin-bottom: 40px;
   }
   section.footer .footer-container .contact-form input,
   section.footer .footer-container .contact-form textarea,
   section.footer .footer-container .contact-form .send-btn {
     width: 100%;
   }
+  .change-text .content-position {
+    left: 25px;
+    width: 90%;
+  }
+  .change-text .content-position .text {
+    font-size: 16px;
+  }
+  .change-text .content-position .temp {
+    margin: 0 0 40px 0;
+  }
+  .change-text .content-position .degrees {
+    margin: 0 0 40px 25px;
+  }
+  .winery-page .idea {
+    background: url(../images/winery1-tablet.jpg) -90px 0 no-repeat;
+  }
+  .winery-page .production {
+    background: url(../images/production.jpg) -38px 0 no-repeat;
+  }
+  .home-page .slider-home-page .prev-arrow {
+    left: 50px;
+  }
+  .home-page .slider-home-page .next-arrow {
+    right: 50px;
+  }
+  .home-page .hover-section .first-img {
+    background: url(../images/first-section-hover.png) -142px 0 no-repeat;
+  }
+  .home-page .hover-section .first-img:hover {
+    background: url(../images/first-section.png) -142px 0 no-repeat;
+  }
+  .home-page .hover-section .third-img {
+    background: url(../images/fourth-section-hover.png) -30px 0 no-repeat;
+  }
+  .home-page .hover-section .third-img:hover {
+    background: url(../images/fourth-section.png) -30px 0 no-repeat;
+  }
+  .home-page .hover-section .fifth-img {
+    background: url(../images/fifth-section-hover.png) 0 0 no-repeat;
+  }
+  .home-page .hover-section .fifth-img:hover {
+    background: url(../images/fifth-section.png) 0 0 no-repeat;
+  }
+  .vineyards-page .vineyards-white-sort .white-wine-img {
+    background: url(../images/vineyards2.jpg) right center no-repeat;
+  }
+  .territory-page .fauna .left-box {
+    background: url(../images/fauna-background.jpg) -329px 0 no-repeat;
+  }
+  .territory-page .flora .right-box {
+    background: url(../images/flora-background.jpg) right center no-repeat;
+  }
+  .territory-page .info {
+    background: url(../images/territory-background.jpg) -185px 0 no-repeat;
+  }
 }
-@media screen and (max-width: 768px) {
-  .visit-winery-page section.contact .contact-info-wrapper .icon {
-    width: 40px;
-    height: 55px;
-    border: none;
-  }
-  .territory-page .info .text-wrapper {
-    left: 10%;
-  }
+@media screen and (max-width: 1000px) {
   .home-page .ivent-calendar .calendar-img {
     display: none;
   }
@@ -209,12 +263,224 @@
   .home-page .ivent-calendar .calendar-news .title {
     line-height: 30px;
   }
+}
+@media screen and (max-width: 850px) {
+  section.footer .footer-container {
+    display: table;
+    margin: 0 auto;
+    padding: 95px 0 0 0;
+  }
+  section.footer .footer-container .footer-logo {
+    margin: 0 auto;
+    display: table;
+  }
+  section.footer .footer-container .social-icons {
+    margin-bottom: 70px;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  section.footer .footer-container .social-icons .facebook {
+    margin-right: 0;
+  }
+  section.footer .footer-container .pages {
+    display: none;
+  }
+  section.footer .footer-container .contact-info p,
+  section.footer .footer-container .contact-info .title {
+    text-align: center;
+  }
+  section.footer .footer-container .contact-info p {
+    margin-bottom: 30px;
+  }
+  section.footer .footer-container .contact-info .contact-box {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  section.footer .footer-container .contact-form {
+    width: 100%;
+    margin: 70px auto 0;
+    display: table;
+  }
+  section.footer .footer-container .contact-form p {
+    display: none;
+  }
+  section.footer .copyright {
+    text-align: center;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .visit-winery-page section.about .default-wrapper {
+    width: 95%;
+  }
+  .winery-page .location-section,
+  .winery-page .idea-section,
+  .winery-page .production-section {
+    display: table;
+  }
+  .winery-page .idea {
+    background: url(../images/winery1-tablet.jpg) left center no-repeat;
+    background-size: cover;
+  }
+  .winery-page .idea,
+  .winery-page .text-part,
+  .winery-page .location,
+  .winery-page .production {
+    width: 100%;
+  }
+  .winery-page .production-text {
+    height: 480px !important;
+  }
+  .winery-page .text-part {
+    height: 720px;
+  }
+  .winery-page .winery-location {
+    height: 590px;
+  }
+  .winery-page .welcome-to-winary .position-content .content {
+    width: 95%;
+  }
+  .territory-page .info {
+    position: relative;
+    width: 100%;
+    height: 740px;
+  }
+  .territory-page .info .text-wrapper {
+    left: 5%;
+  }
+  .territory-page .info .text-wrapper .title,
+  .territory-page .info .text-wrapper .subtitle {
+    text-align: center;
+  }
+  .territory-page .info .text-wrapper p {
+    width: 95%;
+    text-align: center;
+    line-height: 25px;
+  }
+  .territory-page .flora .left-box {
+    height: 410px;
+  }
+  .territory-page .flora,
+  .territory-page .climate {
+    display: table;
+  }
+  .territory-page .flora .text-wrapper,
+  .territory-page .climate .text-wrapper {
+    margin-right: 0;
+    text-align: center;
+    width: 95%;
+  }
+  .territory-page .flora .right-box,
+  .territory-page .climate .right-box,
+  .territory-page .flora .left-box,
+  .territory-page .climate .left-box {
+    width: 100%;
+  }
+  .territory-page .flora .left-box .text-wrapper,
+  .territory-page .climate .left-box .text-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .territory-page .fauna {
+    display: table;
+  }
+  .territory-page .fauna .text-wrapper {
+    margin-right: 0;
+    text-align: center;
+    width: 95%;
+  }
+  .territory-page .fauna .right-box,
+  .territory-page .fauna .left-box {
+    width: 100%;
+  }
+  .territory-page .fauna .right-box {
+    height: 680px;
+  }
+  .territory-page .fauna .right-box .text-wrapper .title {
+    width: 95%;
+  }
+  .territory-page .fauna .left-box {
+    background: url(../images/fauna-background.jpg) center center no-repeat;
+  }
+  .territory-page .fauna .left-box .text-wrapper {
+    margin-left: 0;
+  }
+  .territory-page .fauna .left-box .text-wrapper .title {
+    text-align: center;
+  }
+  .territory-page .fauna .left-box .text-wrapper p {
+    line-height: 25px;
+    text-align: center;
+  }
+  .vineyards-page .vineyards-black-sort .text-part .black-wine-position {
+    margin-right: 30px;
+  }
+  .vineyards-page .vineyards-white-sort .text-part .white-wine-position {
+    margin-left: 30px;
+  }
+  .vineyards-page .vineyards .content {
+    width: 90%;
+  }
+  section.intro .logo-headline {
+    top: 46%;
+    right: 0;
+    left: 0;
+  }
+  section.intro nav {
+    display: none;
+  }
+  section.intro .hamburger-nav-mobile {
+    display: block;
+    position: relative;
+  }
+  section.intro .hamburger-nav-mobile .hamburger-container {
+    height: 100%;
+    left: auto;
+    right: 0;
+  }
+  section.intro .hamburger-nav-mobile .hamburger-container.open-menu {
+    width: 500px;
+  }
+  section.intro .hamburger-nav-mobile .hamburger-container ul {
+    top: 40%;
+  }
+  section.intro .hamburger-nav-mobile .hamburger-container ul li {
+    line-height: 17px;
+  }
+  section.intro .hamburger-nav-mobile .hamburger-container ul li:hover .grey-line,
+  section.intro .hamburger-nav-mobile .hamburger-container ul li.selected .grey-line {
+    margin-top: 6px;
+  }
+  section.intro .hamburger-menu-mobile {
+    display: block;
+  }
+  section.intro .hamburger-menu-mobile .menu-nav-overlay {
+    z-index: 1;
+  }
+  section.intro .hamburger-menu-mobile .label {
+    display: none;
+  }
+  section.intro .hamburger-menu-mobile .hamburger-btn {
+    top: 8%;
+    left: 88%;
+  }
+  .visit-winery-page section.contact .contact-info-wrapper .icon {
+    width: 40px;
+    height: 55px;
+    border: none;
+  }
+  .home-page .home-bck1 {
+    height: 250px;
+  }
   .home-page .red-wine .bottle {
     width: 50%;
   }
   .home-page .red-wine .bottle .bottle-img.freska {
-    margin: 190px -365px;
-    transform: scale(0.6, 0.6) rotate(-90deg);
+    height: 740px;
+    width: 100%;
+    margin: 0;
+    background: url('../images/freska-crvena.png') center center no-repeat;
+    transform: scale(1);
   }
   .home-page .red-wine .description {
     width: 50%;
@@ -223,8 +489,11 @@
     width: 50%;
   }
   .home-page .white-wine .bottle .bottle-img.freska-white {
-    margin: 190px -365px;
-    transform: scale(0.6, 0.6) rotate(-90deg);
+    height: 740px;
+    width: 100%;
+    margin: 0;
+    background: url('../images/freska-bela.png') center center no-repeat;
+    transform: scale(1);
   }
   .home-page .white-wine .description {
     width: 50%;

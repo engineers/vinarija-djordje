@@ -312,7 +312,7 @@ section.intro {
         position: absolute;
         top: 50px;
         left: 75px;
-        z-index: 1;
+        z-index: 5;
         cursor: pointer;
     }
 
@@ -452,17 +452,14 @@ section.footer {
             margin-top: 70px;
 
             .facebook {
-                height: 21px;
+                height: 53px;
+                width: 53px;
                 margin-right: 15px;
+                background: url(../images/sprite.svg) -230px -191px no-repeat;
                 cursor: pointer;
-            }
-
-            .facebook {
-                width: 11px;
-                background: url('../images/sprite.svg') -121px -81px no-repeat;
 
                 &:hover {
-                    background: url('../images/sprite.svg') -341px -81px no-repeat;
+                    background: url(../images/sprite.svg) -299px -191px no-repeat;
                 }
             }
         }
@@ -1124,7 +1121,7 @@ section.footer {
 
         .home-slider {
             width: 100%;
-            height: 1050px;
+            height: 100%;
             outline: none;
 
             &.first {
@@ -1411,6 +1408,10 @@ section.footer {
                 width: 100%;
             }
         }
+    }
+
+    .location-section {
+        direction: rtl;
     }
 
     .location {
@@ -1740,6 +1741,7 @@ section.footer {
                     font-size: 36px;
                     color: #333;
                     font-family: 'Minion Pro-Regular';
+                    text-align: right;
                 }
 
                 .subtitle {
@@ -1953,7 +1955,15 @@ section.footer {
 /*#endregion*/
 
 /*#region Hamburger menu*/
-.hamburger-menu {
+section.intro {
+    .hamburger-menu-mobile {
+        display: none;
+    }
+}
+
+
+.hamburger-menu,
+.hamburger-menu-mobile {
     display: block;
 
     .menu-nav-overlay {
@@ -1966,7 +1976,8 @@ section.footer {
         z-index: 8;
     }
 
-    .hamburger-nav {
+    .hamburger-nav,
+    .hamburger-nav-mobile {
         .hamburger-container {
             position: fixed;
             top: 0;
@@ -2462,11 +2473,11 @@ section.footer {
         }
 
         .degrees {
-            margin: 100px 0 40px 25px;
+            margin: 15px 0 40px 25px;
         }
 
         .temp {
-            margin: 100px 0 40px 0;
+            margin: 15px 0 40px 0;
         }
 
         .degrees,
@@ -2482,6 +2493,10 @@ section.footer {
 
         .percentage {
             margin-left: 25px;
+        }
+
+        .read-more-box {
+            margin-top: 40px;
         }
     }
 }
@@ -2501,6 +2516,7 @@ section.footer {
         width: 100%;
         height: 740px;
         background: url('../images/territory-background.jpg') center center no-repeat;
+        background-size: cover;
 
         .text-wrapper {
             position: absolute;
@@ -2594,6 +2610,7 @@ section.footer {
     .fauna {
         width: 100%;
         height: 733px;
+        direction: rtl;
 
         .left-box {
             width: 50%;
@@ -2614,6 +2631,9 @@ section.footer {
                 margin-left: 110px;
 
                 .title {
+                    width: 81%;
+                    float: left;
+                    text-align: left;
                     margin-bottom: 30px;
                     font-size: 36px;
                     font-family: 'Minion Pro-Regular';
@@ -2634,6 +2654,7 @@ section.footer {
                     font-size: 18px;
                     font-family: 'TenorSans';
                     color: #333;
+                    text-align: left;
                 }
             }
         }

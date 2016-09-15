@@ -14,4 +14,10 @@
             $scope.contactMessage = 'Something went wrong, please try again.';
         });
     };
+
+    $scope.hamburgerMenu = false;
+
+    $scope.showMenu = function () {
+        $scope.hamburgerMenu = !$scope.hamburgerMenu;
+    };
 });

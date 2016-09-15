@@ -43,6 +43,51 @@
             </li>
         </ul>
     </nav>
+
+    <div class="hamburger-menu-mobile">
+        <div ng-show="hamburgerMenu" class="menu-nav-overlay" ng-click="showMenu()"></div>
+        <nav class="hamburger-nav-mobile">
+            <div class="hamburger-container" ng-class="{'open-menu': hamburgerMenu}" set-height>
+                <ul ng-click="showMenu()">
+                    <li class="flex">
+                        <div class="grey-line"></div>
+                        <a scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home">почетна</a>
+                    </li>
+                    <li class="flex selected">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.wines">вина</a>
+                    </li>
+                    <li class="flex">
+                        <div class="grey-line"></div>
+                        <a scroll-to-section section-to-scroll="winery-page" time="5000" state="layout.winery">винарија</a>
+                    </li>
+                    <li class="flex">
+                        <div class="grey-line"></div>
+                        <a scroll-to-section section-to-scroll="vineyards-page" time="5000" state="layout.vineyards">виногради</a>
+                    </li>
+                    <li class="flex">
+                        <div class="grey-line"></div>
+                        <a scroll-to-section section-to-scroll="visit-winery-page" time="5000" state="layout.visit-winery">посета винарији</a>
+                    </li>
+                    <li class="flex">
+                        <div class="grey-line"></div>
+                        <a scroll-to-section section-to-scroll="actualities-page" time="5000" state="layout.actualities">актуелности</a>
+                    </li>
+                    <li class="flex">
+                        <div class="grey-line"></div>
+                        <a scroll-to-section section-to-scroll="territory-page" time="5000" state="layout.territory">делиблатска пешчара</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hamburger-btn" ng-click="showMenu()" ng-class="{'open': hamburgerMenu}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="label">Мени</div>
+    </div>
 </section>
 
 <div ui-view></div>
@@ -51,7 +96,7 @@
     <div class="footer-container flex">
         <div>
             <a target="_blank" href="https://www.google.rs/maps/place/44%C2%B059'41.9%22N+20%C2%B056'25.2%22E/@44.9949618,20.9381543,642m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d44.994958!4d20.940343?hl=en">
-                <img class="" src="../assets/images/logo.svg" />
+                <img class="footer-logo" src="../assets/images/logo.svg" />
             </a>
             <div class="social-icons flex">
                 <a class="facebook" href="https://www.facebook.com/djordjevinarija/" target="_blank"></a>
