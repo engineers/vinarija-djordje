@@ -5,7 +5,9 @@ var app = angular.module('App', [
   'md.data.table',
   'angularFileUpload',
   'LocalStorageModule',
-  'textAngular'
+  'textAngular',
+  'slickCarousel',
+  'ui.sortable'
 ])
 .config(function ($urlRouterProvider, jwtInterceptorProvider, $httpProvider, $locationProvider, jwtOptionsProvider, localStorageServiceProvider, $mdThemingProvider) {
     $urlRouterProvider.otherwise('/blog');

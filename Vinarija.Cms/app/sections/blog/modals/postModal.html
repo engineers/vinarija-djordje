@@ -53,10 +53,10 @@
                                     <span ng-show="!item.progress">-</span>
                                 </td>
                                 <td md-cell class="text-center">
-                                    <span ng-show="item.isSuccess"><i class="fa fa-ban" aria-hidden="true"></i></span>
-                                    <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
-                                    <span ng-show="item.isError"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
-                                    <span ng-show="!item.isError || !item.isCancel || !item.isSuccess">-</span>
+                                    <span ng-show="item.isSuccess"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    <span ng-show="item.isCancel"><i class="fa fa-ban"></i></span>
+                                    <span ng-show="item.isError"><i class="fa fa-ban" aria-hidden="true"></i></span>
+                                    <span ng-show="!item.isError && !item.isCancel && !item.isSuccess">-</span>
                                 </td>
                                 <td md-cell nowrap>
                                     <md-button type="button" aria-label="Delete" class="md-raised" ng-click="item.remove()">

@@ -8,77 +8,47 @@
         }
     });
 })
-.controller('GalleryController', function ($scope, blogService, $timeout, $mdDialog) {
-    $scope.params = { pageSize: 10, pageNumber: 1 };
-    loadData();
+.controller('GalleryController', function ($scope, blogService, $timeout, $mdDialog, FileUploader, config, localStorageService) {
+    $scope.uploader = new FileUploader({
+        url: config.baseAddress + 'post/uploadImage',
+        headers: {
+            'Authorization': localStorageService.get('token')
+        }
+    });
 
-    $scope.onPaginate = function (pageNumber, pageSize) {
-        $scope.params.pageNumber = pageNumber;
-        $scope.params.pageSize = pageSize;
-        loadData();
+    $scope.uploader.filters.push({
+        name: 'imageFilter',
+        fn: function (item /*{File|FileLikeObject}*/, options) {
+            var type = '|' + item.type.slice(item.type.lastIndexOf('/') + 1) + '|';
+            return '|jpg|png|jpeg|bmp|gif|'.indexOf(type) !== -1;
+        }
+    });
+
+    $scope.uploader.onAfterAddingFile = function () {
+        if ($scope.uploader.queue.length > 1) {
+            $scope.uploader.queue.splice(0, 1);
+        }
     };
 
-    $scope.onReorder = function (sort) {
-        $scope.params.sort = sort;
-        loadData();
+    $scope.uploader.onBeforeUploadItem = function (item) {
+        item.formData.push({ 'id': $scope.post.id });
     };
 
-    $scope.openModal = function (ev, post) {
-        $mdDialog.show({
-            controller: 'PostModalController',
-            templateUrl: 'app/sections/blog/modals/postModal.html',
-            parent: angular.element(document.body),
-            targetEvent: ev,
-            size: 'lg',
-            clickOutsideToClose: true,
-            locals: {
-                post: angular.copy(post)
-            }
-        })
-		.then(function (data) {
-		    loadData();
-		}, function () {
-		});
-    };
-
-    $scope.removeModal = function (ev, post) {
-        var confirm = $mdDialog.confirm()
-		.title('Brisanje posta')
-		.textContent('Da li ste sigurni da želite da obrišete post?')
-		.ariaLabel('Brisanje')
-		.targetEvent(ev)
-		.ok('Da')
-		.cancel('Ne');
-        $mdDialog.show(confirm).then(function () {
-            blogService.remove(post.id).then(function (res) {
-                $scope.params.pageNumber = 1;
-                loadData();
-            });
-        });
-    };
-
-    $scope.toggleActive = function (post) {
-        blogService.activateDeactivate(post);
-    };
-
-    var filterTextTimeout;
-    $scope.search = function () {
-        if (filterTextTimeout) $timeout.cancel(filterTextTimeout);
-        filterTextTimeout = $timeout(function () {
-            loadData();
-        }, 250);
+    $scope.uploader.onCompleteAll = function () {
+        $scope.loading = false;
+        $mdDialog.hide($scope.response);
     };
 
     function loadData() {
         $scope.loading = true;
-        $scope.promise = blogService.get($scope.params).then(function (res) {
-            $scope.posts = res.posts;
-            $scope.totalItems = res.totalCount;
+        $scope.promise = galleryService.getAll().then(function (images) {
+            $scope.galleryImages = images;
             $scope.loading = false;
-        }, function() {
+        }, function () {
             $scope.loading = false;
         });
 
         return $scope.promise;
     }
+    
 });
