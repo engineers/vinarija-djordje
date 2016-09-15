@@ -8,9 +8,9 @@
         }
     });
 })
-.controller('GalleryController', function ($scope, blogService, $timeout, $mdDialog, FileUploader, config, localStorageService) {
+.controller('GalleryController', function ($scope, galleryService, $timeout, $mdDialog, FileUploader, config, localStorageService) {
     $scope.uploader = new FileUploader({
-        url: config.baseAddress + 'post/uploadImage',
+        url: config.baseAddress + 'gallery/uploadImage',
         headers: {
             'Authorization': localStorageService.get('token')
         }
@@ -25,9 +25,7 @@
     });
 
     $scope.uploader.onAfterAddingFile = function () {
-        if ($scope.uploader.queue.length > 1) {
-            $scope.uploader.queue.splice(0, 1);
-        }
+        $scope.uploadingImages = true;
     };
 
     $scope.uploader.onBeforeUploadItem = function (item) {
@@ -35,13 +33,15 @@
     };
 
     $scope.uploader.onCompleteAll = function () {
-        $scope.loading = false;
+        $scope.uploadingImages = false;
         $mdDialog.hide($scope.response);
     };
 
+    loadData();
+
     function loadData() {
         $scope.loading = true;
-        $scope.promise = galleryService.getAll().then(function (images) {
+        $scope.promise = galleryService.getImages().then(function (images) {
             $scope.galleryImages = images;
             $scope.loading = false;
         }, function () {
