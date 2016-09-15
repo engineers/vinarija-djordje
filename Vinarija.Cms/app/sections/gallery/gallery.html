@@ -27,7 +27,7 @@
             </tbody>
         </table>
 
-        <div class="col-md-9" style="margin-bottom: 40px" ng-show="uploader.queue.length > 0">
+        <div class="margin-bottom-40" ng-show="uploader.queue.length > 0">
             <table md-table class="table">
                 <thead md-head>
                     <tr md-row>
@@ -66,6 +66,15 @@
                 <div>
                     <md-progress-linear md-mode="determinate" value="{{uploader.progress}}"></md-progress-linear>
                 </div>
+            </div>
+
+            <div layout="row">
+                <md-input-container>
+                    <md-button class="md-raised md-primary" ng-click="uploadImages()">Dodaj slike</md-button>
+                </md-input-container>
+                <md-input-container>
+                    <md-button class="md-raised" ng-click="cancelUpload()">Nazad</md-button>
+                </md-input-container>
             </div>
         </div>
     </div>

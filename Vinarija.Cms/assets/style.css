@@ -377,9 +377,12 @@ md-sidenav.md-locked-open {
 
 div[text-angular] div[contenteditable="true"] {
     border: 1px solid rgba(0,0,0,0.12);
-
 }
 
 div[text-angular-toolbar] {
     margin-bottom: 5px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
 }

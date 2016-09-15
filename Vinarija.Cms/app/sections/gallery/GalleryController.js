@@ -25,19 +25,22 @@
     });
 
     $scope.uploader.onAfterAddingFile = function () {
-        $scope.uploadingImages = true;
-    };
-
-    $scope.uploader.onBeforeUploadItem = function (item) {
-        item.formData.push({ 'id': $scope.post.id });
     };
 
     $scope.uploader.onCompleteAll = function () {
         $scope.uploadingImages = false;
-        $mdDialog.hide($scope.response);
+        $scope.uploader.queue = [];
     };
 
     loadData();
+
+    $scope.cancelUpload = function () {
+        $scope.uploader.queue = [];
+    };
+
+    $scope.uploadImages = function () {
+        $scope.uploader.uploadAll();
+    };
 
     function loadData() {
         $scope.loading = true;
@@ -50,5 +53,4 @@
 
         return $scope.promise;
     }
-    
 });
