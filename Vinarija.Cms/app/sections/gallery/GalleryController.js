@@ -11,6 +11,14 @@
 .controller('GalleryController', function ($scope, galleryService, $timeout, $mdDialog, FileUploader, config, localStorageService) {
     $scope.oldGallery = [];
 
+    $scope.slickConfig = {
+        enabled: true,
+        autoplay: true,
+        draggable: true,
+        autoplaySpeed: 3000,
+        method: {}
+    };
+
     $scope.uploader = new FileUploader({
         url: config.baseAddress + 'gallery/uploadImage',
         headers: {
@@ -26,12 +34,8 @@
         }
     });
 
-    $scope.slickConfig = {
-        enabled: true,
-        autoplay: true,
-        draggable: true,
-        autoplaySpeed: 3000,
-        method: {}
+    $scope.uploader.onAfterAddingFile = function (fileItem) {
+        $scope.uploadingImages = true;
     };
 
     $scope.uploader.onCompleteAll = function () {
@@ -67,7 +71,7 @@
 
     $scope.removeImage = function (ev, image) {
         var confirm = $mdDialog.confirm()
-        .title('Brisanje slie')
+        .title('Brisanje slike')
         .textContent('Da li ste sigurni da želite da obrišete sliku?')
         .ariaLabel('Brisanje')
         .targetEvent(ev)
@@ -83,18 +87,19 @@
 
     $scope.cancelUpload = function () {
         $scope.uploader.queue = [];
+        $scope.uploadingImages = false;
     };
 
     $scope.uploadImages = function () {
         $scope.uploader.uploadAll();
     };
 
-    $scope.cancelReorder = function () {
+    $scope.cancelReordering = function () {
         $scope.galleryImages = angular.copy($scope.oldGallery);
         $scope.reordering = false;
     };
 
-    $scope.saveReorder = function () {
+    $scope.saveReordering = function () {
         galleryService.saveReorder().then(function () {
             loadData();
             $scope.reordering = false;

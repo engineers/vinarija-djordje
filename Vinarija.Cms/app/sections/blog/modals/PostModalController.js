@@ -60,7 +60,7 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
 
     $scope.removeImage = function (image) {
         var confirm = $mdDialog.confirm()
-       .title('Brisanje slie')
+       .title('Brisanje slike')
        .textContent('Da li ste sigurni da želite da obrišete sliku?')
        .ariaLabel('Brisanje')
        .targetEvent(ev)
