@@ -26,19 +26,33 @@
         }
     });
 
-    $scope.uploader.onAfterAddingFile = function () {
+    $scope.slickConfig = {
+        enabled: true,
+        autoplay: true,
+        draggable: true,
+        autoplaySpeed: 3000,
+        method: {}
     };
 
     $scope.uploader.onCompleteAll = function () {
         $scope.uploadingImages = false;
         $scope.uploader.queue = [];
+        loadData();
     };
 
     $scope.sortableOptions = {
-        update: function (e, ui) { },
-        start: function (e, ui) {
+        update: function (e, ui) {
+            $scope.reordering = true;
         },
-        stop: function (e, ui) { },
+        start: function (e, ui) {
+            $scope.refreshSlick = true;
+            $scope.$apply();
+
+        },
+        stop: function (e, ui) {
+            $scope.refreshSlick = false;
+            $scope.$apply();
+        },
         axis: 'y',
         helper: function (e, ui) {
             ui.children().each(function () {
@@ -52,22 +66,19 @@
     loadData();
 
     $scope.removeImage = function (ev, image) {
-        $scope.removeImage = function (image) {
-            var confirm = $mdDialog.confirm()
-           .title('Brisanje slie')
-           .textContent('Da li ste sigurni da želite da obrišete sliku?')
-           .ariaLabel('Brisanje')
-           .targetEvent(ev)
-           .ok('Da')
-           .cancel('Ne');
-            $mdDialog.show(confirm).then(function () {
-                galleryService.removeImage(image.id).then(function () {
-                    loadData();
-                    $scope.$emit('toast', { message: 'Slika uspešno obrisana!', type: 'success' });
-                });
+        var confirm = $mdDialog.confirm()
+        .title('Brisanje slie')
+        .textContent('Da li ste sigurni da želite da obrišete sliku?')
+        .ariaLabel('Brisanje')
+        .targetEvent(ev)
+        .ok('Da')
+        .cancel('Ne');
+        $mdDialog.show(confirm).then(function () {
+            galleryService.removeImage(image.id).then(function () {
+                loadData();
+                $scope.$emit('toast', { message: 'Slika uspešno obrisana!', type: 'success' });
             });
-        };
-        
+        });
     };
 
     $scope.cancelUpload = function () {
@@ -92,6 +103,7 @@
 
     function loadData() {
         $scope.loading = true;
+        $scope.refreshSlick = true;
         $scope.promise = galleryService.getImages().then(function (images) {
             _.each(images, function (image) {
                 image.name = image.filePath.substring(image.filePath.indexOf("_") + 1);
@@ -100,6 +112,8 @@
             $scope.galleryImages = images;
             $scope.oldGallery = angular.copy($scope.galleryImages);
             $scope.loading = false;
+            $scope.refreshSlick = false;
+
         }, function () {
             $scope.loading = false;
         });

@@ -59,6 +59,7 @@ namespace Vinarija.Core
                 {
                     uow.GalleryRepository.Delete(imageId);
                     if (File.Exists(filePath + "\\" + gallery.FilePath)) File.Delete(filePath + "\\" + gallery.FilePath);
+                    uow.Save();
                 }
             }
         }

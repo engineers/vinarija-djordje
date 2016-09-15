@@ -18,7 +18,9 @@ app.factory('galleryService', function ($http, config, $rootScope) {
         return $http({
             url: config.baseAddress + 'gallery/removeImage',
             method: 'DELETE',
-            params: { imageId: imageId }
+            params: {
+                imageId: imageId
+            }
         })
         .then(function (response) {
             return response.data;

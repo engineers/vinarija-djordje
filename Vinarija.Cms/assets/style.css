@@ -386,3 +386,7 @@ div[text-angular-toolbar] {
 .margin-bottom-40 {
     margin-bottom: 40px;
 }
+
+slick {
+    width: 100%;
+}
