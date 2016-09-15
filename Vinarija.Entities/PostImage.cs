@@ -17,6 +17,7 @@ namespace Vinarija.Entities
         public int Id { get; set; }
         public string FilePath { get; set; }
         public int PostId { get; set; }
+        public System.DateTime DateCreated { get; set; }
     
         public virtual Post Post { get; set; }
     }

@@ -84,7 +84,7 @@
         return $http({
             url: config.baseAddress + 'post/removeImage',
             method: 'PUT',
-            data: { postId: hotspotId, image: image }
+            data: { postId: postId, postImageId: image.id }
         })
         .then(function (response) {
             return response.data;

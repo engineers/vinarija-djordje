@@ -155,6 +155,7 @@
     <Compile Include="Helpers\ValidateModelAttribute.cs" />
     <Compile Include="Mailers\IUserMailer.cs" />
     <Compile Include="Mailers\UserMailer.cs" />
+    <Compile Include="Models\PostImageModel.cs" />
     <Compile Include="Models\PostActiveDeactiveModel.cs" />
     <Compile Include="Models\PostModel.cs" />
     <Compile Include="Models\UserLoginModel.cs" />

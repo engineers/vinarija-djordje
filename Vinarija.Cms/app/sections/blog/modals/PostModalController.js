@@ -3,11 +3,13 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
     taOptions.toolbar = [
         ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'pre', 'quote'],
         ['bold', 'italics', 'underline', 'strikeThrough', 'ul', 'ol', 'redo', 'undo', 'clear'],
-        ['justifyLeft', 'justifyCenter', 'justifyRight', 'indent', 'outdent'],
+        ['justifyLeft', 'justifyCenter', 'justifyRight', 'indent', 'outdent']
     ];
 
+    $scope.imagePath = config.postImagesPath;
+
     $scope.uploader = new FileUploader({
-        url: config.baseAddress + 'post/upload',
+        url: config.baseAddress + 'post/uploadImage',
         headers : {
             'Authorization': localStorageService.get('token')
         }
@@ -20,6 +22,12 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
             return '|jpg|png|jpeg|bmp|gif|'.indexOf(type) !== -1;
         }
     });
+
+    $scope.uploader.onAfterAddingFile = function () {
+        if ($scope.uploader.queue.length > 1) {
+            $scope.uploader.queue.splice(0, 1);
+        }
+    };
 
     $scope.uploader.onBeforeUploadItem = function (item) {
         item.formData.push({'id': $scope.post.id});
@@ -42,21 +50,18 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
             $scope.response = r;
             $scope.$emit('toast', { message: 'Uspešno sačuvano!', type: 'success' });
             if ($scope.uploader.queue && $scope.uploader.queue.length) {
-                $scope.post.id = r.payload.id;
+                $scope.post.id = r.id;
                 $scope.uploader.uploadAll();
             } else {
                 $mdDialog.hide($scope.response);
             }
-                //$scope.$emit('toast', { message: 'Došlo je do greške, pokusajte kasnije.', type: 'danger' });
         });
     };
 
     $scope.removeImage = function (image) {
         blogService.removeImage($scope.post.id, image).then(function (res) {
-            if (res.success) {
-                $scope.post.photos = res.payload.photos;
-                $scope.$emit('toast', { message: 'Uspešno obrisano!', type: 'success' });
-            }
+            $scope.post.postImages = [];
+            $scope.$emit('toast', { message: 'Slika uspešno obrisana!', type: 'success' });
         });
     };
 

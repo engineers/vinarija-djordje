@@ -31,6 +31,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="FilePath" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="PostId" Type="int" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -105,6 +106,7 @@
           <Property Name="FilePath" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="PostId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Post" Relationship="VinarijaModel.FK_BlogImage_Blog" FromRole="PostImage" ToRole="Post" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <Association Name="FK_BlogImage_Blog">
           <End Type="VinarijaModel.Post" Role="Post" Multiplicity="1" />
@@ -157,6 +159,7 @@
           <EntitySetMapping Name="PostImages">
             <EntityTypeMapping TypeName="VinarijaModel.PostImage">
               <MappingFragment StoreEntitySet="PostImage">
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
                 <ScalarProperty Name="PostId" ColumnName="PostId" />
                 <ScalarProperty Name="FilePath" ColumnName="FilePath" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

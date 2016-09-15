@@ -18,7 +18,7 @@ namespace Vinarija.Data.Repository
         {
             PostPageModel model = new PostPageModel();
 
-            var query = (IQueryable<Post>)dbSet;
+            var query = (IQueryable<Post>)dbSet.Include("PostImages");
 
             if (!string.IsNullOrEmpty(searchTerm))
             {

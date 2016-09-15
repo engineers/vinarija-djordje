@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Vinarija.Common.Models.User;
 using Vinarija.Common.Models.PostPageModel;
+using System.IO;
+using System.Drawing;
+
 
 namespace Vinarija.Core
 {
@@ -86,7 +89,7 @@ namespace Vinarija.Core
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                
+
                 Post postFromDB = uow.PostRepository.GetById(postId);
                 ValidationHelper.ValidateNotNull(postFromDB);
 
@@ -96,6 +99,62 @@ namespace Vinarija.Core
                 uow.Save();
 
                 return postFromDB;
+            }
+        }
+
+        public void RemoveImage(int postId, int postImageId, string rootFolder)
+        {
+            using (UnitOfWork uow = new UnitOfWork())
+            {
+                PostImage postImage = uow.PostImageRepository.Find(pi => pi.Id == postImageId && pi.PostId == postId).FirstOrDefault();
+                if (postImage != null)
+                {
+                    uow.PostImageRepository.Delete(postImage);
+                    uow.Save();
+                    if (File.Exists(rootFolder + "\\" + postImage.FilePath)) File.Delete(rootFolder + "\\" + postImage.FilePath);
+                }
+            }
+        }
+
+        public void AddImage(string rootFolder, Stream inputStream, string fileName, int postId)
+        {
+            if (!Directory.Exists(rootFolder))
+            {
+                Directory.CreateDirectory(rootFolder);
+            }
+
+            if (File.Exists(rootFolder + "\\" + fileName))
+            {
+                throw new ValidationException("Slika sa istim imenom vec postoji!");
+            }
+
+            using (var imageFile = System.Drawing.Image.FromStream(inputStream))
+            {
+                imageFile.Save(rootFolder + "\\" + fileName);
+
+                using (UnitOfWork uow = new UnitOfWork())
+                {
+                    PostImage postImage = uow.PostImageRepository.Find(pi => pi.PostId == postId).FirstOrDefault();
+                    if (postImage != null)
+                    {
+                        postImage.FilePath = fileName;
+                        postImage.DateCreated = DateTime.UtcNow;
+
+                        uow.PostImageRepository.Update(postImage);
+                    }
+                    else
+                    {
+                        PostImage newPostImage = new PostImage
+                        {
+                            FilePath = fileName,
+                            PostId = postId,
+                            DateCreated = DateTime.UtcNow
+                        };
+                        uow.PostImageRepository.Insert(newPostImage);
+                    }
+
+                    uow.Save();
+                }
             }
         }
     }

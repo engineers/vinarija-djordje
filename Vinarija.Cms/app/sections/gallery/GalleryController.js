@@ -1,14 +1,14 @@
 ﻿app.config(function ($stateProvider) {
-    $stateProvider.state('layout.blog', {
-        url: '/blog',
-        controller: 'BlogController',
-        templateUrl: 'app/sections/blog/blog.html',
+    $stateProvider.state('layout.gallery', {
+        url: '/gallery',
+        controller: 'GalleryController',
+        templateUrl: 'app/sections/gallery/gallery.html',
         data: {
             requiresLogin: true
         }
     });
 })
-.controller('BlogController', function ($scope, blogService, $timeout, $mdDialog) {
+.controller('GalleryController', function ($scope, blogService, $timeout, $mdDialog) {
     $scope.params = { pageSize: 10, pageNumber: 1 };
     loadData();
 
