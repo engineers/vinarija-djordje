@@ -9,6 +9,8 @@
     });
 })
 .controller('GalleryController', function ($scope, galleryService, $timeout, $mdDialog, FileUploader, config, localStorageService) {
+    $scope.oldGallery = [];
+
     $scope.uploader = new FileUploader({
         url: config.baseAddress + 'gallery/uploadImage',
         headers: {
@@ -42,10 +44,27 @@
         $scope.uploader.uploadAll();
     };
 
+    $scope.cancelReorder = function () {
+        $scope.galleryImages = angular.copy($scope.oldGallery);
+        $scope.reordering = false;
+    };
+
+    $scope.saveReorder = function () {
+        galleryService.saveReorder().then(function () {
+            loadData();
+            $scope.reordering = false;
+        });
+    };
+
     function loadData() {
         $scope.loading = true;
         $scope.promise = galleryService.getImages().then(function (images) {
+            _.each(images, function (image) {
+                image.name = image.filePath.substring(image.filePath.indexOf("_") + 1);
+                image.filePath = config.galleryImagesPath + image.filePath;
+            });
             $scope.galleryImages = images;
+            $scope.oldGallery = angular.copy($scope.galleryImages);
             $scope.loading = false;
         }, function () {
             $scope.loading = false;

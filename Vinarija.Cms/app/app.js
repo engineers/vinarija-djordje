@@ -64,4 +64,5 @@ var app = angular.module('App', [
 app.constant('config', {
     baseAddress: 'http://localhost:53491/api/',
     postImagesPath: 'http://localhost:53491/Content/Posts/',
+    galleryImagesPath: 'http://localhost:53491/Content/Gallery/',
 });

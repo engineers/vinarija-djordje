@@ -1,6 +1,6 @@
 ﻿<div>
     <span class="padding-bottom-0"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</span>
-    
+
     <div layout="column">
         <br />
         <input ng-show="!post.postImages.length" type="file" nv-file-select="" multiple uploader="uploader" /><br />
@@ -14,10 +14,10 @@
                     <th md-column></th>
                 </tr>
             </thead>
-            <tbody md-body>
-                <tr md-row ng-repeat="image in galleryImages">
+            <tbody md-body ui-sortable="sortableSettings" ng-model="galleryImages">
+                <tr md-row ng-repeat="image in galleryImages track by $index">
                     <td md-cell><i pointer class="fa fa-bars" aria-hidden="true"></i></td>
-                    <td md-cell></td>
+                    <td md-cell ng-bind="image.name"></td>
                     <td md-cell>
                         <md-button type="button" aria-label="Delete" class="md-raised" ng-click="removeImage()">
                             <i class="fa fa-trash" aria-hidden="true"></i>
@@ -26,6 +26,16 @@
                 </tr>
             </tbody>
         </table>
+
+        <div layout="row" ng-if="galleryImages.length">
+            <md-whiteframe class="md-whiteframe-1dp" flex layout layout-align="center center">
+                <slick settings="slickConfig" ng-if="!refreshSlick">
+                    <div ng-repeat="image in galleryImages">
+                        <img height="500" ng-src="{{image.filePath}}" />
+                    </div>
+                </slick>
+            </md-whiteframe>
+        </div>
 
         <div class="margin-bottom-40" ng-show="uploader.queue.length > 0">
             <table md-table class="table">
