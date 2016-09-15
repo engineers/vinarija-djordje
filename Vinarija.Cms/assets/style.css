@@ -2,6 +2,10 @@
     float: right;
 }
 
+[pointer] {
+    cursor: -webkit-grab;
+}
+
 [nomrg], [mrg="0"] {
     margin: 0px !important;
 }

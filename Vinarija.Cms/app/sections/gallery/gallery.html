@@ -1,10 +1,31 @@
 ﻿<div>
     <span class="padding-bottom-0"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</span>
     
-    <div layout="row">
+    <div layout="column">
         <br />
         <input ng-show="!post.postImages.length" type="file" nv-file-select="" multiple uploader="uploader" /><br />
         <br />
+
+        <table md-table class="table" ng-show="galleryImages.length">
+            <thead md-head>
+                <tr md-row>
+                    <th md-column>Redosled</th>
+                    <th md-column>Ime slike</th>
+                    <th md-column></th>
+                </tr>
+            </thead>
+            <tbody md-body>
+                <tr md-row ng-repeat="image in galleryImages">
+                    <td md-cell><i pointer class="fa fa-bars" aria-hidden="true"></i></td>
+                    <td md-cell></td>
+                    <td md-cell>
+                        <md-button type="button" aria-label="Delete" class="md-raised" ng-click="removeImage()">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </md-button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
         <div class="col-md-9" style="margin-bottom: 40px" ng-show="uploader.queue.length > 0">
             <table md-table class="table">
