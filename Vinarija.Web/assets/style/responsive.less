@@ -330,6 +330,18 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .logo {
+        top: 30px;
+        left: 30px;
+    }
+
+    section.intro {
+        .main-logo {
+            top: 30px;
+            left: 30px;
+        }
+    }
+
     section.footer {
         .copyright {
             margin-top: 30px;
@@ -445,6 +457,76 @@
             background: url(../images/territory-background.jpg) -185px 0 no-repeat;
         }
     }
+
+    .wines-page {
+        .wine-selection {
+            .red-wine {
+                .logo {
+                    top: 30px;
+                    left: 30px;
+                }
+
+                .wine-position {
+                    top: 55%;
+
+                    .title {
+                        margin-bottom: -115px;
+                        font-size: 30px;
+                    }
+
+                    .red-bottle {
+                        background: url('../images/freska-crvena.png') center center no-repeat;
+                        transform: scale(.6);
+                        height: 678px;
+                        width: 100%;
+                    }
+
+                    .read-more-box {
+                        margin-right: 159px;
+                        position: relative;
+                        top: -100px;
+                    }
+                }
+
+                .hamburger-menu {
+                    .hamburger-nav {
+                        .hamburger-container {
+                            ul {
+                                top: 57%;
+
+                                li {
+                                    line-height: 40px;
+
+                                    &.selected {
+                                        .grey-line {
+                                            margin-top: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .hamburger-btn {
+                        top: 50%;
+                    }
+
+                    .label {
+                        top: 50%;
+                    }
+                }
+            }
+
+            .white-wine {
+                .wine-position {
+                    .white-bottle {
+                        width: 230px;
+                        background: url('../images/freska-bela.png') center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -526,13 +608,26 @@
 }
 
 @media screen and (max-width: 768px) {
-    .visit-winery-page {
-        section.about {
-            .default-wrapper {
-                width: 95%;
+    .actualities-page {
+        .ivent-calendar {
+            .calendar-news {
+                width: 70%;
+            }
+
+            .calendar-img {
+                &.first,
+                &.second,
+                &.third,
+                &.fourth,
+                &.fifth,
+                &.sixth {
+                    display: none;
+                }
             }
         }
     }
+
+
 
     .winery-page {
         .location-section,
@@ -691,6 +786,19 @@
                 width: 90%;
             }
         }
+
+        .land {
+            display: table;
+
+            .text-part {
+                height: 560px;
+            }
+
+            .land-img,
+            .text-part {
+                width: 100%;
+            }
+        }
     }
 
     section.intro {
@@ -746,13 +854,21 @@
             }
 
             .hamburger-btn {
-                top: 8%;
+                top: 62px;
                 left: 88%;
             }
         }
     }
 
     .visit-winery-page {
+        .visit-winery-page {
+            section.about {
+                .default-wrapper {
+                    width: 95%;
+                }
+            }
+        }
+
         section.contact {
             .contact-info-wrapper {
                 .icon {

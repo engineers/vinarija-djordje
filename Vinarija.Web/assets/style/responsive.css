@@ -182,6 +182,14 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .logo {
+    top: 30px;
+    left: 30px;
+  }
+  section.intro .main-logo {
+    top: 30px;
+    left: 30px;
+  }
   section.footer .copyright {
     margin-top: 30px;
     padding-bottom: 40px;
@@ -252,6 +260,47 @@
   .territory-page .info {
     background: url(../images/territory-background.jpg) -185px 0 no-repeat;
   }
+  .wines-page .wine-selection .red-wine .logo {
+    top: 30px;
+    left: 30px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position {
+    top: 55%;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .title {
+    margin-bottom: -115px;
+    font-size: 30px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .red-bottle {
+    background: url('../images/freska-crvena.png') center center no-repeat;
+    transform: scale(0.6);
+    height: 678px;
+    width: 100%;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box {
+    margin-right: 159px;
+    position: relative;
+    top: -100px;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul {
+    top: 57%;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul li {
+    line-height: 40px;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul li.selected .grey-line {
+    margin-top: 16px;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-btn {
+    top: 50%;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .label {
+    top: 50%;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .white-bottle {
+    width: 230px;
+    background: url('../images/freska-bela.png') center center no-repeat;
+  }
 }
 @media screen and (max-width: 1000px) {
   .home-page .ivent-calendar .calendar-img {
@@ -310,8 +359,16 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .visit-winery-page section.about .default-wrapper {
-    width: 95%;
+  .actualities-page .ivent-calendar .calendar-news {
+    width: 70%;
+  }
+  .actualities-page .ivent-calendar .calendar-img.first,
+  .actualities-page .ivent-calendar .calendar-img.second,
+  .actualities-page .ivent-calendar .calendar-img.third,
+  .actualities-page .ivent-calendar .calendar-img.fourth,
+  .actualities-page .ivent-calendar .calendar-img.fifth,
+  .actualities-page .ivent-calendar .calendar-img.sixth {
+    display: none;
   }
   .winery-page .location-section,
   .winery-page .idea-section,
@@ -421,6 +478,16 @@
   .vineyards-page .vineyards .content {
     width: 90%;
   }
+  .vineyards-page .land {
+    display: table;
+  }
+  .vineyards-page .land .text-part {
+    height: 560px;
+  }
+  .vineyards-page .land .land-img,
+  .vineyards-page .land .text-part {
+    width: 100%;
+  }
   section.intro .logo-headline {
     top: 46%;
     right: 0;
@@ -461,8 +528,11 @@
     display: none;
   }
   section.intro .hamburger-menu-mobile .hamburger-btn {
-    top: 8%;
+    top: 62px;
     left: 88%;
+  }
+  .visit-winery-page .visit-winery-page section.about .default-wrapper {
+    width: 95%;
   }
   .visit-winery-page section.contact .contact-info-wrapper .icon {
     width: 40px;
