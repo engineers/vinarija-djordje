@@ -65,7 +65,7 @@ namespace Vinarija.Api.Controllers
 
         [ValidateModel]
         [TokenAuthorize]
-        [HttpPatch]
+        [HttpPut]
         public Post ActiveDeactive(PostActiveDeactiveModel model)
         {
             Post post = PostManager.ActiveDeactive(model.PostId.Value, model.Active.Value);

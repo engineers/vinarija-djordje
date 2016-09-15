@@ -46,11 +46,30 @@
         });
     };
 
+    factory.activateDeactivate = function (data) {
+        return $http({
+            url: config.baseAddress + 'post/activeDeactive',
+            method: 'PUT',
+            data: {
+                postId: data.id,
+                active: data.active
+            }
+        })
+        .then(function (response) {
+            console.log(response);
+            return response.data;
+        }, function (response) {
+            $rootScope.$emit('toast', { message: response.data.message, type: 'danger' });
+
+            throw 'blogService.update: ' + response.data.message;
+        });
+    };
+
     factory.remove = function (id) {
         return $http({
             url: config.baseAddress + 'post/delete',
             method: 'DELETE',
-            params: { _id: id }
+            params: { postId: id }
         })
         .then(function (response) {
             return response.data;

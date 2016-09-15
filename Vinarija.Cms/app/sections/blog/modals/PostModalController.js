@@ -31,6 +31,9 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
     };
 
     $scope.post = post;
+    if ($scope.post) {
+        $scope.post.date = new Date(post.date);
+    }
 
     $scope.store = function () {
         $scope.loading = true;

@@ -57,6 +57,11 @@
         });
     };
 
+    $scope.toggleActive = function (post) {
+        blogService.activateDeactivate(post).then(function () {
+        });
+    };
+
     var filterTextTimeout;
     $scope.search = function () {
         if (filterTextTimeout) $timeout.cancel(filterTextTimeout);

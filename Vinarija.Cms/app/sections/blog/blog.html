@@ -28,10 +28,10 @@
             </thead>
             <tbody md-body>
                 <tr md-row ng-repeat="post in posts track by $index">
-                    <td md-cell ng-bind="post.date"></td>
+                    <td md-cell ng-bind="post.date | correctedDate"></td>
                     <td md-cell ng-bind="post.title"></td>
                     <td md-cell>
-                        <md-switch ng-model="post.active" aria-label="Switch 1"></md-switch>
+                        <md-switch ng-model="post.active" ng-change="toggleActive(post)" aria-label="Switch 1"></md-switch>
                     </td>
                     <td md-cell text-right>
                         <md-menu class="procedure-dropdown" md-position-mode="target-right target">

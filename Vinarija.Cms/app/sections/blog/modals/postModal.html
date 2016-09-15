@@ -12,28 +12,25 @@
         <md-dialog-content>
             <div class="md-dialog-content">
                 <div layout="row">
-                    <md-input-container flex="20">
-                        <md-datepicker ng-model="post.date"
-                                       md-placeholder="Datum"
-                                       md-open-on-focus
-                                       required
-                        ></md-datepicker>
-                    </md-input-container>
+                    <md-datepicker ng-model="post.date"
+                                   md-placeholder="Datum"
+                                   md-open-on-focus
+                                   required></md-datepicker>
+                </div>
+                <div layout="row">
                     <md-input-container flex>
                         <label>Naslov</label>
                         <input ng-model="post.title" required type="text">
                     </md-input-container>
                 </div>
                 <div layout="row">
-                    <md-input-container flex>
-                        <div text-angular required class="content-text" aria-label="Content" ng-model="post.content"></div>
-                    </md-input-container>
+                    <div text-angular required class="content-text" aria-label="Content" ng-model="post.content"></div>
                 </div>
-                
+
                 <br />
                 <input type="file" nv-file-select="" uploader="uploader" /><br />
                 <br />
-                
+
                 <div class="col-md-9" style="margin-bottom: 40px" ng-show="uploader.queue.length > 0">
                     <table md-table class="table">
                         <thead md-head>
