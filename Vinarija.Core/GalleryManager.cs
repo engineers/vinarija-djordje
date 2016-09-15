@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Vinarija.Common.Models.User;
 using Vinarija.Common.Models.PostPageModel;
+using System.IO;
 
 namespace Vinarija.Core
 {
@@ -21,6 +22,31 @@ namespace Vinarija.Core
                 List<Gallery> gallery = uow.GalleryRepository.GetAll().OrderByDescending(g => g.SortOrder).ToList();
 
                 return gallery;
+            }
+        }
+
+        public void AddImage(string rootFolder, Stream inputStream, string fileName)
+        {
+            if (!Directory.Exists(rootFolder))
+            {
+                Directory.CreateDirectory(rootFolder);
+            }
+
+            using (var imageFile = System.Drawing.Image.FromStream(inputStream))
+            {
+                imageFile.Save(rootFolder + "\\" + fileName);
+
+                using (UnitOfWork uow = new UnitOfWork())
+                {
+                   
+                    Gallery galleryImage = new Gallery
+                    {
+                        FilePath = fileName,
+                    };
+                    uow.GalleryRepository.Insert(galleryImage);
+
+                    uow.Save();
+                }
             }
         }
     }

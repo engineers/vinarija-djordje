@@ -15,6 +15,7 @@ namespace Vinarija.Api.Controllers
 {
     public class GalleryController : BaseController
     {
+        [AllowAnonymous]
         public List<Gallery> GetAll()
         {
             List<Gallery> gallery = GalleryManager.GetAll();
@@ -22,17 +23,18 @@ namespace Vinarija.Api.Controllers
             return gallery;
         }
 
+        [TokenAuthorize]
         [HttpPost]
-        public void UploadImage(string folderPath)
+        public void UploadImage()
         {
             var httpRequest = HttpContext.Current.Request;
-            if (httpRequest.Files.Count == 0) throw new ValidationException("You did not select a file!");
+            if (httpRequest.Files.Count == 0) throw new ValidationException("Nijedan fajl nije odabran za upload!");
 
             HttpPostedFile postedFile = httpRequest.Files[0];
             string rootFolder = HttpContext.Current.Server.MapPath($"~/Content/Gallery/");
             string extension = Path.GetExtension(postedFile.FileName);
 
-            //GalleryManager.AddImage(postedFile.InputStream, rootFolder, postedFile.FileName);
+            GalleryManager.AddImage(rootFolder, postedFile.InputStream, (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds + "_" + postedFile.FileName);
         }
     }
 }
