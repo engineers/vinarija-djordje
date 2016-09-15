@@ -12,6 +12,7 @@ namespace Vinarija.Api.Controllers
 {
     public class MailController : ApiController
     {
+        [AllowAnonymous]
         [HttpPost]
         public HttpResponseMessage Contact(MailModel model)
         {
