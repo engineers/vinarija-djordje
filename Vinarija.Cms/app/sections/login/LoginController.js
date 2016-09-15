@@ -11,7 +11,7 @@ app.config(function ($stateProvider) {
     $scope.login = function () {
         adminService.login($scope.user).then(function (response) {
             localStorageService.set('token', response.token);
-            $state.go('layout.hotspot');
+            $state.go('layout.blog');
         });
     };
 });

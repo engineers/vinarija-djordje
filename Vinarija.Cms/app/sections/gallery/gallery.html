@@ -46,7 +46,7 @@
         </div>
 
         <h4 class="text-center" ng-show="!loading && !galleryImages.length">Trenutno nemate slika za galeriju u bazi</h4>
-
+        <h4 ng-show="loading" class="text-center">Molim sačekajte...</h4>
 
         <div class="margin-bottom-40" ng-show="uploader.queue.length > 0">
             <table md-table class="table">

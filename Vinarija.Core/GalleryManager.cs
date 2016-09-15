@@ -50,6 +50,26 @@ namespace Vinarija.Core
             }
         }
 
+        public void Reorder(int[] galleryIds)
+        {
+            using (var uow = new UnitOfWork())
+            {
+                for (int i = 0; i < galleryIds.Length; i++)
+                {
+                    Gallery galleryImage = uow.GalleryRepository.GetById(galleryIds[i]);
+
+                    if (galleryImage == null)
+                    {
+                        throw new ValidationException($"Slika sa Id-jem '{galleryIds[i]}' ne postoji!");
+                    }
+
+                    galleryImage.SortOrder = i + 1;
+                }
+
+                uow.Save();
+            }
+        }
+
         public void removeImage(string filePath, int imageId)
         {
             using (UnitOfWork uow = new UnitOfWork())

@@ -100,9 +100,8 @@
     };
 
     $scope.saveReordering = function () {
-        galleryService.saveReorder().then(function () {
+        galleryService.saveReorder($scope.galleryImages).then(function () {
             loadData();
-            $scope.reordering = false;
         });
     };
 
@@ -118,6 +117,7 @@
             $scope.oldGallery = angular.copy($scope.galleryImages);
             $scope.loading = false;
             $scope.refreshSlick = false;
+            $scope.reordering = false;
 
         }, function () {
             $scope.loading = false;

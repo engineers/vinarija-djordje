@@ -38,6 +38,13 @@ namespace Vinarija.Api.Controllers
         }
 
         [TokenAuthorize]
+        [HttpPut]
+        public void Reorder(GalleryReorderModel input)
+        {
+            GalleryManager.Reorder(input.GalleryIds);
+        }
+
+        [TokenAuthorize]
         [HttpDelete]
         public void RemoveImage(int imageId)
         {
