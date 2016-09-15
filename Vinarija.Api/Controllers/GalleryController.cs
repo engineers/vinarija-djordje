@@ -9,18 +9,19 @@ using System.Web.Http;
 using Vinarija.Api.Helpers;
 using Vinarija.Api.Models;
 using Vinarija.Common.Exceptions;
+using Vinarija.Entities;
 
 namespace Vinarija.Api.Controllers
 {
-    [TokenAuthorize]
     public class GalleryController : BaseController
     {
-        /// <summary>
-        /// Upload the image.
-        /// </summary>
-        /// <param name="folderPath">The folder path. (format '/folder1/folder2')</param>
-        /// <exception cref="ValidationException">You did not select a file!</exception>
-        /// <exception cref="Phin.Common.Exceptions.ValidationException">You did not select a file!</exception>
+        public List<Gallery> GetAll()
+        {
+            List<Gallery> gallery = GalleryManager.GetAll();
+
+            return gallery;
+        }
+
         [HttpPost]
         public void UploadImage(string folderPath)
         {

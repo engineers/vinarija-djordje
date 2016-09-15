@@ -14,5 +14,14 @@ namespace Vinarija.Core
 {
     public class GalleryManager
     {
+        public List<Gallery> GetAll()
+        {
+            using (UnitOfWork uow = new UnitOfWork())
+            {
+                List<Gallery> gallery = uow.GalleryRepository.GetAll().OrderByDescending(g => g.SortOrder).ToList();
+
+                return gallery;
+            }
+        }
     }
 }

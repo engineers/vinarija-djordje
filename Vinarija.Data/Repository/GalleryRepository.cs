@@ -13,5 +13,13 @@ namespace Vinarija.Data.Repository
     public class GalleryRepository : GenericRepository<Gallery>
     {
         public GalleryRepository(DbContext dbContext) : base(dbContext) { }
+
+        public override void Insert(Gallery entity)
+        {
+            int? sortOrder = dbSet.Any() ? dbSet.Max(g => g.SortOrder) + 1 : 1;
+            entity.SortOrder = sortOrder;
+
+            base.Insert(entity);
+        }
     }
 }
