@@ -6,6 +6,10 @@
             .bottle {
                 .bottle-img {
                     margin: 120px -110px;
+                    -moz-transform: scale(.8, .8);
+                    -ms-transform: scale(.8, .8);
+                    -o-transform: scale(.8, .8);
+                    -webkit-transform: scale(.8, .8);
                     transform: scale(.8, .8);
                 }
             }
@@ -29,6 +33,10 @@
             .bottle {
                 .bottle-img {
                     margin: 120px -110px;
+                    -moz-transform: scale(.8, .8);
+                    -ms-transform: scale(.8, .8);
+                    -o-transform: scale(.8, .8);
+                    -webkit-transform: scale(.8, .8);
                     transform: scale(.8, .8);
                 }
             }
@@ -97,6 +105,10 @@
             .description {
                 .descr-part {
                     left: 50%;
+                    -moz-transform: translateY(-50%) translateX(-50%);
+                    -ms-transform: translateY(-50%) translateX(-50%);
+                    -o-transform: translateY(-50%) translateX(-50%);
+                    -webkit-transform: translateY(-50%) translateX(-50%);
                     transform: translateY(-50%) translateX(-50%);
                     width: 80%;
 
@@ -122,6 +134,10 @@
             .bottle {
                 .bottle-img {
                     margin: 80px -220px;
+                    -moz-transform: scale(.6, .6);
+                    -ms-transform: scale(.6, .6);
+                    -o-transform: scale(.6, .6);
+                    -webkit-transform: scale(.6, .6);
                     transform: scale(.6, .6);
                 }
             }
@@ -131,6 +147,10 @@
             .description {
                 .descr-part {
                     left: 50%;
+                    -moz-transform: translateY(-50%) translateX(-50%);
+                    -ms-transform: translateY(-50%) translateX(-50%);
+                    -o-transform: translateY(-50%) translateX(-50%);
+                    -webkit-transform: translateY(-50%) translateX(-50%);
                     transform: translateY(-50%) translateX(-50%);
                     width: 80%;
 
@@ -206,6 +226,7 @@
 
     section.footer {
         .footer-container {
+            -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
         }
     }
@@ -365,25 +386,6 @@
         }
     }
 
-    .change-text {
-        .content-position {
-            left: 25px;
-            width: 90%;
-
-            .text {
-                font-size: 16px;
-            }
-
-            .temp {
-                margin: 0 0 40px 0;
-            }
-
-            .degrees {
-                margin: 0 0 40px 25px;
-            }
-        }
-    }
-
     .winery-page {
         .idea {
             background: url(../images/winery1-tablet.jpg) -90px 0 no-repeat;
@@ -470,21 +472,20 @@
                     top: 55%;
 
                     .title {
-                        margin-bottom: -115px;
+                        margin-bottom: 25px;
                         font-size: 30px;
                     }
 
                     .red-bottle {
-                        background: url('../images/freska-crvena.png') center center no-repeat;
-                        transform: scale(.6);
-                        height: 678px;
+                        background: url('../images/izbor-crno-vino-tablet-landscape.png') center center no-repeat;
+                        height: 460px;
                         width: 100%;
                     }
 
                     .read-more-box {
                         margin-right: 159px;
                         position: relative;
-                        top: -100px;
+                        top: 10px;
                     }
                 }
 
@@ -519,11 +520,245 @@
 
             .white-wine {
                 .wine-position {
+                    top: 56%;
+
+                    .title {
+                        margin-bottom: 0;
+                        font-size: 30px;
+                    }
+
                     .white-bottle {
-                        width: 230px;
-                        background: url('../images/freska-bela.png') center center no-repeat;
+                        width: 232px;
+                        background: url('../images/izbor-belo-vino-tablet-landscape.png') center center no-repeat;
+                        height: 470px;
+                    }
+
+                    .read-more-box {
+                        margin-left: 170px;
+                        margin-top: 0;
                     }
                 }
+            }
+        }
+    }
+
+    #fullpage {
+        .name-position {
+            display: none;
+        }
+
+        .all-sorts {
+            top: 39%;
+        }
+
+        .freska-crvena {
+            top: 4%;
+            left: 6%;
+
+            .freska-crvena-bottle {
+                height: 671px;
+                -moz-transform: scale(.7);
+                -ms-transform: scale(.7);
+                -o-transform: scale(.7);
+                -webkit-transform: scale(.7);
+                transform: scale(.7);
+            }
+        }
+
+        .portugizer {
+            top: 53%;
+            left: 5%;
+
+            .portugizer-bottle {
+                -moz-transform: scale(.7);
+                -ms-transform: scale(.7);
+                -o-transform: scale(.7);
+                -webkit-transform: scale(.7);
+                transform: scale(.7);
+            }
+        }
+    }
+
+    .change-text {
+        .content-position {
+            left: 85px;
+            width: 75%;
+
+            .name-wine {
+                margin-bottom: 5px;
+                font-size: 34px;
+            }
+
+            .subtitle {
+                margin-bottom: 25px;
+                font-size: 24px;
+            }
+
+            .text {
+                margin-bottom: 12px;
+                font-size: 13px;
+            }
+
+            .temp {
+                margin: 0 0 20px 0;
+            }
+
+            .degrees {
+                margin: 0 0 20px 25px;
+            }
+        }
+    }
+
+    .letter-position {
+        &.f-red {
+            top: 2%;
+            left: 48%;
+            -moz-transform: scale(.7);
+            -ms-transform: scale(.7);
+            -o-transform: scale(.7);
+            -webkit-transform: scale(.7);
+            transform: scale(.7);
+        }
+
+        &.f-white {
+            top: 7%;
+            left: 48%;
+            -moz-transform: scale(.7);
+            -ms-transform: scale(.7);
+            -o-transform: scale(.7);
+            -webkit-transform: scale(.7);
+            transform: scale(.7);
+        }
+
+        &.letter-portugizer {
+            top: 0;
+            left: 50%;
+            -moz-transform: scale(.7);
+            -ms-transform: scale(.7);
+            -o-transform: scale(.7);
+            -webkit-transform: scale(.7);
+            transform: scale(.7);
+        }
+
+        &.sardone-letter {
+            top: 10%;
+            left: 51%;
+            -moz-transform: scale(.7);
+            -ms-transform: scale(.7);
+            -o-transform: scale(.7);
+            -webkit-transform: scale(.7);
+            transform: scale(.7);
+        }
+
+        &.traminac-letter {
+            top: 6%;
+            left: 51%;
+            -moz-transform: scale(.7);
+            -ms-transform: scale(.7);
+            -o-transform: scale(.7);
+            -webkit-transform: scale(.7);
+            transform: scale(.7);
+        }
+
+        &.sovinjon-letter {
+            top: 9%;
+            left: 49%;
+            -moz-transform: scale(.7);
+            -ms-transform: scale(.7);
+            -o-transform: scale(.7);
+            -webkit-transform: scale(.7);
+            transform: scale(.7);
+        }
+    }
+
+    .red-wine-page {
+        .sort-content {
+            .stamp-big {
+                bottom: -118px;
+                right: -124px;
+                -moz-transform: scale(.5);
+                -ms-transform: scale(.5);
+                -o-transform: scale(.5);
+                -webkit-transform: scale(.5);
+                transform: scale(.5);
+            }
+        }
+    }
+
+    #fullpage-white {
+        .name-position {
+            display: none;
+        }
+
+        .all-sorts {
+            top: 36%;
+        }
+
+        .change-text {
+            .content-position {
+                bottom: 80px;
+            }
+        }
+    }
+
+    .freska-bela {
+        top: 2%;
+        left: 4%;
+
+        .freska-bela-bottle {
+            -moz-transform: scale(.7);
+            -ms-transform: scale(.7);
+            -o-transform: scale(.7);
+            -webkit-transform: scale(.7);
+            transform: scale(.7);
+        }
+    }
+
+    .sardone {
+        top: 27.5%;
+        left: 4%;
+
+        .sardone-bottle {
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+            -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+        }
+    }
+
+    .traminac {
+        top: 52%;
+        left: 4%;
+
+        .traminac-bottle {
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+            -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+        }
+    }
+
+    .sovinjon {
+        top: 78%;
+        left: 4%;
+
+        .sovinjon-bottle {
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+            -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+        }
+    }
+
+    .white-wine-page {
+        .sort-content {
+            .stamp-big {
+                transform: scale(.5);
+                bottom: -115px;
+                right: -130px;
             }
         }
     }
@@ -895,6 +1130,10 @@
                         width: 100%;
                         margin: 0;
                         background: url('../images/freska-crvena.png') center center no-repeat;
+                        -moz-transform: scale(1);
+                        -ms-transform: scale(1);
+                        -o-transform: scale(1);
+                        -webkit-transform: scale(1);
                         transform: scale(1);
                     }
                 }
@@ -915,6 +1154,10 @@
                         width: 100%;
                         margin: 0;
                         background: url('../images/freska-bela.png') center center no-repeat;
+                        -moz-transform: scale(1);
+                        -ms-transform: scale(1);
+                        -o-transform: scale(1);
+                        -webkit-transform: scale(1);
                         transform: scale(1);
                     }
                 }

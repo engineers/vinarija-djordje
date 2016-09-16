@@ -358,6 +358,10 @@ section.intro .logo-headline {
   left: 0;
   right: 0;
   margin: 0 auto;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -402,6 +406,10 @@ section.intro nav {
   font-family: 'Minion Pro-Regular';
   letter-spacing: 2px;
   text-transform: uppercase;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -824,6 +832,10 @@ section.footer .copyright {
 .home-page .red-wine .description .descr-part {
   position: absolute;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
   right: 0;
@@ -872,6 +884,10 @@ section.footer .copyright {
 .home-page .white-wine .description .descr-part {
   position: absolute;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 0;
   right: 0;
@@ -925,6 +941,9 @@ section.footer .copyright {
   width: 380px;
   height: 800px;
   z-index: 1;
+  -moz-transition: all .500s;
+  -o-transition: all .500s;
+  -webkit-transition: all .500s;
   transition: all .500s;
   background-size: cover;
 }
@@ -933,6 +952,9 @@ section.footer .copyright {
 .home-page .hover-section .third-img:hover,
 .home-page .hover-section .fourth-img:hover,
 .home-page .hover-section .fifth-img:hover {
+  -moz-transition: all .500s;
+  -o-transition: all .500s;
+  -webkit-transition: all .500s;
   transition: all .500s;
 }
 .home-page .hover-section .first-img:hover .news,
@@ -1145,6 +1167,10 @@ section.footer .copyright {
 .home-page .slider-home-page .next-arrow {
   position: absolute;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100px;
   height: 100px;
@@ -1182,6 +1208,10 @@ section.footer .copyright {
 .home-page .ivent-calendar .calendar {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 210px;
 }
@@ -1198,6 +1228,10 @@ section.footer .copyright {
   width: 30%;
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 130px;
 }
@@ -1236,6 +1270,10 @@ section.footer .copyright {
 .winery-page .text-part .position {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 110px;
 }
@@ -1309,6 +1347,10 @@ section.footer .copyright {
 .winery-page .welcome-to-winary .position-content {
   position: relative;
   top: 40%;
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
   transform: translateY(-40%);
 }
 .winery-page .welcome-to-winary .position-content .title,
@@ -1507,6 +1549,10 @@ section.footer .copyright {
 .vineyards-page .vineyards-white-sort .text-part .white-wine-position {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   float: left;
   margin-left: 115px;
@@ -1548,6 +1594,10 @@ section.footer .copyright {
 .vineyards-page .vineyards-black-sort .text-part .black-wine-position {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-right: 115px;
   float: right;
@@ -1594,6 +1644,10 @@ section.footer .copyright {
 .vineyards-page .land .text-part .land-position {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   float: right;
   margin-right: 115px;
@@ -1641,6 +1695,10 @@ section.footer .copyright {
   position: absolute;
   z-index: 4;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 44%;
 }
@@ -1663,6 +1721,10 @@ section.footer .copyright {
 .wines-page .wine-selection .red-wine .wine-position {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-47%);
+  -ms-transform: translateY(-47%);
+  -o-transform: translateY(-47%);
+  -webkit-transform: translateY(-47%);
   transform: translateY(-47%);
 }
 .wines-page .wine-selection .red-wine .wine-position .title {
@@ -1706,6 +1768,10 @@ section.footer .copyright {
 .wines-page .wine-selection .white-wine .wine-position {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-46%);
+  -ms-transform: translateY(-46%);
+  -o-transform: translateY(-46%);
+  -webkit-transform: translateY(-46%);
   transform: translateY(-46%);
   overflow: hidden;
 }
@@ -1942,6 +2008,10 @@ section.intro .hamburger-menu-mobile {
   position: absolute;
   bottom: 0;
   left: 25%;
+  -moz-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  -o-transform: translateX(-25%);
+  -webkit-transform: translateX(-25%);
   transform: translateX(-25%);
   height: 96px;
 }
@@ -1957,6 +2027,10 @@ section.intro .hamburger-menu-mobile {
 .white-wine-page .scroll-down .empty-circle .full-circle {
   position: relative;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 6px;
   height: 6px;
@@ -2026,6 +2100,10 @@ section.intro .hamburger-menu-mobile {
   position: fixed;
   top: 9%;
   left: 22%;
+  -moz-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  -o-transform: translateX(-25%);
+  -webkit-transform: translateX(-25%);
   transform: translateX(-25%);
   width: 345px !important;
 }
@@ -2038,6 +2116,10 @@ section.intro .hamburger-menu-mobile {
   position: fixed;
   top: 59%;
   left: 21%;
+  -moz-transform: translateX(-22%);
+  -ms-transform: translateX(-22%);
+  -o-transform: translateX(-22%);
+  -webkit-transform: translateX(-22%);
   transform: translateX(-22%);
   width: 345px !important;
 }
@@ -2050,6 +2132,10 @@ section.intro .hamburger-menu-mobile {
   position: fixed;
   top: 4.5%;
   left: 21%;
+  -moz-transform: translateX(-22%);
+  -ms-transform: translateX(-22%);
+  -o-transform: translateX(-22%);
+  -webkit-transform: translateX(-22%);
   transform: translateX(-22%);
   width: 345px !important;
 }
@@ -2062,6 +2148,10 @@ section.intro .hamburger-menu-mobile {
   position: fixed;
   top: 29.5%;
   left: 21%;
+  -moz-transform: translateX(-22%);
+  -ms-transform: translateX(-22%);
+  -o-transform: translateX(-22%);
+  -webkit-transform: translateX(-22%);
   transform: translateX(-22%);
   width: 345px !important;
 }
@@ -2074,6 +2164,10 @@ section.intro .hamburger-menu-mobile {
   position: fixed;
   top: 54%;
   left: 21%;
+  -moz-transform: translateX(-22%);
+  -ms-transform: translateX(-22%);
+  -o-transform: translateX(-22%);
+  -webkit-transform: translateX(-22%);
   transform: translateX(-22%);
   width: 345px !important;
 }
@@ -2086,21 +2180,32 @@ section.intro .hamburger-menu-mobile {
   position: fixed;
   top: 79%;
   left: 21%;
+  -moz-transform: translateX(-22%);
+  -ms-transform: translateX(-22%);
+  -o-transform: translateX(-22%);
+  -webkit-transform: translateX(-22%);
   transform: translateX(-22%);
   width: 345px !important;
 }
 .sovinjon .sovinjon-bottle {
   width: 345px;
-  height: 700px;
+  height: 733px;
   background: url('../images/sovinjon.png') center center no-repeat;
 }
 .all-sorts {
   position: relative;
   left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 21%;
   width: 500px;
   opacity: 0.1;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  -webkit-transition: opacity .5s;
   transition: opacity .5s;
 }
 .all-sorts .name {
@@ -2138,6 +2243,9 @@ section.intro .hamburger-menu-mobile {
 }
 .name-position {
   opacity: 0.1;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  -webkit-transition: opacity .5s;
   transition: opacity .5s;
   position: relative;
   top: 31%;
@@ -2236,6 +2344,10 @@ section.intro .hamburger-menu-mobile {
   position: absolute;
   top: 50%;
   left: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 110px;
 }
@@ -2274,6 +2386,10 @@ section.intro .hamburger-menu-mobile {
 .territory-page .climate .left-box .text-wrapper {
   position: absolute;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-right: 110px;
   text-align: right;
@@ -2331,6 +2447,10 @@ section.intro .hamburger-menu-mobile {
 .territory-page .fauna .right-box .text-wrapper {
   position: absolute;
   top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 110px;
 }
