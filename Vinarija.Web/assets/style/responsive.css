@@ -39,6 +39,9 @@
   .home-page .ivent-calendar .calendar-news {
     margin-left: 5%;
   }
+  #fullpage .name-position .name {
+    width: 280px;
+  }
 }
 @media screen and (max-width: 1500px) {
   .red-wine-page .red-sort .all-sorts .name,
