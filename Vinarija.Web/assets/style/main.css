@@ -1305,6 +1305,7 @@ section.footer .copyright {
   width: 132px;
   height: 110px;
   background: url('../images/contact-card-logo.svg') center center no-repeat;
+  cursor: inherit;
 }
 .winery-page .winery-location {
   height: 735px;

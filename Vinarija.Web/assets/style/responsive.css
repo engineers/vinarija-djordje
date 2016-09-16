@@ -247,6 +247,13 @@
   .home-page .slider-home-page .next-arrow {
     right: 50px;
   }
+  .home-page .hover-section .first-img .news .view-more,
+  .home-page .hover-section .second-img .news .view-more,
+  .home-page .hover-section .third-img .news .view-more,
+  .home-page .hover-section .fourth-img .news .view-more,
+  .home-page .hover-section .fifth-img .news .view-more {
+    margin-bottom: 20px;
+  }
   .home-page .hover-section .first-img {
     background: url(../images/first-section-hover.png) -142px 0 no-repeat;
   }
@@ -336,7 +343,6 @@
     top: 39%;
   }
   #fullpage .freska-crvena {
-    /*top: 4%;*/
     left: 6%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
@@ -348,7 +354,6 @@
     transform: scale(0.7);
   }
   #fullpage .portugizer {
-    /*top: 53%;*/
     left: 5%;
   }
   #fullpage .portugizer .portugizer-bottle {
@@ -608,8 +613,8 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     top: 0;
     -moz-transform: none;
     -ms-transform: none;
@@ -627,7 +632,7 @@
   }
   .wines-page .wine-selection .red-wine .wine-position .red-bottle {
     height: 100%;
-    width: 235px;
+    width: 110px;
   }
   .wines-page .wine-selection .white-wine .wine-position {
     height: 100%;
@@ -639,8 +644,8 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     direction: rtl;
     top: 0;
     -moz-transform: none;
@@ -651,7 +656,7 @@
   }
   .wines-page .wine-selection .white-wine .wine-position .title {
     margin-left: 0;
-    width: 170px;
+    width: 130px;
   }
   .wines-page .wine-selection .white-wine .wine-position .read-more-box {
     margin-left: 0;
@@ -659,6 +664,7 @@
   }
   .wines-page .wine-selection .white-wine .wine-position .white-bottle {
     height: 100%;
+    width: 120px;
     margin-left: 0;
   }
   .actualities-page .ivent-calendar .calendar-news {
@@ -703,6 +709,13 @@
     position: relative;
     width: 100%;
     height: 740px;
+    background: none;
+  }
+  .territory-page .info .tablet-img {
+    width: 100%;
+    height: 740px;
+    background: url(../images/territory-background.jpg) -185px 0 no-repeat;
+    opacity: .5;
   }
   .territory-page .info .text-wrapper {
     left: 5%;
@@ -877,5 +890,142 @@
   }
   .home-page .white-wine .description {
     width: 50%;
+  }
+  .red-wine-page .tablet-position,
+  .white-wine-page .tablet-position {
+    display: block;
+  }
+  .red-wine-page .tablet-position .red-sort,
+  .white-wine-page .tablet-position .red-sort {
+    position: absolute;
+    width: 100%;
+    height: 50% !important;
+  }
+  .red-wine-page .tablet-position .sort-content,
+  .white-wine-page .tablet-position .sort-content {
+    position: static;
+    width: 100%;
+  }
+  .red-wine-page .scroll-down,
+  .white-wine-page .scroll-down {
+    display: none;
+  }
+  #fullpage .freska-crvena,
+  #fullpage .portugizer {
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  #fullpage .freska-crvena {
+    top: 0;
+  }
+  #fullpage .portugizer {
+    top: 48%;
+  }
+  #fullpage .all-sorts {
+    top: 0;
+    left: 100%;
+  }
+  #fullpage .change-text {
+    float: none;
+    width: 100%;
+  }
+  #fullpage .change-text .content-position {
+    bottom: -200px;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #fullpage .change-text .content-position .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #fullpage .change-text .content-position .degrees,
+  #fullpage .change-text .content-position .percentage {
+    font-size: 30px;
+  }
+  #fullpage .change-text .content-position .alcohol {
+    margin-bottom: 0;
+  }
+  #fullpage .change-text .content-position .read-more-box {
+    margin-top: 20px;
+  }
+  #fullpage .letter-position.f-red {
+    top: 47%;
+    left: -50px;
+  }
+  #fullpage .letter-position.letter-portugizer {
+    top: 45%;
+    left: -33px;
+  }
+  #fullpage-white .freska-bela,
+  #fullpage-white .sardone,
+  #fullpage-white .traminac,
+  #fullpage-white .sovinjon {
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  #fullpage-white .freska-bela {
+    top: 0;
+  }
+  #fullpage-white .sardone {
+    top: 23%;
+  }
+  #fullpage-white .traminac {
+    top: 49%;
+  }
+  #fullpage-white .sovinjon {
+    top: 73%;
+  }
+  #fullpage-white .all-sorts {
+    top: 0;
+    left: 100%;
+  }
+  #fullpage-white .change-text {
+    float: none;
+    width: 100%;
+  }
+  #fullpage-white .change-text .content-position {
+    bottom: -155px;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #fullpage-white .change-text .content-position .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #fullpage-white .change-text .content-position .degrees,
+  #fullpage-white .change-text .content-position .percentage {
+    font-size: 30px;
+  }
+  #fullpage-white .change-text .content-position .alcohol {
+    margin-bottom: 0;
+  }
+  #fullpage-white .change-text .content-position .read-more-box {
+    margin-top: 20px;
+  }
+  #fullpage-white .letter-position.f-white {
+    top: 46%;
+    left: -50px;
+  }
+  #fullpage-white .letter-position.sardone-letter {
+    top: 46%;
+    left: -30px;
+  }
+  #fullpage-white .letter-position.traminac-letter {
+    top: 46%;
+    left: -18px;
+  }
+  #fullpage-white .letter-position.sovinjon-letter {
+    top: 46%;
+    left: -50px;
   }
 }
