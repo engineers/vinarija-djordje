@@ -76,6 +76,12 @@
             }
         }
     }
+
+    .home-page {
+        .home-bck1 {
+            height: 240px;
+        }
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -232,6 +238,10 @@
     }
 
     .home-page {
+        .home-bck1 {
+            height: 200px;
+        }
+
         .ivent-calendar {
             .calendar,
             .calendar-news {
@@ -397,6 +407,10 @@
     }
 
     .home-page {
+        .home-bck1 {
+            height: 164px;
+        }
+
         .slider-home-page {
             .prev-arrow {
                 left: 50px;
@@ -860,9 +874,132 @@
             line-height: 22px;
         }
     }
+
+    .home-page {
+        .home-bck1 {
+            height: 164px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .wines-page {
+        .wine-selection {
+            .mobile-display {
+                display: block;
+
+                .red-wine,
+                .white-wine {
+                    width: 100%;
+                    height: 50% !important;
+                }
+            }
+
+            .red-wine {
+                .hamburger-menu {
+                    .hamburger-nav {
+                        .hamburger-container {
+                            left: auto;
+                            right: 0;
+
+                            &.open-menu {
+                                width: 50%;
+                                left: auto;
+                                right: 0;
+                            }
+
+                            ul {
+                                top: 40%;
+                            }
+                        }
+                    }
+
+                    .hamburger-btn {
+                        top: 62px;
+                        left: 88%;
+                    }
+
+                    .label {
+                        display: none;
+                    }
+                }
+
+                .wine-position {
+                    height: 100%;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    top: 0;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    -o-transform: none;
+                    -webkit-transform: none;
+                    transform: none;
+
+                    .title {
+                        margin-right: 0;
+                        width: 170px;
+                    }
+
+                    .read-more-box {
+                        margin-right: 0;
+                        width: 202px;
+                    }
+
+                    .red-bottle {
+                        height: 100%;
+                        width: 235px;
+                    }
+                }
+            }
+
+            .white-wine {
+                .wine-position {
+                    height: 100%;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    direction: rtl;
+                    top: 0;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    -o-transform: none;
+                    -webkit-transform: none;
+                    transform: none;
+
+                    .title {
+                        margin-left: 0;
+                        width: 170px;
+                    }
+
+                    .read-more-box {
+                        margin-left: 0;
+                        width: 202px;
+                    }
+
+                    .white-bottle {
+                        height: 100%;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
     .actualities-page {
         .ivent-calendar {
             .calendar-news {
@@ -881,8 +1018,6 @@
             }
         }
     }
-
-
 
     .winery-page {
         .location-section,
@@ -1077,7 +1212,7 @@
                 right: 0;
 
                 &.open-menu {
-                    width: 500px;
+                    width: 60%;
                 }
 
                 ul {

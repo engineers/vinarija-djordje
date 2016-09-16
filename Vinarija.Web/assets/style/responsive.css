@@ -45,6 +45,9 @@
   .white-wine-page .red-sort .all-sorts .name {
     margin-right: 40px;
   }
+  .home-page .home-bck1 {
+    height: 240px;
+  }
 }
 @media screen and (max-width: 1400px) {
   section.intro .logo-headline {
@@ -143,6 +146,9 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .home-page .home-bck1 {
+    height: 200px;
+  }
   .home-page .ivent-calendar .calendar,
   .home-page .ivent-calendar .calendar-news {
     margin-left: 3%;
@@ -231,6 +237,9 @@
   }
   .winery-page .production {
     background: url(../images/production.jpg) -38px 0 no-repeat;
+  }
+  .home-page .home-bck1 {
+    height: 164px;
   }
   .home-page .slider-home-page .prev-arrow {
     left: 50px;
@@ -557,8 +566,101 @@
     text-align: center;
     line-height: 22px;
   }
+  .home-page .home-bck1 {
+    height: 164px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .wines-page .wine-selection .mobile-display {
+    display: block;
+  }
+  .wines-page .wine-selection .mobile-display .red-wine,
+  .wines-page .wine-selection .mobile-display .white-wine {
+    width: 100%;
+    height: 50% !important;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container {
+    left: auto;
+    right: 0;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container.open-menu {
+    width: 50%;
+    left: auto;
+    right: 0;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul {
+    top: 40%;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-btn {
+    top: 62px;
+    left: 88%;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .label {
+    display: none;
+  }
+  .wines-page .wine-selection .red-wine .wine-position {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    top: 0;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .title {
+    margin-right: 0;
+    width: 170px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box {
+    margin-right: 0;
+    width: 202px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .red-bottle {
+    height: 100%;
+    width: 235px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    direction: rtl;
+    top: 0;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .title {
+    margin-left: 0;
+    width: 170px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .read-more-box {
+    margin-left: 0;
+    width: 202px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .white-bottle {
+    height: 100%;
+    margin-left: 0;
+  }
   .actualities-page .ivent-calendar .calendar-news {
     width: 70%;
   }
@@ -706,7 +808,7 @@
     right: 0;
   }
   section.intro .hamburger-nav-mobile .hamburger-container.open-menu {
-    width: 500px;
+    width: 60%;
   }
   section.intro .hamburger-nav-mobile .hamburger-container ul {
     top: 40%;
