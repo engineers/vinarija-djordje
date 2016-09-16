@@ -327,7 +327,7 @@
     top: 39%;
   }
   #fullpage .freska-crvena {
-    top: 4%;
+    /*top: 4%;*/
     left: 6%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
@@ -339,7 +339,7 @@
     transform: scale(0.7);
   }
   #fullpage .portugizer {
-    top: 53%;
+    /*top: 53%;*/
     left: 5%;
   }
   #fullpage .portugizer .portugizer-bottle {
@@ -441,7 +441,7 @@
     top: 36%;
   }
   #fullpage-white .change-text .content-position {
-    bottom: 80px;
+    bottom: 110px;
   }
   .freska-bela {
     top: 2%;
@@ -491,6 +491,15 @@
     transform: scale(0.5);
     bottom: -115px;
     right: -130px;
+  }
+  .visit-winery-page section.about .default-wrapper {
+    width: 90%;
+  }
+  .actualities-page .ivent-calendar .calendar-news {
+    padding: 0 15px;
+  }
+  .actualities-page .ivent-calendar .calendar {
+    margin: 0 15px;
   }
 }
 @media screen and (max-width: 1000px) {
