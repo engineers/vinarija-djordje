@@ -49,31 +49,31 @@
         <nav class="hamburger-nav-mobile">
             <div class="hamburger-container" ng-class="{'open-menu': hamburgerMenu}" set-height>
                 <ul ng-click="showMenu()">
-                    <li class="flex">
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.home')}">
                         <div class="grey-line"></div>
                         <a scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home">почетна</a>
                     </li>
-                    <li class="flex selected">
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.wines')}">
                         <div class="grey-line"></div>
                         <a ui-sref="layout.wines">вина</a>
                     </li>
-                    <li class="flex">
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.winery')}">
                         <div class="grey-line"></div>
                         <a scroll-to-section section-to-scroll="winery-page" time="5000" state="layout.winery">винарија</a>
                     </li>
-                    <li class="flex">
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.vineyards')}">
                         <div class="grey-line"></div>
                         <a scroll-to-section section-to-scroll="vineyards-page" time="5000" state="layout.vineyards">виногради</a>
                     </li>
-                    <li class="flex">
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
                         <div class="grey-line"></div>
                         <a scroll-to-section section-to-scroll="visit-winery-page" time="5000" state="layout.visit-winery">посета винарији</a>
                     </li>
-                    <li class="flex">
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.actualities')}">
                         <div class="grey-line"></div>
                         <a scroll-to-section section-to-scroll="actualities-page" time="5000" state="layout.actualities">актуелности</a>
                     </li>
-                    <li class="flex">
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.territory')}">
                         <div class="grey-line"></div>
                         <a scroll-to-section section-to-scroll="territory-page" time="5000" state="layout.territory">делиблатска пешчара</a>
                     </li>

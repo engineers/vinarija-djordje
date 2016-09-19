@@ -1320,6 +1320,7 @@ section.footer .copyright {
   text-align: right;
 }
 .winery-page .winery-location .position .content {
+  direction: initial;
   width: 100%;
 }
 .winery-page .location-section {
@@ -1511,6 +1512,12 @@ section.footer .copyright {
 .actualities-page .sixth-section .calendar {
   margin-right: 155px;
   margin-left: 0;
+}
+.actualities-page .second-section .calendar-news .content,
+.actualities-page .fourth-section .calendar-news .content,
+.actualities-page .sixth-section .calendar-news .content {
+  direction: initial;
+  text-align: right;
 }
 /*#endregion*/
 /*#region Vineyards*/
@@ -2355,6 +2362,7 @@ section.intro .hamburger-menu-mobile {
   margin-left: 110px;
 }
 .territory-page .info .text-wrapper .title {
+  width: 80%;
   margin-bottom: 10px;
   font-size: 36px;
   font-family: 'Minion Pro-Regular';
@@ -2456,6 +2464,7 @@ section.intro .hamburger-menu-mobile {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 110px;
+  direction: initial;
 }
 .territory-page .fauna .right-box .text-wrapper .title {
   width: 81%;
