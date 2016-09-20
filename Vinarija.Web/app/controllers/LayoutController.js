@@ -14,4 +14,15 @@
             $scope.contactMessage = 'Something went wrong, please try again.';
         });
     };
+
+    $scope.hamburgerMenu = false;
+
+    $scope.showMenu = function () {
+        $scope.hamburgerMenu = !$scope.hamburgerMenu;
+    };
+
+    $scope.goToSlide = function (slide) {
+        var slide = parseInt(slide);
+        $('#active-header-img').slick('slickGoTo', slide);
+    };
 });

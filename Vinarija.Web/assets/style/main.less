@@ -303,6 +303,57 @@ h5 {
     color: #888;
 }
 
+.scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    -o-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
+    height: 96px;
+
+    .empty-circle {
+        width: 18px;
+        height: 18px;
+        margin: 0 auto;
+        border: 1px solid #888;
+        border-radius: 50px;
+
+        .full-circle {
+            position: relative;
+            top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            margin: 0 auto;
+            display: table;
+            background-color: #888;
+            border-radius: 50px;
+        }
+    }
+
+    .text {
+        margin: 10px 0;
+        color: #888;
+        font-size: 14px;
+        font-family: 'TenorSans';
+    }
+
+    .vertical-line {
+        margin: 0 auto;
+        display: table;
+        width: 1px;
+        height: 40px;
+        background-color: #888;
+    }
+}
+
 /*#endregion*/
 
 /*#region Layout*/
@@ -312,7 +363,7 @@ section.intro {
         position: absolute;
         top: 50px;
         left: 75px;
-        z-index: 1;
+        z-index: 5;
         cursor: pointer;
     }
 
@@ -322,6 +373,10 @@ section.intro {
         left: 0;
         right: 0;
         margin: 0 auto;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         z-index: 1;
     }
@@ -367,6 +422,15 @@ section.intro {
         }
     }
 
+    .scroll-down {
+        left: 50%;
+        -moz-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+        -o-transform: translateX(-25%);
+        -webkit-transform: translateX(-25%);
+        transform: translateX(-50%);
+    }
+
     nav {
         position: absolute;
         top: 50%;
@@ -375,6 +439,10 @@ section.intro {
         font-family: 'Minion Pro-Regular';
         letter-spacing: 2px;
         text-transform: uppercase;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         z-index: 1;
 
@@ -451,59 +519,15 @@ section.footer {
         .social-icons {
             margin-top: 70px;
 
-            .facebook,
-            .twitter,
-            .vine,
-            .linkedIn,
-            .instagram {
-                height: 21px;
-                margin-right: 15px;
-                cursor: pointer;
-            }
-
             .facebook {
-                width: 11px;
-                background: url('../images/sprite.svg') -121px -81px no-repeat;
+                height: 53px;
+                width: 53px;
+                margin-right: 15px;
+                background: url(../images/sprite.svg) -230px -191px no-repeat;
+                cursor: pointer;
 
                 &:hover {
-                    background: url('../images/sprite.svg') -341px -81px no-repeat;
-                }
-            }
-
-            .twitter {
-                width: 16px;
-                background: url('../images/sprite.svg') -161px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -381px -81px no-repeat;
-                }
-            }
-
-            .vine {
-                width: 17px;
-                background: url('../images/sprite.svg') -76px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -296px -81px no-repeat;
-                }
-            }
-
-            .linkedIn {
-                width: 17px;
-                background: url('../images/sprite.svg') -205px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -425px -81px no-repeat;
-                }
-            }
-
-            .instagram {
-                width: 20px;
-                margin-right: 0;
-                background: url('../images/sprite.svg') -27px -81px no-repeat;
-
-                &:hover {
-                    background: url('../images/sprite.svg') -247px -81px no-repeat;
+                    background: url(../images/sprite.svg) -299px -191px no-repeat;
                 }
             }
         }
@@ -663,6 +687,8 @@ section.footer {
                 -ms-flex-align: center;
                 -webkit-align-items: center;
                 align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
                 -webkit-justify-content: space-between;
                 justify-content: space-between;
                 background-color: @red;
@@ -702,7 +728,7 @@ section.footer {
     }
 
     .copyright {
-        margin-top: 120px;
+        margin-top: 85px;
         padding-bottom: 45px;
         color: #646464;
         font-size: 16px;
@@ -722,7 +748,7 @@ section.footer {
             width: 68%;
 
             h3 {
-                margin: 0;
+                margin-bottom: 30px;
                 color: #333333;
                 font-size: 36px;
                 text-transform: uppercase;
@@ -924,6 +950,10 @@ section.footer {
             .descr-part {
                 position: absolute;
                 top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
                 left: 0;
                 right: 0;
@@ -984,6 +1014,10 @@ section.footer {
             .descr-part {
                 position: absolute;
                 top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
                 left: 0;
                 right: 0;
@@ -1031,7 +1065,7 @@ section.footer {
 
     .home-bck1 {
         width: 100%;
-        height: 388px;
+        height: 370px;
         background: url('../images/home-bck1.jpg') top center no-repeat;
         background-size: cover;
     }
@@ -1047,10 +1081,16 @@ section.footer {
             width: 380px;
             height: 800px;
             z-index: 1;
+            -moz-transition: all .500s;
+            -o-transition: all .500s;
+            -webkit-transition: all .500s;
             transition: all .500s;
             background-size: cover;
 
             &:hover {
+                -moz-transition: all .500s;
+                -o-transition: all .500s;
+                -webkit-transition: all .500s;
                 transition: all .500s;
 
                 .news {
@@ -1081,7 +1121,7 @@ section.footer {
                 }
 
                 .view-more {
-                    margin-left: 20px;
+                    margin: 0 0 20px 20px;
                     font-size: 16px;
                     color: @w;
                     text-transform: uppercase;
@@ -1165,7 +1205,7 @@ section.footer {
 
         .home-slider {
             width: 100%;
-            height: 1050px;
+            height: 100%;
             outline: none;
 
             &.first {
@@ -1288,6 +1328,10 @@ section.footer {
         .next-arrow {
             position: absolute;
             top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             width: 100px;
             height: 100px;
@@ -1333,6 +1377,10 @@ section.footer {
         .calendar {
             position: relative;
             top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             margin-left: 210px;
 
@@ -1352,6 +1400,10 @@ section.footer {
             width: 30%;
             position: relative;
             top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             margin-left: 130px;
 
@@ -1398,12 +1450,16 @@ section.footer {
         .position {
             position: relative;
             top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             margin-left: 110px;
         }
 
         .title {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             font-size: 36px;
             color: #333;
             font-family: 'Minion Pro-Regular';
@@ -1426,10 +1482,12 @@ section.footer {
         }
 
         .logo {
+            position: relative;
+            left: 0;
             width: 132px;
             height: 110px;
-            cursor: pointer;
             background: url('../images/contact-card-logo.svg') center center no-repeat;
+            cursor: inherit;
         }
     }
 
@@ -1440,7 +1498,6 @@ section.footer {
         .position {
             margin-right: 110px;
 
-
             .title,
             .subtitle,
             .content {
@@ -1448,9 +1505,14 @@ section.footer {
             }
 
             .content {
+                direction: initial;
                 width: 100%;
             }
         }
+    }
+
+    .location-section {
+        direction: rtl;
     }
 
     .location {
@@ -1481,6 +1543,10 @@ section.footer {
         .position-content {
             position: relative;
             top: 40%;
+            -moz-transform: translateY(-40%);
+            -ms-transform: translateY(-40%);
+            -o-transform: translateY(-40%);
+            -webkit-transform: translateY(-40%);
             transform: translateY(-40%);
 
             .title,
@@ -1506,6 +1572,7 @@ section.footer {
             }
 
             .read-more-box {
+                -webkit-justify-content: center;
                 justify-content: center;
             }
         }
@@ -1668,6 +1735,13 @@ section.footer {
             margin-right: 155px;
             margin-left: 0;
         }
+
+        .calendar-news {
+            .content {
+                direction: initial;
+                text-align: right;
+            }
+        }
     }
 }
 /*#endregion*/
@@ -1718,15 +1792,76 @@ section.footer {
             .white-wine-position {
                 position: relative;
                 top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-                float: right;
-                margin-right: 115px;
+                float: left;
+                margin-left: 115px;
 
                 .title {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     font-size: 36px;
                     color: #333;
                     font-family: 'Minion Pro-Regular';
+                }
+
+                .subtitle {
+                    margin-bottom: 35px;
+                    font-size: 28px;
+                    color: #888;
+                    font-family: 'NK124';
+                    text-align: left;
+                }
+
+                .sort-wine {
+                    .sort {
+                        margin-bottom: 35px;
+                        font-size: 18px;
+                        color: #333;
+                        font-family: 'TenorSans';
+                        text-transform: uppercase;
+                    }
+                }
+
+                .red-line {
+                    width: 35px;
+                    margin: 9px 15px 0 0px;
+                }
+            }
+        }
+
+        .white-wine-img {
+            width: 50%;
+            height: 732px;
+            background: url('../images/vineyards2.jpg') center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .vineyards-black-sort {
+        .text-part {
+            width: 50%;
+            height: 732px;
+
+            .black-wine-position {
+                position: relative;
+                top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                margin-right: 115px;
+                float: right;
+
+                .title {
+                    margin-bottom: 30px;
+                    font-size: 36px;
+                    color: #333;
+                    font-family: 'Minion Pro-Regular';
+                    text-align: right;
                 }
 
                 .subtitle {
@@ -1757,56 +1892,6 @@ section.footer {
             }
         }
 
-        .white-wine-img {
-            width: 50%;
-            height: 732px;
-            background: url('../images/vineyards2.jpg') center center no-repeat;
-            background-size: cover;
-        }
-    }
-
-    .vineyards-black-sort {
-        .text-part {
-            width: 50%;
-            height: 732px;
-
-            .black-wine-position {
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
-                margin-left: 115px;
-
-                .title {
-                    margin-bottom: 20px;
-                    font-size: 36px;
-                    color: #333;
-                    font-family: 'Minion Pro-Regular';
-                }
-
-                .subtitle {
-                    margin-bottom: 35px;
-                    font-size: 28px;
-                    color: #888;
-                    font-family: 'NK124';
-                }
-
-                .sort-wine {
-                    .sort {
-                        margin-bottom: 35px;
-                        font-size: 18px;
-                        color: #333;
-                        font-family: 'TenorSans';
-                        text-transform: uppercase;
-                    }
-                }
-
-                .red-line {
-                    width: 35px;
-                    margin: 9px 15px 0 0;
-                }
-            }
-        }
-
         .black-wine-img {
             width: 50%;
             height: 732px;
@@ -1823,12 +1908,16 @@ section.footer {
             .land-position {
                 position: relative;
                 top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
                 float: right;
                 margin-right: 115px;
 
                 .title {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     font-size: 36px;
                     text-align: right;
                     color: #333;
@@ -1879,6 +1968,10 @@ section.footer {
             position: absolute;
             z-index: 4;
             top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             left: 44%;
         }
@@ -1891,9 +1984,10 @@ section.footer {
 
             .logo {
                 position: absolute;
-                width: 160px;
-                height: 110px;
-                margin: 50px 0 0 75px;
+                top: 50px;
+                left: 75px;
+                width: 159px;
+                height: 105px;
                 z-index: 10;
                 cursor: pointer;
                 background: url('../images/logo.svg') center center no-repeat;
@@ -1902,6 +1996,10 @@ section.footer {
             .wine-position {
                 position: relative;
                 top: 50%;
+                -moz-transform: translateY(-47%);
+                -ms-transform: translateY(-47%);
+                -o-transform: translateY(-47%);
+                -webkit-transform: translateY(-47%);
                 transform: translateY(-47%);
 
                 .title {
@@ -1956,6 +2054,10 @@ section.footer {
             .wine-position {
                 position: relative;
                 top: 50%;
+                -moz-transform: translateY(-46%);
+                -ms-transform: translateY(-46%);
+                -o-transform: translateY(-46%);
+                -webkit-transform: translateY(-46%);
                 transform: translateY(-46%);
                 overflow: hidden;
 
@@ -1989,7 +2091,15 @@ section.footer {
 /*#endregion*/
 
 /*#region Hamburger menu*/
-.hamburger-menu {
+section.intro {
+    .hamburger-menu-mobile {
+        display: none;
+    }
+}
+
+
+.hamburger-menu,
+.hamburger-menu-mobile {
     display: block;
 
     .menu-nav-overlay {
@@ -2002,7 +2112,8 @@ section.footer {
         z-index: 8;
     }
 
-    .hamburger-nav {
+    .hamburger-nav,
+    .hamburger-nav-mobile {
         .hamburger-container {
             position: fixed;
             top: 0;
@@ -2160,21 +2271,22 @@ section.footer {
 /*#endregion*/
 
 /*#region Red wines and White wines page*/
+.logo {
+    position: absolute;
+    width: 159px;
+    height: 105px;
+    top: 50px;
+    left: 75px;
+    z-index: 5;
+    cursor: pointer;
+    background: url('../images/logo.svg') center center no-repeat;
+}
+
 .red-wine-page,
 .white-wine-page {
     height: 100%;
     position: fixed;
     width: 100%;
-
-    .logo {
-        position: absolute;
-        width: 160px;
-        height: 110px;
-        margin: 50px 0 0 75px;
-        z-index: 5;
-        cursor: pointer;
-        background: url('../images/logo.svg') center center no-repeat;
-    }
 
     .red-sort {
         position: relative;
@@ -2189,48 +2301,7 @@ section.footer {
         background-size: cover;
     }
 
-    .scroll-down {
-        position: absolute;
-        bottom: 0;
-        left: 25%;
-        transform: translateX(-25%);
-        height: 96px;
 
-        .empty-circle {
-            width: 18px;
-            height: 18px;
-            margin: 0 auto;
-            border: 1px solid #888;
-            border-radius: 50px;
-
-            .full-circle {
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 6px;
-                height: 6px;
-                margin: 0 auto;
-                display: table;
-                background-color: #888;
-                border-radius: 50px;
-            }
-        }
-
-        .text {
-            margin: 10px 0;
-            color: #888;
-            font-size: 14px;
-            font-family: 'TenorSans';
-        }
-
-        .vertical-line {
-            margin: 0 auto;
-            display: table;
-            width: 1px;
-            height: 40px;
-            background-color: #888;
-        }
-    }
 
     .sort-content {
         position: relative;
@@ -2284,8 +2355,12 @@ section.footer {
 
 .freska-crvena {
     position: fixed;
-    top: 9%;
+    /*top: 9%;*/
     left: 22%;
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    -o-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
     transform: translateX(-25%);
     width: 345px !important;
 
@@ -2298,8 +2373,12 @@ section.footer {
 
 .portugizer {
     position: fixed;
-    top: 59%;
+    /*top: 59%;*/
     left: 21%;
+    -moz-transform: translateX(-22%);
+    -ms-transform: translateX(-22%);
+    -o-transform: translateX(-22%);
+    -webkit-transform: translateX(-22%);
     transform: translateX(-22%);
     width: 345px !important;
 
@@ -2314,6 +2393,10 @@ section.footer {
     position: fixed;
     top: 4.5%;
     left: 21%;
+    -moz-transform: translateX(-22%);
+    -ms-transform: translateX(-22%);
+    -o-transform: translateX(-22%);
+    -webkit-transform: translateX(-22%);
     transform: translateX(-22%);
     width: 345px !important;
 
@@ -2328,6 +2411,10 @@ section.footer {
     position: fixed;
     top: 29.5%;
     left: 21%;
+    -moz-transform: translateX(-22%);
+    -ms-transform: translateX(-22%);
+    -o-transform: translateX(-22%);
+    -webkit-transform: translateX(-22%);
     transform: translateX(-22%);
     width: 345px !important;
 
@@ -2342,6 +2429,10 @@ section.footer {
     position: fixed;
     top: 54%;
     left: 21%;
+    -moz-transform: translateX(-22%);
+    -ms-transform: translateX(-22%);
+    -o-transform: translateX(-22%);
+    -webkit-transform: translateX(-22%);
     transform: translateX(-22%);
     width: 345px !important;
 
@@ -2356,21 +2447,34 @@ section.footer {
     position: fixed;
     top: 79%;
     left: 21%;
+    -moz-transform: translateX(-22%);
+    -ms-transform: translateX(-22%);
+    -o-transform: translateX(-22%);
+    -webkit-transform: translateX(-22%);
     transform: translateX(-22%);
     width: 345px !important;
 
     .sovinjon-bottle {
         width: 345px;
-        height: 700px;
+        height: 733px;
         background: url('../images/sovinjon.png') center center no-repeat;
     }
 }
 
 .all-sorts {
     position: relative;
-    left: 37%;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     top: 21%;
+    width: 500px;
     opacity: 0.1;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
     transition: opacity .5s;
 
     .name {
@@ -2426,6 +2530,9 @@ section.footer {
 
 .name-position {
     opacity: 0.1;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
     transition: opacity .5s;
     position: relative;
     top: 31%;
@@ -2495,11 +2602,11 @@ section.footer {
         }
 
         .degrees {
-            margin: 100px 0 40px 25px;
+            margin: 15px 0 40px 25px;
         }
 
         .temp {
-            margin: 100px 0 40px 0;
+            margin: 15px 0 40px 0;
         }
 
         .degrees,
@@ -2515,6 +2622,10 @@ section.footer {
 
         .percentage {
             margin-left: 25px;
+        }
+
+        .read-more-box {
+            margin-top: 40px;
         }
     }
 }
@@ -2534,15 +2645,21 @@ section.footer {
         width: 100%;
         height: 740px;
         background: url('../images/territory-background.jpg') center center no-repeat;
+        background-size: cover;
 
         .text-wrapper {
             position: absolute;
             top: 50%;
             left: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             margin-left: 110px;
 
             .title {
+                width: 80%;
                 margin-bottom: 10px;
                 font-size: 36px;
                 font-family: 'Minion Pro-Regular';
@@ -2580,12 +2697,16 @@ section.footer {
             .text-wrapper {
                 position: absolute;
                 top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
                 margin-right: 110px;
                 text-align: right;
 
                 .title {
-                    margin-bottom: 10px;
+                    margin-bottom: 30px;
                     font-size: 36px;
                     font-family: 'Minion Pro-Regular';
                     color: #333;
@@ -2627,6 +2748,7 @@ section.footer {
     .fauna {
         width: 100%;
         height: 733px;
+        direction: rtl;
 
         .left-box {
             width: 50%;
@@ -2643,11 +2765,19 @@ section.footer {
             .text-wrapper {
                 position: absolute;
                 top: 50%;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
                 margin-left: 110px;
+                direction: initial;
 
                 .title {
-                    margin-bottom: 10px;
+                    width: 81%;
+                    float: left;
+                    text-align: left;
+                    margin-bottom: 30px;
                     font-size: 36px;
                     font-family: 'Minion Pro-Regular';
                     color: #333;
@@ -2667,6 +2797,7 @@ section.footer {
                     font-size: 18px;
                     font-family: 'TenorSans';
                     color: #333;
+                    text-align: left;
                 }
             }
         }
