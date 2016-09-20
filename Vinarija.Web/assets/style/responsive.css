@@ -1219,6 +1219,28 @@
   .actualities-page .ivent-calendar .calendar .month {
     margin-bottom: 20px;
   }
+  .change-text .content-position .name-wine,
+  .change-text .content-position .subtitle {
+    display: none;
+  }
+  .change-text .content-position .text {
+    line-height: 15px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .title {
+    font-size: 22px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .red-bottle {
+    height: 125%;
+    width: 115px;
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box .read-more {
+    margin: 0 10px;
+  }
   .wines-page .wine-selection .red-wine .logo {
     top: 10px;
     left: 0;
