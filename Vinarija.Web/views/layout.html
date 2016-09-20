@@ -2,7 +2,7 @@
     <img class="main-logo" src="../assets/images/logo.svg" scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home" />
     <img class="logo-headline" src="../assets/images/headline-logo.png" />
 
-    <slick-carousel dots="true" class="how-it-works-slider" set-height>
+    <slick-carousel dots="true" id="active-header-img" set-height>
         <div class="slide first" set-height></div>
         <div class="slide second" set-height></div>
         <div class="slide third" set-height></div>
@@ -11,35 +11,43 @@
         <div class="slide sixth" set-height></div>
     </slick-carousel>
 
+    <div class="scroll-down">
+        <div class="empty-circle">
+            <div class="full-circle"></div>
+        </div>
+        <div class="text">Скролуј доле</div>
+        <div class="vertical-line"></div>
+    </div>
+
     <nav>
         <ul>
-            <li class="flex" ng-class="{'selected' : $state.includes('layout.home')}">
+            <li class="flex" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}">
                 <div class="grey-line"></div>
-                <a scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home">почетна</a>
+                <a ui-sref="layout.home">почетна</a>
             </li>
             <li class="flex" ng-class="{'selected' : $state.includes('layout.wines')}">
                 <div class="grey-line"></div>
                 <a ui-sref="layout.wines">вина</a>
             </li>
-            <li class="flex" ng-class="{'selected' : $state.includes('layout.winery')}">
+            <li class="flex" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}">
                 <div class="grey-line"></div>
-                <a scroll-to-section section-to-scroll="winery-page" time="5000" state="layout.winery">винарија</a>
+                <a ui-sref="layout.winery">винарија</a>
             </li>
-            <li class="flex" ng-class="{'selected' : $state.includes('layout.vineyards')}">
+            <li class="flex" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}">
                 <div class="grey-line"></div>
-                <a scroll-to-section section-to-scroll="vineyards-page" time="5000" state="layout.vineyards">виногради</a>
+                <a ui-sref="layout.vineyards">виногради</a>
             </li>
-            <li class="flex" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
+            <li class="flex" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
                 <div class="grey-line"></div>
-                <a scroll-to-section section-to-scroll="visit-winery-page" time="5000" state="layout.visit-winery">посета винарији</a>
+                <a ui-sref="layout.visit-winery">посета винарији</a>
             </li>
-            <li class="flex" ng-class="{'selected' : $state.includes('layout.actualities')}">
+            <li class="flex" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}">
                 <div class="grey-line"></div>
-                <a scroll-to-section section-to-scroll="actualities-page" time="5000" state="layout.actualities">актуелности</a>
+                <a ui-sref="layout.actualities">актуелности</a>
             </li>
-            <li class="flex" ng-class="{'selected' : $state.includes('layout.territory')}">
+            <li class="flex" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}">
                 <div class="grey-line"></div>
-                <a scroll-to-section section-to-scroll="territory-page" time="5000" state="layout.territory">делиблатска пешчара</a>
+                <a ui-sref="layout.territory">делиблатска пешчара</a>
             </li>
         </ul>
     </nav>
@@ -49,33 +57,33 @@
         <nav class="hamburger-nav-mobile">
             <div class="hamburger-container" ng-class="{'open-menu': hamburgerMenu}" set-height>
                 <ul ng-click="showMenu()">
-                    <li class="flex" ng-class="{'selected' : $state.includes('layout.home')}">
+                    <li class="flex" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}">
                         <div class="grey-line"></div>
-                        <a scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home">почетна</a>
+                        <a ui-sref="layout.home">почетна</a>
                     </li>
                     <li class="flex" ng-class="{'selected' : $state.includes('layout.wines')}">
                         <div class="grey-line"></div>
                         <a ui-sref="layout.wines">вина</a>
                     </li>
-                    <li class="flex" ng-class="{'selected' : $state.includes('layout.winery')}">
+                    <li class="flex" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}">
                         <div class="grey-line"></div>
-                        <a scroll-to-section section-to-scroll="winery-page" time="5000" state="layout.winery">винарија</a>
+                        <a ui-sref="layout.winery">винарија</a>
                     </li>
-                    <li class="flex" ng-class="{'selected' : $state.includes('layout.vineyards')}">
+                    <li class="flex" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}">
                         <div class="grey-line"></div>
-                        <a scroll-to-section section-to-scroll="vineyards-page" time="5000" state="layout.vineyards">виногради</a>
+                        <a ui-sref="layout.vineyards">виногради</a>
                     </li>
-                    <li class="flex" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
+                    <li class="flex" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
                         <div class="grey-line"></div>
-                        <a scroll-to-section section-to-scroll="visit-winery-page" time="5000" state="layout.visit-winery">посета винарији</a>
+                        <a ui-sref="layout.visit-winery">посета винарији</a>
                     </li>
-                    <li class="flex" ng-class="{'selected' : $state.includes('layout.actualities')}">
+                    <li class="flex" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}">
                         <div class="grey-line"></div>
-                        <a scroll-to-section section-to-scroll="actualities-page" time="5000" state="layout.actualities">актуелности</a>
+                        <a ui-sref="layout.actualities">актуелности</a>
                     </li>
-                    <li class="flex" ng-class="{'selected' : $state.includes('layout.territory')}">
+                    <li class="flex" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}">
                         <div class="grey-line"></div>
-                        <a scroll-to-section section-to-scroll="territory-page" time="5000" state="layout.territory">делиблатска пешчара</a>
+                        <a ui-sref="layout.territory">делиблатска пешчара</a>
                     </li>
                 </ul>
             </div>
@@ -109,7 +117,7 @@
                 <div class="first-colum">
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.home')}" scroll-to-section section-to-scroll="home-page" time="5000" state="layout.home">почетна</a>
+                        <a class="page-name" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}" ui-sref="layout.home">почетна</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
@@ -117,25 +125,25 @@
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.winery')}" scroll-to-section section-to-scroll="winery-page" time="5000" state="layout.winery">винарија</a>
+                        <a class="page-name" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}" ui-sref="layout.winery">винарија</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.vineyards')}" scroll-to-section section-to-scroll="vineyards-page" time="5000" state="layout.vineyards">виногради</a>
+                        <a class="page-name" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}" ui-sref="layout.vineyards">виногради</a>
                     </div>
                 </div>
                 <div class="second-colum">
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.visit-winery')}" scroll-to-section section-to-scroll="visit-winery-page" time="5000" state="layout.visit-winery">посета винарији</a>
+                        <a class="page-name" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}" ui-sref="layout.visit-winery">посета винарији</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.actualities')}" scroll-to-section section-to-scroll="actualities-page" time="5000" state="layout.actualities">актуелности</a>
+                        <a class="page-name" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}" ui-sref="layout.actualities">актуелности</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.territory')}" scroll-to-section section-to-scroll="territory-page" time="5000" state="layout.territory">делиблатска пешчара</a>
+                        <a class="page-name" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}" ui-sref="layout.territory">делиблатска пешчара</a>
                     </div>
                 </div>
             </div>

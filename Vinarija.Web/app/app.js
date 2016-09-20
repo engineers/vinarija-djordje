@@ -70,9 +70,11 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
     $locationProvider.html5Mode(true);
 });
 
-app.run(function ($rootScope, $state) {
+app.run(function ($rootScope, $state, $anchorScroll) {
 
     $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+
+        $anchorScroll(top);
 
         $rootScope.$state = $state;
 

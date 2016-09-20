@@ -19,7 +19,7 @@
                     fade: true,
                     speed: 1000,
                     autoplay: true,
-                    autoplaySpeed: 4000,
+                    autoplaySpeed: 5000,
                     pauseOnHover: false
                 });
             };

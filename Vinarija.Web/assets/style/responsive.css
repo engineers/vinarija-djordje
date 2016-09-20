@@ -1321,6 +1321,9 @@
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
+  section.intro .scroll-down {
+    display: none;
+  }
   section.intro .main-logo {
     z-index: 1;
     top: 10px;
@@ -1394,15 +1397,16 @@
     -o-transform: none;
     -webkit-transform: none;
     transform: none;
-    margin-left: 18%;
+    margin-left: 25%;
   }
   .home-page .ivent-calendar .calendar .date {
-    text-align: center;
+    text-align: left;
     font-size: 100px;
   }
   .home-page .ivent-calendar .calendar .month {
     margin-bottom: 15px;
     font-size: 15px;
+    text-align: left;
   }
   .home-page .ivent-calendar .calendar-news {
     float: none;
@@ -1418,10 +1422,6 @@
   .home-page .ivent-calendar .calendar-news .content {
     margin-bottom: 20px;
     line-height: 18px;
-  }
-  .home-page .ivent-calendar .calendar-news .read-more-box {
-    -webkit-justify-content: center;
-    justify-content: center;
   }
   section.footer .footer-container {
     padding: 60px 0 0 0;

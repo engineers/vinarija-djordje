@@ -2031,6 +2031,10 @@
     }
 
     section.intro {
+        .scroll-down {
+            display: none;
+        }
+
         .main-logo {
             z-index: 1;
             top: 10px;
@@ -2128,16 +2132,17 @@
                 -o-transform: none;
                 -webkit-transform: none;
                 transform: none;
-                margin-left: 18%;
+                margin-left: 25%;
 
                 .date {
-                    text-align: center;
+                    text-align: left;
                     font-size: 100px;
                 }
 
                 .month {
                     margin-bottom: 15px;
                     font-size: 15px;
+                    text-align: left;
                 }
             }
 
@@ -2156,11 +2161,6 @@
                 .content {
                     margin-bottom: 20px;
                     line-height: 18px;
-                }
-
-                .read-more-box {
-                    -webkit-justify-content: center;
-                    justify-content: center;
                 }
             }
         }
