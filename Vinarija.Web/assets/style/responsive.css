@@ -738,7 +738,8 @@
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-btn {
     top: 62px;
-    left: 88%;
+    left: auto;
+    right: 30px;
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .label {
     display: none;
@@ -1230,7 +1231,8 @@
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-btn {
     top: 50px;
-    left: 80%;
+    left: auto;
+    right: 30px;
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul {
     top: 50%;
@@ -1364,19 +1366,35 @@
     margin-top: 9px;
   }
   section.intro .hamburger-menu-mobile .hamburger-btn {
-    left: 80%;
+    left: auto;
+    right: 30px;
     top: 50px;
   }
   .home-page .slider-home-page .prev-arrow {
-    left: 20px;
+    left: 0;
+    -moz-transform: translateY(-50%) scale(0.6);
+    -ms-transform: translateY(-50%) scale(0.6);
+    -o-transform: translateY(-50%) scale(0.6);
+    -webkit-transform: translateY(-50%) scale(0.6);
+    transform: translateY(-50%) scale(0.6);
   }
   .home-page .slider-home-page .next-arrow {
-    right: 20px;
+    right: 0;
+    -moz-transform: translateY(-50%) scale(0.6);
+    -ms-transform: translateY(-50%) scale(0.6);
+    -o-transform: translateY(-50%) scale(0.6);
+    -webkit-transform: translateY(-50%) scale(0.6);
+    transform: translateY(-50%) scale(0.6);
   }
   .home-page .ivent-calendar .calendar {
     float: none;
     top: 0;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
     transform: none;
+    margin-left: 18%;
   }
   .home-page .ivent-calendar .calendar .date {
     text-align: center;
@@ -1395,9 +1413,15 @@
   }
   .home-page .ivent-calendar .calendar-news .title {
     margin-bottom: 15px;
+    line-height: 26px;
   }
   .home-page .ivent-calendar .calendar-news .content {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 18px;
+  }
+  .home-page .ivent-calendar .calendar-news .read-more-box {
+    -webkit-justify-content: center;
+    justify-content: center;
   }
   section.footer .footer-container {
     padding: 60px 0 0 0;

@@ -1190,7 +1190,8 @@
 
                     .hamburger-btn {
                         top: 62px;
-                        left: 88%;
+                        left: auto;
+                        right: 30px;
                     }
 
                     .label {
@@ -1865,7 +1866,8 @@
                 .hamburger-menu {
                     .hamburger-btn {
                         top: 50px;
-                        left: 80%;
+                        left: auto;
+                        right: 30px;
                     }
 
                     .hamburger-nav {
@@ -2089,7 +2091,8 @@
             }
 
             .hamburger-btn {
-                left: 80%;
+                left: auto;
+                right: 30px;
                 top: 50px;
             }
         }
@@ -2098,11 +2101,21 @@
     .home-page {
         .slider-home-page {
             .prev-arrow {
-                left: 20px;
+                left: 0;
+                -moz-transform: translateY(-50%) scale(.6);
+                -ms-transform: translateY(-50%) scale(.6);
+                -o-transform: translateY(-50%) scale(.6);
+                -webkit-transform: translateY(-50%) scale(.6);
+                transform: translateY(-50%) scale(.6);
             }
 
             .next-arrow {
-                right: 20px;
+                right: 0;
+                -moz-transform: translateY(-50%) scale(.6);
+                -ms-transform: translateY(-50%) scale(.6);
+                -o-transform: translateY(-50%) scale(.6);
+                -webkit-transform: translateY(-50%) scale(.6);
+                transform: translateY(-50%) scale(.6);
             }
         }
 
@@ -2110,7 +2123,12 @@
             .calendar {
                 float: none;
                 top: 0;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                -webkit-transform: none;
                 transform: none;
+                margin-left: 18%;
 
                 .date {
                     text-align: center;
@@ -2132,10 +2150,17 @@
 
                 .title {
                     margin-bottom: 15px;
+                    line-height: 26px;
                 }
 
                 .content {
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
+                    line-height: 18px;
+                }
+
+                .read-more-box {
+                    -webkit-justify-content: center;
+                    justify-content: center;
                 }
             }
         }

@@ -647,7 +647,7 @@ section.footer .footer-container .contact-form .message {
   color: #fff;
 }
 section.footer .copyright {
-  margin-top: 120px;
+  margin-top: 85px;
   padding-bottom: 45px;
   color: #646464;
   font-size: 16px;
@@ -1003,7 +1003,7 @@ section.footer .copyright {
 .home-page .hover-section .third-img .news .view-more,
 .home-page .hover-section .fourth-img .news .view-more,
 .home-page .hover-section .fifth-img .news .view-more {
-  margin-left: 20px;
+  margin: 0 0 20px 20px;
   font-size: 16px;
   color: #fff;
   text-transform: uppercase;
