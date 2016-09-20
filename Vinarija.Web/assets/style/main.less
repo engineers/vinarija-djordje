@@ -1641,53 +1641,6 @@ section.footer {
                 color: #888;
                 line-height: 21px;
             }
-
-            .news-popup {
-                position: fixed;
-                top: 0;
-                right: 0;
-                height: 100%;
-                overflow: auto;
-                z-index: 8;
-                background-color: #fbf9f0;
-                width: 0;
-
-                &.open-menu {
-                    width: 100%;
-                }
-
-                .popup-content {
-                    -webkit-justify-content: space-between;
-                    justify-content: space-between;
-                    padding: 190px 75px 0 0;
-
-                    .calendar {
-                        width: 230px;
-                        margin-left: 0;
-
-                        .date {
-                            margin-top: -30px;
-                            text-align: center;
-                        }
-                    }
-
-                    .all-text {
-                        width: 60%;
-                        z-index: 5;
-
-                        .first-row {
-                            margin-right: 6%;
-                            width: 47%;
-                            float: left;
-                        }
-
-                        .second-row {
-                            width: 47%;
-                            float: left;
-                        }
-                    }
-                }
-            }
         }
 
         .calendar-img {
@@ -1740,6 +1693,53 @@ section.footer {
             .content {
                 direction: initial;
                 text-align: right;
+            }
+        }
+    }
+
+    .news-popup {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow: auto;
+        z-index: 8;
+        background-color: #fbf9f0;
+        width: 0;
+
+        &.open-menu {
+            width: 100%;
+        }
+
+        .popup-content {
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            padding: 190px 75px 0 0;
+
+            .calendar {
+                width: 230px;
+                margin-left: 0;
+
+                .date {
+                    margin-top: -30px;
+                    text-align: center;
+                }
+            }
+
+            .all-text {
+                width: 60%;
+                z-index: 5;
+
+                .first-row {
+                    margin-right: 6%;
+                    width: 47%;
+                    float: left;
+                }
+
+                .second-row {
+                    width: 47%;
+                    float: left;
+                }
             }
         }
     }

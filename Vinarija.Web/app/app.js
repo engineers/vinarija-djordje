@@ -1,10 +1,10 @@
-﻿var app = angular.module('vinarija', ['ui.router', 'ngSanitize']); //'uiGmapgoogle-maps'
-
-app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
+﻿var app = angular.module('vinarija', ['ui.router', 'ngSanitize', 'angularUtils.directives.dirPagination']);
+app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, paginationTemplateProvider) {
     $urlRouterProvider.otherwise(function ($injector) {
         var $state = $injector.get('$state');
         $state.go('layout.home');
     });
+    paginationTemplateProvider.setPath('../views/dirPagination.tpl.html');
 
     $stateProvider
         .state('layout', {
@@ -34,6 +34,15 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
            url: '/aktuelnosti',
            controller: 'ActualitiesController',
            templateUrl: '/views/actualities.html',
+           resolve: {
+               postsData: function (blogService) {
+                   var params = {
+                       pageNumber: 1,
+                       pageSize: 2
+                   };
+                   return blogService.getPosts(params);
+               }
+           },
            pageName: 'Актуелности',
        })
        .state('layout.vineyards', {
@@ -91,5 +100,6 @@ app.run(function ($rootScope, $state, $anchorScroll) {
 });
 
 app.constant('config', {
-    baseAddress: 'http://localhost:53491/api/'
+    baseAddress: 'http://localhost:53491/api/',
+    contentAddress: 'http://localhost:53491/Content/'
 });

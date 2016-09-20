@@ -1,194 +1,48 @@
 ﻿<div class="actualities-page">
-    <section class="ivent-calendar">
+    <section class="ivent-calendar" dir-paginate="post in posts | itemsPerPage: params.pageSize" total-items="totalCount" current-page="params.pageNumber">
         <div class="calendar">
-            <div class="date">01</div>
-            <div class="month">апр</div>
+            <div class="date" ng-bind="post.dateDay"></div>
+            <div class="month" ng-bind="post.dateMonth"></div>
         </div>
         <div class="calendar-news">
-            <div class="title">Представљање на винској илегали</div>
-            <div class="content">
-                На југу Балкана, између Дунава и Карпата, простире се Делиблатска
-                пешчара, заштићено прибежиште за многе врсте биљака и животиња и
-                значајан генетски ресусрс наше планете.
-            </div>
-            <div class="read-more-box flex" ng-click="showNewsPopUp()">
+            <div class="title" ng-bind="post.title"></div>
+            <div class="content" ng-bind-html="post.content"></div>
+            <div class="read-more-box flex" ng-click="showNewsPopUp(post)">
                 <div class="vertical-line"></div>
                 <div class="read-more">прочитај још</div>
                 <div class="vertical-line"></div>
             </div>
+        </div>
+        <div class="calendar-img" ng-if="post.postImages.length > 0">
+            <img ng-src="{{post.imageUrl}}" />
+        </div>
+        <div class="calendar-img first" ng-show="!post.postImages.length">
+            no image placeholder
+        </div>
+    </section>
 
-            <div class="news-popup" ng-class="{'open-menu': newsPopUp}" set-height>
-                <div class="back-arrow-black" ng-click="showNewsPopUp()"></div>
-                <div class="flex popup-content">
-                    <div class="calendar-img first"></div>
-                    <div class="calendar">
-                        <div class="date">01</div>
-                        <div class="month">апр</div>
-                    </div>
-                    <div class="all-text">
-                        <div class="title">Представљање на винској илегали</div>
-                        <div class="first-row">
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nisi quam,
-                                a commodo sem consequat sit amet. Donec a massa tincidunt, rutrum sapien et, rhoncus
-                                lectus. Fusce tortor augue, viverra accumsan suscipit non, rhoncus vel massa. Interdum
-                                et malesuada fames ac ante ipsum primis in faucibus. Praesent non dui sit amet sapien ornare
-                                facilisis egestas at leo. Ut nisi sem, convallis eu odio sit amet, scelerisque rutrum
-                                justo. Maecenas vestibulum sit amet erat vel fringilla. Quisque lacinia mi at elit tempus,
-                                ut mollis ligula semper. Etiam fringilla sagittis lacus, sit amet volutpat felis mattis sit
-                                amet. Duis elementum lectus id luctus tempor. Nam venenatis ante dui, ac vehicula sapien
-                                dictum ut. Nam pulvinar elementum semper. Cras rutrum metus lectus. Vivamus vehicula turpis
-                                lectus, ornare interdum tellus varius non.
-                            </div>
-                            <div class="content">
-                                Sed accumsan urna sed sapien feugiat accumsan. Donec ultrices quam enim, in semper urna semper
-                                sed. Vivamus facilisis accumsan dui, a venenatis sem molestie eu. Nam placerat urna eu placerat
-                                tincidunt. Quisque justo urna, pellentesque et purus condimentum, condimentum pretium sem.
-                                Maecenas quis libero sit amet nulla porttitor venenatis id vehicula ante. Mauris tincidunt,
-                                lacus nec condimentum suscipit, risus est posuere eros, luctus placerat ex sem sed ligula.
-                                Donec ipsum orci, ullamcorper a luctus quis, convallis eget lacus. Proin vel mattis nibh,
-                                ut tempor lorem. Sed suscipit dignissim finibus. Pellentesque non leo sit amet metus
-                                consectetur egestas ut sit amet felis. Phasellus et est tortor. Sed nulla libero, vehicula
-                                in pulvinar vitae, convallis id nulla.
-                            </div>
-                        </div>
+    <dir-pagination-controls 
+                             max-size="10"
+                             on-page-change="pageChanged(newPageNumber)"
+                             ></dir-pagination-controls>
 
-                        <div class="second-row">
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nisi quam,
-                                a commodo sem consequat sit amet. Donec a massa tincidunt, rutrum sapien et, rhoncus
-                                lectus. Fusce tortor augue, viverra accumsan suscipit non, rhoncus vel massa. Interdum
-                                et malesuada fames ac ante ipsum primis in faucibus. Praesent non dui sit amet sapien ornare
-                                facilisis egestas at leo. Ut nisi sem, convallis eu odio sit amet, scelerisque rutrum
-                                justo. Maecenas vestibulum sit amet erat vel fringilla. Quisque lacinia mi at elit tempus,
-                                ut mollis ligula semper. Etiam fringilla sagittis lacus, sit amet volutpat felis mattis sit
-                                amet. Duis elementum lectus id luctus tempor. Nam venenatis ante dui, ac vehicula sapien
-                                dictum ut. Nam pulvinar elementum semper. Cras rutrum metus lectus. Vivamus vehicula turpis
-                                lectus, ornare interdum tellus varius non.
-                            </div>
-                            <div class="content">
-                                Sed accumsan urna sed sapien feugiat accumsan. Donec ultrices quam enim, in semper urna semper
-                                sed. Vivamus facilisis accumsan dui, a venenatis sem molestie eu. Nam placerat urna eu placerat
-                                tincidunt. Quisque justo urna, pellentesque et purus condimentum, condimentum pretium sem.
-                                Maecenas quis libero sit amet nulla porttitor venenatis id vehicula ante. Mauris tincidunt,
-                                lacus nec condimentum suscipit, risus est posuere eros, luctus placerat ex sem sed ligula.
-                                Donec ipsum orci, ullamcorper a luctus quis, convallis eget lacus. Proin vel mattis nibh,
-                                ut tempor lorem. Sed suscipit dignissim finibus. Pellentesque non leo sit amet metus
-                                consectetur egestas ut sit amet felis. Phasellus et est tortor. Sed nulla libero, vehicula
-                                in pulvinar vitae, convallis id nulla.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stamp-big"></div>
+    <div class="news-popup open-menu" ng-if="postPreview" set-height>
+        <div class="back-arrow-black" ng-click="showNewsPopUp()"></div>
+        <div class="flex popup-content">
+            <div class="calendar-img">
+                <img ng-src="{{postPreview.imageUrl}}" />
+            </div>
+            <div class="calendar">
+                <div class="date" ng-bind="postPreview.dateDay"></div>
+                <div class="month" ng-bind="postPreview.dateMonth"></div>
+            </div>
+            <div class="all-text">
+                <div class="title" ng-bind="postPreview.title"></div>
+                <div class="first-row">
+                    <div class="content" ng-bind-html="postPreview.content"></div>
                 </div>
             </div>
-
+            <div class="stamp-big"></div>
         </div>
-        <div class="calendar-img first"></div>
-    </section>
-
-    <section class="ivent-calendar second-section">
-        <div class="calendar">
-            <div class="date">07</div>
-            <div class="month">апр</div>
-        </div>
-        <div class="calendar-news">
-            <div class="title">Представљање на винској илегали</div>
-            <div class="content">
-                На југу Балкана, између Дунава и Карпата, простире се Делиблатска
-                пешчара, заштићено прибежиште за многе врсте биљака и животиња и
-                значајан генетски ресусрс наше планете.
-            </div>
-            <div class="read-more-box flex" ng-click="showNewsPopUp()">
-                <div class="vertical-line"></div>
-                <div class="read-more">прочитај још</div>
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="calendar-img second"></div>
-    </section>
-
-    <section class="ivent-calendar">
-        <div class="calendar">
-            <div class="date">13</div>
-            <div class="month">мај</div>
-        </div>
-        <div class="calendar-news">
-            <div class="title">Представљање на винској илегали</div>
-            <div class="content">
-                На југу Балкана, између Дунава и Карпата, простире се Делиблатска
-                пешчара, заштићено прибежиште за многе врсте биљака и животиња и
-                значајан генетски ресусрс наше планете.
-            </div>
-            <div class="read-more-box flex" ng-click="showNewsPopUp()">
-                <div class="vertical-line"></div>
-                <div class="read-more">прочитај још</div>
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="calendar-img third"></div>
-    </section>
-
-    <section class="ivent-calendar fourth-section">
-        <div class="calendar">
-            <div class="date">28</div>
-            <div class="month">мај</div>
-        </div>
-        <div class="calendar-news">
-            <div class="title">Представљање на винској илегали</div>
-            <div class="content">
-                На југу Балкана, између Дунава и Карпата, простире се Делиблатска
-                пешчара, заштићено прибежиште за многе врсте биљака и животиња и
-                значајан генетски ресусрс наше планете.
-            </div>
-            <div class="read-more-box flex" ng-click="showNewsPopUp()">
-                <div class="vertical-line"></div>
-                <div class="read-more">прочитај још</div>
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="calendar-img fourth"></div>
-    </section>
-
-    <section class="ivent-calendar">
-        <div class="calendar">
-            <div class="date">08</div>
-            <div class="month">јул</div>
-        </div>
-        <div class="calendar-news">
-            <div class="title">Представљање на винској илегали</div>
-            <div class="content">
-                На југу Балкана, између Дунава и Карпата, простире се Делиблатска
-                пешчара, заштићено прибежиште за многе врсте биљака и животиња и
-                значајан генетски ресусрс наше планете.
-            </div>
-            <div class="read-more-box flex" ng-click="showNewsPopUp()">
-                <div class="vertical-line"></div>
-                <div class="read-more">прочитај још</div>
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="calendar-img fifth"></div>
-    </section>
-
-    <section class="ivent-calendar sixth-section">
-        <div class="calendar">
-            <div class="date">16</div>
-            <div class="month">јул</div>
-        </div>
-        <div class="calendar-news">
-            <div class="title">Представљање на винској илегали</div>
-            <div class="content">
-                На југу Балкана, између Дунава и Карпата, простире се Делиблатска
-                пешчара, заштићено прибежиште за многе врсте биљака и животиња и
-                значајан генетски ресусрс наше планете.
-            </div>
-            <div class="read-more-box flex" ng-click="showNewsPopUp()">
-                <div class="vertical-line"></div>
-                <div class="read-more">прочитај још</div>
-                <div class="vertical-line"></div>
-            </div>
-        </div>
-        <div class="calendar-img sixth"></div>
-    </section>
+    </div>
 </div>
