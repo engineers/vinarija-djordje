@@ -1,0 +1,18 @@
+﻿<md-content flex layout="row" layout-align="center center">
+    <md-whiteframe class="md-whiteframe-1dp" flex-sm="60" flex-gt-sm="40" layout="column" layout-margin layout-padding>
+        <form name="form" layout="column" ng-submit="login()">
+            <div flex layout="row" layout-align="center center" md-primary-color>
+                <h1 class="md-primary">Vinarija Đorđević CMS</h1>
+            </div>
+            <md-input-container flex>
+                <label>Email</label>
+                <input type="text" ng-model="user.email" required>
+            </md-input-container>
+            <md-input-container flex>
+                <label>Šifra</label>
+                <input type="password" ng-model="user.password" required>
+            </md-input-container>
+            <md-button class="md-raised md-primary" type="submit" pull-right ng-disabled="form.$invalid">Uloguj se</md-button>
+        </form>
+    </md-whiteframe>
+</md-content>

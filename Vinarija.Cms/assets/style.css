@@ -1,0 +1,392 @@
+[pull-right] {
+    float: right;
+}
+
+[pointer] {
+    cursor: -webkit-grab;
+}
+
+[nomrg], [mrg="0"] {
+    margin: 0px !important;
+}
+
+[nopadd], [padd="0"] {
+    padding: 0px !important;
+}
+
+[pull-right] {
+    float: right;
+}
+
+[overflow="none"] {
+    overflow: none !important;
+}
+
+[vertical-align="middle"] {
+    vertical-align: middle !important;
+}
+
+[text-right] {
+    text-align: right;
+}
+
+[overflow-x="hidden"] {
+    overflow-x: hidden;
+}
+
+[break-all] {
+    word-break: break-all;
+}
+
+[font-size="20px"] {
+    font-size: 20px;
+}
+
+[md-primary-color] {
+    color: #607D8B;
+}
+
+[padd-left="3"] {
+    padding-left: 3rem;
+}
+
+[padd-top="20px"] {
+    padding-top: 20px;
+}
+
+[no-visible] {
+    visibility: hidden;
+}
+
+md-table-container {
+    max-height: 700px !important;
+}
+
+/*thead {
+  background: #ccc;
+}*/
+
+md-content {
+    background: #FFF;
+}
+
+thead tr > th {
+    color: #000 !important;
+}
+
+md-icon.md-sort-icon {
+    color: #FFF !important;
+}
+
+.md-errors-spacer {
+    display: none;
+}
+
+md-dialog {
+    border-radius: 0px;
+}
+
+.login-container {
+    width: 300px;
+}
+
+.normal-case {
+    text-transform: none !important;
+}
+
+.vc-header-icon {
+    font-size: 3em;
+}
+
+.vc-toolbar-icon {
+    font-size: 35px;
+}
+
+.site-content-toolbar-button {
+    font-size: 20px;
+}
+
+.sidenav-btn {
+    margin: 0px;
+    border: 0px;
+    border-radius: none;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.docs-toolbar-tools {
+    padding: 0;
+    margin: 0 24px;
+    width: auto;
+}
+
+a.md-button {
+    border-radius: 0px;
+}
+
+md-list-item .md-button {
+    border-radius: 0px !important;
+}
+
+.page-content {
+    overflow: auto;
+}
+
+.permission-tr > td {
+    width: 20%;
+    vertical-align: middle;
+}
+
+.users-tr > td {
+    vertical-align: middle !important;
+}
+
+.tag-1 {
+    background: #16a085;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    border: 1px solid #16a085;
+    border-radius: 4px;
+}
+
+.tag-2 {
+    background: #28b463;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    border: 1px solid #28b463;
+    border-radius: 4px;
+}
+
+.tag-3 {
+    background: #2a83bd;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    border: 1px solid #2a83bd;
+    border-radius: 4px;
+}
+
+.tag-4 {
+    background: #8e44ad;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    border: 1px solid #8e44ad;
+    border-radius: 4px;
+}
+
+.tag-5 {
+    background: #2c3e50;
+    padding: 0px 5px 0px 5px;
+    color: white;
+    border: 1px solid #2c3e50;
+    border-radius: 4px;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0px;
+}
+
+.padding-bottom {
+    padding-bottom: 5px;
+}
+
+.no {
+    margin: 0px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+.table {
+    border-collapse: collapse !important;
+}
+
+    .table td, .table th {
+        background-color: transparent;
+    }
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd !important;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+    .table th {
+        text-align: left;
+    }
+
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+    }
+
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+        border-top: 1px solid #ddd;
+    }
+
+    .table > thead > tr > th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .table > caption + thead > tr:first-child > th,
+    .table > colgroup + thead > tr:first-child > th,
+    .table > thead:first-child > tr:first-child > th,
+    .table > caption + thead > tr:first-child > td,
+    .table > colgroup + thead > tr:first-child > td,
+    .table > thead:first-child > tr:first-child > td {
+        border-top: 0;
+    }
+
+    .table > tbody + tbody {
+        border-top: 2px solid #ddd;
+    }
+
+    .table .table {
+        background-color: #fff;
+    }
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+    padding: 5px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+    .table-bordered > thead > tr > th,
+    .table-bordered > tbody > tr > th,
+    .table-bordered > tfoot > tr > th,
+    .table-bordered > thead > tr > td,
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tfoot > tr > td {
+        border: 1px solid #ddd;
+    }
+
+    .table-bordered > thead > tr > th,
+    .table-bordered > thead > tr > td {
+        border-bottom-width: 2px;
+    }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+
+input.ng-invalid, md-select.ng-invalid .md-select-value, textarea.ng-invalid, .quickdate.ng-invalid > a.quickdate-button, vc-datepicker.ng-invalid md-datepicker .md-datepicker-input-container, vc-datepicker.ng-invalid:not([disabled]) .time {
+    border-bottom: 1px solid rgb(244,67,54);
+}
+
+md-select.ng-invalid.ng-dirty .md-select-value {
+    border-bottom-width: 1px !important;
+    color: rgb(200, 200, 200) !important;
+}
+
+tr.md-row {
+    height: 45px !important;
+}
+
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+    background-color: #f5f5f5;
+}
+
+tr.tr-vet th, tr.tr-vet td {
+    background-color: #009999;
+    color: white;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.width-50 {
+    width: 50px;
+}
+
+md-sidenav.md-locked-open {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+}
+
+.btn-group {
+    display: inline-block;
+}
+
+
+.btn-default {
+    min-height: 36px;
+    min-width: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: rgb(33,33,33);
+    background-color: rgb(250,250,250);
+    font-weight: 500;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    border: none;
+    margin: 4px 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+div[text-angular] div[contenteditable="true"] {
+    border: 1px solid rgba(0,0,0,0.12);
+}
+
+div[text-angular-toolbar] {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+slick {
+    width: 100%;
+}

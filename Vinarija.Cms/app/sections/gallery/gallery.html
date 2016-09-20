@@ -1,0 +1,102 @@
+﻿<div>
+    <span class="padding-bottom-0"><i class="fa fa-picture-o" aria-hidden="true"></i> Galerija</span>
+
+    <div layout="column">
+        <br />
+        <input ng-show="!post.postImages.length" type="file" nv-file-select="" multiple uploader="uploader" /><br />
+        <br />
+        <div ng-show="!uploadingImages">
+            <table md-table class="table" ng-show="galleryImages.length">
+                <thead md-head>
+                    <tr md-row>
+                        <th md-column>Redosled</th>
+                        <th md-column>Ime slike</th>
+                        <th md-column></th>
+                    </tr>
+                </thead>
+                <tbody md-body ui-sortable="sortableOptions" ng-model="galleryImages">
+                    <tr md-row ng-repeat="image in galleryImages track by $index">
+                        <td md-cell><i pointer class="fa fa-bars" aria-hidden="true"></i></td>
+                        <td md-cell ng-bind="image.name"></td>
+                        <td md-cell>
+                            <md-button type="button" aria-label="Delete" class="md-raised" ng-click="removeImage($event, image)">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </md-button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div layout="row" ng-show="reordering">
+                <md-input-container>
+                    <md-button class="md-raised md-primary" ng-click="saveReordering()">Sačuvaj redosled</md-button>
+                </md-input-container>
+                <md-input-container>
+                    <md-button class="md-raised" ng-click="cancelReordering()">Nazad</md-button>
+                </md-input-container>
+            </div>
+            <div layout="row" ng-if="galleryImages.length">
+                <md-whiteframe class="md-whiteframe-1dp" flex layout layout-align="center center">
+                    <slick settings="slickConfig" ng-if="!refreshSlick">
+                        <div ng-repeat="image in galleryImages">
+                            <img height="500" ng-src="{{image.filePath}}" />
+                        </div>
+                    </slick>
+                </md-whiteframe>
+            </div>
+        </div>
+
+        <h4 class="text-center" ng-show="!loading && !galleryImages.length">Trenutno nemate slika za galeriju u bazi</h4>
+        <h4 ng-show="loading" class="text-center">Molim sačekajte...</h4>
+
+        <div class="margin-bottom-40" ng-show="uploader.queue.length > 0">
+            <table md-table class="table">
+                <thead md-head>
+                    <tr md-row>
+                        <th md-column width="50%">Ime slike</th>
+                        <th md-column ng-show="uploader.isHTML5">Velčina</th>
+                        <th md-column ng-show="uploader.isHTML5">Progres %</th>
+                        <th md-column>Status</th>
+                        <th md-column></th>
+                    </tr>
+                </thead>
+                <tbody md-body>
+                    <tr md-row ng-repeat="item in uploader.queue">
+                        <td md-cell><strong>{{ item.file.name }}</strong></td>
+                        <td md-cell ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                        <td md-cell ng-show="uploader.isHTML5">
+                            <div class="progress" ng-show="item.progress" style="margin-bottom: 0;">
+                                <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+                            </div>
+                            <span ng-show="!item.progress">-</span>
+                        </td>
+                        <td md-cell class="text-center">
+                            <span ng-show="item.isSuccess"><i class="fa fa-check" aria-hidden="true"></i></span>
+                            <span ng-show="item.isCancel"><i class="fa fa-ban"></i></span>
+                            <span ng-show="item.isError"><i class="fa fa-ban" aria-hidden="true"></i></span>
+                            <span ng-show="!item.isError && !item.isCancel && !item.isSuccess">-</span>
+                        </td>
+                        <td md-cell nowrap>
+                            <md-button type="button" aria-label="Delete" class="md-raised" ng-click="item.remove()">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                            </md-button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <div>
+                    <md-progress-linear md-mode="determinate" value="{{uploader.progress}}"></md-progress-linear>
+                </div>
+            </div>
+
+            <div layout="row">
+                <md-input-container>
+                    <md-button class="md-raised md-primary" ng-click="uploadImages()">Dodaj slike</md-button>
+                </md-input-container>
+                <md-input-container>
+                    <md-button class="md-raised" ng-click="cancelUpload()">Nazad</md-button>
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+</div>

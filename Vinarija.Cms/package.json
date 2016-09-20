@@ -1,0 +1,36 @@
+{
+  "name": "Ciao.Cms",
+  "version": "1.0.0",
+  "description": "This is the seed project you need to use if you're going to create an AngularJS app that will use Auth0 and an API that you're going to be developing. That API can be in any language.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "angular": "1.5.8",
+    "font-awesome": "4.6.3",
+    "angular-ui-router": "0.3.1",
+    "angular-jwt": "0.1.3",
+    "angular-local-storage": "0.2.7",
+    "underscore": "1.8.3",
+    "angular-material": "1.1.0",
+    "angular-material-data-table": "0.10.9",
+    "jquery": "3.1.0",
+    "angular-file-upload": "2.3.4",
+    "moment": "2.14.1",
+    "textangular": "1.5.9",
+    "angular-slick-carousel": "3.1.7",
+    "slick-carousel": "1.6.0",
+    "angular-ui-sortable": "0.14.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "author": "",
+  "license": "ISC"
+}
