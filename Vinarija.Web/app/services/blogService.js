@@ -1,6 +1,21 @@
 ﻿app.factory('blogService', function ($http, $q, config) {
     var factory = {};
 
+    factory.monthsLocale = {
+        'Jan': 'јан',
+        'Feb': 'феб',
+        'Mar': 'мар',
+        'Apr': 'апр',
+        'May': 'мај',
+        'Jun': 'јун',
+        'Jul': 'јул',
+        'Avg': 'авг',
+        'Sep': 'сеп',
+        'Oct': 'окт',
+        'Nov': 'нов',
+        'Dec': 'дец'
+    };
+
     factory.getPosts = function (params) {
         return $http({
             url: config.baseAddress + 'post/getAll',
@@ -12,6 +27,16 @@
             throw err.message;
         });
     };
+
+    factory.buildPreviewDate = function (posts) {
+        for (var i = 0; i < posts.length; i++) {
+            if (posts[i].postImages && posts[i].postImages.length) {
+                posts[i].imageUrl = config.contentAddress + 'Posts\\' + posts[i].id + '\\' + posts[i].postImages[0].filePath
+            }
+            posts[i].dateDay = moment(posts[i].date).format("DD");
+            posts[i].dateMonth = factory.monthsLocale[moment(posts[i].date).format("MMM")];
+        }
+    }
 
     return factory;
 });

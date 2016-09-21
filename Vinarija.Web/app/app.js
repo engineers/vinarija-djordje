@@ -17,6 +17,18 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             controller: 'HomeController',
             templateUrl: '/views/home.html',
             pageName: 'Почетна',
+            resolve: {
+                postsData: function (blogService) {
+                    var params = {
+                        pageNumber: 1,
+                        pageSize: 6
+                    };
+                    return blogService.getPosts(params);
+                },
+                gallery: function (galleryService) {
+                    return galleryService.getImages();
+                }
+            },
         })
        .state('layout.visit-winery', {
            url: '/poseta-vinariji',
@@ -38,7 +50,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
                postsData: function (blogService) {
                    var params = {
                        pageNumber: 1,
-                       pageSize: 2
+                       pageSize: 6
                    };
                    return blogService.getPosts(params);
                }
