@@ -146,16 +146,18 @@
         <div class="prev-arrow"></div>
         <div class="next-arrow"></div>
         <slick-carousel prev-arrow="prev-arrow" next-arrow="next-arrow" set-height>
-            <div class="home-slider" set-height ng-repeat="image in gallery">
-                <img ng-src="{{contentAddress + '\\Gallery\\' + image.filePath}}" />
+            <div set-height ng-repeat="image in gallery">
+                <div class="home-slider" ng-style="{'background-image':'url(' + contentAddress + '\\Gallery' + '/' + image.filePath + ')'}"></div>
             </div>
         </slick-carousel>
     </section>
 
     <section class="ivent-calendar">
         <div class="calendar-list">
-            <div class="number" ng-repeat="post in posts track by $index">
-                <a href="javascript:;" ng-click="selectPost(post)" ng-bind="$index + 1"></a>
+            <div class="number" ng-repeat="post in posts track by $index" ng-click="selectPost(post, $index)" ng-class="{ 'active-post' : $index == activeIndex}">
+                <div class="active-box">
+                    <a href="javascript:;" ng-bind="$index + 1"></a>
+                </div>
             </div>
         </div>
         <div class="calendar left">
@@ -165,15 +167,15 @@
         <div class="calendar-news left">
             <div class="title" ng-bind="selectedPost.title"></div>
             <div class="content" ng-bind-html="selectedPost.content"></div>
-            <div class="read-more-box flex" scroll-to-section section-to-scroll="actualities-page" time="5000" state="layout.actualities">
+            <div class="read-more-box flex" ui-sref="layout.actualities">
                 <div class="vertical-line"></div>
                 <div class="read-more">прочитај још</div>
                 <div class="vertical-line"></div>
             </div>
         </div>
-        <div class="calendar-img">
-            <img ng-if="selectedPost.imageUrl" ng-src="{{selectedPost.imageUrl}}" />
-            <img ng-if="!selectedPost.imageUrl" src="..." />
+        <div ng-if="selectedPost.imageUrl">
+            <img class="calendar-img" ng-src="{{selectedPost.imageUrl}}" />
         </div>
+        <div class="default-news-img" ng-if="!selectedPost.imageUrl" />
     </section>
 </div>

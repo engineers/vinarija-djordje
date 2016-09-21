@@ -1,5 +1,5 @@
 ﻿<div class="actualities-page">
-    <section class="ivent-calendar" dir-paginate="post in posts | itemsPerPage: params.pageSize" total-items="totalCount" current-page="params.pageNumber">
+    <section class="ivent-calendar" dir-paginate="post in posts | itemsPerPage: params.pageSize" total-items="totalCount" current-page="params.pageNumber" ng-class="{ 'rotate-element' : $odd}">
         <div class="calendar">
             <div class="date" ng-bind="post.dateDay"></div>
             <div class="month" ng-bind="post.dateMonth"></div>
@@ -13,34 +13,30 @@
                 <div class="vertical-line"></div>
             </div>
         </div>
-        <div class="calendar-img" ng-if="post.postImages.length > 0">
-            <img ng-src="{{post.imageUrl}}" />
+        <div ng-if="post.postImages.length > 0">
+            <img class="calendar-img" ng-src="{{post.imageUrl}}" />
         </div>
-        <div class="calendar-img first" ng-show="!post.postImages.length">
-            no image placeholder
-        </div>
+        <div class="default-news-img" ng-show="!post.postImages.length"></div>
     </section>
 
-    <dir-pagination-controls 
-        max-size="10"
-        on-page-change="pageChanged(newPageNumber)"
-        ></dir-pagination-controls>
+    <dir-pagination-controls max-size="10"
+                             on-page-change="pageChanged(newPageNumber)">
+    </dir-pagination-controls>
 
     <div class="news-popup open-menu" ng-if="postPreview" set-height>
         <div class="back-arrow-black" ng-click="showNewsPopUp()"></div>
         <div class="flex popup-content">
-            <div class="calendar-img">
+            <div class="calendar-img" ng-if="postPreview.imageUrl">
                 <img ng-src="{{postPreview.imageUrl}}" />
             </div>
+            <div class="default-news-img" ng-if="!postPreview.imageUrl"></div>
             <div class="calendar">
                 <div class="date" ng-bind="postPreview.dateDay"></div>
                 <div class="month" ng-bind="postPreview.dateMonth"></div>
             </div>
             <div class="all-text">
                 <div class="title" ng-bind="postPreview.title"></div>
-                <div class="first-row">
-                    <div class="content" ng-bind-html="postPreview.content"></div>
-                </div>
+                <div class="content" ng-bind-html="postPreview.content"></div>
             </div>
             <div class="stamp-big"></div>
         </div>

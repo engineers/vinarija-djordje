@@ -59,18 +59,9 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
     };
 
     $scope.removeImage = function (image) {
-        var confirm = $mdDialog.confirm()
-       .title('Brisanje slike')
-       .textContent('Da li ste sigurni da želite da obrišete sliku?')
-       .ariaLabel('Brisanje')
-       .targetEvent(ev)
-       .ok('Da')
-       .cancel('Ne');
-        $mdDialog.show(confirm).then(function () {
-            blogService.removeImage($scope.post.id, image).then(function (res) {
-                $scope.post.postImages = [];
-                $scope.$emit('toast', { message: 'Slika uspešno obrisana!', type: 'success' });
-            });
+        blogService.removeImage($scope.post.id, image).then(function (res) {
+            $scope.post.postImages = [];
+            $scope.$emit('toast', { message: 'Slika uspešno obrisana!', type: 'success' });
         });
     };
 

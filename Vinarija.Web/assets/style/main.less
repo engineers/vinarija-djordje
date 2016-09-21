@@ -1150,18 +1150,18 @@ section.footer {
         .first-img {
             position: relative;
             top: -110px;
-            background: url('../images/first-section-hover.png') center center no-repeat;
+            background: url('../images/first-section-hover.jpg') center center no-repeat;
 
             &:hover {
-                background: url('../images/first-section.png') center center no-repeat;
+                background: url('../images/first-section.jpg') center center no-repeat;
             }
         }
 
         .second-img {
-            background: url('../images/second-section-hover.png') center center no-repeat;
+            background: url('../images/third-section-hover.png') center center no-repeat;
 
             &:hover {
-                background: url('../images/second-section.png') center center no-repeat;
+                background: url('../images/third-section.png') center center no-repeat;
             }
         }
 
@@ -1176,20 +1176,20 @@ section.footer {
         }
 
         .fourth-img {
-            background: url('../images/third-section-hover.png') center center no-repeat;
+            background: url('../images/second-section-hover.jpg') center center no-repeat;
 
             &:hover {
-                background: url('../images/third-section.png') center center no-repeat;
+                background: url('../images/second-section.jpg') center center no-repeat;
             }
         }
 
         .fifth-img {
             position: relative;
             top: -110px;
-            background: url('../images/fifth-section-hover.png') center center no-repeat;
+            background: url('../images/fifth-section-hover.jpg') center center no-repeat;
 
             &:hover {
-                background: url('../images/fifth-section.png') center center no-repeat;
+                background: url('../images/fifth-section.jpg') center center no-repeat;
             }
         }
     }
@@ -1207,121 +1207,7 @@ section.footer {
             width: 100%;
             height: 100%;
             outline: none;
-
-            &.first {
-                background: url('../images/slider/1.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.second {
-                background: url('../images/slider/2.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.third {
-                background: url('../images/slider/3.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.fourth {
-                background: url('../images/slider/4.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.fifth {
-                background: url('../images/slider/5.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.sixth {
-                background: url('../images/slider/6.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.seventh {
-                background: url('../images/slider/8.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.eighth {
-                background: url('../images/slider/9.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.ninth {
-                background: url('../images/slider/10.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.tenth {
-                background: url('../images/slider/11.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.eleventh {
-                background: url('../images/slider/12.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.twelfth {
-                background: url('../images/slider/13.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.thirteenth {
-                background: url('../images/slider/14.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.fourteenth {
-                background: url('../images/slider/15.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.fifteenth {
-                background: url('../images/slider/16.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.sixteenth {
-                background: url('../images/slider/17.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.seventeenth {
-                background: url('../images/slider/18.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.eighteenth {
-                background: url('../images/slider/19.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.nineteenth {
-                background: url('../images/slider/20.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.twentieth {
-                background: url('../images/slider/21.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.twenty-first {
-                background: url('../images/slider/22.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.twenty-second {
-                background: url('../images/slider/23.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.twenty-third {
-                background: url('../images/slider/7.jpg') center center no-repeat;
-                background-size: cover;
-            }
+            background-size: cover;
         }
 
         .prev-arrow,
@@ -1365,12 +1251,30 @@ section.footer {
             float: left;
 
             .number {
+                position: relative;
                 width: 73px;
                 height: 73px;
                 text-align: center;
                 line-height: 77px;
                 background-color: @red;
-                color: @w;
+                cursor: pointer;
+
+                a {
+                    color: @w;
+                }
+
+                &.active-post {
+                    .active-box {
+                        width: 65px;
+                        height: 73px;
+                        margin-left: 8px;
+                        background-color: #fff;
+                    }
+
+                    a {
+                        color: @red;
+                    }
+                }
             }
         }
 
@@ -1416,6 +1320,7 @@ section.footer {
             }
 
             .content {
+                width: 100%;
                 margin-bottom: 25px;
                 font-size: 18px;
                 color: #888;
@@ -1426,10 +1331,18 @@ section.footer {
         .calendar-img {
             width: 500px;
             height: 438px;
-            background: url('../images/calendar-img.jpg') center center no-repeat;
+            float: right;
             background-size: cover;
         }
     }
+}
+
+.default-news-img {
+    width: 500px;
+    height: 438px;
+    float: right;
+    background: url('../images/default-news-pic.jpg') left center no-repeat;
+    background-size: cover;
 }
 /*#endregion*/
 
@@ -1596,6 +1509,17 @@ section.footer {
         align-items: center;
         background-color: #fbf9f0;
 
+        &.rotate-element {
+            direction: rtl;
+
+            .calendar-news {
+                .content {
+                    direction: initial;
+                    text-align: right;
+                }
+            }
+        }
+
         .calendar-list {
             float: left;
 
@@ -1605,12 +1529,16 @@ section.footer {
                 text-align: center;
                 line-height: 77px;
                 background-color: @red;
-                color: @w;
+
+                a {
+                    color: @w;
+                }
             }
         }
 
         .calendar {
-            margin-left: 155px;
+            margin: 0 auto;
+            display: table;
 
             .date {
                 color: @date;
@@ -1625,6 +1553,7 @@ section.footer {
         }
 
         .calendar-news {
+            margin: 0 auto;
             width: 35%;
 
             .title {
@@ -1646,54 +1575,6 @@ section.footer {
         .calendar-img {
             width: 500px;
             height: 438px;
-
-            &.first {
-                background: url('../images/calendar-img.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.second {
-                background: url('../images/actualities2.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.third {
-                background: url('../images/actualities3.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.fourth {
-                background: url('../images/actualities4.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.fifth {
-                background: url('../images/actualities5.jpg') center center no-repeat;
-                background-size: cover;
-            }
-
-            &.sixth {
-                background: url('../images/actualities6.jpg') center center no-repeat;
-                background-size: cover;
-            }
-        }
-    }
-
-    .second-section,
-    .fourth-section,
-    .sixth-section {
-        direction: rtl;
-
-        .calendar {
-            margin-right: 155px;
-            margin-left: 0;
-        }
-
-        .calendar-news {
-            .content {
-                direction: initial;
-                text-align: right;
-            }
         }
     }
 
@@ -1722,6 +1603,14 @@ section.footer {
 
                 .date {
                     margin-top: -30px;
+                    color: @date;
+                    font-size: 172px;
+                    font-family: 'Mincho-regular';
+                    text-align: center;
+                }
+
+                .month {
+                    font-size: 25px;
                     text-align: center;
                 }
             }
@@ -1730,15 +1619,19 @@ section.footer {
                 width: 60%;
                 z-index: 5;
 
-                .first-row {
-                    margin-right: 6%;
-                    width: 47%;
-                    float: left;
+                .title {
+                    margin-bottom: 30px;
+                    font-size: 24px;
+                    color: #333;
+                    text-transform: uppercase;
+                    font-family: 'Minion Pro-bold-Bold';
                 }
 
-                .second-row {
-                    width: 47%;
-                    float: left;
+                .content {
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                    color: #888;
+                    line-height: 21px;
                 }
             }
         }
@@ -1746,6 +1639,62 @@ section.footer {
 }
 /*#endregion*/
 
+/*#region Pagination*/
+.pagination {
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #fbf9f0;
+    padding: 50px 0;
+
+    .prew-arrow {
+        border-left: 1px solid #cdcdcd;
+    }
+
+    .prew-arrow,
+    .next-arrow {
+        a {
+            font-size: 25px;
+            line-height: 8px;
+
+            &:hover {
+                color: #bf1e2e;
+            }
+        }
+    }
+
+    .prew-arrow,
+    .next-arrow,
+    .page-number {
+        width: 35px;
+        height: 30px;
+        border-right: 1px solid #cdcdcd;
+        cursor: pointer;
+
+        a {
+            margin: 0 auto;
+            display: table;
+            position: relative;
+            top: 50%;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            color: #333;
+        }
+    }
+
+    .page-number {
+        font-size: 15px;
+
+        &.active {
+            a {
+                color: #bf1e2e;
+            }
+        }
+    }
+}
+/*#endregion*/
 /*#region Vineyards*/
 .vineyards-page {
     .vineyards {
@@ -1954,7 +1903,6 @@ section.footer {
     }
 }
 /*#endregion*/
-
 /*#region Wines*/
 .wines-page {
     .wine-selection {
@@ -2089,7 +2037,6 @@ section.footer {
     }
 }
 /*#endregion*/
-
 /*#region Hamburger menu*/
 section.intro {
     .hamburger-menu-mobile {
@@ -2267,9 +2214,7 @@ section.intro {
         left: 50%;
     }
 }
-
 /*#endregion*/
-
 /*#region Red wines and White wines page*/
 .logo {
     position: absolute;
@@ -2637,7 +2582,6 @@ section.intro {
     }
 }
 /*#endregion*/
-
 /*#region Territory*/
 .territory-page {
     .info {
@@ -2803,9 +2747,7 @@ section.intro {
         }
     }
 }
-
 /*#endregion*/
-
 /*FF*/
 @-moz-document url-prefix() {
     section.footer {
@@ -2824,7 +2766,6 @@ section.intro {
         }
     }
 }
-
 /*IE*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .name-position {
@@ -2838,7 +2779,6 @@ section.intro {
         top: 47%;
     }
 }
-
 /*Microsoft Edge*/
 @supports
 
