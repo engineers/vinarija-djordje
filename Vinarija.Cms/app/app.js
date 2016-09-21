@@ -24,6 +24,8 @@ var app = angular.module('App', [
         },
         whiteListedDomains: [
         	'localhost',
+            'cms.vinarijadjordje.rs',
+            'enginee.rs'
         ],
         unauthenticatedRedirectPath: '/login'
     });
@@ -60,6 +62,12 @@ var app = angular.module('App', [
         }
     });
 });
+
+//app.constant('config', {
+//    baseAddress: 'http://enginee.rs:8122/api/',
+//    postImagesPath: 'http://enginee.rs:8122/Content/Posts/',
+//    galleryImagesPath: 'http://enginee.rs:8122/Content/Gallery/',
+//});
 
 app.constant('config', {
     baseAddress: 'http://localhost:53491/api/',

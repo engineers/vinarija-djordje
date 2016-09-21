@@ -42,7 +42,7 @@ namespace Vinarija.Api.Helpers
                 errorMessage += "; Inner Exception: " + exception.InnerException.Message;
             }
 
-            context.Result = new ResponseMessageResult(context.Request.CreateErrorResponse(statusCode, exception.Message));
+            context.Result = new ResponseMessageResult(context.Request.CreateErrorResponse(statusCode, errorMessage));
         }
     }
 }
