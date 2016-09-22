@@ -1232,6 +1232,8 @@ section.footer .copyright {
   height: 438px;
   float: right;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .default-news-img {
   width: 500px;
@@ -1434,6 +1436,8 @@ section.footer .copyright {
   width: 500px;
   height: 438px;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .actualities-page .news-popup {
   position: fixed;
@@ -1457,6 +1461,8 @@ section.footer .copyright {
   width: 500px;
   height: 438px;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .actualities-page .news-popup .popup-content .calendar {
   width: 230px;
