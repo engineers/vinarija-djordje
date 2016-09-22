@@ -1187,6 +1187,7 @@
     right: 25px;
   }
   .actualities-page .ivent-calendar {
+    width: 100%;
     display: table;
     padding-bottom: 30px;
   }
@@ -1195,8 +1196,8 @@
     width: 100%;
   }
   .actualities-page .ivent-calendar .calendar-news {
-    width: 92%;
-    padding: 0 4%;
+    width: 90%;
+    padding: 0 5%;
   }
   .actualities-page .ivent-calendar .calendar-news .content {
     width: 100%;
@@ -1204,21 +1205,34 @@
   }
   .actualities-page .ivent-calendar .calendar-news .title {
     line-height: 25px;
-    text-align: left;
-  }
-  .actualities-page .ivent-calendar .calendar-news .read-more-box {
-    -webkit-justify-content: center;
-    justify-content: center;
   }
   .actualities-page .ivent-calendar .calendar {
+    width: 90%;
+    padding: 0 5%;
     margin-left: 0;
     margin-right: 0;
   }
   .actualities-page .ivent-calendar .calendar .date {
-    text-align: center;
+    font-size: 110px;
   }
   .actualities-page .ivent-calendar .calendar .month {
     margin-bottom: 20px;
+    text-align: initial;
+  }
+  .actualities-page .news-popup .stamp-big {
+    display: none;
+  }
+  .actualities-page .news-popup .popup-content {
+    display: table;
+    padding: 120px 5% 30px 5%;
+  }
+  .actualities-page .news-popup .popup-content .calendar,
+  .actualities-page .news-popup .popup-content .all-text {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .actualities-page .news-popup .popup-content .calendar {
+    margin-bottom: 30px;
   }
   .change-text .content-position .name-wine,
   .change-text .content-position .subtitle {
@@ -1525,12 +1539,15 @@
   }
   .home-page .ivent-calendar .calendar-news .title {
     margin-bottom: 15px;
-    line-height: 26px;
+    line-height: 22px;
     font-size: 19px;
   }
   .home-page .ivent-calendar .calendar-news .content {
     margin-bottom: 20px;
     line-height: 18px;
+  }
+  .home-page .ivent-calendar .calendar-news .read-more-box .vertical-line {
+    height: 30px;
   }
   section.footer .footer-container {
     padding: 60px 0 0 0;
@@ -1544,5 +1561,32 @@
   section.footer .copyright {
     padding-bottom: 40px;
     margin: 30px 30px 0 30px;
+  }
+  #fullpage .change-text .content-position {
+    bottom: -100px;
+  }
+  #fullpage .change-text .content-position .text {
+    margin-bottom: 5px;
+    line-height: 16px;
+    font-size: 13px;
+  }
+  #fullpage .change-text .content-position .temp {
+    margin: 0 0 5px 0;
+  }
+  #fullpage .change-text .content-position .degrees {
+    margin: 0 0 5px 25px;
+    font-size: 18px;
+  }
+  #fullpage .change-text .content-position .percentage {
+    font-size: 18px;
+  }
+  #fullpage .change-text .read-more-box {
+    margin-top: 5px;
+  }
+  #fullpage .change-text .read-more-box .read-more {
+    font-size: 14px;
+  }
+  #fullpage .change-text .read-more-box .vertical-line {
+    height: 20px;
   }
 }

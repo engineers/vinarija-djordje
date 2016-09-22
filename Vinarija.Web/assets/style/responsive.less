@@ -1809,6 +1809,7 @@
 
     .actualities-page {
         .ivent-calendar {
+            width: 100%;
             display: table;
             padding-bottom: 30px;
 
@@ -1818,8 +1819,8 @@
             }
 
             .calendar-news {
-                width: 92%;
-                padding: 0 4%;
+                width: 90%;
+                padding: 0 5%;
 
                 .content {
                     width: 100%;
@@ -1828,25 +1829,43 @@
 
                 .title {
                     line-height: 25px;
-                    text-align: left;
-                }
-
-                .read-more-box {
-                    -webkit-justify-content: center;
-                    justify-content: center;
                 }
             }
 
             .calendar {
+                width: 90%;
+                padding: 0 5%;
                 margin-left: 0;
                 margin-right: 0;
 
                 .date {
-                    text-align: center;
+                    font-size: 110px;
                 }
 
                 .month {
                     margin-bottom: 20px;
+                    text-align: initial;
+                }
+            }
+        }
+
+        .news-popup {
+            .stamp-big {
+                display: none;
+            }
+
+            .popup-content {
+                display: table;
+                padding: 120px 5% 30px 5%;
+
+                .calendar,
+                .all-text {
+                    margin: 0 auto;
+                    width: 100%;
+                }
+
+                .calendar {
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -2300,13 +2319,19 @@
 
                 .title {
                     margin-bottom: 15px;
-                    line-height: 26px;
+                    line-height: 22px;
                     font-size: 19px;
                 }
 
                 .content {
                     margin-bottom: 20px;
                     line-height: 18px;
+                }
+
+                .read-more-box {
+                    .vertical-line {
+                        height: 30px;
+                    }
                 }
             }
         }
@@ -2330,6 +2355,45 @@
         .copyright {
             padding-bottom: 40px;
             margin: 30px 30px 0 30px;
+        }
+    }
+
+    #fullpage {
+        .change-text {
+            .content-position {
+                bottom: -100px;
+
+                .text {
+                    margin-bottom: 5px;
+                    line-height: 16px;
+                    font-size: 13px;
+                }
+
+                .temp {
+                    margin: 0 0 5px 0;
+                }
+
+                .degrees {
+                    margin: 0 0 5px 25px;
+                    font-size: 18px;
+                }
+
+                .percentage {
+                    font-size: 18px;
+                }
+            }
+
+            .read-more-box {
+                margin-top: 5px;
+
+                .read-more {
+                    font-size: 14px;
+                }
+
+                .vertical-line {
+                    height: 20px;
+                }
+            }
         }
     }
 }
