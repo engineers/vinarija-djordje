@@ -1580,11 +1580,15 @@ section.footer .copyright {
 .vineyards-page .vineyards .content.second {
   padding-bottom: 230px;
 }
+.vineyards-page .vineyards-white-sort {
+  direction: rtl;
+}
 .vineyards-page .vineyards-white-sort .text-part {
   width: 50%;
   height: 732px;
 }
 .vineyards-page .vineyards-white-sort .text-part .white-wine-position {
+  direction: initial;
   position: relative;
   top: 50%;
   -moz-transform: translateY(-50%);

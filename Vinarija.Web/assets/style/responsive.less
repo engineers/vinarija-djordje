@@ -1277,20 +1277,23 @@
     }
 
     .actualities-page {
+        .news-popup {
+            .popup-content {
+                .calendar-img {
+                    display: none;
+                }
+            }
+        }
+
         .ivent-calendar {
+            height: 330px;
+
             .calendar-news {
                 width: 70%;
             }
 
             .calendar-img {
-                &.first,
-                &.second,
-                &.third,
-                &.fourth,
-                &.fifth,
-                &.sixth {
-                    display: none;
-                }
+                display: none;
             }
         }
     }
@@ -1935,9 +1938,14 @@
 
     .territory-page {
         .climate {
+            .right-box {
+                height: 500px;
+            }
+
             .left-box {
                 .text-wrapper {
                     p {
+                        margin-bottom: 15px;
                         line-height: 18px;
                     }
                 }
@@ -1945,11 +1953,16 @@
         }
 
         .fauna {
+            .left-box {
+                height: 500px;
+            }
+
             .right-box {
                 height: 740px;
 
                 .text-wrapper {
                     p {
+                        margin-bottom: 15px;
                         line-height: 18px;
                     }
                 }
@@ -1957,9 +1970,15 @@
         }
 
         .flora {
+            .right-box {
+                height: 500px;
+                background-size: cover;
+            }
+
             .left-box {
                 .text-wrapper {
                     p {
+                        margin-bottom: 15px;
                         line-height: 18px;
                     }
                 }
@@ -1971,6 +1990,7 @@
 
             .text-wrapper {
                 p {
+                    margin-bottom: 15px;
                     line-height: 18px;
                 }
 
@@ -1983,10 +2003,35 @@
     }
 
     .visit-winery-page {
+        section.about {
+            padding: 115px 0 50px;
+
+            .default-wrapper {
+                h3 {
+                    margin-bottom: 100px;
+                }
+
+                p {
+                    margin-bottom: 15px;
+                    line-height: 18px;
+                }
+            }
+        }
+
         section.contact {
+            .contact-card {
+                bottom: 295px;
+                width: 310px;
+                height: 310px;
+            }
+
             .contact-info-wrapper {
                 display: table;
                 height: 100%;
+
+                .icon {
+                    width: 47px;
+                }
 
                 .text {
                     .line1 {
@@ -2008,24 +2053,58 @@
                 }
             }
         }
-
-        section.about {
-            .default-wrapper {
-                p {
-                    line-height: 18px;
-                }
-            }
-        }
     }
 
     .vineyards-page {
+        .vineyards-white-sort {
+            display: block;
+
+            .white-wine-img {
+                width: 100%;
+                height: 500px;
+                background-size: cover;
+            }
+
+            .text-part {
+                width: 100%;
+                height: 350px;
+            }
+        }
+
+        .vineyards-black-sort {
+            display: block;
+
+            .black-wine-img {
+                width: 100%;
+                height: 500px;
+                background-size: cover;
+            }
+
+            .text-part {
+                width: 100%;
+                height: 450px;
+            }
+        }
+
         .vineyards {
+            .title {
+                padding-top: 40px;
+            }
+
             .content {
                 line-height: 18px;
+
+                &.second {
+                    padding-bottom: 40px;
+                }
             }
         }
 
         .land {
+            .land-img {
+                height: 500px;
+            }
+
             .text-part {
                 height: 730px;
 
@@ -2039,6 +2118,20 @@
     }
 
     .winery-page {
+        .text-part {
+            .logo {
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        .idea {
+            height: 500px;
+        }
+
         .winery-location {
             height: 680px;
         }
@@ -2052,6 +2145,11 @@
                     font-size: 35px;
                 }
             }
+        }
+
+        .location,
+        .production {
+            height: 500px;
         }
     }
 
@@ -2138,6 +2236,18 @@
     }
 
     .home-page {
+        .welcome {
+            padding: 30px 0 30px;
+
+            .content {
+                margin-top: 30px;
+
+                p {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
         .slider-home-page {
             .prev-arrow {
                 left: 0;
@@ -2171,7 +2281,7 @@
 
                 .date {
                     text-align: left;
-                    font-size: 100px;
+                    font-size: 90px;
                 }
 
                 .month {
@@ -2191,6 +2301,7 @@
                 .title {
                     margin-bottom: 15px;
                     line-height: 26px;
+                    font-size: 19px;
                 }
 
                 .content {
