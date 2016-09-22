@@ -1496,6 +1496,9 @@ section.footer .copyright {
   color: #888;
   line-height: 21px;
 }
+.actualities-page .news-popup .popup-content .all-text .content a {
+  color: #888;
+}
 /*#endregion*/
 /*#region Pagination*/
 .pagination {

@@ -166,7 +166,7 @@
         </div>
         <div class="calendar-news left">
             <div class="title" ng-bind="selectedPost.title"></div>
-            <div class="content" ng-bind-html="selectedPost.content"></div>
+            <div class="content" ng-bind-html="selectedPost.content.substring(0, 300) + '...'"></div>
             <div class="read-more-box flex" ui-sref="layout.actualities">
                 <div class="vertical-line"></div>
                 <div class="read-more">прочитај још</div>

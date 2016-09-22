@@ -6,7 +6,7 @@
         </div>
         <div class="calendar-news">
             <div class="title" ng-bind="post.title"></div>
-            <div class="content" ng-bind-html="post.content"></div>
+            <div class="content" ng-bind-html="post.content.substring(0, 300) + '...'"></div>
             <div class="read-more-box flex" ng-click="showNewsPopUp(post)">
                 <div class="vertical-line"></div>
                 <div class="read-more">прочитај још</div>
