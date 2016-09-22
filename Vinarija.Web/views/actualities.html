@@ -14,7 +14,7 @@
             </div>
         </div>
         <div ng-if="post.postImages.length > 0">
-            <img class="calendar-img" ng-src="{{post.imageUrl}}" />
+            <div class="calendar-img" ng-style="{'background-image':'url(' + post.imageUrl + ')'}"></div>
         </div>
         <div class="default-news-img" ng-show="!post.postImages.length"></div>
     </section>
@@ -26,8 +26,8 @@
     <div class="news-popup open-menu" ng-if="postPreview" set-height>
         <div class="back-arrow-black" ng-click="showNewsPopUp()"></div>
         <div class="flex popup-content">
-            <div class="calendar-img" ng-if="postPreview.imageUrl">
-                <img ng-src="{{postPreview.imageUrl}}" />
+            <div ng-if="postPreview.imageUrl">
+                <div class="calendar-img" ng-style="{'background-image':'url(' + postPreview.imageUrl + ')'}"></div>
             </div>
             <div class="default-news-img" ng-if="!postPreview.imageUrl"></div>
             <div class="calendar">

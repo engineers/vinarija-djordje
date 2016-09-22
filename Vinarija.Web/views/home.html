@@ -174,7 +174,7 @@
             </div>
         </div>
         <div ng-if="selectedPost.imageUrl">
-            <img class="calendar-img" ng-src="{{selectedPost.imageUrl}}" />
+            <div class="calendar-img" ng-style="{'background-image':'url(' + selectedPost.imageUrl + ')'}"></div>
         </div>
         <div class="default-news-img" ng-if="!selectedPost.imageUrl" />
     </section>

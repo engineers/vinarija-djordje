@@ -1433,6 +1433,7 @@ section.footer .copyright {
 .actualities-page .ivent-calendar .calendar-img {
   width: 500px;
   height: 438px;
+  background-size: cover;
 }
 .actualities-page .news-popup {
   position: fixed;
@@ -1451,6 +1452,11 @@ section.footer .copyright {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 190px 75px 0 0;
+}
+.actualities-page .news-popup .popup-content .calendar-img {
+  width: 500px;
+  height: 438px;
+  background-size: cover;
 }
 .actualities-page .news-popup .popup-content .calendar {
   width: 230px;
