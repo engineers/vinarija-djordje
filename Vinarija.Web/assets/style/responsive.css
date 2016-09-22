@@ -1486,6 +1486,20 @@
     right: 30px;
     top: 50px;
   }
+  .home-page .white-wine .description .descr-part {
+    width: 90%;
+  }
+  .home-page .white-wine .bottle .bottle-img.freska-white {
+    height: 490px;
+    background: url(../images/izbor-belo-vino-tablet-landscape.png) center center no-repeat;
+  }
+  .home-page .red-wine .description .descr-part {
+    width: 90%;
+  }
+  .home-page .red-wine .bottle .bottle-img.freska {
+    height: 464px;
+    background: url(../images/izbor-crno-vino-tablet-landscape.png) center center no-repeat;
+  }
   .home-page .welcome {
     padding: 30px 0 30px;
   }
