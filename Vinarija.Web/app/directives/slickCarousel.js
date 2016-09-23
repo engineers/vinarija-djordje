@@ -23,10 +23,39 @@
                     pauseOnHover: false
                 });
             };
+            if (!element.hasClass('responsive')) {
+                $timeout(function () {
+                    initiateSlider();
+                }, 200);
+            }
 
-            $timeout(function () {
-                initiateSlider();
-            }, 200);
+            if ($(window).width() < 769) {
+                $('.responsive').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    pauseOnHover: false,
+                    responsive: [
+                       {
+                           breakpoint: 769,
+                           settings: {
+                               slidesToShow: 3,
+                               slidesToScroll: 2,
+                           }
+                       },
+                       {
+                           breakpoint: 690,
+                           settings: {
+                               slidesToShow: 1,
+                               slidesToScroll: 1
+                           }
+                       }
+                    ]
+                });
+            };
         }
     }
 });

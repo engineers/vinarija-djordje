@@ -716,6 +716,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .default-news-img {
+    display: none;
+  }
   .wines-page .wine-selection .mobile-display {
     display: block;
   }
@@ -1004,8 +1007,75 @@
     height: 55px;
     border: none;
   }
+  .home-page .hover-section .responsive {
+    width: 100%;
+  }
+  .home-page .hover-section .responsive .slick-prev,
+  .home-page .hover-section .responsive .slick-next {
+    display: none !important;
+  }
+  .home-page .hover-section .responsive .first-img,
+  .home-page .hover-section .responsive .second-img,
+  .home-page .hover-section .responsive .third-img,
+  .home-page .hover-section .responsive .fourth-img,
+  .home-page .hover-section .responsive .fifth-img {
+    position: absolute;
+    height: 690px;
+  }
+  .home-page .hover-section .responsive .first-img .news,
+  .home-page .hover-section .responsive .second-img .news,
+  .home-page .hover-section .responsive .third-img .news,
+  .home-page .hover-section .responsive .fourth-img .news,
+  .home-page .hover-section .responsive .fifth-img .news {
+    display: table;
+    position: relative;
+    top: 400px;
+    width: 100%;
+    height: 300px;
+  }
+  .home-page .hover-section .responsive .first-img,
+  .home-page .hover-section .responsive .third-img,
+  .home-page .hover-section .responsive .fifth-img {
+    top: 0;
+  }
+  .home-page .hover-section .responsive .first-img {
+    position: initial;
+    top: 0;
+    background: url('../images/first-section.jpg') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .first-img:hover {
+    background: url('../images/first-section.jpg') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .second-img {
+    background: url('../images/third-section.png') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .second-img:hover {
+    background: url('../images/third-section.png') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .third-img {
+    position: initial;
+    top: 0;
+    background: url('../images/fourth-section.png') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .third-img:hover {
+    background: url('../images/fourth-section.png') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .fourth-img {
+    background: url('../images/second-section.jpg') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .fourth-img:hover {
+    background: url('../images/second-section.jpg') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .fifth-img {
+    position: initial;
+    top: 0;
+    background: url('../images/fifth-section.jpg') center center no-repeat;
+  }
+  .home-page .hover-section .responsive .fifth-img:hover {
+    background: url('../images/fifth-section.jpg') center center no-repeat;
+  }
   .home-page .home-bck1 {
-    height: 250px;
+    height: 145px;
   }
   .home-page .red-wine .bottle {
     width: 50%;
@@ -1241,20 +1311,59 @@
   .change-text .content-position .text {
     line-height: 15px;
   }
+  .wines-page .wine-selection .white-wine .wine-position .title {
+    margin-right: 25px;
+    text-align: left;
+    font-size: 22px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .read-more-box {
+    margin-left: 25px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .read-more-box .read-more {
+    margin: 0 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .white-bottle {
+    position: relative;
+    bottom: 15%;
+    left: -5%;
+    width: 143px;
+    background: url('../images/belo-izbor-mobile.png') center center no-repeat;
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    background-size: cover;
+  }
   .wines-page .wine-selection .red-wine .wine-position .title {
+    margin-left: 20px;
+    margin-bottom: 0;
+    width: 181px;
     font-size: 22px;
   }
   .wines-page .wine-selection .red-wine .wine-position .red-bottle {
-    height: 125%;
-    width: 115px;
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+    position: relative;
+    top: 15%;
+    left: 4%;
+    width: 162px;
+    background: url('../images/crno-izbor-mobile.png') center center no-repeat;
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    background-size: cover;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box {
+    width: 215px;
+    margin-right: 19px;
   }
   .wines-page .wine-selection .red-wine .wine-position .read-more-box .read-more {
     margin: 0 10px;
+    font-size: 14px;
+    text-align: center;
   }
   .wines-page .wine-selection .red-wine .logo {
     top: 10px;
@@ -1486,6 +1595,9 @@
     right: 30px;
     top: 50px;
   }
+  .home-page .home-bck1 {
+    height: 65px;
+  }
   .home-page .white-wine .description .descr-part {
     width: 90%;
   }
@@ -1576,8 +1688,22 @@
     padding-bottom: 40px;
     margin: 30px 30px 0 30px;
   }
+  #fullpage .freska-crvena {
+    top: -12%;
+  }
+  #fullpage .freska-crvena .freska-crvena-bottle {
+    height: 718px;
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.3);
+  }
+  #fullpage .letter-position.f-red {
+    top: 45%;
+  }
   #fullpage .change-text .content-position {
-    bottom: -100px;
+    bottom: -110px;
   }
   #fullpage .change-text .content-position .text {
     margin-bottom: 5px;
@@ -1602,5 +1728,20 @@
   }
   #fullpage .change-text .read-more-box .vertical-line {
     height: 20px;
+  }
+  #fullpage .all-sorts {
+    width: 300px;
+  }
+  #fullpage .all-sorts .name {
+    margin: 22px 0 0 0;
+    font-size: 15px;
+  }
+  #fullpage .all-sorts .grey-line {
+    left: 140px;
+    width: 10px;
+  }
+  #fullpage .all-sorts .grey-line.red-line-active {
+    left: 132px;
+    width: 20px;
   }
 }

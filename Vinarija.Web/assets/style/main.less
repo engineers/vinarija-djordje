@@ -1078,7 +1078,8 @@ section.footer {
         .third-img,
         .fourth-img,
         .fifth-img {
-            width: 380px;
+            position: relative;
+            width: 390px;
             height: 800px;
             z-index: 1;
             -moz-transition: all .500s;
@@ -1105,6 +1106,7 @@ section.footer {
                 width: 100%;
                 height: 265px;
                 background: url('../images/news-bck.png') bottom center no-repeat;
+                background-size: cover;
 
                 .news-title {
                     margin: 100px 0 20px 20px;
@@ -1139,29 +1141,25 @@ section.footer {
             }
         }
 
-        .second-img,
-        .fourth-img {
-            .news {
-                position: relative;
-                top: 535px;
-            }
-        }
-
         .first-img {
             position: relative;
             top: -110px;
             background: url('../images/first-section-hover.jpg') center center no-repeat;
+            background-size: cover;
 
             &:hover {
                 background: url('../images/first-section.jpg') center center no-repeat;
+                background-size: cover;
             }
         }
 
         .second-img {
             background: url('../images/third-section-hover.png') center center no-repeat;
+            background-size: cover;
 
             &:hover {
                 background: url('../images/third-section.png') center center no-repeat;
+                background-size: cover;
             }
         }
 
@@ -1169,17 +1167,21 @@ section.footer {
             position: relative;
             top: -110px;
             background: url('../images/fourth-section-hover.png') center center no-repeat;
+            background-size: cover;
 
             &:hover {
                 background: url('../images/fourth-section.png') center center no-repeat;
+                background-size: cover;
             }
         }
 
         .fourth-img {
             background: url('../images/second-section-hover.jpg') center center no-repeat;
+            background-size: cover;
 
             &:hover {
                 background: url('../images/second-section.jpg') center center no-repeat;
+                background-size: cover;
             }
         }
 
@@ -1187,9 +1189,11 @@ section.footer {
             position: relative;
             top: -110px;
             background: url('../images/fifth-section-hover.jpg') center center no-repeat;
+            background-size: cover;
 
             &:hover {
                 background: url('../images/fifth-section.jpg') center center no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -1343,7 +1347,7 @@ section.footer {
     width: 500px;
     height: 438px;
     float: right;
-    background: url('../images/default-news-pic.jpg') left center no-repeat;
+    background: url('../images/default-news-pic.jpg') center center no-repeat;
     background-size: cover;
 }
 /*#endregion*/
@@ -2795,7 +2799,6 @@ section.intro {
 
     .all-sorts {
         position: absolute;
-        left: 37%;
         top: 47%;
     }
 }
@@ -2811,7 +2814,6 @@ section.intro {
 
     .all-sorts {
         position: absolute;
-        left: 37%;
         top: 47%;
     }
 }

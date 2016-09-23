@@ -994,7 +994,8 @@ section.footer .copyright {
 .home-page .hover-section .third-img,
 .home-page .hover-section .fourth-img,
 .home-page .hover-section .fifth-img {
-  width: 380px;
+  position: relative;
+  width: 390px;
   height: 800px;
   z-index: 1;
   -moz-transition: all .500s;
@@ -1031,6 +1032,7 @@ section.footer .copyright {
   width: 100%;
   height: 265px;
   background: url('../images/news-bck.png') bottom center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .first-img .news .news-title,
 .home-page .hover-section .second-img .news .news-title,
@@ -1075,46 +1077,51 @@ section.footer .copyright {
   background: url('../images/sprite.svg') -372px -35px no-repeat;
   cursor: pointer;
 }
-.home-page .hover-section .second-img .news,
-.home-page .hover-section .fourth-img .news {
-  position: relative;
-  top: 535px;
-}
 .home-page .hover-section .first-img {
   position: relative;
   top: -110px;
   background: url('../images/first-section-hover.jpg') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .first-img:hover {
   background: url('../images/first-section.jpg') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .second-img {
   background: url('../images/third-section-hover.png') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .second-img:hover {
   background: url('../images/third-section.png') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .third-img {
   position: relative;
   top: -110px;
   background: url('../images/fourth-section-hover.png') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .third-img:hover {
   background: url('../images/fourth-section.png') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .fourth-img {
   background: url('../images/second-section-hover.jpg') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .fourth-img:hover {
   background: url('../images/second-section.jpg') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .fifth-img {
   position: relative;
   top: -110px;
   background: url('../images/fifth-section-hover.jpg') center center no-repeat;
+  background-size: cover;
 }
 .home-page .hover-section .fifth-img:hover {
   background: url('../images/fifth-section.jpg') center center no-repeat;
+  background-size: cover;
 }
 .home-page .slider-home-page {
   position: relative;
@@ -1239,7 +1246,7 @@ section.footer .copyright {
   width: 500px;
   height: 438px;
   float: right;
-  background: url('../images/default-news-pic.jpg') left center no-repeat;
+  background: url('../images/default-news-pic.jpg') center center no-repeat;
   background-size: cover;
 }
 /*#endregion*/
@@ -2489,7 +2496,6 @@ section.intro .hamburger-menu-mobile {
   }
   .all-sorts {
     position: absolute;
-    left: 37%;
     top: 47%;
   }
 }
@@ -2501,7 +2507,6 @@ section.intro .hamburger-menu-mobile {
   }
   .all-sorts {
     position: absolute;
-    left: 37%;
     top: 47%;
   }
 }

@@ -1157,6 +1157,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .default-news-img {
+        display: none;
+    }
+
     .wines-page {
         .wine-selection {
             .mobile-display {
@@ -1568,8 +1572,93 @@
     }
 
     .home-page {
+        .hover-section {
+            .responsive {
+                width: 100%;
+
+                .slick-prev,
+                .slick-next {
+                    display: none !important;
+                }
+
+                .first-img,
+                .second-img,
+                .third-img,
+                .fourth-img,
+                .fifth-img {
+                    position: absolute;
+                    height: 690px;
+
+                    &:hover {
+                        .news {
+                        }
+                    }
+
+                    .news {
+                        display: table;
+                        position: relative;
+                        top: 400px;
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+
+                .first-img,
+                .third-img,
+                .fifth-img {
+                    top: 0;
+                }
+
+                .first-img {
+                    position: initial;
+                    top: 0;
+                    background: url('../images/first-section.jpg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/first-section.jpg') center center no-repeat;
+                    }
+                }
+
+                .second-img {
+                    background: url('../images/third-section.png') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/third-section.png') center center no-repeat;
+                    }
+                }
+
+                .third-img {
+                    position: initial;
+                    top: 0;
+                    background: url('../images/fourth-section.png') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/fourth-section.png') center center no-repeat;
+                    }
+                }
+
+                .fourth-img {
+                    background: url('../images/second-section.jpg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/second-section.jpg') center center no-repeat;
+                    }
+                }
+
+                .fifth-img {
+                    position: initial;
+                    top: 0;
+                    background: url('../images/fifth-section.jpg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/fifth-section.jpg') center center no-repeat;
+                    }
+                }
+            }
+        }
+
         .home-bck1 {
-            height: 250px;
+            height: 145px;
         }
 
         .red-wine {
@@ -1886,25 +1975,71 @@
 
     .wines-page {
         .wine-selection {
+            .white-wine {
+                .wine-position {
+                    .title {
+                        margin-right: 25px;
+                        text-align: left;
+                        font-size: 22px;
+                    }
+
+                    .read-more-box {
+                        margin-left: 25px;
+
+                        .read-more {
+                            margin: 0 10px;
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                    }
+
+                    .white-bottle {
+                        position: relative;
+                        bottom: 15%;
+                        left: -5%;
+                        width: 143px;
+                        background: url('../images/belo-izbor-mobile.png') center center no-repeat;
+                        -moz-transform: scale(.7);
+                        -ms-transform: scale(.7);
+                        -o-transform: scale(.7);
+                        -webkit-transform: scale(.7);
+                        transform: scale(.7);
+                        background-size: cover;
+                    }
+                }
+            }
+
             .red-wine {
                 .wine-position {
                     .title {
+                        margin-left: 20px;
+                        margin-bottom: 0;
+                        width: 181px;
                         font-size: 22px;
                     }
 
                     .red-bottle {
-                        height: 125%;
-                        width: 115px;
-                        -moz-transform: scale(0.5);
-                        -ms-transform: scale(0.5);
-                        -o-transform: scale(0.5);
-                        -webkit-transform: scale(0.5);
-                        transform: scale(0.5);
+                        position: relative;
+                        top: 15%;
+                        left: 4%;
+                        width: 162px;
+                        background: url('../images/crno-izbor-mobile.png') center center no-repeat;
+                        -moz-transform: scale(.7);
+                        -ms-transform: scale(.7);
+                        -o-transform: scale(.7);
+                        -webkit-transform: scale(.7);
+                        transform: scale(.7);
+                        background-size: cover;
                     }
 
                     .read-more-box {
+                        width: 215px;
+                        margin-right: 19px;
+
                         .read-more {
                             margin: 0 10px;
+                            font-size: 14px;
+                            text-align: center;
                         }
                     }
                 }
@@ -2255,6 +2390,10 @@
     }
 
     .home-page {
+        .home-bck1 {
+            height: 65px;
+        }
+
         .white-wine {
             .description {
                 .descr-part {
@@ -2393,9 +2532,28 @@
     }
 
     #fullpage {
+        .freska-crvena {
+            top: -12%;
+
+            .freska-crvena-bottle {
+                height: 718px;
+                -moz-transform: scale(0.7);
+                -ms-transform: scale(0.7);
+                -o-transform: scale(0.7);
+                -webkit-transform: scale(0.7);
+                transform: scale(0.3);
+            }
+        }
+
+        .letter-position {
+            &.f-red {
+                top: 45%;
+            }
+        }
+
         .change-text {
             .content-position {
-                bottom: -100px;
+                bottom: -110px;
 
                 .text {
                     margin-bottom: 5px;
@@ -2426,6 +2584,25 @@
 
                 .vertical-line {
                     height: 20px;
+                }
+            }
+        }
+
+        .all-sorts {
+            width: 300px;
+
+            .name {
+                margin: 22px 0 0 0;
+                font-size: 15px;
+            }
+
+            .grey-line {
+                left: 140px;
+                width: 10px;
+
+                &.red-line-active {
+                    left: 132px;
+                    width: 20px;
                 }
             }
         }
