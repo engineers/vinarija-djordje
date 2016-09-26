@@ -1586,7 +1586,8 @@
                 .third-img,
                 .fourth-img,
                 .fifth-img {
-                    position: absolute;
+                    position: inherit;
+                    /*position: absolute;*/
                     height: 690px;
 
                     &:hover {
@@ -2390,6 +2391,23 @@
     }
 
     .home-page {
+        .hover-section {
+            height: 500px;
+
+            .responsive {
+                .first-img,
+                .second-img,
+                .third-img,
+                .fourth-img,
+                .fifth-img {
+
+                    .news {
+                        top: 230px;
+                    }
+                }
+            }
+        }
+
         .home-bck1 {
             height: 65px;
         }

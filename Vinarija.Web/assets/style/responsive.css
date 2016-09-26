@@ -1019,7 +1019,8 @@
   .home-page .hover-section .responsive .third-img,
   .home-page .hover-section .responsive .fourth-img,
   .home-page .hover-section .responsive .fifth-img {
-    position: absolute;
+    position: inherit;
+    /*position: absolute;*/
     height: 690px;
   }
   .home-page .hover-section .responsive .first-img .news,
@@ -1594,6 +1595,16 @@
     left: auto;
     right: 30px;
     top: 50px;
+  }
+  .home-page .hover-section {
+    height: 500px;
+  }
+  .home-page .hover-section .responsive .first-img .news,
+  .home-page .hover-section .responsive .second-img .news,
+  .home-page .hover-section .responsive .third-img .news,
+  .home-page .hover-section .responsive .fourth-img .news,
+  .home-page .hover-section .responsive .fifth-img .news {
+    top: 230px;
   }
   .home-page .home-bck1 {
     height: 65px;
