@@ -1763,7 +1763,7 @@
     transform: scale(0.3);
   }
   #fullpage .portugizer {
-    top: 37%;
+    top: 33%;
   }
   #fullpage .portugizer .portugizer-bottle {
     -moz-transform: scale(0.3);
@@ -1776,7 +1776,7 @@
     top: 45%;
   }
   #fullpage .change-text .content-position {
-    bottom: -120px;
+    bottom: -105px;
     width: 95%;
   }
   #fullpage .change-text .content-position .text {
@@ -1788,11 +1788,12 @@
     margin: 0 0 5px 0;
   }
   #fullpage .change-text .content-position .degrees {
-    margin: 0 0 5px 25px;
-    font-size: 18px;
+    margin: 0 0 5px 8px;
+    font-size: 14px;
   }
   #fullpage .change-text .content-position .percentage {
-    font-size: 18px;
+    margin-left: 8px;
+    font-size: 14px;
   }
   #fullpage .change-text .content-position .read-more-box {
     margin-top: 10px;
