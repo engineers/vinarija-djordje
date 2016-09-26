@@ -14,10 +14,6 @@
     padding: 0px !important;
 }
 
-[pull-right] {
-    float: right;
-}
-
 [overflow="none"] {
     overflow: none !important;
 }
@@ -389,4 +385,35 @@ div[text-angular-toolbar] {
 
 slick {
     width: 100%;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slick-prev {
+    left: 30px;
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+}
+
+    .slick-prev:before {
+        font-size: 30px;
+    }
+
+.slick-next {
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+}
+
+    .slick-next:before {
+        font-size: 30px;
+    }
+
+.slick-prev, .slick-next {
+    display: block !important;
 }

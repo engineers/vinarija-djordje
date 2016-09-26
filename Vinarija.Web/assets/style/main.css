@@ -2128,7 +2128,7 @@ section.intro .hamburger-menu-mobile {
 }
 .freska-bela {
   position: fixed;
-  top: 4.5%;
+  /*top: 4.5%;*/
   left: 21%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
@@ -2139,12 +2139,12 @@ section.intro .hamburger-menu-mobile {
 }
 .freska-bela .freska-bela-bottle {
   width: 345px;
-  height: 700px;
+  height: 860px;
   background: url('../images/freska-bela.png') center center no-repeat;
 }
 .sardone {
   position: fixed;
-  top: 29.5%;
+  /*top: 29.5%;*/
   left: 21%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
@@ -2155,12 +2155,12 @@ section.intro .hamburger-menu-mobile {
 }
 .sardone .sardone-bottle {
   width: 345px;
-  height: 700px;
+  height: 820px;
   background: url('../images/sardone.png') center center no-repeat;
 }
 .traminac {
   position: fixed;
-  top: 54%;
+  /*top: 54%;*/
   left: 21%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
@@ -2171,12 +2171,12 @@ section.intro .hamburger-menu-mobile {
 }
 .traminac .traminac-bottle {
   width: 345px;
-  height: 700px;
+  height: 840px;
   background: url('../images/traminac.png') center center no-repeat;
 }
 .sovinjon {
   position: fixed;
-  top: 79%;
+  /*top: 79%;*/
   left: 21%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
@@ -2187,7 +2187,7 @@ section.intro .hamburger-menu-mobile {
 }
 .sovinjon .sovinjon-bottle {
   width: 345px;
-  height: 733px;
+  height: 840px;
   background: url('../images/sovinjon.png') center center no-repeat;
 }
 .all-sorts {

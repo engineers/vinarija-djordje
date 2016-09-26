@@ -582,10 +582,10 @@
     bottom: 110px;
   }
   .freska-bela {
-    top: 2%;
     left: 4%;
   }
   .freska-bela .freska-bela-bottle {
+    height: 770px;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
@@ -593,10 +593,10 @@
     transform: scale(0.7);
   }
   .sardone {
-    top: 27.5%;
     left: 4%;
   }
   .sardone .sardone-bottle {
+    height: 720px;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
@@ -604,10 +604,10 @@
     transform: scale(0.7);
   }
   .traminac {
-    top: 52%;
     left: 4%;
   }
   .traminac .traminac-bottle {
+    height: 770px;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
@@ -615,10 +615,10 @@
     transform: scale(0.7);
   }
   .sovinjon {
-    top: 78%;
     left: 4%;
   }
   .sovinjon .sovinjon-bottle {
+    height: 770px;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
@@ -1193,17 +1193,45 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
+  #fullpage-white .freska-bela .freska-bela-bottle,
+  #fullpage-white .sardone .freska-bela-bottle,
+  #fullpage-white .traminac .freska-bela-bottle,
+  #fullpage-white .sovinjon .freska-bela-bottle,
+  #fullpage-white .freska-bela .sardone-bottle,
+  #fullpage-white .sardone .sardone-bottle,
+  #fullpage-white .traminac .sardone-bottle,
+  #fullpage-white .sovinjon .sardone-bottle,
+  #fullpage-white .freska-bela .traminac-bottle,
+  #fullpage-white .sardone .traminac-bottle,
+  #fullpage-white .traminac .traminac-bottle,
+  #fullpage-white .sovinjon .traminac-bottle,
+  #fullpage-white .freska-bela .sovinjon-bottle,
+  #fullpage-white .sardone .sovinjon-bottle,
+  #fullpage-white .traminac .sovinjon-bottle,
+  #fullpage-white .sovinjon .sovinjon-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
   #fullpage-white .freska-bela {
-    top: 0;
+    top: -1%;
+  }
+  #fullpage-white .freska-bela .freska-bela-bottle {
+    height: 670px;
   }
   #fullpage-white .sardone {
     top: 23%;
   }
+  #fullpage-white .sardone .sardone-bottle {
+    height: 690px;
+  }
   #fullpage-white .traminac {
-    top: 49%;
+    top: 47%;
   }
   #fullpage-white .sovinjon {
-    top: 73%;
+    top: 72%;
   }
   #fullpage-white .all-sorts {
     top: 0;

@@ -963,10 +963,10 @@
     }
 
     .freska-bela {
-        top: 2%;
         left: 4%;
 
         .freska-bela-bottle {
+            height: 770px;
             -moz-transform: scale(.7);
             -ms-transform: scale(.7);
             -o-transform: scale(.7);
@@ -976,10 +976,10 @@
     }
 
     .sardone {
-        top: 27.5%;
         left: 4%;
 
         .sardone-bottle {
+            height: 720px;
             -moz-transform: scale(0.7);
             -ms-transform: scale(0.7);
             -o-transform: scale(0.7);
@@ -989,10 +989,10 @@
     }
 
     .traminac {
-        top: 52%;
         left: 4%;
 
         .traminac-bottle {
+            height: 770px;
             -moz-transform: scale(0.7);
             -ms-transform: scale(0.7);
             -o-transform: scale(0.7);
@@ -1002,10 +1002,10 @@
     }
 
     .sovinjon {
-        top: 78%;
         left: 4%;
 
         .sovinjon-bottle {
+            height: 770px;
             -moz-transform: scale(0.7);
             -ms-transform: scale(0.7);
             -o-transform: scale(0.7);
@@ -1811,22 +1811,41 @@
             -o-transform: translateX(-50%);
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+
+            .freska-bela-bottle,
+            .sardone-bottle,
+            .traminac-bottle,
+            .sovinjon-bottle {
+                -moz-transform: scale(0.6);
+                -ms-transform: scale(0.6);
+                -o-transform: scale(0.6);
+                -webkit-transform: scale(0.6);
+                transform: scale(0.6);
+            }
         }
 
         .freska-bela {
-            top: 0;
+            top: -1%;
+
+            .freska-bela-bottle {
+                height: 670px;
+            }
         }
 
         .sardone {
             top: 23%;
+
+            .sardone-bottle {
+                height: 690px;
+            }
         }
 
         .traminac {
-            top: 49%;
+            top: 47%;
         }
 
         .sovinjon {
-            top: 73%;
+            top: 72%;
         }
 
         .all-sorts {
