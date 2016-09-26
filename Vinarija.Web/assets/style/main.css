@@ -1132,8 +1132,8 @@ section.footer .copyright {
 .home-page .slider-home-page .home-slider {
   width: 100%;
   height: 100%;
-  outline: none;
   background-size: cover;
+  outline: none;
 }
 .home-page .slider-home-page .prev-arrow,
 .home-page .slider-home-page .next-arrow {
