@@ -16,16 +16,25 @@ namespace Vinarija.Api.Controllers
 {
     public class PostController : BaseController
     {
-        [AllowAnonymous]
+        [TokenAuthorize]
         [HttpGet]
         public PostPageModel GetAll(int? pageSize = null, int? pageNumber = null, string orderBy = null, string searchTerm = null)
         {
-            PostPageModel postPageModel = PostManager.GetAll(pageSize, pageNumber, orderBy, searchTerm);
+            PostPageModel postPageModel = PostManager.GetAll(pageSize, pageNumber, orderBy, searchTerm, true);
 
             return postPageModel;
         }
 
-        
+        [AllowAnonymous]
+        [HttpGet]
+        public PostPageModel GetAllPublic(int? pageSize = null, int? pageNumber = null, string orderBy = null, string searchTerm = null)
+        {
+            PostPageModel postPageModel = PostManager.GetAll(pageSize, pageNumber, orderBy, searchTerm, false);
+
+            return postPageModel;
+        }
+
+
         [ValidateModel]
         [TokenAuthorize]
         [HttpPost]

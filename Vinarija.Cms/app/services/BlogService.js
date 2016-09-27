@@ -56,7 +56,6 @@
             }
         })
         .then(function (response) {
-            console.log(response);
             return response.data;
         }, function (response) {
             $rootScope.$emit('toast', { message: response.data.message, type: 'danger' });

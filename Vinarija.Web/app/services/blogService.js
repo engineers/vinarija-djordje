@@ -18,7 +18,7 @@
 
     factory.getPosts = function (params) {
         return $http({
-            url: config.baseAddress + 'post/getAll',
+            url: config.baseAddress + 'post/getAllPublic',
             method: 'GET',
             params: params
         }).then(function (res) {
