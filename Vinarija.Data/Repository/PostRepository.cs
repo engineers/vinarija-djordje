@@ -14,11 +14,16 @@ namespace Vinarija.Data.Repository
     {
         public PostRepository(DbContext dbContext) : base(dbContext) { }
 
-        public PostPageModel GetAll(int? pageSize, int? pageNumber, string orderBy, string searchTerm)
+        public PostPageModel GetAll(int? pageSize, int? pageNumber, string orderBy, string searchTerm, bool all)
         {
             PostPageModel model = new PostPageModel();
 
             var query = (IQueryable<Post>)dbSet.Include("PostImages");
+
+            if (!all)
+            {
+                query = query.Where(p => p.Active);
+            }
 
             if (!string.IsNullOrEmpty(searchTerm))
             {

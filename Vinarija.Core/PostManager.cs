@@ -17,11 +17,11 @@ namespace Vinarija.Core
 {
     public class PostManager
     {
-        public PostPageModel GetAll(int? pageSize, int? pageNumber, string orderBy, string searchTerm)
+        public PostPageModel GetAll(int? pageSize, int? pageNumber, string orderBy, string searchTerm, bool all)
         {
             using (UnitOfWork uow = new UnitOfWork())
             {
-                PostPageModel postPageModel = uow.PostRepository.GetAll(pageSize, pageNumber, orderBy, searchTerm);
+                PostPageModel postPageModel = uow.PostRepository.GetAll(pageSize, pageNumber, orderBy, searchTerm, all);
                 return postPageModel;
             }
         }
