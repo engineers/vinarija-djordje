@@ -1947,7 +1947,7 @@ section.intro .hamburger-menu-mobile {
   height: 20px;
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 27%;
   z-index: 8;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -1990,7 +1990,7 @@ section.intro .hamburger-menu-mobile {
 .label {
   position: absolute;
   left: 73px;
-  top: 30%;
+  top: 27%;
   z-index: 10;
   font-size: 18px;
   color: #fff;
