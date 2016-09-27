@@ -3,6 +3,9 @@
 /*#region Mixins */
 /*#endregion */
 @media screen and (max-width: 1600px) {
+  .wines-page .wine-selection .red-wine .wine-position .red-bottle {
+    width: 81%;
+  }
   .home-page .red-wine .bottle .bottle-img {
     margin: 120px -110px;
     -moz-transform: scale(0.8, 0.8);
@@ -51,8 +54,39 @@
   .home-page .home-bck1 {
     height: 240px;
   }
+  #fullpage .all-sorts {
+    width: 400px;
+  }
+  #fullpage .all-sorts .grey-line {
+    left: 175px;
+    width: 25px;
+  }
+  #fullpage .all-sorts .grey-line.red-line-active {
+    left: 155px;
+    width: 45px;
+  }
+  #fullpage .freska-crvena .freska-crvena-bottle {
+    height: 750px;
+  }
+  #fullpage .portugizer .portugizer-bottle {
+    height: 810px;
+  }
+  #fullpage-white .all-sorts {
+    width: 400px;
+  }
+  #fullpage-white .all-sorts .grey-line {
+    left: 175px;
+    width: 25px;
+  }
+  #fullpage-white .all-sorts .grey-line.red-line-active {
+    left: 155px;
+    width: 45px;
+  }
 }
 @media screen and (max-width: 1400px) {
+  .wines-page .wine-selection .red-wine .wine-position .red-bottle {
+    width: 78%;
+  }
   section.intro .logo-headline {
     top: 40%;
     right: -85px;
@@ -142,6 +176,115 @@
   }
 }
 @media screen and (max-width: 1300px) {
+  #fullpage .change-text .content-position .name-wine {
+    margin-bottom: 0;
+  }
+  #fullpage .change-text .content-position .text {
+    margin-bottom: 5px;
+  }
+  #fullpage .change-text .content-position .temp {
+    margin: 15px 0 20px 0;
+  }
+  #fullpage .change-text .content-position .degrees {
+    margin: 15px 0 20px 25px;
+  }
+  #fullpage .change-text .content-position .read-more-box {
+    margin-top: 20px;
+  }
+  #fullpage .change-text .content-position .read-more-box .vertical-line {
+    height: 35px;
+  }
+  #fullpage .all-sorts {
+    width: 350px;
+  }
+  #fullpage .all-sorts .name {
+    font-size: 16px;
+  }
+  #fullpage .all-sorts .grey-line {
+    left: 165px;
+    width: 10px;
+  }
+  #fullpage .all-sorts .grey-line.red-line-active {
+    left: 155px;
+    width: 20px;
+  }
+  #fullpage .freska-crvena .freska-crvena-bottle {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #fullpage .portugizer .portugizer-bottle {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #fullpage-white .change-text .content-position .name-wine {
+    margin-bottom: 0;
+  }
+  #fullpage-white .change-text .content-position .text {
+    margin-bottom: 5px;
+  }
+  #fullpage-white .change-text .content-position .temp {
+    margin: 15px 0 20px 0;
+  }
+  #fullpage-white .change-text .content-position .degrees {
+    margin: 15px 0 20px 25px;
+  }
+  #fullpage-white .change-text .content-position .read-more-box {
+    margin-top: 20px;
+  }
+  #fullpage-white .change-text .content-position .read-more-box .vertical-line {
+    height: 35px;
+  }
+  #fullpage-white .all-sorts {
+    width: 350px;
+  }
+  #fullpage-white .all-sorts .name {
+    font-size: 16px;
+  }
+  #fullpage-white .all-sorts .grey-line {
+    left: 165px;
+    width: 10px;
+  }
+  #fullpage-white .all-sorts .grey-line.red-line-active {
+    left: 155px;
+    width: 20px;
+  }
+  #fullpage-white .freska-bela .freska-bela-bottle {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #fullpage-white .sardone .sardone-bottle {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #fullpage-white .traminac .traminac-bottle {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #fullpage-white .sovinjon .sovinjon-bottle {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .default-news-img {
+    width: 38%;
+  }
   .default-wrapper {
     width: 90%;
   }
