@@ -2,10 +2,10 @@
     <section class="welcome">
         <div class="default-wrapper">
             <div class="stamp-title">
-                <h3 class="center">Добро Дошли</h3>
-                <h5 class="center">Винарија Ђорђе</h5>
+                <h3 class="center" animation-settings="headlineAnimation" scroll-trigger>Добро Дошли</h3>
+                <h5 class="center" animation-settings="headlineAnimation" scroll-trigger>Винарија Ђорђе</h5>
             </div>
-            <div class="content">
+            <div class="content" animation-settings="bodyTextAnimation" scroll-trigger>
                 <p>
                     На југу Балкана, између Дунава и Карпата, простире се Делиблатска пешчара, заштићено прибежиште за
                     многе врсте биљака и животиња и значајан генетски ресусрс наше планете.
@@ -28,9 +28,9 @@
 
     <section class="red-wine flex">
         <div class="bottle">
-            <div class="bottle-img freska"></div>
+            <div class="bottle-img freska" animation-settings="leftAnimation" scroll-trigger></div>
         </div>
-        <div class="description">
+        <div class="description" animation-settings="rightAnimation" scroll-trigger>
             <div class="descr-part">
                 <h3><span>Црвена</span> Вина</h3>
                 <div class="flex">
@@ -47,7 +47,7 @@
     </section>
 
     <section class="white-wine flex">
-        <div class="description">
+        <div class="description" animation-settings="leftAnimation" scroll-trigger>
             <div class="descr-part">
                 <h3><span>Бела</span> Вина</h3>
                 <div class="flex types">
@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="bottle">
-            <div class="bottle-img freska-white"></div>
+            <div class="bottle-img freska-white" animation-settings="rightAnimation" scroll-trigger></div>
         </div>
     </section>
 
@@ -78,7 +78,7 @@
 
     <section class="hover-section">
         <slick-carousel class="responsive flex">
-            <div class="first-img" ui-sref="layout.wines" style="cursor: pointer;">
+            <div class="first-img" ui-sref="layout.wines" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">Вина</div>
                     <div class="news-content">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="second-img" ui-sref="layout.winery" style="cursor: pointer;">
+            <div class="second-img" ui-sref="layout.winery" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">Винарија</div>
                     <div class="news-content">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="third-img" ui-sref="layout.vineyards" style="cursor: pointer;">
+            <div class="third-img" ui-sref="layout.vineyards" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">Виногради</div>
                     <div class="news-content">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="fourth-img" ui-sref="layout.visit-winery" style="cursor: pointer;">
+            <div class="fourth-img" ui-sref="layout.visit-winery" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">Посета винарији</div>
                     <div class="news-content">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="fifth-img" ui-sref="layout.actualities" style="cursor: pointer;">
+            <div class="fifth-img" ui-sref="layout.actualities" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">Актуелности</div>
                     <div class="news-content">
@@ -163,21 +163,21 @@
             </div>
         </div>
         <div class="calendar left">
-            <div class="date" ng-bind="selectedPost.dateDay"></div>
-            <div class="month" ng-bind="selectedPost.dateMonth">апр</div>
+            <div class="date" ng-bind="selectedPost.dateDay" animation-settings="leftAnimation" scroll-trigger></div>
+            <div class="month" ng-bind="selectedPost.dateMonth" animation-settings="leftAnimation" scroll-trigger>апр</div>
         </div>
         <div class="calendar-news left">
-            <div class="title" ng-bind="selectedPost.title"></div>
-            <div class="content" ng-bind-html="selectedPost.content.substring(0, 300) + '...'"></div>
-            <div class="read-more-box flex" ui-sref="layout.actualities">
+            <div class="title" ng-bind="selectedPost.title" animation-settings="leftAnimation" scroll-trigger></div>
+            <div class="content" ng-bind-html="selectedPost.content.substring(0, 300) + '...'" animation-settings="leftAnimation" scroll-trigger></div>
+            <div class="read-more-box flex" ui-sref="layout.actualities" animation-settings="leftAnimation" scroll-trigger>
                 <div class="vertical-line"></div>
                 <div class="read-more">прочитај још</div>
                 <div class="vertical-line"></div>
             </div>
         </div>
-        <div ng-if="selectedPost.imageUrl">
+        <div ng-if="selectedPost.imageUrl" animation-settings="rightAnimation" scroll-trigger>
             <div class="calendar-img" ng-style="{'background-image':'url(' + selectedPost.imageUrl + ')'}"></div>
         </div>
-        <div class="default-news-img" ng-if="!selectedPost.imageUrl" />
+        <div class="default-news-img" ng-if="!selectedPost.imageUrl" animation-settings="rightAnimation" scroll-trigger/>
     </section>
 </div>
