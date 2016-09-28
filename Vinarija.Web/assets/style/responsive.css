@@ -228,6 +228,24 @@
   .territory-page .climate .left-box .text-wrapper p {
     width: 95%;
   }
+  #fullpage .freska-crvena {
+    top: 2%;
+  }
+  #fullpage .portugizer {
+    top: 51%;
+  }
+  #fullpage-white .freska-bela {
+    top: -1%;
+  }
+  #fullpage-white .sardone {
+    top: 24%;
+  }
+  #fullpage-white .traminac {
+    top: 48%;
+  }
+  #fullpage-white .sovinjon {
+    top: 73.5%;
+  }
 }
 @media screen and (max-width: 1300px) {
   #fullpage .change-text .content-position .name-wine {
