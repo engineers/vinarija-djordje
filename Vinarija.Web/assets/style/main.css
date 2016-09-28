@@ -2495,31 +2495,15 @@ section.intro .hamburger-menu-mobile {
   }
 }
 /*IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .hamburger-menu .hamburger-nav .hamburger-container {
+    overflow: hidden;
+  }
+}
 /*Microsoft Edge*/
+@supports (-ms-ime-align:auto) {
+  .hamburger-menu .hamburger-nav .hamburger-container {
+    overflow: hidden;
+  }
+}
 /*Safari and Chrome*/
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /*@media screen and (max-width: 1024px) {
-        #fullpage {
-            .freska-crvena {
-                top: 4%;
-            }
-
-            .portugizer {
-                top: 3%;
-            }
-        }
-    }*/
-}
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  /*@media screen and (max-width: 1024px) {
-        #fullpage {
-            .freska-crvena {
-                top: 6%;
-            }
-
-            .portugizer {
-                top: 53%;
-            }
-        }
-    }*/
-}
