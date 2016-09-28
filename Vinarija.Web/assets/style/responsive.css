@@ -253,7 +253,7 @@
     transform: scale(0.6);
   }
   #fullpage-white .freska-bela {
-    top: -1%;
+    top: -2%;
   }
   #fullpage-white .freska-bela .freska-bela-bottle {
     -moz-transform: scale(0.6);
@@ -263,7 +263,7 @@
     transform: scale(0.6);
   }
   #fullpage-white .sardone {
-    top: 24%;
+    top: 23%;
   }
   #fullpage-white .sardone .sardone-bottle {
     -moz-transform: scale(0.6);
@@ -273,7 +273,7 @@
     transform: scale(0.6);
   }
   #fullpage-white .traminac {
-    top: 48%;
+    top: 47%;
   }
   #fullpage-white .traminac .traminac-bottle {
     -moz-transform: scale(0.6);
@@ -292,11 +292,24 @@
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
   }
+  .change-text .content-position .temp {
+    margin: 15px 0 20px 0;
+  }
+  .change-text .content-position .degrees {
+    margin: 15px 0 20px 25px;
+  }
   .change-text .content-position .name-wine {
     margin-bottom: 0;
   }
   .change-text .content-position .read-more-box {
     margin-top: 20px;
+  }
+  .change-text .content-position .text {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  .change-text .read-more-box .vertical-line {
+    height: 35px;
   }
 }
 @media screen and (max-width: 1300px) {
