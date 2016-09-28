@@ -643,7 +643,7 @@
   }
   #fullpage .portugizer {
     left: 5%;
-    top: 53%;
+    top: 3%;
   }
   #fullpage .portugizer .portugizer-bottle {
     -moz-transform: scale(0.7);
@@ -752,6 +752,7 @@
     transform: scale(0.7);
   }
   #fullpage-white .sardone {
+    top: 1%;
     left: 4%;
   }
   #fullpage-white .sardone .sardone-bottle {
@@ -763,6 +764,7 @@
     transform: scale(0.7);
   }
   #fullpage-white .traminac {
+    top: 0;
     left: 4%;
   }
   #fullpage-white .traminac .traminac-bottle {
@@ -774,6 +776,7 @@
     transform: scale(0.7);
   }
   #fullpage-white .sovinjon {
+    top: 0;
     left: 4%;
   }
   #fullpage-white .sovinjon .sovinjon-bottle {
