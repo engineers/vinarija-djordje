@@ -1988,6 +1988,7 @@ section.footer {
                     height: 210px;
                     width: 85%;
                     background: url('../images/choose-wine-red.png') center right no-repeat;
+                    background-size: cover;
                 }
 
                 .read-more-box {
@@ -2325,7 +2326,7 @@ section.intro {
 
 .freska-crvena {
     position: fixed;
-    /*top: 9%;*/
+    top: 9%;
     left: 22%;
     -moz-transform: translateX(-25%);
     -ms-transform: translateX(-25%);
@@ -2336,14 +2337,14 @@ section.intro {
 
     .freska-crvena-bottle {
         width: 345px;
-        height: 700px;
+        height: 670px;
         background: url('../images/freska-crvena.png') center center no-repeat;
     }
 }
 
 .portugizer {
     position: fixed;
-    /*top: 59%;*/
+    top: 59%;
     left: 21%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
@@ -2361,7 +2362,7 @@ section.intro {
 
 .freska-bela {
     position: fixed;
-    /*top: 4.5%;*/
+    top: 2.5%;
     left: 21%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
@@ -2379,7 +2380,7 @@ section.intro {
 
 .sardone {
     position: fixed;
-    /*top: 29.5%;*/
+    top: 28%;
     left: 21%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
@@ -2397,7 +2398,7 @@ section.intro {
 
 .traminac {
     position: fixed;
-    /*top: 54%;*/
+    top: 52.5%;
     left: 21%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
@@ -2415,7 +2416,7 @@ section.intro {
 
 .sovinjon {
     position: fixed;
-    /*top: 79%;*/
+    top: 78%;
     left: 21%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
@@ -2432,14 +2433,15 @@ section.intro {
 }
 
 .all-sorts {
-    position: relative;
+    float: left;
+    position: absolute;
     left: 50%;
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    top: 21%;
+    top: 50%;
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
     width: 500px;
     opacity: 0.1;
     -moz-transition: opacity .5s;
@@ -2499,13 +2501,19 @@ section.intro {
 }
 
 .name-position {
+    float: left;
     opacity: 0.1;
     -moz-transition: opacity .5s;
     -o-transition: opacity .5s;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
-    position: relative;
-    top: 31%;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 
     .grey-line {
         display: table;
@@ -2539,7 +2547,6 @@ section.intro {
     .content-position {
         position: relative;
         left: 135px;
-        bottom: 50px;
         width: 72%;
 
         .name-wine {
