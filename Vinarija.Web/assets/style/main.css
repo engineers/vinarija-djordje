@@ -1788,7 +1788,6 @@ section.footer .copyright {
   height: 210px;
   width: 85%;
   background: url('../images/choose-wine-red.png') center right no-repeat;
-  background-size: cover;
 }
 .wines-page .wine-selection .red-wine .wine-position .read-more-box {
   -webkit-justify-content: flex-end;
@@ -2496,24 +2495,21 @@ section.intro .hamburger-menu-mobile {
   }
 }
 /*IE*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .name-position {
-    position: absolute;
-    top: 48%;
+/*Microsoft Edge*/
+/*Safari and Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) and screen and (max-width: 1024px) {
+  #fullpage .freska-crvena {
+    top: 4%;
   }
-  .all-sorts {
-    position: absolute;
-    top: 47%;
+  #fullpage .portugizer {
+    top: 3%;
   }
 }
-/*Microsoft Edge*/
-@supports (-ms-ime-align:auto) {
-  .name-position {
-    position: absolute;
-    top: 48%;
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and screen and (max-width: 1024px) {
+  #fullpage .freska-crvena {
+    top: 6%;
   }
-  .all-sorts {
-    position: absolute;
-    top: 47%;
+  #fullpage .portugizer {
+    top: 53%;
   }
 }
