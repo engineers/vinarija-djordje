@@ -210,6 +210,10 @@
   .home-page .white-wine .bottle .bottle-img {
     margin: 120px -110px;
   }
+  .red-wine-page .scroll-down .vertical-line,
+  .white-wine-page .scroll-down .vertical-line {
+    height: 20px;
+  }
   .red-wine-page .sort-content .content-position,
   .white-wine-page .sort-content .content-position {
     left: 10%;
@@ -229,22 +233,70 @@
     width: 95%;
   }
   #fullpage .freska-crvena {
-    top: 2%;
+    top: 0;
+  }
+  #fullpage .freska-crvena .freska-crvena-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   #fullpage .portugizer {
-    top: 51%;
+    top: 47%;
+  }
+  #fullpage .portugizer .portugizer-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   #fullpage-white .freska-bela {
     top: -1%;
   }
+  #fullpage-white .freska-bela .freska-bela-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
   #fullpage-white .sardone {
     top: 24%;
+  }
+  #fullpage-white .sardone .sardone-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   #fullpage-white .traminac {
     top: 48%;
   }
+  #fullpage-white .traminac .traminac-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
   #fullpage-white .sovinjon {
-    top: 73.5%;
+    top: 72.5%;
+  }
+  #fullpage-white .sovinjon .sovinjon-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  .change-text .content-position .name-wine {
+    margin-bottom: 0;
+  }
+  .change-text .content-position .read-more-box {
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 1300px) {
