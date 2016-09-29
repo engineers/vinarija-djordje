@@ -387,6 +387,9 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .home-page .white-wine .bottle .bottle-img.freska-white {
+    background-size: initial;
+  }
   .home-page .home-bck1 {
     height: 200px;
   }

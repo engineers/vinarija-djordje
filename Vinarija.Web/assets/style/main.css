@@ -932,6 +932,7 @@ section.footer .copyright {
 }
 .home-page .white-wine .bottle .bottle-img.freska-white {
   background: url('../images/white-wine.png') center right no-repeat;
+  background-size: cover;
 }
 .home-page .white-wine .description {
   position: relative;
