@@ -971,6 +971,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .back-arrow-black {
+    background: url(../images/sprite.svg) -98px -128px no-repeat;
+  }
   .gallery-page section.gallery .prev-arrow {
     top: 50%;
     left: 50px;
@@ -2146,13 +2149,13 @@
     top: 45%;
   }
   #fullpage .change-text .content-position {
-    bottom: -150px;
+    bottom: -155px;
     width: 95%;
   }
   #fullpage .change-text .content-position .text {
     margin-bottom: 0;
     line-height: 14px;
-    font-size: 13px;
+    font-size: 14px;
   }
   #fullpage .change-text .content-position .temp {
     margin: 0 0 5px 0;
@@ -2190,23 +2193,23 @@
     width: 20px;
   }
   #fullpage-white .all-sorts {
-    width: 320px;
+    width: 330px;
   }
   #fullpage-white .all-sorts .name {
     margin: 10px 110px 0px 0;
     font-size: 15px;
   }
   #fullpage-white .all-sorts .grey-line {
-    left: 150px;
+    left: 155px;
     width: 10px;
     margin-top: 17px;
   }
   #fullpage-white .all-sorts .grey-line.red-line-active {
-    left: 140px;
+    left: 145px;
     width: 20px;
   }
   #fullpage-white .change-text .content-position {
-    bottom: -130px;
+    bottom: -150px;
     width: 95%;
   }
   #fullpage-white .change-text .content-position .read-more-box {
@@ -2217,8 +2220,8 @@
   }
   #fullpage-white .change-text .content-position .text {
     margin-bottom: 0;
-    line-height: 13px;
-    font-size: 13px;
+    line-height: 14px;
+    font-size: 14px;
   }
   #fullpage-white .change-text .content-position .temp {
     margin: 0 0 5px 0;
@@ -2274,5 +2277,164 @@
     -o-transform: scale(0.3);
     -webkit-transform: scale(0.3);
     transform: scale(0.3);
+  }
+}
+@media screen and (max-width: 350px) {
+  #fullpage .freska-crvena {
+    top: -22%;
+  }
+  #fullpage .freska-crvena .freska-crvena-bottle {
+    height: 718px;
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  #fullpage .portugizer {
+    top: 29%;
+  }
+  #fullpage .portugizer .portugizer-bottle {
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  #fullpage .letter-position.f-red {
+    top: 45%;
+  }
+  #fullpage .change-text .content-position {
+    bottom: -115px;
+    width: 95%;
+  }
+  #fullpage .change-text .content-position .text {
+    margin-bottom: 0;
+    line-height: 10px;
+    font-size: 12px;
+  }
+  #fullpage .change-text .content-position .temp {
+    margin: 0 0 5px 0;
+  }
+  #fullpage .change-text .content-position .degrees {
+    margin: 0 0 5px 8px;
+    font-size: 14px;
+  }
+  #fullpage .change-text .content-position .percentage {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+  #fullpage .change-text .content-position .read-more-box {
+    margin-top: 10px;
+  }
+  #fullpage .change-text .content-position .read-more-box .read-more {
+    font-size: 12px;
+  }
+  #fullpage .change-text .content-position .read-more-box .vertical-line {
+    height: 15px;
+  }
+  #fullpage .all-sorts {
+    width: 275px;
+  }
+  #fullpage .all-sorts .name {
+    margin: 22px 0 0 0;
+    font-size: 14px;
+  }
+  #fullpage .all-sorts .grey-line {
+    left: 130px;
+    width: 10px;
+  }
+  #fullpage .all-sorts .grey-line.red-line-active {
+    left: 120px;
+    width: 20px;
+  }
+  #fullpage-white .all-sorts {
+    width: 285px;
+  }
+  #fullpage-white .all-sorts .name {
+    margin: 10px 110px 0px 0;
+    font-size: 12px;
+  }
+  #fullpage-white .all-sorts .grey-line {
+    left: 133px;
+    width: 10px;
+    margin-top: 17px;
+  }
+  #fullpage-white .all-sorts .grey-line.red-line-active {
+    left: 123px;
+    width: 20px;
+  }
+  #fullpage-white .change-text .content-position {
+    bottom: -120px;
+    width: 95%;
+  }
+  #fullpage-white .change-text .content-position .read-more-box {
+    margin-top: 10px;
+  }
+  #fullpage-white .change-text .content-position .read-more-box .read-more {
+    font-size: 12px;
+  }
+  #fullpage-white .change-text .content-position .read-more-box .vertical-line {
+    height: 15px;
+  }
+  #fullpage-white .change-text .content-position .text {
+    margin-bottom: 0;
+    line-height: 11px;
+    font-size: 12px;
+  }
+  #fullpage-white .change-text .content-position .temp {
+    margin: 0 0 5px 0;
+  }
+  #fullpage-white .change-text .content-position .degrees {
+    margin: 0 0 5px 8px;
+    font-size: 14px;
+  }
+  #fullpage-white .change-text .content-position .percentage {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+  #fullpage-white .freska-bela {
+    top: -10%;
+    left: 48%;
+  }
+  #fullpage-white .freska-bela .freska-bela-bottle {
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  #fullpage-white .sardone {
+    top: 15%;
+    left: 48%;
+  }
+  #fullpage-white .sardone .sardone-bottle {
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  #fullpage-white .traminac {
+    top: 38%;
+    left: 48%;
+  }
+  #fullpage-white .traminac .traminac-bottle {
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  #fullpage-white .sovinjon {
+    top: 63%;
+    left: 48%;
+  }
+  #fullpage-white .sovinjon .sovinjon-bottle {
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
   }
 }
