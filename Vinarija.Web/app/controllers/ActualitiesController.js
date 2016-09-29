@@ -5,11 +5,12 @@
         pageSize: 6
     };
     $scope.monthsLocale = blogService.monthsLocale;
+    console.log($scope.monthsLocale);
 
     $scope.posts = postsData.posts;
     $scope.totalCount = postsData.totalCount;
     blogService.buildPreviewDate($scope.posts);
-
+    console.log($scope.posts);
     $scope.showNewsPopUp = function (post) {
         $scope.newsPopUp = !$scope.newsPopUp;
         if ($scope.newsPopUp) {

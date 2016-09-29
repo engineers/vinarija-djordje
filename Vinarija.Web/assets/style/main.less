@@ -1717,6 +1717,7 @@ section.footer {
     }
 }
 /*#endregion*/
+
 /*#region Vineyards*/
 .vineyards-page {
     .vineyards {
@@ -1928,6 +1929,7 @@ section.footer {
     }
 }
 /*#endregion*/
+
 /*#region Wines*/
 .wines-page {
     .wine-selection {
@@ -2062,6 +2064,7 @@ section.footer {
     }
 }
 /*#endregion*/
+
 /*#region Hamburger menu*/
 section.intro {
     .hamburger-menu-mobile {
@@ -2240,6 +2243,7 @@ section.intro {
     }
 }
 /*#endregion*/
+
 /*#region Red wines and White wines page*/
 .logo {
     position: absolute;
@@ -2613,6 +2617,7 @@ section.intro {
     }
 }
 /*#endregion*/
+
 /*#region Territory*/
 .territory-page {
     .info {
@@ -2779,6 +2784,126 @@ section.intro {
     }
 }
 /*#endregion*/
+
+/*#region Gallery page*/
+.gallery-page {
+    .logo {
+        position: absolute;
+        top: 50px;
+        left: 75px;
+        width: 159px;
+        height: 105px;
+        z-index: 10;
+        cursor: pointer;
+        background: url('../images/logo.svg') center center no-repeat;
+    }
+
+    .hamburger-menu-mobile {
+        display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 50%;
+        left: 75px;
+        font-size: 18px;
+        font-family: 'Minion Pro-Regular';
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 22px 0;
+            cursor: pointer;
+
+            &:hover,
+            &.selected {
+                .grey-line {
+                    display: table;
+                }
+            }
+
+            a {
+                color: @grey;
+
+                &:hover {
+                    color: @grey-white;
+                }
+            }
+
+            &.selected {
+                a {
+                    color: @grey-white;
+                }
+            }
+        }
+    }
+
+    section.gallery {
+        position: relative;
+
+        .slick-initialized {
+            .slick-slide {
+                outline: none;
+            }
+        }
+
+        .slick-dotted {
+            &.slick-slider {
+                margin-bottom: 0;
+            }
+        }
+
+        .home-slider {
+            width: 100%;
+            height: 100%;
+            outline: none;
+            background-size: cover;
+            outline: none;
+        }
+
+        .prev-arrow,
+        .next-arrow {
+            position: absolute;
+            bottom: 10%;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .prev-arrow {
+            left: 140px;
+            background: url('../images/sprite.svg') -269px -272px no-repeat;
+
+            &:hover {
+                background: url('../images/sprite.svg') -28px -272px no-repeat;
+            }
+        }
+
+        .next-arrow {
+            right: 140px;
+            background: url('../images/sprite.svg') -394px -272px no-repeat;
+
+            &:hover {
+                background: url('../images/sprite.svg') -153px -272px no-repeat;
+            }
+        }
+    }
+}
+/*#endregion*/
+
 /*FF*/
 @-moz-document url-prefix() {
     section.footer {

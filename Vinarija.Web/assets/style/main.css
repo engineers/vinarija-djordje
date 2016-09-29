@@ -2485,6 +2485,96 @@ section.intro .hamburger-menu-mobile {
   text-align: left;
 }
 /*#endregion*/
+/*#region Gallery page*/
+.gallery-page .logo {
+  position: absolute;
+  top: 50px;
+  left: 75px;
+  width: 159px;
+  height: 105px;
+  z-index: 10;
+  cursor: pointer;
+  background: url('../images/logo.svg') center center no-repeat;
+}
+.gallery-page .hamburger-menu-mobile {
+  display: none;
+}
+.gallery-page nav {
+  position: absolute;
+  top: 50%;
+  left: 75px;
+  font-size: 18px;
+  font-family: 'Minion Pro-Regular';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.gallery-page nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.gallery-page nav li {
+  margin: 22px 0;
+  cursor: pointer;
+}
+.gallery-page nav li:hover .grey-line,
+.gallery-page nav li.selected .grey-line {
+  display: table;
+}
+.gallery-page nav li a {
+  color: #8a8a8a;
+}
+.gallery-page nav li a:hover {
+  color: #e2e1e1;
+}
+.gallery-page nav li.selected a {
+  color: #e2e1e1;
+}
+.gallery-page section.gallery {
+  position: relative;
+}
+.gallery-page section.gallery .slick-initialized .slick-slide {
+  outline: none;
+}
+.gallery-page section.gallery .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.gallery-page section.gallery .home-slider {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  outline: none;
+}
+.gallery-page section.gallery .prev-arrow,
+.gallery-page section.gallery .next-arrow {
+  position: absolute;
+  bottom: 10%;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  cursor: pointer;
+}
+.gallery-page section.gallery .prev-arrow {
+  left: 140px;
+  background: url('../images/sprite.svg') -269px -272px no-repeat;
+}
+.gallery-page section.gallery .prev-arrow:hover {
+  background: url('../images/sprite.svg') -28px -272px no-repeat;
+}
+.gallery-page section.gallery .next-arrow {
+  right: 140px;
+  background: url('../images/sprite.svg') -394px -272px no-repeat;
+}
+.gallery-page section.gallery .next-arrow:hover {
+  background: url('../images/sprite.svg') -153px -272px no-repeat;
+}
+/*#endregion*/
 /*FF*/
 @-moz-document url-prefix() {
   section.footer .footer-container .contact-form .send-btn .send-img {

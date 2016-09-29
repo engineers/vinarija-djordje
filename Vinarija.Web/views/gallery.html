@@ -1,0 +1,99 @@
+﻿<div class="gallery-page">
+    <div class="logo" ui-sref="layout.home"></div>
+
+    <nav>
+        <ul>
+            <li class="flex" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.home">почетна</a>
+            </li>
+            <li class="flex" ng-class="{'selected' : $state.includes('layout.wines')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.wines">вина</a>
+            </li>
+            <li class="flex" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.winery">винарија</a>
+            </li>
+            <li class="flex" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.vineyards">виногради</a>
+            </li>
+            <li class="flex" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.visit-winery">посета винарији</a>
+            </li>
+            <li class="flex" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.actualities">актуелности</a>
+            </li>
+            <li class="flex" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.territory">делиблатска пешчара</a>
+            </li>
+            <li class="flex" ng-class="{'selected' : $state.includes('layout.gallery')}">
+                <div class="grey-line"></div>
+                <a ui-sref="layout.gallery">Галерија</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hamburger-menu-mobile">
+        <div ng-show="hamburgerMenu" class="menu-nav-overlay" ng-click="showMenu()"></div>
+        <nav class="hamburger-nav-mobile">
+            <div class="hamburger-container" ng-class="{'open-menu': hamburgerMenu}" set-height>
+                <ul ng-click="showMenu()">
+                    <li class="flex" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.home">почетна</a>
+                    </li>
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.wines')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.wines">вина</a>
+                    </li>
+                    <li class="flex" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.winery">винарија</a>
+                    </li>
+                    <li class="flex" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.vineyards">виногради</a>
+                    </li>
+                    <li class="flex" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.visit-winery">посета винарији</a>
+                    </li>
+                    <li class="flex" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.actualities">актуелности</a>
+                    </li>
+                    <li class="flex" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.territory">делиблатска пешчара</a>
+                    </li>
+                    <li class="flex" ng-class="{'selected' : $state.includes('layout.gallery')}">
+                        <div class="grey-line"></div>
+                        <a ui-sref="layout.gallery">Галерија</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hamburger-btn" ng-click="showMenu()" ng-class="{'open': hamburgerMenu}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="label">Мени</div>
+    </div>
+
+    <section class="gallery">
+        <div class="prev-arrow"></div>
+        <div class="next-arrow"></div>
+        <slick-carousel prev-arrow="prev-arrow" next-arrow="next-arrow" set-height>
+            <div set-height ng-repeat="image in gallery">
+                <div class="home-slider" ng-style="{'background-image':'url(' + contentAddress + '\\Gallery' + '/' + image.filePath + ')'}"></div>
+            </div>
+        </slick-carousel>
+    </section>
+</div>

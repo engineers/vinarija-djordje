@@ -800,6 +800,23 @@
         }
     }
 
+    .gallery-page {
+        .logo {
+            top: 30px;
+            left: 30px;
+        }
+
+        section.gallery {
+            .prev-arrow {
+                left: 50px;
+            }
+
+            .next-arrow {
+                right: 50px;
+            }
+        }
+    }
+
     .home-page {
         .ivent-calendar {
             .calendar-news {
@@ -1506,6 +1523,86 @@
 }
 
 @media screen and (max-width: 768px) {
+    .gallery-page {
+        section.gallery {
+            .prev-arrow {
+                top: 50%;
+                left: 50px;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            .next-arrow {
+                top: 50%;
+                right: 50px;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+
+        nav {
+            display: none;
+        }
+
+        .hamburger-nav-mobile {
+            display: block;
+            position: relative;
+
+            .hamburger-container {
+                height: 100%;
+                left: auto;
+                right: 0;
+
+                &.open-menu {
+                    width: 60%;
+                }
+
+                ul {
+                    top: 50%;
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+
+                    li {
+                        line-height: 17px;
+
+                        &:hover,
+                        &.selected {
+                            .grey-line {
+                                margin-top: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .hamburger-menu-mobile {
+            display: block;
+
+            .menu-nav-overlay {
+                z-index: 1;
+            }
+
+            .label {
+                display: none;
+            }
+
+            .hamburger-btn {
+                top: 62px;
+                left: 88%;
+            }
+        }
+    }
+
     .default-news-img {
         display: none;
     }
@@ -1536,7 +1633,12 @@
                             }
 
                             ul {
-                                top: 40%;
+                                top: 50%;
+                                -moz-transform: translateY(-50%);
+                                -ms-transform: translateY(-50%);
+                                -o-transform: translateY(-50%);
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
                             }
                         }
                     }
@@ -1886,7 +1988,12 @@
                 }
 
                 ul {
-                    top: 40%;
+                    top: 50%;
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
 
                     li {
                         line-height: 17px;
@@ -2258,6 +2365,88 @@
 }
 
 @media screen and (max-width: 690px) {
+    .gallery-page {
+        .logo {
+            z-index: 1;
+            top: 10px;
+            left: 0;
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+            -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+        }
+
+        section.gallery {
+            .prev-arrow {
+                left: 0;
+                -moz-transform: translateY(-50%) scale(.6);
+                -ms-transform: translateY(-50%) scale(.6);
+                -o-transform: translateY(-50%) scale(.6);
+                -webkit-transform: translateY(-50%) scale(.6);
+                transform: translateY(-50%) scale(.6);
+            }
+
+            .next-arrow {
+                right: 0;
+                -moz-transform: translateY(-50%) scale(.6);
+                -ms-transform: translateY(-50%) scale(.6);
+                -o-transform: translateY(-50%) scale(.6);
+                -webkit-transform: translateY(-50%) scale(.6);
+                transform: translateY(-50%) scale(.6);
+            }
+        }
+
+        .hamburger-nav-mobile {
+            .hamburger-container {
+                &.open-menu {
+                    width: 100%;
+                }
+            }
+        }
+
+        .hamburger-menu-mobile {
+            .hamburger-nav-mobile {
+                .hamburger-container {
+                    &.open-menu {
+                        width: 100%;
+                    }
+
+                    ul {
+                        left: 50px;
+                        top: 50%;
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        width: 70%;
+
+                        li {
+                            font-size: 16px;
+
+                            a {
+                                line-height: 14px;
+                            }
+
+                            &.selected {
+                                .grey-line {
+                                    margin-top: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hamburger-btn {
+                left: auto;
+                right: 30px;
+                top: 50px;
+            }
+        }
+    }
+
     .back-arrow-red {
         right: 25px;
     }
@@ -2449,6 +2638,7 @@
                                 li {
                                     font-size: 16px;
                                     letter-spacing: 2px;
+                                    line-height: 32px;
                                 }
                             }
 
@@ -2740,7 +2930,7 @@
                             font-size: 16px;
 
                             a {
-                                line-height: 24px;
+                                line-height: 14px;
                             }
 
                             &.selected {

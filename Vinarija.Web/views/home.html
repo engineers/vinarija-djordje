@@ -163,21 +163,21 @@
             </div>
         </div>
         <div class="calendar left">
-            <div class="date" ng-bind="selectedPost.dateDay" animation-settings="leftAnimation" scroll-trigger></div>
-            <div class="month" ng-bind="selectedPost.dateMonth" animation-settings="leftAnimation" scroll-trigger>апр</div>
+            <div class="date" ng-bind="selectedPost.dateDay" animation-settings="headlineAnimation" scroll-trigger></div>
+            <div class="month" ng-bind="selectedPost.dateMonth" animation-settings="headlineAnimation" scroll-trigger>апр</div>
         </div>
         <div class="calendar-news left">
-            <div class="title" ng-bind="selectedPost.title" animation-settings="leftAnimation" scroll-trigger></div>
-            <div class="content" ng-bind-html="selectedPost.content.substring(0, 300) + '...'" animation-settings="leftAnimation" scroll-trigger></div>
-            <div class="read-more-box flex" ui-sref="layout.actualities" animation-settings="leftAnimation" scroll-trigger>
+            <div class="title" ng-bind="selectedPost.title" animation-settings="bodyTextAnimation" scroll-trigger></div>
+            <div class="content" ng-bind-html="selectedPost.content.substring(0, 300) + '...'" animation-settings="bodyTextAnimation" scroll-trigger></div>
+            <div class="read-more-box flex" ui-sref="layout.actualities" animation-settings="bodyTextAnimation" scroll-trigger>
                 <div class="vertical-line"></div>
                 <div class="read-more">прочитај још</div>
                 <div class="vertical-line"></div>
             </div>
         </div>
-        <div ng-if="selectedPost.imageUrl" animation-settings="rightAnimation" scroll-trigger>
+        <div ng-if="selectedPost.imageUrl" animation-settings="fadeInAnimation" scroll-trigger>
             <div class="calendar-img" ng-style="{'background-image':'url(' + selectedPost.imageUrl + ')'}"></div>
         </div>
-        <div class="default-news-img" ng-if="!selectedPost.imageUrl" animation-settings="rightAnimation" scroll-trigger/>
+        <div class="default-news-img" ng-if="!selectedPost.imageUrl" animation-settings="fadeInAnimation" scroll-trigger />
     </section>
 </div>

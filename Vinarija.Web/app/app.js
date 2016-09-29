@@ -86,6 +86,17 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
            controller: 'WhiteWinesController',
            templateUrl: '/views/white-wines.html',
            pageName: 'Бела вина',
+       })
+       .state('layout.gallery', {
+           url: '/galerija',
+           controller: 'GalleryController',
+           templateUrl: '/views/gallery.html',
+           pageName: 'Галерија',
+           resolve: {
+               gallery: function (galleryService) {
+                   return galleryService.getImages();
+               }
+           },
        });
 
     $locationProvider.html5Mode(true);
