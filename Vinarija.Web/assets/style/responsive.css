@@ -7,12 +7,10 @@
     width: 81%;
   }
   .home-page .red-wine .bottle .bottle-img {
-    margin: 120px -110px;
-    -moz-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+    margin: 120px 0;
+  }
+  .home-page .red-wine .bottle .bottle-img.freska {
+    background: url('../images/pocetna-update-c-responsive.png') center left no-repeat;
   }
   .home-page .red-wine .description .descr-part h3,
   .home-page .red-wine .description .descr-part .red-line,
@@ -23,12 +21,11 @@
     width: 60%;
   }
   .home-page .white-wine .bottle .bottle-img {
-    margin: 120px -110px;
-    -moz-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
-    -o-transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+    width: 100%;
+    margin: 120px 0;
+  }
+  .home-page .white-wine .bottle .bottle-img.freska-white {
+    background: url('../images/pocetna-updateb-responsive.png') center right no-repeat;
   }
   .home-page .white-wine .description .descr-part h3,
   .home-page .white-wine .description .descr-part .types,
@@ -176,14 +173,6 @@
   .home-page .red-wine .description .descr-part .red-line {
     margin-left: 0;
   }
-  .home-page .red-wine .bottle .bottle-img {
-    margin: 80px -220px;
-    -moz-transform: scale(0.6, 0.6);
-    -ms-transform: scale(0.6, 0.6);
-    -o-transform: scale(0.6, 0.6);
-    -webkit-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6);
-  }
   .home-page .white-wine .description .descr-part {
     left: 50%;
     -moz-transform: translateY(-50%) translateX(-50%);
@@ -206,9 +195,6 @@
   }
   .home-page .white-wine .description .descr-part .red-line {
     margin-right: 0;
-  }
-  .home-page .white-wine .bottle .bottle-img {
-    margin: 120px -110px;
   }
   .red-wine-page .scroll-down .vertical-line,
   .white-wine-page .scroll-down .vertical-line {
@@ -529,6 +515,16 @@
   .home-page .welcome .content p {
     font-size: 16px;
   }
+  .home-page .red-wine .bottle .bottle-img {
+    margin: 120px -60px;
+  }
+  .home-page .red-wine .bottle .bottle-img.freska {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
   .home-page .red-wine .description .descr-part .type {
     font-size: 16px;
   }
@@ -537,6 +533,17 @@
   }
   .home-page .red-wine .description .descr-part .black-btn:hover {
     background-color: #000;
+  }
+  .home-page .white-wine .bottle .bottle-img {
+    width: 1100px;
+    margin: 120px -55px;
+  }
+  .home-page .white-wine .bottle .bottle-img.freska-white {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
   .home-page .white-wine .description .descr-part .type {
     font-size: 15px;
@@ -780,7 +787,7 @@
     transform: scale(0.7);
   }
   .letter-position.f-white {
-    top: 7%;
+    top: 0;
     left: 48%;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
@@ -798,7 +805,7 @@
     transform: scale(0.7);
   }
   .letter-position.sardone-letter {
-    top: 10%;
+    top: 3%;
     left: 51%;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
@@ -807,7 +814,7 @@
     transform: scale(0.7);
   }
   .letter-position.traminac-letter {
-    top: 6%;
+    top: 2%;
     left: 51%;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
@@ -816,7 +823,7 @@
     transform: scale(0.7);
   }
   .letter-position.sovinjon-letter {
-    top: 9%;
+    top: 3%;
     left: 49%;
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);

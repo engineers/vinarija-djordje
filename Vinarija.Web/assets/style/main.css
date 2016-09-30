@@ -875,11 +875,12 @@ section.footer .copyright {
 }
 .home-page .red-wine .bottle .bottle-img {
   margin: 210px 0;
-  width: 1100px;
+  width: 1130px;
   height: 280px;
 }
 .home-page .red-wine .bottle .bottle-img.freska {
   background: url('../images/red-wine.png') center left no-repeat;
+  background-size: cover;
 }
 .home-page .red-wine .description {
   position: relative;
@@ -927,11 +928,11 @@ section.footer .copyright {
 .home-page .white-wine .bottle .bottle-img {
   float: right;
   width: 1100px;
-  height: 280px;
+  height: 322px;
   margin: 210px 0;
 }
 .home-page .white-wine .bottle .bottle-img.freska-white {
-  background: url('../images/white-wine.png') center right no-repeat;
+  background: url('../images/pocetna-updateb.png') center right no-repeat;
   background-size: cover;
 }
 .home-page .white-wine .description {
@@ -2066,33 +2067,33 @@ section.intro .hamburger-menu-mobile {
   height: 300px;
 }
 .letter-position.f-red {
-  top: 20%;
-  left: 53%;
+  top: 15%;
+  left: 52.6%;
   background: url('../images/F-red.svg') center border-box no-repeat;
 }
 .letter-position.letter-portugizer {
-  top: 16%;
-  left: 55%;
+  top: 15%;
+  left: 52.6%;
   background: url('../images/portugizer-stamp.svg') center border-box no-repeat;
 }
 .letter-position.f-white {
-  top: 22%;
-  left: 53%;
+  top: 13%;
+  left: 52.6%;
   background: url('../images/F-white.svg') center center no-repeat;
 }
 .letter-position.sardone-letter {
-  top: 25%;
+  top: 13%;
   left: 54%;
   background: url('../images/sardone-stamp.svg') center center no-repeat;
 }
 .letter-position.traminac-letter {
-  top: 26%;
-  left: 55%;
+  top: 13%;
+  left: 54%;
   background: url('../images/tramirac-stamp.svg') center center no-repeat;
 }
 .letter-position.sovinjon-letter {
-  top: 28%;
-  left: 53%;
+  top: 13%;
+  left: 52.6%;
   background: url('../images/sovinjon-stamp.svg') center center no-repeat;
 }
 .freska-crvena {
@@ -2287,7 +2288,6 @@ section.intro .hamburger-menu-mobile {
   width: 72%;
 }
 .change-text .content-position .name-wine {
-  margin-bottom: 14px;
   font-size: 36px;
   color: #333;
   font-family: 'Minion Pro-Regular';

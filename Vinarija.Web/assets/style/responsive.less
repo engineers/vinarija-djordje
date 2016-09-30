@@ -17,12 +17,11 @@
         .red-wine {
             .bottle {
                 .bottle-img {
-                    margin: 120px -110px;
-                    -moz-transform: scale(.8, .8);
-                    -ms-transform: scale(.8, .8);
-                    -o-transform: scale(.8, .8);
-                    -webkit-transform: scale(.8, .8);
-                    transform: scale(.8, .8);
+                    margin: 120px 0;
+
+                    &.freska {
+                        background: url('../images/pocetna-update-c-responsive.png') center left no-repeat;
+                    }
                 }
             }
 
@@ -44,12 +43,12 @@
         .white-wine {
             .bottle {
                 .bottle-img {
-                    margin: 120px -110px;
-                    -moz-transform: scale(.8, .8);
-                    -ms-transform: scale(.8, .8);
-                    -o-transform: scale(.8, .8);
-                    -webkit-transform: scale(.8, .8);
-                    transform: scale(.8, .8);
+                    width: 100%;
+                    margin: 120px 0;
+
+                    &.freska-white {
+                        background: url('../images/pocetna-updateb-responsive.png') center right no-repeat;
+                    }
                 }
             }
 
@@ -272,17 +271,6 @@
                     }
                 }
             }
-
-            .bottle {
-                .bottle-img {
-                    margin: 80px -220px;
-                    -moz-transform: scale(.6, .6);
-                    -ms-transform: scale(.6, .6);
-                    -o-transform: scale(.6, .6);
-                    -webkit-transform: scale(.6, .6);
-                    transform: scale(.6, .6);
-                }
-            }
         }
 
         .white-wine {
@@ -313,12 +301,6 @@
                     .red-line {
                         margin-right: 0;
                     }
-                }
-            }
-
-            .bottle {
-                .bottle-img {
-                    margin: 120px -110px;
                 }
             }
         }
@@ -851,6 +833,20 @@
         }
 
         .red-wine {
+            .bottle {
+                .bottle-img {
+                    margin: 120px -60px;
+
+                    &.freska {
+                        -moz-transform: scale(.9);
+                        -ms-transform: scale(.9);
+                        -o-transform: scale(.9);
+                        -webkit-transform: scale(.9);
+                        transform: scale(.9);
+                    }
+                }
+            }
+
             .description {
                 .descr-part {
                     .type {
@@ -871,6 +867,21 @@
         }
 
         .white-wine {
+            .bottle {
+                .bottle-img {
+                    width: 1100px;
+                    margin: 120px -55px;
+
+                    &.freska-white {
+                        -moz-transform: scale(.9);
+                        -ms-transform: scale(.9);
+                        -o-transform: scale(.9);
+                        -webkit-transform: scale(.9);
+                        transform: scale(.9);
+                    }
+                }
+            }
+
             .description {
                 .descr-part {
                     .type {
@@ -1264,7 +1275,7 @@
         }
 
         &.f-white {
-            top: 7%;
+            top: 0;
             left: 48%;
             -moz-transform: scale(.7);
             -ms-transform: scale(.7);
@@ -1284,7 +1295,7 @@
         }
 
         &.sardone-letter {
-            top: 10%;
+            top: 3%;
             left: 51%;
             -moz-transform: scale(.7);
             -ms-transform: scale(.7);
@@ -1294,7 +1305,7 @@
         }
 
         &.traminac-letter {
-            top: 6%;
+            top: 2%;
             left: 51%;
             -moz-transform: scale(.7);
             -ms-transform: scale(.7);
@@ -1304,7 +1315,7 @@
         }
 
         &.sovinjon-letter {
-            top: 9%;
+            top: 3%;
             left: 49%;
             -moz-transform: scale(.7);
             -ms-transform: scale(.7);
