@@ -2294,6 +2294,9 @@
   }
 }
 @media screen and (max-width: 350px) {
+  .home-page .ivent-calendar .calendar .date {
+    font-size: 85px;
+  }
   .home-page .ivent-calendar .calendar-news .title {
     margin-bottom: 10px;
   }

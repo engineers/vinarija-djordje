@@ -2600,6 +2600,9 @@ section.intro .hamburger-menu-mobile {
 }
 /*Safari and Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  section.footer .footer-container .contact-form textarea {
+    padding-left: 23px;
+  }
   section.footer .footer-container .contact-form .send-btn {
     display: table;
   }
@@ -2612,6 +2615,9 @@ section.intro .hamburger-menu-mobile {
   }
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  section.footer .footer-container .contact-form textarea {
+    padding-left: 25px;
+  }
   section.footer .footer-container .contact-form .send-btn {
     display: -webkit-box;
     display: -moz-box;
