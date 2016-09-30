@@ -2605,6 +2605,7 @@ section.intro .hamburger-menu-mobile {
   }
   section.footer .footer-container .contact-form .send-btn .send-text {
     float: left;
+    line-height: 24px;
   }
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: right;

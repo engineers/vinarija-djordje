@@ -2294,6 +2294,12 @@
   }
 }
 @media screen and (max-width: 350px) {
+  .home-page .ivent-calendar .calendar-news .title {
+    margin-bottom: 10px;
+  }
+  .home-page .ivent-calendar .calendar-news .content {
+    margin-bottom: 15px;
+  }
   .territory-page .flora .left-box {
     height: 450px;
   }
