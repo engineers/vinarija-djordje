@@ -345,12 +345,12 @@ h5 {
 .scroll-down {
   position: absolute;
   bottom: 0;
-  left: 25%;
-  -moz-transform: translateX(-25%);
-  -ms-transform: translateX(-25%);
-  -o-transform: translateX(-25%);
-  -webkit-transform: translateX(-25%);
-  transform: translateX(-25%);
+  left: 23%;
+  -moz-transform: translateX(-23%);
+  -ms-transform: translateX(-23%);
+  -o-transform: translateX(-23%);
+  -webkit-transform: translateX(-23%);
+  transform: translateX(-23%);
   height: auto;
 }
 .scroll-down .empty-circle {
