@@ -2106,6 +2106,10 @@
     float: none;
     width: 70%;
     top: 0;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
     transform: none;
     margin-left: 25%;
   }

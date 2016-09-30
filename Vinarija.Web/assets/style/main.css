@@ -668,8 +668,9 @@ section.footer .footer-container .contact-form .send-btn {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  -moz-box-pack: space-between;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   background-color: #bf1e2e;
@@ -2598,3 +2599,29 @@ section.intro .hamburger-menu-mobile {
   }
 }
 /*Safari and Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  section.footer .footer-container .contact-form .send-btn {
+    display: table;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-text {
+    float: left;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-img {
+    float: right;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  section.footer .footer-container .contact-form .send-btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-text {
+    float: none;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-img {
+    float: none;
+  }
+}
