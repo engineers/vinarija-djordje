@@ -700,10 +700,10 @@
     color: #8a8a8a;
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul {
-    top: 57%;
+    top: 56%;
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul li {
-    line-height: 40px;
+    line-height: 35px;
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul li.selected .grey-line {
     margin-top: 16px;
@@ -2290,6 +2290,27 @@
   }
 }
 @media screen and (max-width: 350px) {
+  .territory-page .flora .left-box {
+    height: 450px;
+  }
+  .territory-page .fauna .right-box {
+    height: 820px;
+  }
+  .territory-page .climate .left-box {
+    height: 770px;
+  }
+  .winery-page .text-part {
+    height: 760px;
+  }
+  .winery-page .winery-location {
+    height: 760px;
+  }
+  .winery-page .production-text {
+    height: 580px !important;
+  }
+  .vineyards-page .land .text-part {
+    height: 785px;
+  }
   #fullpage .freska-crvena {
     top: -22%;
   }
