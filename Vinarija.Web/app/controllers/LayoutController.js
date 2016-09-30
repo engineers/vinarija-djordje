@@ -26,15 +26,6 @@
         $('#active-header-img').slick('slickGoTo', slide);
     };
 
-    //$scope.headerAnimation = {
-    //    offset: 0,
-    //    transitionTime: '1500',
-    //    targetOpacity: 1,
-    //    transformation: 'fromScale',
-    //    translateValue: '50px',
-    //    scaleValue: '0.9'
-    //};
-
     $scope.headlineAnimation = {
         offset: 150,
         transitionTime: '1000',
@@ -68,16 +59,25 @@
         translateValue: '50px',
     };
 
-    //$scope.circle = {
-    //    offset: 150,
-    //    transitionTime: '500',
-    //    transformation: 'fromScale',
-    //    scaleValue: '0.7'
-    //};
-
     $scope.fadeInAnimation = {
         offset: 300,
         targetOpacity: 1,
         transitionTime: '1700',
+    };
+
+    $scope.leftBottleAnimation = {
+        offset: 350,
+        targetOpacity: 1,
+        transitionTime: '1000',
+        transformation: 'fromLeft',
+        translateValue: '200px',
+    };
+
+    $scope.rightBottleAnimation = {
+        offset: 350,
+        targetOpacity: 1,
+        transitionTime: '1000',
+        transformation: 'fromRight',
+        translateValue: '200px',
     };
 });
