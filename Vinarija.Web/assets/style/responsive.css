@@ -1761,7 +1761,7 @@
     position: relative;
     bottom: 15%;
     left: -5%;
-    width: 143px;
+    width: 120px;
     height: 100%;
     background: url('../images/belo-izbor-mobile.png') center center no-repeat;
     -moz-transform: scale(0.7);
@@ -1781,7 +1781,7 @@
     position: relative;
     top: 15%;
     left: 4%;
-    width: 162px;
+    width: 130px;
     height: 100%;
     background: url('../images/crno-izbor-mobile.png') center center no-repeat;
     -moz-transform: scale(0.7);
@@ -2353,7 +2353,7 @@
     height: 785px;
   }
   #fullpage .freska-crvena {
-    top: -22%;
+    top: -25%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
     height: 718px;
@@ -2364,7 +2364,7 @@
     transform: scale(0.2);
   }
   #fullpage .portugizer {
-    top: 29%;
+    top: 26%;
   }
   #fullpage .portugizer .portugizer-bottle {
     -moz-transform: scale(0.2);
@@ -2377,7 +2377,7 @@
     top: 45%;
   }
   #fullpage .change-text .content-position {
-    bottom: -115px;
+    bottom: -110px;
     width: 95%;
   }
   #fullpage .change-text .content-position .text {
@@ -2466,7 +2466,7 @@
     font-size: 14px;
   }
   #fullpage-white .freska-bela {
-    top: -10%;
+    top: -12%;
     left: 48%;
   }
   #fullpage-white .freska-bela .freska-bela-bottle {
@@ -2477,7 +2477,7 @@
     transform: scale(0.2);
   }
   #fullpage-white .sardone {
-    top: 15%;
+    top: 13%;
     left: 48%;
   }
   #fullpage-white .sardone .sardone-bottle {
@@ -2488,7 +2488,7 @@
     transform: scale(0.2);
   }
   #fullpage-white .traminac {
-    top: 38%;
+    top: 36%;
     left: 48%;
   }
   #fullpage-white .traminac .traminac-bottle {
@@ -2499,7 +2499,7 @@
     transform: scale(0.2);
   }
   #fullpage-white .sovinjon {
-    top: 63%;
+    top: 61%;
     left: 48%;
   }
   #fullpage-white .sovinjon .sovinjon-bottle {
