@@ -2619,6 +2619,18 @@ section.intro .hamburger-menu-mobile {
   #fullpage .portugizer {
     top: 45%;
   }
+  #fullpage-white .freska-bela {
+    top: -7%;
+  }
+  #fullpage-white .sardone {
+    top: 18%;
+  }
+  #fullpage-white .traminac {
+    top: 43%;
+  }
+  #fullpage-white .sovinjon {
+    top: 66%;
+  }
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   section.footer .footer-container .contact-form textarea {
@@ -2638,9 +2650,21 @@ section.intro .hamburger-menu-mobile {
     float: none;
   }
   #fullpage .freska-crvena {
-    top: -16%;
+    top: -14%;
   }
   #fullpage .portugizer {
-    top: 35%;
+    top: 37%;
+  }
+  #fullpage-white .freska-bela {
+    top: -6%;
+  }
+  #fullpage-white .sardone {
+    top: 19%;
+  }
+  #fullpage-white .traminac {
+    top: 42%;
+  }
+  #fullpage-white .sovinjon {
+    top: 67%;
   }
 }
