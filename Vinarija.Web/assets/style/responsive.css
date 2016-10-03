@@ -735,6 +735,7 @@
   }
   #fullpage .freska-crvena {
     left: 6%;
+    top: 3%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
     height: 671px;
@@ -848,11 +849,11 @@
   }
   #fullpage-white .freska-bela .freska-bela-bottle {
     height: 770px;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   #fullpage-white .sardone {
     top: 1%;
@@ -860,11 +861,11 @@
   }
   #fullpage-white .sardone .sardone-bottle {
     height: 720px;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   #fullpage-white .traminac {
     top: 0;
@@ -872,11 +873,11 @@
   }
   #fullpage-white .traminac .traminac-bottle {
     height: 770px;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   #fullpage-white .sovinjon {
     top: 0;
@@ -884,11 +885,11 @@
   }
   #fullpage-white .sovinjon .sovinjon-bottle {
     height: 770px;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .white-wine-page .sort-content .stamp-big {
     transform: scale(0.5);
