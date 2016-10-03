@@ -60,7 +60,7 @@
     };
 
     $scope.fadeInAnimation = {
-        offset: 300,
+        offset: 280,
         targetOpacity: 1,
         transitionTime: '1700',
     };

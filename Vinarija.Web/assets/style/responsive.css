@@ -2139,7 +2139,7 @@
     margin: 30px 30px 0 30px;
   }
   #fullpage .freska-crvena {
-    top: -10%;
+    top: -16%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
     height: 718px;
@@ -2150,7 +2150,7 @@
     transform: scale(0.3);
   }
   #fullpage .portugizer {
-    top: 41%;
+    top: 35%;
   }
   #fullpage .portugizer .portugizer-bottle {
     -moz-transform: scale(0.3);
@@ -2168,7 +2168,7 @@
   }
   #fullpage .change-text .content-position .text {
     margin-bottom: 0;
-    line-height: 14px;
+    line-height: 12px;
     font-size: 14px;
   }
   #fullpage .change-text .content-position .temp {
@@ -2234,7 +2234,7 @@
   }
   #fullpage-white .change-text .content-position .text {
     margin-bottom: 0;
-    line-height: 14px;
+    line-height: 12px;
     font-size: 14px;
   }
   #fullpage-white .change-text .content-position .temp {
@@ -2249,7 +2249,7 @@
     font-size: 14px;
   }
   #fullpage-white .freska-bela {
-    top: -4%;
+    top: -7%;
     left: 43%;
   }
   #fullpage-white .freska-bela .freska-bela-bottle {
@@ -2260,7 +2260,7 @@
     transform: scale(0.3);
   }
   #fullpage-white .sardone {
-    top: 21%;
+    top: 18%;
     left: 43%;
   }
   #fullpage-white .sardone .sardone-bottle {
@@ -2271,7 +2271,7 @@
     transform: scale(0.3);
   }
   #fullpage-white .traminac {
-    top: 44%;
+    top: 41%;
     left: 43%;
   }
   #fullpage-white .traminac .traminac-bottle {
@@ -2282,7 +2282,7 @@
     transform: scale(0.3);
   }
   #fullpage-white .sovinjon {
-    top: 69%;
+    top: 66%;
     left: 43%;
   }
   #fullpage-white .sovinjon .sovinjon-bottle {
@@ -2294,6 +2294,34 @@
   }
 }
 @media screen and (max-width: 350px) {
+  .wines-page .wine-selection .red-wine .wine-position .title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box {
+    width: 210px;
+    margin-top: 0;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box .vertical-line {
+    height: 30px;
+  }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box .read-more {
+    font-size: 12px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .title {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .read-more-box {
+    width: 210px;
+    margin-top: 15px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .read-more-box .vertical-line {
+    height: 30px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .read-more-box .read-more {
+    font-size: 12px;
+  }
   .home-page .ivent-calendar .calendar .date {
     font-size: 85px;
   }
