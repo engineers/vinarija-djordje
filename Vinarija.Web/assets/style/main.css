@@ -2613,6 +2613,12 @@ section.intro .hamburger-menu-mobile {
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: right;
   }
+  #fullpage .freska-crvena {
+    top: -20%;
+  }
+  #fullpage .portugizer {
+    top: 45%;
+  }
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   section.footer .footer-container .contact-form textarea {
@@ -2630,5 +2636,11 @@ section.intro .hamburger-menu-mobile {
   }
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: none;
+  }
+  #fullpage .freska-crvena {
+    top: -16%;
+  }
+  #fullpage .portugizer {
+    top: 35%;
   }
 }

@@ -1777,7 +1777,7 @@
     background-size: cover;
   }
   .wines-page .wine-selection .red-wine .wine-position .title {
-    width: 181px;
+    width: 185px;
     margin-left: 20px;
     margin-bottom: 0;
     font-size: 22px;
@@ -2300,6 +2300,9 @@
   }
 }
 @media screen and (max-width: 350px) {
+  .wines-page .wine-selection .red-wine .wine-position .red-bottle {
+    width: 135px;
+  }
   .wines-page .wine-selection .red-wine .wine-position .title {
     text-align: center;
     margin-top: 20px;
@@ -2313,6 +2316,9 @@
   }
   .wines-page .wine-selection .red-wine .wine-position .read-more-box .read-more {
     font-size: 12px;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .white-bottle {
+    width: 125px;
   }
   .wines-page .wine-selection .white-wine .wine-position .title {
     margin-top: 20px;
