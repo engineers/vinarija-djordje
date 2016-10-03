@@ -1671,13 +1671,14 @@
     width: 70%;
   }
   .gallery-page .hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li {
+    margin: 27px 0;
     font-size: 16px;
   }
   .gallery-page .hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li a {
     line-height: 14px;
   }
   .gallery-page .hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li.selected .grey-line {
-    margin-top: 9px;
+    margin-top: 5px;
   }
   .gallery-page .hamburger-menu-mobile .hamburger-btn {
     left: auto;
@@ -1835,7 +1836,10 @@
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul li {
     font-size: 16px;
     letter-spacing: 2px;
-    line-height: 32px;
+    line-height: 40px;
+  }
+  .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul li.selected .grey-line {
+    margin-top: 17px;
   }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container.open-menu {
     width: 82%;
@@ -2026,12 +2030,13 @@
   }
   section.intro .hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li {
     font-size: 16px;
+    margin: 27px 0;
   }
   section.intro .hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li a {
     line-height: 14px;
   }
   section.intro .hamburger-menu-mobile .hamburger-nav-mobile .hamburger-container ul li.selected .grey-line {
-    margin-top: 9px;
+    margin-top: 5px;
   }
   section.intro .hamburger-menu-mobile .hamburger-btn {
     left: auto;

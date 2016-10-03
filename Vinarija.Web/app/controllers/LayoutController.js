@@ -1,4 +1,5 @@
 ﻿app.controller('LayoutController', function ($scope, contactService) {
+    $scope.homeLoader = true;
     $scope.date = new Date();
     $scope.message = {};
 
@@ -79,5 +80,13 @@
         transitionTime: '1000',
         transformation: 'fromRight',
         translateValue: '200px',
+    };
+
+    var imgHome = new Image();
+    imgHome.src = '../../../assets/images/slide1.jpg';
+
+    imgHome.onload = function () {
+        $scope.homeLoader = false;
+        $scope.$apply();
     };
 });

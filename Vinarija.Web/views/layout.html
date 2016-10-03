@@ -1,4 +1,9 @@
-﻿<section class="intro" set-height ng-if="!$state.includes('layout.wines') && !$state.includes('layout.red-wines') && !$state.includes('layout.white-wines') && !$state.includes('layout.gallery')">
+﻿<div class="loader-overlay" ng-if="homeLoader">
+    <div class="loader">
+        <div class="loader-gif"></div>
+    </div>
+</div>
+<section class="intro" set-height ng-if="!$state.includes('layout.wines') && !$state.includes('layout.red-wines') && !$state.includes('layout.white-wines') && !$state.includes('layout.gallery')">
     <img class="main-logo" src="../assets/images/logo.svg" ui-sref="layout.home" />
     <img class="logo-headline" src="../assets/images/headline-logo.png" animation-settings="fadeInAnimation" scroll-trigger />
 
