@@ -8,37 +8,37 @@
                     <nav class="hamburger-nav">
                         <div class="hamburger-container" ng-class="{'open-menu': hamburgerMenu}">
                             <ul ng-click="showMenu()">
-                                <li class="flex">
+                                <li class="flex" ui-sref="layout.home">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.home">почетна</a>
+                                    <a>почетна</a>
                                 </li>
-                                <li class="flex selected">
+                                <li class="flex selected" ui-sref="layout.wines">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.wines">вина</a>
+                                    <a>вина</a>
                                 </li>
-                                <li class="flex">
+                                <li class="flex" ui-sref="layout.winery">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.winery">винарија</a>
+                                    <a>винарија</a>
                                 </li>
-                                <li class="flex">
+                                <li class="flex" ui-sref="layout.vineyards">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.vineyards">виногради</a>
+                                    <a>виногради</a>
                                 </li>
-                                <li class="flex">
+                                <li class="flex" ui-sref="layout.visit-winery">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.visit-winery">посета винарији</a>
+                                    <a>посета винарији</a>
                                 </li>
-                                <li class="flex">
+                                <li class="flex" ui-sref="layout.actualities">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.actualities">актуелности</a>
+                                    <a>актуелности</a>
                                 </li>
-                                <li class="flex">
+                                <li class="flex" ui-sref="layout.territory">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.territory">делиблатска пешчара</a>
+                                    <a>делиблатска пешчара</a>
                                 </li>
-                                <li class="flex" ng-class="{'selected' : $state.includes('layout.gallery')}">
+                                <li class="flex" ng-class="{'selected' : $state.includes('layout.gallery')}" ui-sref="layout.gallery">
                                     <div class="grey-line"></div>
-                                    <a ui-sref="layout.gallery">Галерија</a>
+                                    <a>Галерија</a>
                                 </li>
                             </ul>
                         </div>

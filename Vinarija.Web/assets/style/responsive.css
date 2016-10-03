@@ -738,22 +738,22 @@
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
     height: 671px;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   #fullpage .portugizer {
     left: 5%;
     top: 3%;
   }
   #fullpage .portugizer .portugizer-bottle {
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .change-text .content-position {
     left: 85px;
@@ -780,56 +780,56 @@
   .letter-position.f-red {
     top: 2%;
     left: 48%;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .letter-position.f-white {
     top: 0;
     left: 48%;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .letter-position.letter-portugizer {
     top: 0;
     left: 50%;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .letter-position.sardone-letter {
     top: 3%;
     left: 51%;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .letter-position.traminac-letter {
     top: 2%;
     left: 51%;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .letter-position.sovinjon-letter {
     top: 3%;
     left: 49%;
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
   }
   .red-wine-page .sort-content .stamp-big {
     bottom: -118px;
@@ -1689,6 +1689,10 @@
   .back-arrow-black {
     right: 25px;
   }
+  .actualities-page {
+    padding-top: 50px;
+    background-color: #fbf9f0;
+  }
   .actualities-page .ivent-calendar {
     width: 100%;
     display: table;
@@ -1746,10 +1750,11 @@
   }
   .wines-page .wine-selection .white-wine .wine-position .title {
     margin-right: 25px;
-    text-align: left;
+    text-align: center;
     font-size: 22px;
   }
   .wines-page .wine-selection .white-wine .wine-position .read-more-box {
+    width: 200px;
     margin-left: 25px;
   }
   .wines-page .wine-selection .white-wine .wine-position .read-more-box .read-more {
@@ -1761,7 +1766,7 @@
     position: relative;
     bottom: 15%;
     left: -5%;
-    width: 120px;
+    width: 148px;
     height: 100%;
     background: url('../images/belo-izbor-mobile.png') center center no-repeat;
     -moz-transform: scale(0.7);
@@ -1772,16 +1777,17 @@
     background-size: cover;
   }
   .wines-page .wine-selection .red-wine .wine-position .title {
+    width: 181px;
     margin-left: 20px;
     margin-bottom: 0;
-    width: 181px;
     font-size: 22px;
+    text-align: center;
   }
   .wines-page .wine-selection .red-wine .wine-position .red-bottle {
     position: relative;
     top: 15%;
     left: 4%;
-    width: 130px;
+    width: 170px;
     height: 100%;
     background: url('../images/crno-izbor-mobile.png') center center no-repeat;
     -moz-transform: scale(0.7);
@@ -2163,7 +2169,7 @@
     top: 45%;
   }
   #fullpage .change-text .content-position {
-    bottom: -155px;
+    bottom: -145px;
     width: 95%;
   }
   #fullpage .change-text .content-position .text {
@@ -2223,7 +2229,7 @@
     width: 20px;
   }
   #fullpage-white .change-text .content-position {
-    bottom: -150px;
+    bottom: -145px;
     width: 95%;
   }
   #fullpage-white .change-text .content-position .read-more-box {
