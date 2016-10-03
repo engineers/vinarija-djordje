@@ -2619,18 +2619,23 @@ section.intro .hamburger-menu-mobile {
   #fullpage .portugizer {
     top: 45%;
   }
-  #fullpage-white .freska-bela {
-    top: -7%;
-  }
-  #fullpage-white .sardone {
-    top: 18%;
-  }
-  #fullpage-white .traminac {
-    top: 43%;
-  }
-  #fullpage-white .sovinjon {
-    top: 66%;
-  }
+  /*#fullpage-white {
+        .freska-bela {
+            top: -7%;
+        }
+
+        .sardone {
+            top: 18%;
+        }
+
+        .traminac {
+            top: 43%;
+        }
+
+        .sovinjon {
+            top: 66%;
+        }
+    }*/
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   section.footer .footer-container .contact-form textarea {
@@ -2655,16 +2660,21 @@ section.intro .hamburger-menu-mobile {
   #fullpage .portugizer {
     top: 37%;
   }
-  #fullpage-white .freska-bela {
-    top: -6%;
-  }
-  #fullpage-white .sardone {
-    top: 19%;
-  }
-  #fullpage-white .traminac {
-    top: 42%;
-  }
-  #fullpage-white .sovinjon {
-    top: 67%;
-  }
+  /*#fullpage-white {
+        .freska-bela {
+            top: -6%;
+        }
+
+        .sardone {
+            top: 19%;
+        }
+
+        .traminac {
+            top: 42%;
+        }
+
+        .sovinjon {
+            top: 67%;
+        }
+    }*/
 }
