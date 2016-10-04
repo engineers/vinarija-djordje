@@ -2586,7 +2586,7 @@
                         position: relative;
                         bottom: 15%;
                         left: -5%;
-                        width: 115px;
+                        width: 120px;
                         height: 100%;
                         background: url('../images/belo-izbor-mobile.png') center center no-repeat;
                         -moz-transform: scale(.7);
@@ -3186,13 +3186,13 @@
 
         .change-text {
             .content-position {
-                bottom: -145px;
+                bottom: -170px;
                 width: 95%;
 
                 .text {
-                    margin-bottom: 0;
+                    margin-bottom: 10px;
                     line-height: 12px;
-                    font-size: 14px;
+                    font-size: 16px;
                 }
 
                 .temp {
@@ -3206,6 +3206,7 @@
 
                 .percentage {
                     margin-left: 8px;
+                    margin-bottom: 10px;
                     font-size: 14px;
                 }
 
@@ -3266,7 +3267,7 @@
 
         .change-text {
             .content-position {
-                bottom: -145px;
+                bottom: -165px;
                 width: 95%;
 
                 .read-more-box {
@@ -3278,9 +3279,9 @@
                 }
 
                 .text {
-                    margin-bottom: 0;
+                    margin-bottom: 10px;
                     line-height: 12px;
-                    font-size: 14px;
+                    font-size: 16px;
                 }
 
                 .temp {
@@ -3294,6 +3295,7 @@
 
                 .percentage {
                     margin-left: 8px;
+                    margin-bottom: 10px;
                     font-size: 14px;
                 }
             }
@@ -3348,6 +3350,23 @@
                 -o-transform: scale(0.3);
                 -webkit-transform: scale(0.3);
                 transform: scale(0.3);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #fullpage,
+    #fullpage-white {
+        .change-text {
+            .content-position {
+                bottom: -150px;
+
+                .text {
+                    margin-bottom: 5px;
+                    line-height: 11px;
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -3672,6 +3691,20 @@
                 -o-transform: scale(0.2);
                 -webkit-transform: scale(0.2);
                 transform: scale(0.2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #fullpage,
+    #fullpage-white {
+        .change-text {
+            .content-position {
+                bottom: -130px;
+
+                .text {
+                }
             }
         }
     }

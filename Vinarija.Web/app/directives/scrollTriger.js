@@ -53,7 +53,7 @@
 
 
             function executeAnimation() {
-                var scrollPosition = $(window).scrollTop() + $(window).height() - scrollOffset - 150;
+                var scrollPosition = $(window).scrollTop() + $(window).height() - scrollOffset;
                 var elementPosition = element.offset().top;
                 if (scrollPosition > elementPosition) {
                     visibility = true;

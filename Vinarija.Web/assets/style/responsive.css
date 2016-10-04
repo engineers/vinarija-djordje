@@ -1768,7 +1768,7 @@
     position: relative;
     bottom: 15%;
     left: -5%;
-    width: 115px;
+    width: 120px;
     height: 100%;
     background: url('../images/belo-izbor-mobile.png') center center no-repeat;
     -moz-transform: scale(0.7);
@@ -2175,13 +2175,13 @@
     top: 45%;
   }
   #fullpage .change-text .content-position {
-    bottom: -145px;
+    bottom: -170px;
     width: 95%;
   }
   #fullpage .change-text .content-position .text {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     line-height: 12px;
-    font-size: 14px;
+    font-size: 16px;
   }
   #fullpage .change-text .content-position .temp {
     margin: 0 0 5px 0;
@@ -2192,6 +2192,7 @@
   }
   #fullpage .change-text .content-position .percentage {
     margin-left: 8px;
+    margin-bottom: 10px;
     font-size: 14px;
   }
   #fullpage .change-text .content-position .read-more-box {
@@ -2235,7 +2236,7 @@
     width: 20px;
   }
   #fullpage-white .change-text .content-position {
-    bottom: -145px;
+    bottom: -165px;
     width: 95%;
   }
   #fullpage-white .change-text .content-position .read-more-box {
@@ -2245,9 +2246,9 @@
     height: 20px;
   }
   #fullpage-white .change-text .content-position .text {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     line-height: 12px;
-    font-size: 14px;
+    font-size: 16px;
   }
   #fullpage-white .change-text .content-position .temp {
     margin: 0 0 5px 0;
@@ -2258,6 +2259,7 @@
   }
   #fullpage-white .change-text .content-position .percentage {
     margin-left: 8px;
+    margin-bottom: 10px;
     font-size: 14px;
   }
   #fullpage-white .freska-bela {
@@ -2303,6 +2305,18 @@
     -o-transform: scale(0.3);
     -webkit-transform: scale(0.3);
     transform: scale(0.3);
+  }
+}
+@media screen and (max-width: 375px) {
+  #fullpage .change-text .content-position,
+  #fullpage-white .change-text .content-position {
+    bottom: -150px;
+  }
+  #fullpage .change-text .content-position .text,
+  #fullpage-white .change-text .content-position .text {
+    margin-bottom: 5px;
+    line-height: 11px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -2526,5 +2540,11 @@
     -o-transform: scale(0.2);
     -webkit-transform: scale(0.2);
     transform: scale(0.2);
+  }
+}
+@media screen and (max-width: 320px) {
+  #fullpage .change-text .content-position,
+  #fullpage-white .change-text .content-position {
+    bottom: -130px;
   }
 }
