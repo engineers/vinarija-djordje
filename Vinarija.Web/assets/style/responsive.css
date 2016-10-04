@@ -1370,6 +1370,24 @@
   .home-page .hover-section .responsive {
     width: 100%;
   }
+  .home-page .hover-section .responsive .slick-dots {
+    bottom: 25px;
+  }
+  .home-page .hover-section .responsive .slick-dots li button:before {
+    font-size: 10px;
+    opacity: 1;
+    color: #fff;
+  }
+  .home-page .hover-section .responsive .slick-dots li.slick-active button:before {
+    content: ' ';
+    top: 1px;
+    left: 2px;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+  }
   .home-page .hover-section .responsive .slick-prev,
   .home-page .hover-section .responsive .slick-next {
     display: none !important;
@@ -2046,6 +2064,13 @@
   .home-page .hover-section {
     height: 500px;
   }
+  .home-page .hover-section .responsive .first-img,
+  .home-page .hover-section .responsive .second-img,
+  .home-page .hover-section .responsive .third-img,
+  .home-page .hover-section .responsive .fourth-img,
+  .home-page .hover-section .responsive .fifth-img {
+    height: 500px;
+  }
   .home-page .hover-section .responsive .first-img .news,
   .home-page .hover-section .responsive .second-img .news,
   .home-page .hover-section .responsive .third-img .news,
@@ -2312,16 +2337,16 @@
     top: -8%;
   }
   #fullpage-white .sardone {
-    top: 16%;
+    top: 15%;
   }
   #fullpage-white .traminac {
-    top: 39%;
+    top: 40%;
   }
   #fullpage-white .sovinjon {
-    top: 64%;
+    top: 65%;
   }
   #fullpage-white .change-text .content-position {
-    bottom: -130px;
+    bottom: -135px;
   }
   #fullpage-white .change-text .content-position .text {
     margin-bottom: 5px;

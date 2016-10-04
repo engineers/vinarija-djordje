@@ -45,6 +45,7 @@
                            {
                                breakpoint: 769,
                                settings: {
+                                   dots: true,
                                    slidesToShow: 3,
                                    slidesToScroll: 2,
                                    swipe: true,
@@ -53,6 +54,7 @@
                            {
                                breakpoint: 690,
                                settings: {
+                                   dots: true,
                                    slidesToShow: 1,
                                    slidesToScroll: 1,
                                    swipe: true,
