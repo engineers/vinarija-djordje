@@ -2308,12 +2308,36 @@
   }
 }
 @media screen and (max-width: 375px) {
-  #fullpage .change-text .content-position,
-  #fullpage-white .change-text .content-position {
-    bottom: -150px;
+  #fullpage-white .freska-bela {
+    top: -8%;
   }
-  #fullpage .change-text .content-position .text,
+  #fullpage-white .sardone {
+    top: 16%;
+  }
+  #fullpage-white .traminac {
+    top: 39%;
+  }
+  #fullpage-white .sovinjon {
+    top: 64%;
+  }
+  #fullpage-white .change-text .content-position {
+    bottom: -130px;
+  }
   #fullpage-white .change-text .content-position .text {
+    margin-bottom: 5px;
+    line-height: 11px;
+    font-size: 14px;
+  }
+  #fullpage .freska-crvena {
+    top: -17%;
+  }
+  #fullpage .portugizer {
+    top: 34%;
+  }
+  #fullpage .change-text .content-position {
+    bottom: -140px;
+  }
+  #fullpage .change-text .content-position .text {
     margin-bottom: 5px;
     line-height: 11px;
     font-size: 14px;
