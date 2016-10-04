@@ -1372,6 +1372,7 @@
     border: none;
   }
   .home-page .hover-section .responsive {
+    display: block;
     width: 100%;
   }
   .home-page .hover-section .responsive .slick-dots {
