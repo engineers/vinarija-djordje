@@ -1,4 +1,4 @@
-app.factory('galleryService', function ($http, config, $rootScope) {
+app.factory('galleryService', function ($http, config, $rootScope, $q) {
     var factory = {};
 
     factory.getImages = function (params) {
@@ -11,6 +11,7 @@ app.factory('galleryService', function ($http, config, $rootScope) {
             return response.data;
         }, function (response) {
             $rootScope.$emit('toast', { message: response.data.message });
+            return $q.reject(response);
         });
     };
 
@@ -26,6 +27,7 @@ app.factory('galleryService', function ($http, config, $rootScope) {
             return response.data;
         }, function (response) {
             $rootScope.$emit('toast', { message: response.data.message });
+            return $q.reject(response);
         });
     };
 
@@ -46,6 +48,7 @@ app.factory('galleryService', function ($http, config, $rootScope) {
             return response.data;
         }, function (response) {
             $rootScope.$emit('toast', { message: response.data.message });
+            return $q.reject(response);
         });
     };
 

@@ -31,6 +31,24 @@ var app = angular.module('App', [
     });
 
     $httpProvider.interceptors.push('jwtInterceptor');
+    $httpProvider.interceptors.push(function ($injector, $q, localStorageService, $rootScope) {
+        return {
+            responseError: function (response) {
+                var appConfig = $injector.get('config');
+                var $http = $injector.get('$http');
+                if ((response.status == 401 || response.status == 403) && response.config.url.startsWith(appConfig.baseAddress)
+                    && response.data.message.toLowerCase().indexOf('token') != -1) {
+                    localStorageService.remove('token');
+                    delete $http.defaults.headers.common.Authorization;
+                    $rootScope.session = {};
+                    $state.go('login');
+                }
+
+                return $q.reject(response);
+            }
+        };
+    });
+
     $locationProvider.html5Mode(true);
 
     $mdThemingProvider.theme('default')
