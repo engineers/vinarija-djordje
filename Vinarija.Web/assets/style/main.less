@@ -621,6 +621,10 @@ section.footer {
                 font-size: 22px;
                 color: @grey;
                 font-family: 'Minion Pro-600-Semibold';
+
+                &:hover {
+                    color: @w;
+                }
             }
         }
 
@@ -1280,6 +1284,7 @@ section.footer {
                     }
 
                     a {
+                        margin-right: 9px;
                         color: @red;
                     }
                 }
@@ -1652,7 +1657,7 @@ section.footer {
                     margin-bottom: 25px;
                     font-size: 18px;
                     color: #888;
-                    line-height: 21px;
+                    line-height: 26px;
 
                     a {
                         color: #888;
@@ -2075,6 +2080,17 @@ section.intro {
     }
 }
 
+.hamburger-menu {
+    .hamburger-nav {
+        .hamburger-container {
+            overflow-x: hidden;
+
+            &.open-menu {
+                overflow-x: hidden;
+            }
+        }
+    }
+}
 
 .hamburger-menu,
 .hamburger-menu-mobile {
@@ -2438,6 +2454,24 @@ section.intro {
     }
 }
 
+#fullpage-white {
+    .all-sorts {
+        width: 545px;
+
+        .name {
+            width: 170px;
+        }
+
+        .grey-line {
+            left: 232px;
+
+            &.red-line-active {
+                left: 192px;
+            }
+        }
+    }
+}
+
 .all-sorts {
     float: left;
     position: absolute;
@@ -2456,7 +2490,9 @@ section.intro {
     transition: opacity .5s;
 
     .name {
-        margin: 20px 110px 20px 0;
+        width: 140px;
+        margin: 20px 0;
+        text-align: right;
         font-size: 18px;
         color: #888;
         font-family: 'TenorSans';
@@ -2619,7 +2655,6 @@ section.intro {
     }
 }
 /*#endregion*/
-
 /*#region Territory*/
 .territory-page {
     .info {
@@ -2786,7 +2821,6 @@ section.intro {
     }
 }
 /*#endregion*/
-
 /*#region Gallery page*/
 .gallery-page {
     .logo {
@@ -2905,7 +2939,6 @@ section.intro {
     }
 }
 /*#endregion*/
-
 /*#region Loader*/
 .loader-overlay {
     position: fixed;
@@ -2934,7 +2967,6 @@ section.intro {
     }
 }
 /*#endregion*/
-
 /*FF*/
 @-moz-document url-prefix() {
     section.footer {
@@ -2953,7 +2985,6 @@ section.intro {
         }
     }
 }
-
 /*IE*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .hamburger-menu {
@@ -2964,7 +2995,6 @@ section.intro {
         }
     }
 }
-
 /*Microsoft Edge*/
 @supports
 
@@ -2977,7 +3007,6 @@ section.intro {
         }
     }
 }
-
 /*Safari and Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     section.footer {

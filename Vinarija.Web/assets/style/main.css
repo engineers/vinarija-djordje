@@ -609,6 +609,9 @@ section.footer .footer-container .contact-info .info {
   color: #8a8a8a;
   font-family: 'Minion Pro-600-Semibold';
 }
+section.footer .footer-container .contact-info .info:hover {
+  color: #fff;
+}
 section.footer .footer-container .contact-form {
   width: 340px;
 }
@@ -1191,6 +1194,7 @@ section.footer .copyright {
   background-color: #fff;
 }
 .home-page .ivent-calendar .calendar-list .number.active-post a {
+  margin-right: 9px;
   color: #bf1e2e;
 }
 .home-page .ivent-calendar .calendar {
@@ -1504,7 +1508,7 @@ section.footer .copyright {
   margin-bottom: 25px;
   font-size: 18px;
   color: #888;
-  line-height: 21px;
+  line-height: 26px;
 }
 .actualities-page .news-popup .popup-content .all-text .content a {
   color: #888;
@@ -1852,6 +1856,12 @@ section.footer .copyright {
 section.intro .hamburger-menu-mobile {
   display: none;
 }
+.hamburger-menu .hamburger-nav .hamburger-container {
+  overflow-x: hidden;
+}
+.hamburger-menu .hamburger-nav .hamburger-container.open-menu {
+  overflow-x: hidden;
+}
 .hamburger-menu,
 .hamburger-menu-mobile {
   display: block;
@@ -2193,6 +2203,18 @@ section.intro .hamburger-menu-mobile {
   height: 840px;
   background: url('../images/sovinjon.png') center center no-repeat;
 }
+#fullpage-white .all-sorts {
+  width: 545px;
+}
+#fullpage-white .all-sorts .name {
+  width: 170px;
+}
+#fullpage-white .all-sorts .grey-line {
+  left: 232px;
+}
+#fullpage-white .all-sorts .grey-line.red-line-active {
+  left: 192px;
+}
 .all-sorts {
   float: left;
   position: absolute;
@@ -2211,7 +2233,9 @@ section.intro .hamburger-menu-mobile {
   transition: opacity .5s;
 }
 .all-sorts .name {
-  margin: 20px 110px 20px 0;
+  width: 140px;
+  margin: 20px 0;
+  text-align: right;
   font-size: 18px;
   color: #888;
   font-family: 'TenorSans';
