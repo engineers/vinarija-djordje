@@ -392,6 +392,9 @@ h5 {
 /*#endregion*/
 /*#region Layout*/
 /*#region Header*/
+section.intro {
+  position: relative;
+}
 section.intro .main-logo {
   position: absolute;
   top: 50px;
