@@ -23,7 +23,7 @@
                              on-page-change="pageChanged(newPageNumber)">
     </dir-pagination-controls>
 
-    <div class="news-popup open-menu" ng-if="postPreview" set-height>
+    <div class="news-popup open-menu" ng-if="postPreview">
         <div class="back-arrow-black" ng-click="showNewsPopUp()"></div>
         <div class="flex popup-content">
             <div ng-if="postPreview.imageUrl" animation-settings="fadeInAnimation" scroll-trigger>

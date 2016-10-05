@@ -1822,6 +1822,7 @@ section.footer .copyright {
   background-color: #8a8a8a;
 }
 .wines-page .wine-selection .red-wine .wine-position .read-more-box .read-more {
+  margin: 0 50px;
   color: #8a8a8a;
   font-size: 16px;
   font-family: 'TenorSans';
@@ -1859,6 +1860,7 @@ section.footer .copyright {
   margin-top: -30px;
 }
 .wines-page .wine-selection .white-wine .wine-position .read-more-box .read-more {
+  margin: 0 50px;
   font-size: 16px;
 }
 /*#endregion*/

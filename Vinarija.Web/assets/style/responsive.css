@@ -146,6 +146,11 @@
 @media screen and (max-width: 1400px) {
   .wines-page .wine-selection .red-wine .wine-position .red-bottle {
     width: 78%;
+    background-size: contain;
+  }
+  .wines-page .wine-selection .white-wine .wine-position .white-bottle {
+    width: 78%;
+    background-size: contain;
   }
   section.intro .logo-headline {
     top: 40%;
@@ -227,8 +232,13 @@
   .territory-page .climate .left-box .text-wrapper p {
     width: 95%;
   }
+  #fullpage .name-position .name {
+    width: 250px;
+    font-size: 32px;
+  }
   #fullpage .freska-crvena {
     top: 0;
+    left: 18.3%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
     -moz-transform: scale(0.6);
@@ -239,6 +249,7 @@
   }
   #fullpage .portugizer {
     top: 47%;
+    left: 17.5%;
   }
   #fullpage .portugizer .portugizer-bottle {
     -moz-transform: scale(0.6);
@@ -246,6 +257,10 @@
     -o-transform: scale(0.6);
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
+  }
+  #fullpage-white .name-position .name {
+    width: 210px;
+    font-size: 32px;
   }
   #fullpage-white .freska-bela {
     top: -3%;
@@ -295,16 +310,35 @@
   }
   .change-text .content-position .name-wine {
     margin-bottom: 0;
+    font-size: 33px;
   }
   .change-text .content-position .read-more-box {
     margin-top: 20px;
   }
   .change-text .content-position .text {
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .change-text .content-position .degrees,
+  .change-text .content-position .percentage {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  .change-text .content-position .subtitle {
+    margin-bottom: 15px;
+    font-size: 25px;
   }
   .change-text .read-more-box .vertical-line {
     height: 35px;
+  }
+  .letter-position.f-red,
+  .letter-position.letter-portugizer,
+  .letter-position.f-white,
+  .letter-position.sardone-letter,
+  .letter-position.traminac-letter,
+  .letter-position.sovinjon-letter {
+    top: 1%;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -770,7 +804,7 @@
     font-size: 30px;
   }
   .letter-position.f-red {
-    top: 2%;
+    top: 4%;
     left: 48%;
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -779,7 +813,7 @@
     transform: scale(0.6);
   }
   .letter-position.f-white {
-    top: 0;
+    top: 3%;
     left: 48%;
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -788,7 +822,7 @@
     transform: scale(0.6);
   }
   .letter-position.letter-portugizer {
-    top: 0;
+    top: 1%;
     left: 50%;
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -797,7 +831,7 @@
     transform: scale(0.6);
   }
   .letter-position.sardone-letter {
-    top: 3%;
+    top: 7%;
     left: 51%;
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -806,7 +840,7 @@
     transform: scale(0.6);
   }
   .letter-position.traminac-letter {
-    top: 2%;
+    top: 3%;
     left: 51%;
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -815,7 +849,7 @@
     transform: scale(0.6);
   }
   .letter-position.sovinjon-letter {
-    top: 3%;
+    top: 5%;
     left: 49%;
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -1122,9 +1156,12 @@
     margin-right: 0;
     width: 202px;
   }
+  .wines-page .wine-selection .red-wine .wine-position .read-more-box .read-more {
+    margin: 0 30px;
+  }
   .wines-page .wine-selection .red-wine .wine-position .red-bottle {
     position: relative;
-    top: 12.5%;
+    top: 15%;
     left: 2%;
     height: 600px;
     width: 180px;
@@ -1164,6 +1201,9 @@
     margin-left: 0;
     width: 202px;
   }
+  .wines-page .wine-selection .white-wine .wine-position .read-more-box .read-more {
+    margin: 0 30px;
+  }
   .wines-page .wine-selection .white-wine .wine-position .white-bottle {
     position: relative;
     bottom: 15%;
@@ -1181,6 +1221,9 @@
   }
   .actualities-page .news-popup .popup-content .calendar-img {
     display: none;
+  }
+  .actualities-page .news-popup .popup-content .all-text {
+    width: 60%;
   }
   .actualities-page .ivent-calendar {
     height: 330px;
@@ -1817,7 +1860,6 @@
   }
   .wines-page .wine-selection .red-wine .wine-position .red-bottle {
     position: relative;
-    top: 15%;
     left: 2%;
     width: 140px;
     height: 100%;
