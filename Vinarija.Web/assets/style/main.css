@@ -200,7 +200,7 @@ a {
 }
 @font-face {
   font-family: 'Mincho-regular';
-  src: url('../fonts/ms_mincho-webfont.woff2') format('woff2'), url('../fonts/ms_mincho-webfont.woff') format('woff');
+  src: url('MS-Mincho.eot?#iefix') format('embedded-opentype'), url('MS-Mincho.woff') format('woff'), url('MS-Mincho.ttf') format('truetype'), url('MS-Mincho.svg#MS-Mincho') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -543,18 +543,19 @@ section.footer .footer-container .pages .first-colum {
   margin-right: 65px;
 }
 section.footer .footer-container .pages .second-colum {
-  width: 225px;
+  width: 265px;
 }
 section.footer .footer-container .pages p,
 section.footer .footer-container .pages .page-name {
   text-transform: uppercase;
-  font-family: 'Minion Pro-Regular';
 }
 section.footer .footer-container .pages .page-name {
   margin-bottom: 40px;
   font-size: 16px;
   color: #8a8a8a;
   cursor: pointer;
+  font-family: 'Mincho-regular';
+  letter-spacing: 2px;
 }
 section.footer .footer-container .pages .page-name:hover,
 section.footer .footer-container .pages .page-name.selected {
@@ -564,6 +565,7 @@ section.footer .footer-container .pages p {
   margin-bottom: 50px;
   font-size: 22px;
   color: #fff;
+  font-family: 'Minion Pro-Regular';
 }
 section.footer .footer-container .contact-info .contact-box {
   -ms-flex-align: center;

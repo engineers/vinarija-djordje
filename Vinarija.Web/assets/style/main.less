@@ -142,10 +142,11 @@ a {
 
 @font-face {
     font-family: 'Mincho-regular';
-    src: url('../fonts/ms_mincho-webfont.woff2') format('woff2'), url('../fonts/ms_mincho-webfont.woff') format('woff');
+    src: url('MS-Mincho.eot?#iefix') format('embedded-opentype'), url('MS-Mincho.woff') format('woff'), url('MS-Mincho.ttf') format('truetype'), url('MS-Mincho.svg#MS-Mincho') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 /*#endregion */
 
 /*#region Defaults*/
@@ -541,13 +542,12 @@ section.footer {
             }
 
             .second-colum {
-                width: 225px;
+                width: 265px;
             }
 
             p,
             .page-name {
                 text-transform: uppercase;
-                font-family: 'Minion Pro-Regular';
             }
 
             .page-name {
@@ -555,6 +555,8 @@ section.footer {
                 font-size: 16px;
                 color: @grey;
                 cursor: pointer;
+                font-family: 'Mincho-regular';
+                letter-spacing: 2px;
 
                 &:hover,
                 &.selected {
@@ -566,6 +568,7 @@ section.footer {
                 margin-bottom: 50px;
                 font-size: 22px;
                 color: @w;
+                font-family: 'Minion Pro-Regular';
             }
         }
 
