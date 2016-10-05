@@ -428,10 +428,10 @@ section.intro {
 
     .scroll-down {
         left: 50%;
-        -moz-transform: translateX(-25%);
-        -ms-transform: translateX(-25%);
-        -o-transform: translateX(-25%);
-        -webkit-transform: translateX(-25%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -1617,6 +1617,9 @@ section.footer {
         }
 
         .popup-content {
+            -webkit-box-pack: space-between;
+            -ms-flex-pack: space-between;
+            -moz-box-pack: space-between;
             -webkit-justify-content: space-between;
             justify-content: space-between;
             padding: 190px 75px 0 0;
@@ -2336,6 +2339,7 @@ section.intro {
     }
 
     &.traminac-letter {
+        width: 350px;
         top: 13%;
         left: 54%;
         background: url('../images/tramirac-stamp.svg') center center no-repeat;
