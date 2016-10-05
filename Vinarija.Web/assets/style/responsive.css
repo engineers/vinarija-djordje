@@ -912,6 +912,12 @@
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
+  .actualities-page .news-popup .popup-content .calendar-img {
+    width: 425px;
+  }
+  .actualities-page .news-popup .popup-content .all-text {
+    width: 40%;
+  }
   .actualities-page .news-popup .popup-content .calendar .date {
     margin-left: 20px;
   }

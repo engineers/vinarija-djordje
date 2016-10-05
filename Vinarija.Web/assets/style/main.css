@@ -1471,6 +1471,7 @@ section.footer .copyright {
 }
 .actualities-page .news-popup.open-menu {
   width: 100%;
+  height: 100%;
 }
 .actualities-page .news-popup .popup-content {
   -webkit-box-pack: space-between;
