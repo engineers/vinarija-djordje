@@ -2548,7 +2548,7 @@ section.intro .hamburger-menu-mobile {
   -o-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 .gallery-page nav ul {
   margin: 0;

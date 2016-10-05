@@ -2656,19 +2656,6 @@
         }
     }
 
-    .change-text {
-        .content-position {
-            .name-wine,
-            .subtitle {
-                display: none;
-            }
-
-            .text {
-                line-height: 15px;
-            }
-        }
-    }
-
     .wines-page {
         .wine-selection {
             .white-wine {
@@ -3260,17 +3247,37 @@
         }
     }
 
+    .red-wine-page,
+    .white-wine-page {
+        .tablet-position {
+            .red-sort {
+                height: 32% !important;
+            }
+        }
+    }
+
+    .letter-position {
+        &.f-red,
+        &.letter-portugizer,
+        &.f-white,
+        &.sardone-letter,
+        &.traminac-letter,
+        &.sovinjon-letter {
+            display: none;
+        }
+    }
+
     #fullpage {
         .freska-crvena {
             top: -16%;
 
             .freska-crvena-bottle {
                 height: 718px;
-                -moz-transform: scale(0.3);
-                -ms-transform: scale(0.3);
-                -o-transform: scale(0.3);
-                -webkit-transform: scale(0.3);
-                transform: scale(0.3);
+                -moz-transform: scale(0.25);
+                -ms-transform: scale(0.25);
+                -o-transform: scale(0.25);
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
             }
         }
 
@@ -3278,28 +3285,30 @@
             top: 35%;
 
             .portugizer-bottle {
-                -moz-transform: scale(0.3);
-                -ms-transform: scale(0.3);
-                -o-transform: scale(0.3);
-                -webkit-transform: scale(0.3);
-                transform: scale(0.3);
-            }
-        }
-
-        .letter-position {
-            &.f-red {
-                top: 45%;
+                -moz-transform: scale(0.25);
+                -ms-transform: scale(0.25);
+                -o-transform: scale(0.25);
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
             }
         }
 
         .change-text {
             .content-position {
-                bottom: -170px;
+                bottom: -120px;
                 width: 95%;
+
+                .title {
+                    font-size: 28px;
+                }
+
+                .subtitle {
+                    font-size: 22px;
+                }
 
                 .text {
                     margin-bottom: 10px;
-                    line-height: 12px;
+                    line-height: 17px;
                     font-size: 16px;
                 }
 
@@ -3309,13 +3318,13 @@
 
                 .degrees {
                     margin: 0 0 5px 8px;
-                    font-size: 14px;
+                    font-size: 19px;
                 }
 
                 .percentage {
                     margin-left: 8px;
                     margin-bottom: 10px;
-                    font-size: 14px;
+                    font-size: 19px;
                 }
 
                 .read-more-box {
@@ -3333,20 +3342,30 @@
         }
 
         .all-sorts {
-            width: 275px;
+            width: 50px;
+            top: 18%;
+            left: 98%;
 
             .name {
-                margin: 22px 0 0 0;
-                font-size: 15px;
+                display: none;
             }
 
             .grey-line {
-                left: 130px;
+                position: relative;
+                left: 0;
                 width: 10px;
+                height: 10px;
+                margin: 5px 0;
+                border-radius: 50px;
+                background-color: @grey;
 
                 &.red-line-active {
-                    left: 120px;
-                    width: 20px;
+                    left: -3px;
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px 0;
+                    border: 2px solid #8a8a8a;
+                    background-color: transparent;
                 }
             }
         }
@@ -3354,28 +3373,37 @@
 
     #fullpage-white {
         .all-sorts {
-            width: 330px;
+            width: 50px;
+            top: 18%;
+            left: 98%;
 
             .name {
-                margin: 10px 110px 0px 0;
-                font-size: 15px;
+                display: none;
             }
 
             .grey-line {
-                left: 155px;
+                position: relative;
+                left: 0;
                 width: 10px;
-                margin-top: 17px;
+                height: 10px;
+                margin: 5px 0;
+                border-radius: 50px;
+                background-color: @grey;
 
                 &.red-line-active {
-                    left: 145px;
-                    width: 20px;
+                    left: -3px;
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px 0;
+                    border: 2px solid #8a8a8a;
+                    background-color: transparent;
                 }
             }
         }
 
         .change-text {
             .content-position {
-                bottom: -165px;
+                bottom: -115px;
                 width: 95%;
 
                 .read-more-box {
@@ -3386,9 +3414,17 @@
                     }
                 }
 
+                .title {
+                    font-size: 28px;
+                }
+
+                .subtitle {
+                    font-size: 22px;
+                }
+
                 .text {
                     margin-bottom: 10px;
-                    line-height: 12px;
+                    line-height: 17px;
                     font-size: 16px;
                 }
 
@@ -3398,66 +3434,66 @@
 
                 .degrees {
                     margin: 0 0 5px 8px;
-                    font-size: 14px;
+                    font-size: 19px;
                 }
 
                 .percentage {
                     margin-left: 8px;
                     margin-bottom: 10px;
-                    font-size: 14px;
+                    font-size: 19px;
                 }
             }
         }
 
         .freska-bela {
             top: -7%;
-            left: 43%;
+            left: 50%;
 
             .freska-bela-bottle {
-                -moz-transform: scale(0.3);
-                -ms-transform: scale(0.3);
-                -o-transform: scale(0.3);
-                -webkit-transform: scale(0.3);
-                transform: scale(0.3);
+                -moz-transform: scale(0.25);
+                -ms-transform: scale(0.25);
+                -o-transform: scale(0.25);
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
             }
         }
 
         .sardone {
             top: 18%;
-            left: 43%;
+            left: 50%;
 
             .sardone-bottle {
-                -moz-transform: scale(0.3);
-                -ms-transform: scale(0.3);
-                -o-transform: scale(0.3);
-                -webkit-transform: scale(0.3);
-                transform: scale(0.3);
+                -moz-transform: scale(0.25);
+                -ms-transform: scale(0.25);
+                -o-transform: scale(0.25);
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
             }
         }
 
         .traminac {
             top: 41%;
-            left: 43%;
+            left: 50%;
 
             .traminac-bottle {
-                -moz-transform: scale(0.3);
-                -ms-transform: scale(0.3);
-                -o-transform: scale(0.3);
-                -webkit-transform: scale(0.3);
-                transform: scale(0.3);
+                -moz-transform: scale(0.25);
+                -ms-transform: scale(0.25);
+                -o-transform: scale(0.25);
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
             }
         }
 
         .sovinjon {
             top: 66%;
-            left: 43%;
+            left: 50%;
 
             .sovinjon-bottle {
-                -moz-transform: scale(0.3);
-                -ms-transform: scale(0.3);
-                -o-transform: scale(0.3);
-                -webkit-transform: scale(0.3);
-                transform: scale(0.3);
+                -moz-transform: scale(0.25);
+                -ms-transform: scale(0.25);
+                -o-transform: scale(0.25);
+                -webkit-transform: scale(0.25);
+                transform: scale(0.25);
             }
         }
     }
@@ -3483,12 +3519,21 @@
 
         .change-text {
             .content-position {
-                bottom: -135px;
+                .name-wine {
+                    font-size: 26px;
+                }
+
+                .subtitle {
+                    font-size: 18px;
+                }
 
                 .text {
                     margin-bottom: 5px;
-                    line-height: 11px;
                     font-size: 14px;
+                }
+
+                .percentage {
+                    margin-bottom: 5px;
                 }
             }
         }
@@ -3496,21 +3541,30 @@
 
     #fullpage {
         .freska-crvena {
-            top: -17%;
+            top: -18%;
         }
 
         .portugizer {
-            top: 34%;
+            top: 33%;
         }
 
         .change-text {
             .content-position {
-                bottom: -140px;
+                .name-wine {
+                    font-size: 26px;
+                }
+
+                .subtitle {
+                    font-size: 18px;
+                }
 
                 .text {
                     margin-bottom: 5px;
-                    line-height: 11px;
                     font-size: 14px;
+                }
+
+                .percentage {
+                    margin-bottom: 5px;
                 }
             }
         }
@@ -3518,6 +3572,11 @@
 }
 
 @media screen and (max-width: 350px) {
+    .back-arrow-black,
+    .back-arrow-red {
+        top: 20px;
+    }
+
     .wines-page {
         .wine-selection {
             .red-wine {
@@ -3638,7 +3697,7 @@
 
     #fullpage {
         .freska-crvena {
-            top: -25%;
+            top: -22%;
 
             .freska-crvena-bottle {
                 height: 718px;
@@ -3651,7 +3710,7 @@
         }
 
         .portugizer {
-            top: 26%;
+            top: 29%;
 
             .portugizer-bottle {
                 -moz-transform: scale(0.2);
@@ -3662,21 +3721,14 @@
             }
         }
 
-        .letter-position {
-            &.f-red {
-                top: 45%;
-            }
-        }
-
         .change-text {
             .content-position {
-                bottom: -110px;
-                width: 95%;
+                bottom: -90px;
 
                 .text {
                     margin-bottom: 0;
-                    line-height: 10px;
-                    font-size: 12px;
+                    line-height: 13px;
+                    font-size: 14px;
                 }
 
                 .temp {
@@ -3690,6 +3742,7 @@
 
                 .percentage {
                     margin-left: 8px;
+                    margin-bottom: 0;
                     font-size: 14px;
                 }
 
@@ -3703,55 +3756,15 @@
                     .vertical-line {
                         height: 15px;
                     }
-                }
-            }
-        }
-
-        .all-sorts {
-            width: 275px;
-
-            .name {
-                margin: 22px 0 0 0;
-                font-size: 14px;
-            }
-
-            .grey-line {
-                left: 130px;
-                width: 10px;
-
-                &.red-line-active {
-                    left: 120px;
-                    width: 20px;
                 }
             }
         }
     }
 
     #fullpage-white {
-        .all-sorts {
-            width: 285px;
-
-            .name {
-                margin: 10px 110px 0px 0;
-                font-size: 12px;
-            }
-
-            .grey-line {
-                left: 133px;
-                width: 10px;
-                margin-top: 17px;
-
-                &.red-line-active {
-                    left: 123px;
-                    width: 20px;
-                }
-            }
-        }
-
         .change-text {
             .content-position {
-                bottom: -120px;
-                width: 95%;
+                bottom: -85px;
 
                 .read-more-box {
                     margin-top: 10px;
@@ -3767,8 +3780,8 @@
 
                 .text {
                     margin-bottom: 0;
-                    line-height: 11px;
-                    font-size: 12px;
+                    line-height: 13px;
+                    font-size: 14px;
                 }
 
                 .temp {
@@ -3782,14 +3795,14 @@
 
                 .percentage {
                     margin-left: 8px;
+                    margin-bottom: 0;
                     font-size: 14px;
                 }
             }
         }
 
         .freska-bela {
-            top: -12%;
-            left: 48%;
+            top: -10%;
 
             .freska-bela-bottle {
                 -moz-transform: scale(0.2);
@@ -3801,8 +3814,7 @@
         }
 
         .sardone {
-            top: 13%;
-            left: 48%;
+            top: 14.5%;
 
             .sardone-bottle {
                 -moz-transform: scale(0.2);
@@ -3814,8 +3826,7 @@
         }
 
         .traminac {
-            top: 36%;
-            left: 48%;
+            top: 38%;
 
             .traminac-bottle {
                 -moz-transform: scale(0.2);
@@ -3827,8 +3838,7 @@
         }
 
         .sovinjon {
-            top: 61%;
-            left: 48%;
+            top: 63%;
 
             .sovinjon-bottle {
                 -moz-transform: scale(0.2);
@@ -3846,11 +3856,45 @@
     #fullpage-white {
         .change-text {
             .content-position {
-                bottom: -130px;
+                bottom: -100px;
 
-                .text {
+                .name-wine {
+                    font-size: 22px;
+                }
+
+                .subtitle {
+                    font-size: 18px;
+                    margin-bottom: 5px;
                 }
             }
+        }
+    }
+
+    #fullpage-white {
+        .freska-bela {
+            top: -13%;
+        }
+
+        .sardone {
+            top: 11%;
+        }
+
+        .traminac {
+            top: 34%;
+        }
+
+        .sovinjon {
+            top: 59.5%;
+        }
+    }
+
+    #fullpage {
+        .freska-crvena {
+            top: -29%;
+        }
+
+        .portugizer {
+            top: 22%;
         }
     }
 
