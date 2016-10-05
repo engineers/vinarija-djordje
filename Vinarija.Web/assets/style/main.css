@@ -105,6 +105,7 @@ body {
   line-height: 1;
   font-size: 14px;
   font-family: 'TenorSans';
+  overflow-x: hidden;
 }
 ol,
 ul {
@@ -1857,10 +1858,7 @@ section.intro .hamburger-menu-mobile {
   display: none;
 }
 .hamburger-menu .hamburger-nav .hamburger-container {
-  overflow-x: hidden;
-}
-.hamburger-menu .hamburger-nav .hamburger-container.open-menu {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .hamburger-menu,
 .hamburger-menu-mobile {
@@ -1907,7 +1905,7 @@ section.intro .hamburger-menu-mobile {
   position: absolute;
   left: 73px;
   top: 40%;
-  width: auto;
+  width: 380px;
 }
 .hamburger-menu .hamburger-nav .hamburger-container ul li,
 .hamburger-menu-mobile .hamburger-nav .hamburger-container ul li,
@@ -2110,7 +2108,7 @@ section.intro .hamburger-menu-mobile {
 .freska-crvena {
   position: fixed;
   top: 9%;
-  left: 22%;
+  left: 20%;
   -moz-transform: translateX(-25%);
   -ms-transform: translateX(-25%);
   -o-transform: translateX(-25%);
@@ -2126,7 +2124,7 @@ section.intro .hamburger-menu-mobile {
 .portugizer {
   position: fixed;
   top: 59%;
-  left: 21%;
+  left: 19.5%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
   -o-transform: translateX(-22%);
@@ -2142,7 +2140,7 @@ section.intro .hamburger-menu-mobile {
 .freska-bela {
   position: fixed;
   top: 2.5%;
-  left: 21%;
+  left: 19.4%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
   -o-transform: translateX(-22%);
@@ -2158,7 +2156,7 @@ section.intro .hamburger-menu-mobile {
 .sardone {
   position: fixed;
   top: 28%;
-  left: 21%;
+  left: 19.4%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
   -o-transform: translateX(-22%);
@@ -2174,7 +2172,7 @@ section.intro .hamburger-menu-mobile {
 .traminac {
   position: fixed;
   top: 52.5%;
-  left: 21%;
+  left: 19.5%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
   -o-transform: translateX(-22%);
@@ -2190,7 +2188,7 @@ section.intro .hamburger-menu-mobile {
 .sovinjon {
   position: fixed;
   top: 78%;
-  left: 21%;
+  left: 19.5%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
   -o-transform: translateX(-22%);

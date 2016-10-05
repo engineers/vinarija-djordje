@@ -32,6 +32,7 @@ body {
     line-height: 1;
     font-size: 14px;
     font-family: 'TenorSans';
+    overflow-x: hidden;
 }
 
 ol, ul {
@@ -2083,11 +2084,7 @@ section.intro {
 .hamburger-menu {
     .hamburger-nav {
         .hamburger-container {
-            overflow-x: hidden;
-
-            &.open-menu {
-                overflow-x: hidden;
-            }
+            overflow-x: hidden !important;
         }
     }
 }
@@ -2128,7 +2125,7 @@ section.intro {
                 position: absolute;
                 left: 73px;
                 top: 40%;
-                width: auto;
+                width: 380px;
 
                 li {
                     display: -webkit-box;
@@ -2349,7 +2346,7 @@ section.intro {
 .freska-crvena {
     position: fixed;
     top: 9%;
-    left: 22%;
+    left: 20%;
     -moz-transform: translateX(-25%);
     -ms-transform: translateX(-25%);
     -o-transform: translateX(-25%);
@@ -2367,7 +2364,7 @@ section.intro {
 .portugizer {
     position: fixed;
     top: 59%;
-    left: 21%;
+    left: 19.5%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
     -o-transform: translateX(-22%);
@@ -2385,7 +2382,7 @@ section.intro {
 .freska-bela {
     position: fixed;
     top: 2.5%;
-    left: 21%;
+    left: 19.4%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
     -o-transform: translateX(-22%);
@@ -2403,7 +2400,7 @@ section.intro {
 .sardone {
     position: fixed;
     top: 28%;
-    left: 21%;
+    left: 19.4%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
     -o-transform: translateX(-22%);
@@ -2421,7 +2418,7 @@ section.intro {
 .traminac {
     position: fixed;
     top: 52.5%;
-    left: 21%;
+    left: 19.5%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
     -o-transform: translateX(-22%);
@@ -2439,7 +2436,7 @@ section.intro {
 .sovinjon {
     position: fixed;
     top: 78%;
-    left: 21%;
+    left: 19.5%;
     -moz-transform: translateX(-22%);
     -ms-transform: translateX(-22%);
     -o-transform: translateX(-22%);
@@ -2655,6 +2652,7 @@ section.intro {
     }
 }
 /*#endregion*/
+
 /*#region Territory*/
 .territory-page {
     .info {
@@ -2821,6 +2819,7 @@ section.intro {
     }
 }
 /*#endregion*/
+
 /*#region Gallery page*/
 .gallery-page {
     .logo {
@@ -2939,6 +2938,7 @@ section.intro {
     }
 }
 /*#endregion*/
+
 /*#region Loader*/
 .loader-overlay {
     position: fixed;
@@ -2967,6 +2967,7 @@ section.intro {
     }
 }
 /*#endregion*/
+
 /*FF*/
 @-moz-document url-prefix() {
     section.footer {
@@ -2985,6 +2986,7 @@ section.intro {
         }
     }
 }
+
 /*IE*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .hamburger-menu {
@@ -2995,6 +2997,7 @@ section.intro {
         }
     }
 }
+
 /*Microsoft Edge*/
 @supports
 
@@ -3007,6 +3010,7 @@ section.intro {
         }
     }
 }
+
 /*Safari and Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     section.footer {
