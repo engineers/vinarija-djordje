@@ -2830,7 +2830,7 @@
     float: right;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and only screen and (min-device-width: 400px) and (max-device-width: 600px) {
   #fullpage .freska-crvena {
     top: -20%;
   }
@@ -2850,7 +2850,7 @@
     top: -11%;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and only screen and (min-device-width: 350px) and (max-device-width: 400px) {
   #fullpage-white .freska-bela {
     top: -11%;
   }
@@ -2888,7 +2888,7 @@
     float: none;
   }
 }
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 400px) and (max-device-width: 600px) {
   #fullpage .freska-crvena {
     top: 0%;
   }
@@ -2908,7 +2908,7 @@
     top: 0%;
   }
 }
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 350px) and (max-device-width: 400px) {
   #fullpage-white .freska-bela {
     top: 0%;
   }
