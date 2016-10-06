@@ -2732,26 +2732,35 @@
 }
 /* ----------- iPhone 6+ ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  #fullpage .freska-crvena {
-    top: -20%;
-  }
-  #fullpage .portugizer {
-    top: -19%;
-  }
-  #fullpage-white .freska-bela {
-    top: -9%;
-  }
-  #fullpage-white .sardone {
-    top: -9%;
-  }
-  #fullpage-white .traminac {
-    top: -11%;
-  }
-  #fullpage-white .sovinjon {
-    top: -11%;
-  }
-}
+/*@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    #fullpage {
+        .freska-crvena {
+            top: -20%;
+        }
+
+        .portugizer {
+            top: -19%;
+        }
+    }
+
+    #fullpage-white {
+        .freska-bela {
+            top: -9%;
+        }
+
+        .sardone {
+            top: -9%;
+        }
+
+        .traminac {
+            top: -11%;
+        }
+
+        .sovinjon {
+            top: -11%;
+        }
+    }
+}*/
 /* ----------- iPhone 6 ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -2794,5 +2803,59 @@
   }
   #fullpage .portugizer {
     top: -23%;
+  }
+}
+/*Safari and Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  section.footer .footer-container .contact-form textarea {
+    padding-left: 23px;
+  }
+  section.footer .footer-container .contact-form .send-btn {
+    display: table;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-text {
+    float: left;
+    line-height: 24px;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-img {
+    float: right;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) and only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  #fullpage .freska-crvena {
+    top: -20%;
+  }
+  #fullpage .portugizer {
+    top: -19%;
+  }
+  #fullpage-white .freska-bela {
+    top: -9%;
+  }
+  #fullpage-white .sardone {
+    top: -9%;
+  }
+  #fullpage-white .traminac {
+    top: -11%;
+  }
+  #fullpage-white .sovinjon {
+    top: -11%;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  section.footer .footer-container .contact-form textarea {
+    padding-left: 25px;
+  }
+  section.footer .footer-container .contact-form .send-btn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-text {
+    float: none;
+  }
+  section.footer .footer-container .contact-form .send-btn .send-img {
+    float: none;
   }
 }

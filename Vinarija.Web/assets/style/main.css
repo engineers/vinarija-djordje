@@ -2658,37 +2658,3 @@ section.intro .hamburger-menu-mobile {
     overflow: hidden;
   }
 }
-/*Safari and Chrome*/
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  section.footer .footer-container .contact-form textarea {
-    padding-left: 23px;
-  }
-  section.footer .footer-container .contact-form .send-btn {
-    display: table;
-  }
-  section.footer .footer-container .contact-form .send-btn .send-text {
-    float: left;
-    line-height: 24px;
-  }
-  section.footer .footer-container .contact-form .send-btn .send-img {
-    float: right;
-  }
-}
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  section.footer .footer-container .contact-form textarea {
-    padding-left: 25px;
-  }
-  section.footer .footer-container .contact-form .send-btn {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-  }
-  section.footer .footer-container .contact-form .send-btn .send-text {
-    float: none;
-  }
-  section.footer .footer-container .contact-form .send-btn .send-img {
-    float: none;
-  }
-}

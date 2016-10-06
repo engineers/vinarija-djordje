@@ -3957,7 +3957,7 @@
 
 /* ----------- iPhone 6+ ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+/*@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     #fullpage {
         .freska-crvena {
             top: -20%;
@@ -3985,7 +3985,7 @@
             top: -11%;
         }
     }
-}
+}*/
 
 /* ----------- iPhone 6 ----------- */
 
@@ -4049,6 +4049,90 @@
 
         .portugizer {
             top: -23%;
+        }
+    }
+}
+
+/*Safari and Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    section.footer {
+        .footer-container {
+            .contact-form {
+                textarea {
+                    padding-left: 23px;
+                }
+
+                .send-btn {
+                    display: table;
+
+                    .send-text {
+                        float: left;
+                        line-height: 24px;
+                    }
+
+                    .send-img {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+        #fullpage {
+            .freska-crvena {
+                top: -20%;
+            }
+
+            .portugizer {
+                top: -19%;
+            }
+        }
+
+        #fullpage-white {
+            .freska-bela {
+                top: -9%;
+            }
+
+            .sardone {
+                top: -9%;
+            }
+
+            .traminac {
+                top: -11%;
+            }
+
+            .sovinjon {
+                top: -11%;
+            }
+        }
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    section.footer {
+        .footer-container {
+            .contact-form {
+                textarea {
+                    padding-left: 25px;
+                }
+
+                .send-btn {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+
+                    .send-text {
+                        float: none;
+                    }
+
+                    .send-img {
+                        float: none;
+                    }
+                }
+            }
         }
     }
 }
