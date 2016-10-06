@@ -2794,26 +2794,35 @@
 }*/
 /* ----------- iPhone 5 and 5S ----------- */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  #fullpage-white .freska-bela {
-    top: -11%;
-  }
-  #fullpage-white .sardone {
-    top: -11.5%;
-  }
-  #fullpage-white .traminac {
-    top: -13%;
-  }
-  #fullpage-white .sovinjon {
-    top: -13%;
-  }
-  #fullpage .freska-crvena {
-    top: -24%;
-  }
-  #fullpage .portugizer {
-    top: -23%;
-  }
-}
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    #fullpage-white {
+        .freska-bela {
+            top: -11%;
+        }
+
+        .sardone {
+            top: -11.5%;
+        }
+
+        .traminac {
+            top: -13%;
+        }
+
+        .sovinjon {
+            top: -13%;
+        }
+    }
+
+    #fullpage {
+        .freska-crvena {
+            top: -24%;
+        }
+
+        .portugizer {
+            top: -23%;
+        }
+    }
+}*/
 /*Safari and Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   section.footer .footer-container .contact-form textarea {
