@@ -97,11 +97,29 @@
     $scope.cancelReordering = function () {
         $scope.galleryImages = angular.copy($scope.oldGallery);
         $scope.reordering = false;
+        $scope.refreshSlick = true;
+        $timeout(function () {
+            $scope.refreshSlick = false;
+        }, 0);
     };
 
     $scope.saveReordering = function () {
         galleryService.saveReorder($scope.galleryImages).then(function () {
             loadData();
+        });
+    };
+
+    $scope.openImagePreviewModal = function (ev, image) {
+        $mdDialog.show({
+            controller: 'ImagePreviewModalController',
+            templateUrl: 'app/sections/gallery/modals/imagePreviewModal.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            size: 'lg',
+            clickOutsideToClose: true,
+            locals: {
+                image: angular.copy(image)
+            }
         });
     };
 

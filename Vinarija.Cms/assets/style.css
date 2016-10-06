@@ -417,3 +417,7 @@ slick {
 .slick-prev, .slick-next {
     display: block !important;
 }
+
+.preview-image {
+    width: 100%;
+}

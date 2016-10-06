@@ -21,7 +21,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
                 postsData: function (blogService) {
                     var params = {
                         pageNumber: 1,
-                        pageSize: 6
+                        pageSize: 6,
+                        orderBy: '-date'
                     };
                     return blogService.getPosts(params);
                 },
@@ -50,7 +51,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
                postsData: function (blogService) {
                    var params = {
                        pageNumber: 1,
-                       pageSize: 6
+                       pageSize: 6,
+                       orderBy: '-date'
                    };
                    return blogService.getPosts(params);
                }

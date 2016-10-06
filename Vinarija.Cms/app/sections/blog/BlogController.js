@@ -9,7 +9,7 @@
     });
 })
 .controller('BlogController', function ($scope, blogService, $timeout, $mdDialog) {
-    $scope.params = { pageSize: 10, pageNumber: 1 };
+    $scope.params = { pageSize: 10, pageNumber: 1, orderBy: '-date' };
     loadData();
 
     $scope.onPaginate = function (pageNumber, pageSize) {

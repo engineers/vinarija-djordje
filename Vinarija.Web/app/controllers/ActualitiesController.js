@@ -2,15 +2,15 @@
     $scope.newsPopUp = false;
     $scope.params = {
         pageNumber: 1,
-        pageSize: 6
+        pageSize: 6,
+        orderBy: '-date'
     };
     $scope.monthsLocale = blogService.monthsLocale;
-    console.log($scope.monthsLocale);
 
     $scope.posts = postsData.posts;
     $scope.totalCount = postsData.totalCount;
     blogService.buildPreviewDate($scope.posts);
-    console.log($scope.posts);
+
     $scope.showNewsPopUp = function (post) {
         $scope.newsPopUp = !$scope.newsPopUp;
         if ($scope.newsPopUp) {
