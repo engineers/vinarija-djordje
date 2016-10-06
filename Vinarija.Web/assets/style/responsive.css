@@ -2888,3 +2888,43 @@
     float: none;
   }
 }
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  #fullpage .freska-crvena {
+    top: 0%;
+  }
+  #fullpage .portugizer {
+    top: 0%;
+  }
+  #fullpage-white .freska-bela {
+    top: 0%;
+  }
+  #fullpage-white .sardone {
+    top: 0%;
+  }
+  #fullpage-white .traminac {
+    top: 0%;
+  }
+  #fullpage-white .sovinjon {
+    top: 0%;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #fullpage-white .freska-bela {
+    top: 0%;
+  }
+  #fullpage-white .sardone {
+    top: 0%;
+  }
+  #fullpage-white .traminac {
+    top: 0%;
+  }
+  #fullpage-white .sovinjon {
+    top: 0%;
+  }
+  #fullpage .freska-crvena {
+    top: 0%;
+  }
+  #fullpage .portugizer {
+    top: 0%;
+  }
+}
