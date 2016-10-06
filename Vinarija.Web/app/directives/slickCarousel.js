@@ -20,7 +20,17 @@
                     speed: 1000,
                     autoplay: true,
                     autoplaySpeed: 5000,
-                    pauseOnHover: false
+                    pauseOnHover: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                swipe: true,
+                                fade: false,
+                                speed: 500,
+                            }
+                        }
+                    ]
                 });
             };
 

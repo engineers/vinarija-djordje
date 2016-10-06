@@ -954,10 +954,12 @@
         .slider-home-page {
             .prev-arrow {
                 left: 50px;
+                background: url(../images/sprite.svg) -28px -272px no-repeat;
             }
 
             .next-arrow {
                 right: 50px;
+                background: url(../images/sprite.svg) -153px -272px no-repeat;
             }
         }
 
@@ -967,13 +969,10 @@
             .third-img,
             .fourth-img,
             .fifth-img {
-                &:hover {
-                    .news {
-                        display: none;
-                    }
-                }
-
                 .news {
+                    display: block;
+                    width: 101%;
+
                     .view-more {
                         margin-bottom: 20px;
                     }
@@ -981,42 +980,60 @@
                     .news-content {
                         font-size: 16px;
                     }
+
+                    .news-title {
+                        margin: 43px 0 20px 20px;
+                    }
                 }
             }
 
             .first-img {
-                background: url('../images/first-section-hover.jpg') -170px 0 no-repeat;
+                background: url('../images/first-section.jpg') -170px 0 no-repeat;
+                background-size: cover;
 
                 &:hover {
-                    background: url('../images/first-section-hover.jpg') -170px 0 no-repeat;
+                    background: url('../images/first-section.jpg') -170px 0 no-repeat;
+                    background-size: cover;
                 }
             }
 
             .second-img {
+                background: url('../images/third-section.png') center center no-repeat;
+                background-size: cover;
+
                 &:hover {
-                    background: url('../images/third-section-hover.png') center center no-repeat;
+                    background: url('../images/third-section.png') center center no-repeat;
+                    background-size: cover;
                 }
             }
 
             .third-img {
-                background: url('../images/fourth-section-hover.png') -30px 0 no-repeat;
+                background: url('../images/fourth-section.png') -30px 0 no-repeat;
+                background-size: cover;
 
                 &:hover {
-                    background: url('../images/fourth-section-hover.png') -30px 0 no-repeat;
+                    background: url('../images/fourth-section.png') -30px 0 no-repeat;
+                    background-size: cover;
                 }
             }
 
             .fourth-img {
+                background: url('../images/second-section.jpg') center center no-repeat;
+                background-size: cover;
+
                 &:hover {
-                    background: url('../images/second-section-hover.jpg') center center no-repeat;
+                    background: url('../images/second-section.jpg') center center no-repeat;
+                    background-size: cover;
                 }
             }
 
             .fifth-img {
-                background: url(../images/fifth-section-hover.jpg) -50px 0 no-repeat;
+                background: url(../images/fifth-section.jpg) -50px 0 no-repeat;
+                background-size: cover;
 
                 &:hover {
-                    background: url(../images/fifth-section-hover.jpg) -50px 0 no-repeat;
+                    background: url(../images/fifth-section.jpg) -50px 0 no-repeat;
+                    background-size: cover;
                 }
             }
         }
@@ -2172,7 +2189,7 @@
                 width: 100%;
 
                 .slick-dots {
-                    bottom: 25px;
+                    bottom: 10px;
                 }
 
                 .slick-dots li button:before {
@@ -2205,6 +2222,10 @@
                     position: inherit;
                     height: 690px;
                     outline: none;
+
+                    .news {
+                        width: 256px;
+                    }
                 }
 
                 .first-img,
@@ -2216,32 +2237,18 @@
                 .first-img {
                     position: initial;
                     top: 0;
-                    background: url('../images/first-section-hover.jpg') center center no-repeat;
-                    background-size: cover;
-                }
-
-                .second-img {
-                    background: url('../images/third-section-hover.png') center center no-repeat;
+                    background: url(../images/first-section.jpg) center center no-repeat;
                     background-size: cover;
                 }
 
                 .third-img {
                     position: initial;
                     top: 0;
-                    background: url('../images/fourth-section-hover.png') center center no-repeat;
-                    background-size: cover;
-                }
-
-                .fourth-img {
-                    background: url('../images/second-section-hover.jpg') center center no-repeat;
-                    background-size: cover;
                 }
 
                 .fifth-img {
                     position: initial;
                     top: 0;
-                    background: url('../images/fifth-section-hover.jpg') center center no-repeat;
-                    background-size: cover;
                 }
             }
         }
@@ -3103,9 +3110,21 @@
                     height: 500px;
 
                     .news {
-                        top: 230px;
+                        width: inherit;
+                        height: 300px;
+                        top: 265px;
                     }
                 }
+            }
+
+            .third-img {
+                background: url(../images/fourth-section.png) 0 0 no-repeat;
+                background-size: cover;
+            }
+
+            .fifth-img {
+                background: url(../images/fifth-section.jpg) 0 0 no-repeat;
+                background-size: cover;
             }
         }
 
@@ -3302,8 +3321,12 @@
 
         .change-text {
             .content-position {
-                bottom: -120px;
+                bottom: -110px;
                 width: 95%;
+
+                .name-wine {
+                    font-size: 30px;
+                }
 
                 .title {
                     font-size: 28px;
@@ -3315,7 +3338,7 @@
 
                 .text {
                     margin-bottom: 10px;
-                    line-height: 17px;
+                    line-height: 16px;
                     font-size: 16px;
                 }
 
@@ -3410,7 +3433,7 @@
 
         .change-text {
             .content-position {
-                bottom: -115px;
+                bottom: -105px;
                 width: 95%;
 
                 .read-more-box {
@@ -3419,6 +3442,10 @@
                     .vertical-line {
                         height: 20px;
                     }
+                }
+
+                .name-wine {
+                    font-size: 30px;
                 }
 
                 .title {
@@ -3431,7 +3458,7 @@
 
                 .text {
                     margin-bottom: 10px;
-                    line-height: 17px;
+                    line-height: 16px;
                     font-size: 16px;
                 }
 

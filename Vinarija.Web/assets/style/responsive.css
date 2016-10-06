@@ -584,16 +584,19 @@
   }
   .home-page .slider-home-page .prev-arrow {
     left: 50px;
+    background: url(../images/sprite.svg) -28px -272px no-repeat;
   }
   .home-page .slider-home-page .next-arrow {
     right: 50px;
+    background: url(../images/sprite.svg) -153px -272px no-repeat;
   }
-  .home-page .hover-section .first-img:hover .news,
-  .home-page .hover-section .second-img:hover .news,
-  .home-page .hover-section .third-img:hover .news,
-  .home-page .hover-section .fourth-img:hover .news,
-  .home-page .hover-section .fifth-img:hover .news {
-    display: none;
+  .home-page .hover-section .first-img .news,
+  .home-page .hover-section .second-img .news,
+  .home-page .hover-section .third-img .news,
+  .home-page .hover-section .fourth-img .news,
+  .home-page .hover-section .fifth-img .news {
+    display: block;
+    width: 101%;
   }
   .home-page .hover-section .first-img .news .view-more,
   .home-page .hover-section .second-img .news .view-more,
@@ -609,29 +612,52 @@
   .home-page .hover-section .fifth-img .news .news-content {
     font-size: 16px;
   }
+  .home-page .hover-section .first-img .news .news-title,
+  .home-page .hover-section .second-img .news .news-title,
+  .home-page .hover-section .third-img .news .news-title,
+  .home-page .hover-section .fourth-img .news .news-title,
+  .home-page .hover-section .fifth-img .news .news-title {
+    margin: 43px 0 20px 20px;
+  }
   .home-page .hover-section .first-img {
-    background: url('../images/first-section-hover.jpg') -170px 0 no-repeat;
+    background: url('../images/first-section.jpg') -170px 0 no-repeat;
+    background-size: cover;
   }
   .home-page .hover-section .first-img:hover {
-    background: url('../images/first-section-hover.jpg') -170px 0 no-repeat;
+    background: url('../images/first-section.jpg') -170px 0 no-repeat;
+    background-size: cover;
+  }
+  .home-page .hover-section .second-img {
+    background: url('../images/third-section.png') center center no-repeat;
+    background-size: cover;
   }
   .home-page .hover-section .second-img:hover {
-    background: url('../images/third-section-hover.png') center center no-repeat;
+    background: url('../images/third-section.png') center center no-repeat;
+    background-size: cover;
   }
   .home-page .hover-section .third-img {
-    background: url('../images/fourth-section-hover.png') -30px 0 no-repeat;
+    background: url('../images/fourth-section.png') -30px 0 no-repeat;
+    background-size: cover;
   }
   .home-page .hover-section .third-img:hover {
-    background: url('../images/fourth-section-hover.png') -30px 0 no-repeat;
+    background: url('../images/fourth-section.png') -30px 0 no-repeat;
+    background-size: cover;
+  }
+  .home-page .hover-section .fourth-img {
+    background: url('../images/second-section.jpg') center center no-repeat;
+    background-size: cover;
   }
   .home-page .hover-section .fourth-img:hover {
-    background: url('../images/second-section-hover.jpg') center center no-repeat;
+    background: url('../images/second-section.jpg') center center no-repeat;
+    background-size: cover;
   }
   .home-page .hover-section .fifth-img {
-    background: url(../images/fifth-section-hover.jpg) -50px 0 no-repeat;
+    background: url(../images/fifth-section.jpg) -50px 0 no-repeat;
+    background-size: cover;
   }
   .home-page .hover-section .fifth-img:hover {
-    background: url(../images/fifth-section-hover.jpg) -50px 0 no-repeat;
+    background: url(../images/fifth-section.jpg) -50px 0 no-repeat;
+    background-size: cover;
   }
   .vineyards-page .vineyards-white-sort .white-wine-img {
     background: url(../images/vineyards2.jpg) right center no-repeat;
@@ -1430,7 +1456,7 @@
     width: 100%;
   }
   .home-page .hover-section .responsive .slick-dots {
-    bottom: 25px;
+    bottom: 10px;
   }
   .home-page .hover-section .responsive .slick-dots li button:before {
     font-size: 10px;
@@ -1460,6 +1486,13 @@
     height: 690px;
     outline: none;
   }
+  .home-page .hover-section .responsive .first-img .news,
+  .home-page .hover-section .responsive .second-img .news,
+  .home-page .hover-section .responsive .third-img .news,
+  .home-page .hover-section .responsive .fourth-img .news,
+  .home-page .hover-section .responsive .fifth-img .news {
+    width: 256px;
+  }
   .home-page .hover-section .responsive .first-img,
   .home-page .hover-section .responsive .third-img,
   .home-page .hover-section .responsive .fifth-img {
@@ -1468,28 +1501,16 @@
   .home-page .hover-section .responsive .first-img {
     position: initial;
     top: 0;
-    background: url('../images/first-section-hover.jpg') center center no-repeat;
-    background-size: cover;
-  }
-  .home-page .hover-section .responsive .second-img {
-    background: url('../images/third-section-hover.png') center center no-repeat;
+    background: url(../images/first-section.jpg) center center no-repeat;
     background-size: cover;
   }
   .home-page .hover-section .responsive .third-img {
     position: initial;
     top: 0;
-    background: url('../images/fourth-section-hover.png') center center no-repeat;
-    background-size: cover;
-  }
-  .home-page .hover-section .responsive .fourth-img {
-    background: url('../images/second-section-hover.jpg') center center no-repeat;
-    background-size: cover;
   }
   .home-page .hover-section .responsive .fifth-img {
     position: initial;
     top: 0;
-    background: url('../images/fifth-section-hover.jpg') center center no-repeat;
-    background-size: cover;
   }
   .home-page .home-bck1 {
     height: 145px;
@@ -2127,7 +2148,17 @@
   .home-page .hover-section .responsive .third-img .news,
   .home-page .hover-section .responsive .fourth-img .news,
   .home-page .hover-section .responsive .fifth-img .news {
-    top: 230px;
+    width: inherit;
+    height: 300px;
+    top: 265px;
+  }
+  .home-page .hover-section .third-img {
+    background: url(../images/fourth-section.png) 0 0 no-repeat;
+    background-size: cover;
+  }
+  .home-page .hover-section .fifth-img {
+    background: url(../images/fifth-section.jpg) 0 0 no-repeat;
+    background-size: cover;
   }
   .home-page .home-bck1 {
     height: 65px;
@@ -2260,8 +2291,11 @@
     transform: scale(0.25);
   }
   #fullpage .change-text .content-position {
-    bottom: -120px;
+    bottom: -110px;
     width: 95%;
+  }
+  #fullpage .change-text .content-position .name-wine {
+    font-size: 30px;
   }
   #fullpage .change-text .content-position .title {
     font-size: 28px;
@@ -2271,7 +2305,7 @@
   }
   #fullpage .change-text .content-position .text {
     margin-bottom: 10px;
-    line-height: 17px;
+    line-height: 16px;
     font-size: 16px;
   }
   #fullpage .change-text .content-position .temp {
@@ -2346,7 +2380,7 @@
     background-color: transparent;
   }
   #fullpage-white .change-text .content-position {
-    bottom: -115px;
+    bottom: -105px;
     width: 95%;
   }
   #fullpage-white .change-text .content-position .read-more-box {
@@ -2354,6 +2388,9 @@
   }
   #fullpage-white .change-text .content-position .read-more-box .vertical-line {
     height: 20px;
+  }
+  #fullpage-white .change-text .content-position .name-wine {
+    font-size: 30px;
   }
   #fullpage-white .change-text .content-position .title {
     font-size: 28px;
@@ -2363,7 +2400,7 @@
   }
   #fullpage-white .change-text .content-position .text {
     margin-bottom: 10px;
-    line-height: 17px;
+    line-height: 16px;
     font-size: 16px;
   }
   #fullpage-white .change-text .content-position .temp {

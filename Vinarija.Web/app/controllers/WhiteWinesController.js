@@ -1,6 +1,6 @@
 ﻿app.controller('WhiteWinesController', function ($scope, $timeout, $state) {
 
-    $(document).ready(function () {
+    $timeout(function () {
         if ($('html').hasClass("fp-enabled")) {
             $.fn.fullpage.destroy('all');
         }
