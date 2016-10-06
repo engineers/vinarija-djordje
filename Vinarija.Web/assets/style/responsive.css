@@ -2272,7 +2272,7 @@
     display: none;
   }
   #fullpage .freska-crvena {
-    top: -20%;
+    top: -16%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
     height: 718px;
@@ -2283,7 +2283,7 @@
     transform: scale(0.25);
   }
   #fullpage .portugizer {
-    top: -19%;
+    top: 34%;
   }
   #fullpage .portugizer .portugizer-bottle {
     -moz-transform: scale(0.25);
@@ -2419,7 +2419,7 @@
     font-size: 19px;
   }
   #fullpage-white .freska-bela {
-    top: -9%;
+    top: -7%;
     left: 50%;
   }
   #fullpage-white .freska-bela .freska-bela-bottle {
@@ -2430,7 +2430,7 @@
     transform: scale(0.25);
   }
   #fullpage-white .sardone {
-    top: -9%;
+    top: 18%;
     left: 50%;
   }
   #fullpage-white .sardone .sardone-bottle {
@@ -2441,7 +2441,7 @@
     transform: scale(0.25);
   }
   #fullpage-white .traminac {
-    top: -11%;
+    top: 41%;
     left: 50%;
   }
   #fullpage-white .traminac .traminac-bottle {
@@ -2452,7 +2452,7 @@
     transform: scale(0.25);
   }
   #fullpage-white .sovinjon {
-    top: -11%;
+    top: 66%;
     left: 50%;
   }
   #fullpage-white .sovinjon .sovinjon-bottle {
@@ -2465,16 +2465,16 @@
 }
 @media screen and (max-width: 375px) {
   #fullpage-white .freska-bela {
-    top: -11%;
+    top: -9%;
   }
   #fullpage-white .sardone {
-    top: -11.5%;
+    top: 16.5%;
   }
   #fullpage-white .traminac {
-    top: -13%;
+    top: 40%;
   }
   #fullpage-white .sovinjon {
-    top: -13%;
+    top: 65%;
   }
   #fullpage-white .change-text .content-position {
     bottom: -90px;
@@ -2494,10 +2494,10 @@
     margin-bottom: 5px;
   }
   #fullpage .freska-crvena {
-    top: -24%;
+    top: -19%;
   }
   #fullpage .portugizer {
-    top: -23%;
+    top: 32%;
   }
   #fullpage .change-text .content-position {
     bottom: -90px;
@@ -2592,9 +2592,6 @@
   .vineyards-page .land .text-part {
     height: 785px;
   }
-  #fullpage .freska-crvena {
-    /*top: -22%;*/
-  }
   #fullpage .freska-crvena .freska-crvena-bottle {
     height: 718px;
     -moz-transform: scale(0.2);
@@ -2602,9 +2599,6 @@
     -o-transform: scale(0.2);
     -webkit-transform: scale(0.2);
     transform: scale(0.2);
-  }
-  #fullpage .portugizer {
-    /*top: 29%;*/
   }
   #fullpage .portugizer .portugizer-bottle {
     -moz-transform: scale(0.2);
@@ -2671,18 +2665,12 @@
     margin-bottom: 0;
     font-size: 14px;
   }
-  #fullpage-white .freska-bela {
-    /*top: -10%;*/
-  }
   #fullpage-white .freska-bela .freska-bela-bottle {
     -moz-transform: scale(0.2);
     -ms-transform: scale(0.2);
     -o-transform: scale(0.2);
     -webkit-transform: scale(0.2);
     transform: scale(0.2);
-  }
-  #fullpage-white .sardone {
-    /*top: 14.5%;*/
   }
   #fullpage-white .sardone .sardone-bottle {
     -moz-transform: scale(0.2);
@@ -2691,18 +2679,12 @@
     -webkit-transform: scale(0.2);
     transform: scale(0.2);
   }
-  #fullpage-white .traminac {
-    /*top: 38%;*/
-  }
   #fullpage-white .traminac .traminac-bottle {
     -moz-transform: scale(0.2);
     -ms-transform: scale(0.2);
     -o-transform: scale(0.2);
     -webkit-transform: scale(0.2);
     transform: scale(0.2);
-  }
-  #fullpage-white .sovinjon {
-    /*top: 63%;*/
   }
   #fullpage-white .sovinjon .sovinjon-bottle {
     -moz-transform: scale(0.2);
@@ -2726,33 +2708,24 @@
     font-size: 18px;
     margin-bottom: 5px;
   }
-  /*#fullpage-white {
-        .freska-bela {
-            top: -13%;
-        }
-
-        .sardone {
-            top: 11%;
-        }
-
-        .traminac {
-            top: 34%;
-        }
-
-        .sovinjon {
-            top: 59.5%;
-        }
-    }
-
-    #fullpage {
-        .freska-crvena {
-            top: -29%;
-        }
-
-        .portugizer {
-            top: 22%;
-        }
-    }*/
+  #fullpage-white .freska-bela {
+    top: -13%;
+  }
+  #fullpage-white .sardone {
+    top: 11%;
+  }
+  #fullpage-white .traminac {
+    top: 34%;
+  }
+  #fullpage-white .sovinjon {
+    top: 59.5%;
+  }
+  #fullpage .freska-crvena {
+    top: -29%;
+  }
+  #fullpage .portugizer {
+    top: 22%;
+  }
   .wines-page .wine-selection .red-wine .hamburger-menu .hamburger-nav .hamburger-container ul li {
     letter-spacing: 0;
   }
