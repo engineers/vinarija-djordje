@@ -2745,65 +2745,6 @@
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: right;
   }
-  /*@media screen and (min-device-width: 400px) and (max-device-width: 600px) {
-        #fullpage {
-            .freska-crvena {
-                top: -20%;
-            }
-
-            .portugizer {
-                top: -19%;
-            }
-        }
-
-        #fullpage-white {
-            .freska-bela {
-                top: -9%;
-            }
-
-            .sardone {
-                top: -9%;
-            }
-
-            .traminac {
-                top: -11%;
-            }
-
-            .sovinjon {
-                top: -11%;
-            }
-        }
-    }
-
-    @media screen and (min-device-width: 350px) and (max-device-width: 400px) {
-        #fullpage-white {
-            .freska-bela {
-                top: -11%;
-            }
-
-            .sardone {
-                top: -11.5%;
-            }
-
-            .traminac {
-                top: -13%;
-            }
-
-            .sovinjon {
-                top: -13%;
-            }
-        }
-
-        #fullpage {
-            .freska-crvena {
-                top: -24%;
-            }
-
-            .portugizer {
-                top: -23%;
-            }
-        }
-    }*/
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 400px) and (max-width: 600px) {
   #fullpage .freska-crvena {
@@ -2813,7 +2754,7 @@
     top: -19%;
   }
   #fullpage-white .freska-bela {
-    top: -9%;
+    top: -9.5%;
   }
   #fullpage-white .sardone {
     top: -9%;
@@ -2825,7 +2766,7 @@
     top: -11%;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 350px) and (max-width: 399px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 361px) and (max-width: 399px) {
   #fullpage-white .freska-bela {
     top: -11%;
   }
@@ -2845,6 +2786,26 @@
     top: -23%;
   }
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 320px) and (max-width: 360px) {
+  #fullpage-white .freska-bela {
+    top: -14%;
+  }
+  #fullpage-white .sardone {
+    top: -14.5%;
+  }
+  #fullpage-white .traminac {
+    top: -17%;
+  }
+  #fullpage-white .sovinjon {
+    top: -16.5%;
+  }
+  #fullpage .freska-crvena {
+    top: -31%;
+  }
+  #fullpage .portugizer {
+    top: -30%;
+  }
+}
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
   section.footer .footer-container .contact-form textarea {
     padding-left: 25px;
@@ -2862,103 +2823,64 @@
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: none;
   }
-  /*@media screen and (min-device-width: 400px) and (max-device-width: 600px) {
-        #fullpage {
-            .freska-crvena {
-                top: 0%;
-            }
-
-            .portugizer {
-                top: 0%;
-            }
-        }
-
-        #fullpage-white {
-            .freska-bela {
-                top: 0%;
-            }
-
-            .sardone {
-                top: 0%;
-            }
-
-            .traminac {
-                top: 0%;
-            }
-
-            .sovinjon {
-                top: 0%;
-            }
-        }
-    }
-
-    @media screen and (min-device-width: 350px) and (max-device-width: 400px) {
-        #fullpage-white {
-            .freska-bela {
-                top: 0%;
-            }
-
-            .sardone {
-                top: 0%;
-            }
-
-            .traminac {
-                top: 0%;
-            }
-
-            .sovinjon {
-                top: 0%;
-            }
-        }
-
-        #fullpage {
-            .freska-crvena {
-                top: 0%;
-            }
-
-            .portugizer {
-                top: 0%;
-            }
-        }
-    }*/
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 400px) and (max-device-width: 600px) {
   #fullpage .freska-crvena {
-    top: 0%;
+    top: -15%;
   }
   #fullpage .portugizer {
-    top: 0%;
+    top: 36%;
   }
   #fullpage-white .freska-bela {
-    top: 0%;
+    top: -7%;
   }
   #fullpage-white .sardone {
-    top: 0%;
+    top: 18%;
   }
   #fullpage-white .traminac {
-    top: 0%;
+    top: 41.5%;
   }
   #fullpage-white .sovinjon {
-    top: 0%;
+    top: 66.5%;
   }
 }
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 350px) and (max-device-width: 399px) {
-  #fullpage-white .freska-bela {
-    top: 0%;
-  }
-  #fullpage-white .sardone {
-    top: 0%;
-  }
-  #fullpage-white .traminac {
-    top: 0%;
-  }
-  #fullpage-white .sovinjon {
-    top: 0%;
-  }
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 361px) and (max-device-width: 399px) {
   #fullpage .freska-crvena {
-    top: 0%;
+    top: -17.5%;
   }
   #fullpage .portugizer {
-    top: 0%;
+    top: 33%;
+  }
+  #fullpage-white .freska-bela {
+    top: -8%;
+  }
+  #fullpage-white .sardone {
+    top: 16.5%;
+  }
+  #fullpage-white .traminac {
+    top: 40%;
+  }
+  #fullpage-white .sovinjon {
+    top: 65%;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 320px) and (max-device-width: 360px) {
+  #fullpage .freska-crvena {
+    top: -19%;
+  }
+  #fullpage .portugizer {
+    top: 31.5%;
+  }
+  #fullpage-white .freska-bela {
+    top: -8.5%;
+  }
+  #fullpage-white .sardone {
+    top: 16%;
+  }
+  #fullpage-white .traminac {
+    top: 39.5%;
+  }
+  #fullpage-white .sovinjon {
+    top: 64.5%;
   }
 }
