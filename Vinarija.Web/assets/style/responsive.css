@@ -2491,7 +2491,10 @@
     line-height: 15px;
   }
   #fullpage-white .change-text .content-position .percentage {
-    margin-bottom: 5px;
+    margin-bottom: 0;
+  }
+  #fullpage-white .change-text .content-position .degrees {
+    margin: 0 0 0 8px;
   }
   #fullpage .freska-crvena {
     top: -19%;
@@ -2766,7 +2769,7 @@
     top: -11%;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 361px) and (max-width: 399px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 360px) and (max-width: 399px) {
   #fullpage-white .freska-bela {
     top: -11%;
   }
@@ -2786,7 +2789,7 @@
     top: -23%;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 320px) and (max-width: 360px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 320px) and (max-width: 359px) {
   #fullpage-white .freska-bela {
     top: -14%;
   }
@@ -2844,43 +2847,43 @@
     top: 66.5%;
   }
 }
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 361px) and (max-device-width: 399px) {
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 360px) and (max-device-width: 399px) {
   #fullpage .freska-crvena {
-    top: -17.5%;
+    top: -24%;
   }
   #fullpage .portugizer {
-    top: 33%;
+    top: 27%;
   }
   #fullpage-white .freska-bela {
-    top: -8%;
+    top: -11%;
   }
   #fullpage-white .sardone {
-    top: 16.5%;
+    top: 13.7%;
   }
   #fullpage-white .traminac {
-    top: 40%;
+    top: 37%;
   }
   #fullpage-white .sovinjon {
-    top: 65%;
+    top: 62%;
   }
 }
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 320px) and (max-device-width: 360px) {
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 320px) and (max-device-width: 359px) {
   #fullpage .freska-crvena {
-    top: -19%;
+    top: -24%;
   }
   #fullpage .portugizer {
-    top: 31.5%;
+    top: 27%;
   }
   #fullpage-white .freska-bela {
-    top: -8.5%;
+    top: -11%;
   }
   #fullpage-white .sardone {
-    top: 16%;
+    top: 13.7%;
   }
   #fullpage-white .traminac {
-    top: 39.5%;
+    top: 37%;
   }
   #fullpage-white .sovinjon {
-    top: 64.5%;
+    top: 62%;
   }
 }
