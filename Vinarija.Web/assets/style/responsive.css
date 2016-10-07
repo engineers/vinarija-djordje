@@ -2730,99 +2730,6 @@
     letter-spacing: 0;
   }
 }
-/* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-/*@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-    #fullpage {
-        .freska-crvena {
-            top: -20%;
-        }
-
-        .portugizer {
-            top: -19%;
-        }
-    }
-
-    #fullpage-white {
-        .freska-bela {
-            top: -9%;
-        }
-
-        .sardone {
-            top: -9%;
-        }
-
-        .traminac {
-            top: -11%;
-        }
-
-        .sovinjon {
-            top: -11%;
-        }
-    }
-}*/
-/* ----------- iPhone 6 ----------- */
-/* Portrait and Landscape */
-/*@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    #fullpage-white {
-        .freska-bela {
-            top: -11%;
-        }
-
-        .sardone {
-            top: -11.5%;
-        }
-
-        .traminac {
-            top: -13%;
-        }
-
-        .sovinjon {
-            top: -13%;
-        }
-    }
-
-    #fullpage {
-        .freska-crvena {
-            top: -24%;
-        }
-
-        .portugizer {
-            top: -23%;
-        }
-    }
-}*/
-/* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-/*@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    #fullpage-white {
-        .freska-bela {
-            top: -11%;
-        }
-
-        .sardone {
-            top: -11.5%;
-        }
-
-        .traminac {
-            top: -13%;
-        }
-
-        .sovinjon {
-            top: -13%;
-        }
-    }
-
-    #fullpage {
-        .freska-crvena {
-            top: -24%;
-        }
-
-        .portugizer {
-            top: -23%;
-        }
-    }
-}*/
 /*Safari and Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   section.footer .footer-container .contact-form textarea {
@@ -2838,8 +2745,67 @@
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: right;
   }
+  /*@media screen and (min-device-width: 400px) and (max-device-width: 600px) {
+        #fullpage {
+            .freska-crvena {
+                top: -20%;
+            }
+
+            .portugizer {
+                top: -19%;
+            }
+        }
+
+        #fullpage-white {
+            .freska-bela {
+                top: -9%;
+            }
+
+            .sardone {
+                top: -9%;
+            }
+
+            .traminac {
+                top: -11%;
+            }
+
+            .sovinjon {
+                top: -11%;
+            }
+        }
+    }
+
+    @media screen and (min-device-width: 350px) and (max-device-width: 400px) {
+        #fullpage-white {
+            .freska-bela {
+                top: -11%;
+            }
+
+            .sardone {
+                top: -11.5%;
+            }
+
+            .traminac {
+                top: -13%;
+            }
+
+            .sovinjon {
+                top: -13%;
+            }
+        }
+
+        #fullpage {
+            .freska-crvena {
+                top: -24%;
+            }
+
+            .portugizer {
+                top: -23%;
+            }
+        }
+    }*/
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and only screen and (min-device-width: 400px) and (max-device-width: 600px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 400px) and (max-width: 600px) {
   #fullpage .freska-crvena {
     top: -20%;
   }
@@ -2859,7 +2825,7 @@
     top: -11%;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and only screen and (min-device-width: 350px) and (max-device-width: 400px) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 350px) and (max-width: 399px) {
   #fullpage-white .freska-bela {
     top: -11%;
   }
@@ -2896,8 +2862,67 @@
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: none;
   }
+  /*@media screen and (min-device-width: 400px) and (max-device-width: 600px) {
+        #fullpage {
+            .freska-crvena {
+                top: 0%;
+            }
+
+            .portugizer {
+                top: 0%;
+            }
+        }
+
+        #fullpage-white {
+            .freska-bela {
+                top: 0%;
+            }
+
+            .sardone {
+                top: 0%;
+            }
+
+            .traminac {
+                top: 0%;
+            }
+
+            .sovinjon {
+                top: 0%;
+            }
+        }
+    }
+
+    @media screen and (min-device-width: 350px) and (max-device-width: 400px) {
+        #fullpage-white {
+            .freska-bela {
+                top: 0%;
+            }
+
+            .sardone {
+                top: 0%;
+            }
+
+            .traminac {
+                top: 0%;
+            }
+
+            .sovinjon {
+                top: 0%;
+            }
+        }
+
+        #fullpage {
+            .freska-crvena {
+                top: 0%;
+            }
+
+            .portugizer {
+                top: 0%;
+            }
+        }
+    }*/
 }
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 400px) and (max-device-width: 600px) {
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 400px) and (max-device-width: 600px) {
   #fullpage .freska-crvena {
     top: 0%;
   }
@@ -2917,7 +2942,7 @@
     top: 0%;
   }
 }
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and only screen and (min-device-width: 350px) and (max-device-width: 400px) {
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 350px) and (max-device-width: 399px) {
   #fullpage-white .freska-bela {
     top: 0%;
   }
