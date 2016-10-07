@@ -2749,6 +2749,26 @@
     float: right;
   }
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 601px) and (max-width: 768px) {
+  #fullpage .freska-crvena {
+    top: -4%;
+  }
+  #fullpage .portugizer {
+    top: -4%;
+  }
+  #fullpage-white .freska-bela {
+    top: -2%;
+  }
+  #fullpage-white .sardone {
+    top: -2%;
+  }
+  #fullpage-white .traminac {
+    top: -3.5%;
+  }
+  #fullpage-white .sovinjon {
+    top: -3.5%;
+  }
+}
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 400px) and (max-width: 600px) {
   #fullpage .freska-crvena {
     top: -20%;
@@ -2825,6 +2845,26 @@
   }
   section.footer .footer-container .contact-form .send-btn .send-img {
     float: none;
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 601px) and (max-device-width: 768px) {
+  #fullpage .freska-crvena {
+    top: -2%;
+  }
+  #fullpage .portugizer {
+    top: 47%;
+  }
+  #fullpage-white .freska-bela {
+    top: -1%;
+  }
+  #fullpage-white .sardone {
+    top: 23.8%;
+  }
+  #fullpage-white .traminac {
+    top: 47.5%;
+  }
+  #fullpage-white .sovinjon {
+    top: 73%;
   }
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 400px) and (max-device-width: 600px) {
