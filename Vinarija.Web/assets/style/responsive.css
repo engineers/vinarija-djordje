@@ -63,7 +63,7 @@
     width: 25px;
   }
   #fullpage .freska-crvena {
-    top: 6%;
+    top: 2%;
     left: 19%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
@@ -74,10 +74,21 @@
     transform: scale(0.8);
   }
   #fullpage .portugizer {
-    top: 55%;
+    top: 34%;
     left: 18.5%;
   }
   #fullpage .portugizer .portugizer-bottle {
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #fullpage .merlo {
+    top: 68%;
+    left: 18.5%;
+  }
+  #fullpage .merlo .merlo-bottle {
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
@@ -248,10 +259,21 @@
     transform: scale(0.6);
   }
   #fullpage .portugizer {
-    top: 47%;
+    top: 32%;
     left: 17.5%;
   }
   #fullpage .portugizer .portugizer-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  #fullpage .merlo {
+    top: 66%;
+    left: 17.5%;
+  }
+  #fullpage .merlo .merlo-bottle {
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
     -o-transform: scale(0.6);
@@ -807,6 +829,17 @@
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
   }
+  #fullpage .merlo {
+    left: 16%;
+    top: 3%;
+  }
+  #fullpage .merlo .merlo-bottle {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
   .change-text .content-position {
     left: 85px;
     width: 75%;
@@ -1279,9 +1312,6 @@
   .winery-page .production {
     width: 100%;
   }
-  .winery-page .production-text {
-    height: 510px !important;
-  }
   .winery-page .text-part {
     height: 720px;
   }
@@ -1569,7 +1599,8 @@
     display: none;
   }
   #fullpage .freska-crvena,
-  #fullpage .portugizer {
+  #fullpage .portugizer,
+  #fullpage .merlo {
     left: 50%;
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -1579,8 +1610,13 @@
   }
   #fullpage .freska-crvena .freska-crvena-bottle,
   #fullpage .portugizer .freska-crvena-bottle,
+  #fullpage .merlo .freska-crvena-bottle,
   #fullpage .freska-crvena .portugizer-bottle,
-  #fullpage .portugizer .portugizer-bottle {
+  #fullpage .portugizer .portugizer-bottle,
+  #fullpage .merlo .portugizer-bottle,
+  #fullpage .freska-crvena .merlo-bottle,
+  #fullpage .portugizer .merlo-bottle,
+  #fullpage .merlo .merlo-bottle {
     -moz-transform: scale(0.6);
     -ms-transform: scale(0.6);
     -o-transform: scale(0.6);
@@ -1591,7 +1627,10 @@
     top: -3%;
   }
   #fullpage .portugizer {
-    top: 47%;
+    top: 31%;
+  }
+  #fullpage .merlo {
+    top: 64%;
   }
   #fullpage .all-sorts {
     top: 27%;
@@ -2272,7 +2311,7 @@
     display: none;
   }
   #fullpage .freska-crvena {
-    top: -16%;
+    top: -10%;
   }
   #fullpage .freska-crvena .freska-crvena-bottle {
     height: 718px;
@@ -2283,9 +2322,19 @@
     transform: scale(0.25);
   }
   #fullpage .portugizer {
-    top: 34%;
+    top: 24%;
   }
   #fullpage .portugizer .portugizer-bottle {
+    -moz-transform: scale(0.25);
+    -ms-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+  }
+  #fullpage .merlo {
+    top: 57%;
+  }
+  #fullpage .merlo .merlo-bottle {
     -moz-transform: scale(0.25);
     -ms-transform: scale(0.25);
     -o-transform: scale(0.25);
@@ -2497,10 +2546,13 @@
     margin: 0 0 0 8px;
   }
   #fullpage .freska-crvena {
-    top: -19%;
+    top: -12%;
   }
   #fullpage .portugizer {
-    top: 32%;
+    top: 22%;
+  }
+  #fullpage .merlo {
+    top: 55%;
   }
   #fullpage .change-text .content-position {
     bottom: -90px;
@@ -2590,7 +2642,7 @@
     height: 760px;
   }
   .winery-page .production-text {
-    height: 580px !important;
+    height: 700px !important;
   }
   .vineyards-page .land .text-part {
     height: 785px;
@@ -2604,6 +2656,13 @@
     transform: scale(0.2);
   }
   #fullpage .portugizer .portugizer-bottle {
+    -moz-transform: scale(0.2);
+    -ms-transform: scale(0.2);
+    -o-transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+  }
+  #fullpage .merlo .merlo-bottle {
     -moz-transform: scale(0.2);
     -ms-transform: scale(0.2);
     -o-transform: scale(0.2);
@@ -2756,6 +2815,9 @@
   #fullpage .portugizer {
     top: -4%;
   }
+  #fullpage .merlo {
+    top: -4%;
+  }
   #fullpage-white .freska-bela {
     top: -2%;
   }
@@ -2774,6 +2836,9 @@
     top: -20%;
   }
   #fullpage .portugizer {
+    top: -19%;
+  }
+  #fullpage .merlo {
     top: -19%;
   }
   #fullpage-white .freska-bela {
@@ -2808,6 +2873,9 @@
   #fullpage .portugizer {
     top: -23%;
   }
+  #fullpage .merlo {
+    top: -23%;
+  }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 320px) and (max-width: 359px) {
   #fullpage-white .freska-bela {
@@ -2826,6 +2894,9 @@
     top: -31%;
   }
   #fullpage .portugizer {
+    top: -30%;
+  }
+  #fullpage .merlo {
     top: -30%;
   }
 }
@@ -2852,7 +2923,10 @@
     top: -2%;
   }
   #fullpage .portugizer {
-    top: 47%;
+    top: 31%;
+  }
+  #fullpage .merlo {
+    top: 65%;
   }
   #fullpage-white .freska-bela {
     top: -1%;
@@ -2869,10 +2943,13 @@
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 400px) and (max-device-width: 600px) {
   #fullpage .freska-crvena {
-    top: -15%;
+    top: -11%;
   }
   #fullpage .portugizer {
-    top: 36%;
+    top: 23%;
+  }
+  #fullpage .merlo {
+    top: 56%;
   }
   #fullpage-white .freska-bela {
     top: -7%;
@@ -2889,10 +2966,13 @@
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 360px) and (max-device-width: 399px) {
   #fullpage .freska-crvena {
-    top: -24%;
+    top: -16%;
   }
   #fullpage .portugizer {
-    top: 27%;
+    top: 18%;
+  }
+  #fullpage .merlo {
+    top: 52%;
   }
   #fullpage-white .freska-bela {
     top: -11%;
@@ -2909,10 +2989,13 @@
 }
 @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (min-device-width: 320px) and (max-device-width: 359px) {
   #fullpage .freska-crvena {
-    top: -24%;
+    top: -17%;
   }
   #fullpage .portugizer {
-    top: 27%;
+    top: 20%;
+  }
+  #fullpage .merlo {
+    top: 51%;
   }
   #fullpage-white .freska-bela {
     top: -11%;

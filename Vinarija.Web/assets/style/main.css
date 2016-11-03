@@ -448,6 +448,10 @@ section.intro .slide.sixth {
   background: url('../images/slide6.jpg') center center;
   background-size: cover;
 }
+section.intro .slide.seventh {
+  background: url('../images/slide7.jpg') center center;
+  background-size: cover;
+}
 section.intro .scroll-down {
   left: 50%;
   -moz-transform: translateX(-50%);
@@ -1411,6 +1415,10 @@ section.footer .engineers-logo {
 .actualities-page .ivent-calendar.rotate-element {
   direction: rtl;
 }
+.actualities-page .ivent-calendar.rotate-element .calendar-news .title {
+  direction: initial;
+  text-align: right;
+}
 .actualities-page .ivent-calendar.rotate-element .calendar-news .content {
   direction: initial;
   text-align: right;
@@ -2125,7 +2133,7 @@ section.intro .hamburger-menu-mobile {
 }
 .freska-crvena {
   position: fixed;
-  top: 9%;
+  top: 6%;
   left: 20%;
   -moz-transform: translateX(-25%);
   -ms-transform: translateX(-25%);
@@ -2141,7 +2149,7 @@ section.intro .hamburger-menu-mobile {
 }
 .portugizer {
   position: fixed;
-  top: 59%;
+  top: 39%;
   left: 19.5%;
   -moz-transform: translateX(-22%);
   -ms-transform: translateX(-22%);
@@ -2154,6 +2162,22 @@ section.intro .hamburger-menu-mobile {
   width: 345px;
   height: 700px;
   background: url('../images/portugizer.png') center center no-repeat;
+}
+.merlo {
+  position: fixed;
+  top: 72%;
+  left: 19.5%;
+  -moz-transform: translateX(-22%);
+  -ms-transform: translateX(-22%);
+  -o-transform: translateX(-22%);
+  -webkit-transform: translateX(-22%);
+  transform: translateX(-22%);
+  width: 345px !important;
+}
+.merlo .merlo-bottle {
+  width: 345px;
+  height: 700px;
+  background: url('../images/merlo-bottle.png') center center no-repeat;
 }
 .freska-bela {
   position: fixed;
