@@ -2121,6 +2121,10 @@
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
+  section.intro .slide.seventh {
+    background: url(../images/slide7.jpg) -240px 0;
+    background-size: cover;
+  }
   section.intro .scroll-down {
     display: none;
   }
@@ -2859,22 +2863,22 @@
     top: -11%;
   }
   #fullpage-white .sardone {
-    top: -11.5%;
+    top: 13.7%;
   }
   #fullpage-white .traminac {
-    top: -13%;
+    top: 37%;
   }
   #fullpage-white .sovinjon {
-    top: -13%;
+    top: 62%;
   }
   #fullpage .freska-crvena {
-    top: -24%;
+    top: -16%;
   }
   #fullpage .portugizer {
-    top: -23%;
+    top: 18%;
   }
   #fullpage .merlo {
-    top: -23%;
+    top: 51.5%;
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-width: 320px) and (max-width: 359px) {
@@ -2972,7 +2976,7 @@
     top: 18%;
   }
   #fullpage .merlo {
-    top: 52%;
+    top: 51.5%;
   }
   #fullpage-white .freska-bela {
     top: -11%;
