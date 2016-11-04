@@ -2110,6 +2110,11 @@ section.intro .hamburger-menu-mobile {
   left: 52.6%;
   background: url('../images/portugizer-stamp.svg') center border-box no-repeat;
 }
+.letter-position.letter-merlo {
+  top: 15%;
+  left: 52.6%;
+  background: url('../images/merlo-letter.svg') center border-box no-repeat;
+}
 .letter-position.f-white {
   top: 13%;
   left: 52.6%;

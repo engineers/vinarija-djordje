@@ -356,6 +356,7 @@
   }
   .letter-position.f-red,
   .letter-position.letter-portugizer,
+  .letter-position.letter-merlo,
   .letter-position.f-white,
   .letter-position.sardone-letter,
   .letter-position.traminac-letter,
@@ -892,6 +893,15 @@
     -o-transform: scale(0.6);
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
+  }
+  .letter-position.letter-merlo {
+    top: 6%;
+    left: 48%;
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
   }
   .letter-position.sardone-letter {
     top: 7%;
@@ -1668,6 +1678,10 @@
     top: 45%;
     left: -33px;
   }
+  #fullpage .letter-position.letter-merlo {
+    top: 45%;
+    left: -55px;
+  }
   #fullpage-white .freska-bela,
   #fullpage-white .sardone,
   #fullpage-white .traminac,
@@ -2308,6 +2322,7 @@
   }
   .letter-position.f-red,
   .letter-position.letter-portugizer,
+  .letter-position.letter-merlo,
   .letter-position.f-white,
   .letter-position.sardone-letter,
   .letter-position.traminac-letter,
