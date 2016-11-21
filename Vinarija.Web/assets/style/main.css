@@ -2672,6 +2672,67 @@ section.intro .hamburger-menu-mobile {
   background: url('../images/loader.gif') center center no-repeat;
 }
 /*#endregion*/
+/*#region Angular translate*/
+.language-wrapper {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+.language-wrapper .language-dropdown {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+  margin-right: 50px;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 21px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url('../img/arrow-down.png') 85px 8px no-repeat;
+  cursor: pointer;
+}
+.language-wrapper .language-separator {
+  position: absolute;
+  bottom: -7px;
+  height: 1px;
+  width: 80px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.language-wrapper .language {
+  width: 35px;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Minion Pro-bold-Bold';
+}
+.language-wrapper .flag {
+  width: 26px;
+  height: 17px;
+  margin-right: 15px;
+  border-radius: 3px;
+}
+.language-wrapper .flag.srb {
+  background: url('../images/serbian-flag.svg') center center no-repeat;
+}
+.language-wrapper .flag.eng {
+  background: url('../images/english-flag.svg') center center no-repeat;
+}
+.language-wrapper .countries-list {
+  position: absolute;
+  top: 35px;
+  right: 70px;
+  color: #fff;
+}
+.language-wrapper .country {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+/*#endregion*/
 /*FF*/
 @-moz-document url-prefix() {
   section.footer .footer-container .contact-form .send-btn .send-img {

@@ -1,5 +1,5 @@
-﻿var app = angular.module('vinarija', ['ui.router', 'ngSanitize', 'angularUtils.directives.dirPagination']);
-app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, paginationTemplateProvider) {
+﻿var app = angular.module('vinarija', ['ui.router', 'ngSanitize', 'angularUtils.directives.dirPagination', 'pascalprecht.translate', 'app.translations']);
+app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, paginationTemplateProvider, $translateProvider, translations) {
     $urlRouterProvider.otherwise(function ($injector) {
         var $state = $injector.get('$state');
         $state.go('layout.home');
@@ -102,6 +102,12 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
        });
 
     $locationProvider.html5Mode(true);
+
+    $translateProvider.useSanitizeValueStrategy(null);
+    $translateProvider.translations('en', translations.en);
+    $translateProvider.translations('srb', translations.srb)
+    $translateProvider.preferredLanguage('en');
+    $translateProvider.fallbackLanguage('en')
 });
 
 app.run(function ($rootScope, $state, $anchorScroll) {

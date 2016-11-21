@@ -1,7 +1,26 @@
-﻿app.controller('LayoutController', function ($scope, contactService) {
+﻿app.controller('LayoutController', function ($scope, contactService, $translate) {
     $scope.homeLoader = true;
     $scope.date = new Date();
     $scope.message = {};
+
+    $scope.dropdownVisible = false;
+
+    $scope.changeLanguage = function (key) {
+        $translate.use(key);
+        $scope.dropdownVisible = false;
+
+        if (key == 'srb') {
+            $scope.activeLanguage = 'srb';
+        } else {
+            $scope.activeLanguage = 'eng';
+        }
+    };
+
+    $scope.changeLanguage('srb');
+
+    $scope.showDropdown = function ($event) {
+        $scope.dropdownVisible = !$scope.dropdownVisible;
+    }
 
     $scope.contact = function () {
         $scope.loader = true;

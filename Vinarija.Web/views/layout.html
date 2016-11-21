@@ -17,6 +17,24 @@
         <div class="slide seventh" set-height></div>
     </slick-carousel>
 
+    <div class="language-wrapper" flag="dropdownVisible">
+        <div class="language-dropdown" ng-click="showDropdown($event)">
+            <div class="flag {{activeLanguage}}"></div>
+            <div class="language" ng-bind="activeLanguage"></div>
+        </div>
+        <div class="language-separator"></div>
+        <div class="countries-list" ng-show="dropdownVisible">
+            <div class="country" ng-click="changeLanguage('srb',$event)" ng-show="activeLanguage =='eng'">
+                <div class="flag srb"></div>
+                <div class="language faq-top">SRB</div>
+            </div>
+            <div class="country" ng-click="changeLanguage('en',$event)" ng-show="activeLanguage =='srb'">
+                <div class="flag eng"></div>
+                <div class="language faq-top">ENG</div>
+            </div>
+        </div>
+    </div>
+
     <div class="scroll-down">
         <div class="empty-circle">
             <div class="full-circle"></div>
@@ -29,7 +47,7 @@
         <ul>
             <li class="flex" ui-sref="layout.home" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}">
                 <div class="grey-line"></div>
-                <a>почетна</a>
+                <a>{{'home' | translate}}</a>
             </li>
             <li class="flex" ui-sref="layout.wines" ng-class="{'selected' : $state.includes('layout.wines')}">
                 <div class="grey-line"></div>
