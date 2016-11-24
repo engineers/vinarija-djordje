@@ -39,7 +39,7 @@
         <div class="empty-circle">
             <div class="full-circle"></div>
         </div>
-        <div class="text">Скролуј доле</div>
+        <div class="text">{{'scroll' | translate}}</div>
         <div class="vertical-line"></div>
     </div>
 
@@ -51,31 +51,31 @@
             </li>
             <li class="flex" ui-sref="layout.wines" ng-class="{'selected' : $state.includes('layout.wines')}">
                 <div class="grey-line"></div>
-                <a>вина</a>
+                <a>{{'wine' | translate}}</a>
             </li>
             <li class="flex" ui-sref="layout.winery" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}">
                 <div class="grey-line"></div>
-                <a>винарија</a>
+                <a>{{'winery' | translate}}</a>
             </li>
             <li class="flex" ui-sref="layout.vineyards" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}">
                 <div class="grey-line"></div>
-                <a>виногради</a>
+                <a>{{'vineyards' | translate}}</a>
             </li>
             <li class="flex" ui-sref="layout.visit-winery" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
                 <div class="grey-line"></div>
-                <a>посета винарији</a>
+                <a>{{'visit-winery' | translate}}</a>
             </li>
             <li class="flex" ui-sref="layout.actualities" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}">
                 <div class="grey-line"></div>
-                <a>актуелности</a>
+                <a>{{'news' | translate}}</a>
             </li>
             <li class="flex" ui-sref="layout.territory" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}">
                 <div class="grey-line"></div>
-                <a>делиблатска пешчара</a>
+                <a>{{'deliblato-sands' | translate}}</a>
             </li>
             <li class="flex" ui-sref="layout.gallery" ng-class="{'selected' : $state.includes('layout.gallery')}">
                 <div class="grey-line"></div>
-                <a>Галерија</a>
+                <a>{{'gallery' | translate}}</a>
             </li>
         </ul>
     </nav>
@@ -87,35 +87,35 @@
                 <ul ng-click="showMenu()">
                     <li class="flex" ui-sref="layout.home" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}">
                         <div class="grey-line"></div>
-                        <a>почетна</a>
+                        <a>{{'home' | translate}}</a>
                     </li>
                     <li class="flex" ui-sref="layout.wines" ng-class="{'selected' : $state.includes('layout.wines')}">
                         <div class="grey-line"></div>
-                        <a>вина</a>
+                        <a>{{'wine' | translate}}</a>
                     </li>
                     <li class="flex" ui-sref="layout.winery" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}">
                         <div class="grey-line"></div>
-                        <a>винарија</a>
+                        <a>{{'winery' | translate}}</a>
                     </li>
                     <li class="flex" ui-sref="layout.vineyards" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}">
                         <div class="grey-line"></div>
-                        <a>виногради</a>
+                        <a>{{'vineyards' | translate}}</a>
                     </li>
                     <li class="flex" ui-sref="layout.visit-winery" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}">
                         <div class="grey-line"></div>
-                        <a>посета винарији</a>
+                        <a>{{'visit-winery' | translate}}</a>
                     </li>
                     <li class="flex" ui-sref="layout.actualities" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}">
                         <div class="grey-line"></div>
-                        <a>актуелности</a>
+                        <a>{{'news' | translate}}</a>
                     </li>
                     <li class="flex" ui-sref="layout.territory" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}">
                         <div class="grey-line"></div>
-                        <a>делиблатска пешчара</a>
+                        <a>{{'deliblato-sands' | translate}}</a>
                     </li>
                     <li class="flex" ui-sref="layout.gallery" ng-class="{'selected' : $state.includes('layout.gallery')}">
                         <div class="grey-line"></div>
-                        <a>Галерија</a>
+                        <a>{{'gallery' | translate}}</a>
                     </li>
                 </ul>
             </div>
@@ -126,7 +126,7 @@
             <span></span>
             <span></span>
         </div>
-        <div class="label">Мени</div>
+        <div class="label">{{'menu' | translate}}</div>
     </div>
 </section>
 
@@ -144,95 +144,95 @@
         </div>
 
         <div class="pages">
-            <p>странице</p>
+            <p>{{'pages' | translate}}</p>
             <div class="pages-container flex">
                 <div class="first-colum">
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}" ui-sref="layout.home">почетна</a>
+                        <a class="page-name" ng-click="goToSlide(1)" ng-class="{'selected' : $state.includes('layout.home')}" ui-sref="layout.home">{{'home' | translate}}</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.wines')}" ui-sref="layout.wines">вина</a>
+                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.wines')}" ui-sref="layout.wines">{{'wine' | translate}}</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}" ui-sref="layout.winery">винарија</a>
+                        <a class="page-name" ng-click="goToSlide(2)" ng-class="{'selected' : $state.includes('layout.winery')}" ui-sref="layout.winery">{{'winery' | translate}}</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}" ui-sref="layout.vineyards">виногради</a>
+                        <a class="page-name" ng-click="goToSlide(5)" ng-class="{'selected' : $state.includes('layout.vineyards')}" ui-sref="layout.vineyards">{{'vineyards' | translate}}</a>
                     </div>
                 </div>
                 <div class="second-colum">
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}" ui-sref="layout.visit-winery">посета винарији</a>
+                        <a class="page-name" ng-click="goToSlide(0)" ng-class="{'selected' : $state.includes('layout.visit-winery')}" ui-sref="layout.visit-winery">{{'visit-winery' | translate}}</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}" ui-sref="layout.actualities">актуелности</a>
+                        <a class="page-name" ng-click="goToSlide(4)" ng-class="{'selected' : $state.includes('layout.actualities')}" ui-sref="layout.actualities">{{'news' | translate}}</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}" ui-sref="layout.territory">делиблатска пешчара</a>
+                        <a class="page-name" ng-click="goToSlide(3)" ng-class="{'selected' : $state.includes('layout.territory')}" ui-sref="layout.territory">{{'deliblato-sands' | translate}}</a>
                     </div>
                     <div class="flex">
                         <div class="red-line"></div>
-                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.gallery')}" ui-sref="layout.gallery">Галерија</a>
+                        <a class="page-name" ng-class="{'selected' : $state.includes('layout.gallery')}" ui-sref="layout.gallery">{{'gallery' | translate}}</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="contact-info">
-            <p>контакт</p>
-            <div class="title">позовите</div>
+            <p>{{'contact' | translate}}</p>
+            <div class="title">{{'call' | translate}}</div>
             <div class="flex contact-box">
                 <div class="call-img"></div>
                 <a href="tel:+381603813054" class="info">+381 (0)60 3813054</a>
             </div>
 
-            <div class="title">пошаљите</div>
+            <div class="title">{{'email' | translate}}</div>
             <div class="flex contact-box">
                 <div class="email-img"></div>
                 <a href="mailto:vinarijadjordje@hotmail.com" class="info">vinarijadjordje@hotmail.com</a>
             </div>
 
-            <div class="title">пронађите нас</div>
+            <div class="title">{{'address' | translate}}</div>
             <a target="_blank" href="https://www.google.rs/maps/place/44%C2%B059'41.9%22N+20%C2%B056'25.2%22E/@44.9949618,20.9381543,642m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d44.994958!4d20.940343?hl=en">
                 <div class="flex contact-box">
                     <div class="map-pin"></div>
-                    <div class="info">Прикажи путању</div>
+                    <div class="info">{{'view map' | translate}}</div>
                 </div>
             </a>
         </div>
 
         <div class="contact-form" ng-form="contactForm">
-            <p>контакт</p>
+            <p>{{'contact' | translate}}</p>
             <input type="text"
-                   placeholder="Ваше име"
+                   placeholder="{{'name' | translate}}"
                    name="name"
                    ng-model="message.name"
                    required />
             <input type="text"
-                   placeholder="Ваш емаил"
+                   placeholder="{{'conatct-email' | translate}}"
                    name="email"
                    ng-model="message.email"
                    required />
             <textarea type="text"
-                      placeholder="Ваша порука"
+                      placeholder="{{'message' | translate}}"
                       name="message"
                       ng-model="message.body"
                       required />
             <button class="send-btn flex" ng-disabled="contactForm.$invalid" ng-click="contact()">
-                <div class="send-text">Пошаљи</div>
+                <div class="send-text">{{'send' | translate}}</div>
                 <div class="send-img" ng-show="!loader"></div>
                 <img src="../assets/images/loader.gif" alt="" ng-show="loader" />
             </button>
             <div class="message">{{contactMessage}}</div>
         </div>
     </div>
-    <div class="copyright center">© {{date | date:'yyyy'}} Сва права задржана - Винарија Ђорђе</div>
+    <div class="copyright center">© {{date | date:'yyyy'}} {{'copyright' | translate}}</div>
     <a href="http://www.enginee.rs" target="_blank" class="engineers-logo center"></a>
 </section>
