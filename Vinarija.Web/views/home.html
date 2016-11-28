@@ -3,7 +3,7 @@
         <div class="default-wrapper">
             <div class="stamp-title">
                 <h3 class="center" animation-settings="headlineAnimation" scroll-trigger>{{'welcome' | translate}}</h3>
-                <h5 class="center" animation-settings="headlineAnimation" scroll-trigger>{{'Winery' | translate}} Ђорђе</h5>
+                <h5 class="center" animation-settings="headlineAnimation" scroll-trigger>{{'winery' | translate}} Ђорђе</h5>
             </div>
             <div class="content" animation-settings="bodyTextAnimation" scroll-trigger>
                 <p>{{'home-content1' | translate}}</p>
@@ -51,11 +51,11 @@
                     <div class="red-line"></div>
                 </div>
                 <div class="flex types">
-                    <div class="type">ТРАМИНАЦ МИРИСНИ</div>
+                    <div class="type">{{'traminac' | translate}}</div>
                     <div class="red-line"></div>
                 </div>
                 <div class="flex types">
-                    <div class="type">СОВИЊОН БЕЛИ</div>
+                    <div class="type">{{'sauvignon' | translate}}</div>
                     <div class="red-line"></div>
                 </div>
                 <button class="black-btn" ui-sref="layout.white-wines">{{'see-more' | translate}}</button>
@@ -73,9 +73,7 @@
             <div class="first-img" ui-sref="layout.wines" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">{{'wine' | translate}}</div>
-                    <div class="news-content">
-                        Погледајте актуелни асортиман наших вина са детаљним описима и предлозима за упаривање са храном.
-                    </div>
+                    <div class="news-content">{{'first-card' | translate}}</div>
                     <div class="flex">
                         <div class="view-more">{{'see-more' | translate}}</div>
                         <div class="more-arrow"></div>
@@ -85,10 +83,7 @@
             <div class="second-img" ui-sref="layout.winery" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">{{'winery' | translate}}</div>
-                    <div class="news-content">
-                        Идеја за озбиљну породичну винарију родила се 2010. године.
-                        Већ наредне године смо почели са...
-                    </div>
+                    <div class="news-content">{{'second-card' | translate}}</div>
                     <div class="flex">
                         <div class="view-more">{{'see-more' | translate}}</div>
                         <div class="more-arrow"></div>
@@ -98,10 +93,7 @@
             <div class="third-img" ui-sref="layout.vineyards" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">{{'vineyards' | translate}}</div>
-                    <div class="news-content">
-                        Винарија ЂОРЂЕ своја вина производи искључиво од грожђа пореклом
-                        из сопствених ...
-                    </div>
+                    <div class="news-content">{{'third-card' | translate}}</div>
                     <div class="flex">
                         <div class="view-more">{{'see-more' | translate}}</div>
                         <div class="more-arrow"></div>
@@ -111,10 +103,7 @@
             <div class="fourth-img" ui-sref="layout.visit-winery" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">{{'visit-winery' | translate}}</div>
-                    <div class="news-content">
-                        Винарија ЂОРЂЕ је смештена у прелепом природном амбијенту
-                        познатог викенд насеља Девојачки...
-                    </div>
+                    <div class="news-content">{{'fourth-card' | translate}}</div>
                     <div class="flex">
                         <div class="view-more">{{'see-more' | translate}}</div>
                         <div class="more-arrow"></div>
@@ -124,9 +113,7 @@
             <div class="fifth-img" ui-sref="layout.actualities" style="cursor: pointer;" animation-settings="leftAnimation" scroll-trigger>
                 <div class="news">
                     <div class="news-title">{{'news' | translate}}</div>
-                    <div class="news-content">
-                        Прво учешће Винарије ЂОРЂЕ на "International Wine Challenge AWC VIENNA" донело нам је и прву медаљу!
-                    </div>
+                    <div class="news-content">{{'fifth-card' | translate}}</div>
                     <div class="flex">
                         <div class="view-more">{{'see-more' | translate}}</div>
                         <div class="more-arrow"></div>
@@ -163,7 +150,7 @@
             <div class="content" ng-bind-html="selectedPost.content.substring(0, 250) + '...'" animation-settings="bodyTextAnimation" scroll-trigger></div>
             <div class="read-more-box flex" ui-sref="layout.actualities" animation-settings="bodyTextAnimation" scroll-trigger>
                 <div class="vertical-line"></div>
-                <div class="read-more">прочитај још</div>
+                <div class="read-more">{{'read-more' | translate}}</div>
                 <div class="vertical-line"></div>
             </div>
         </div>
