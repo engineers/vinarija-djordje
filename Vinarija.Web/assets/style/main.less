@@ -2645,6 +2645,7 @@ section.intro {
             font-size: 36px;
             color: #333;
             font-family: 'Minion Pro-Regular';
+            text-transform: uppercase;
         }
 
         .subtitle {
@@ -3043,6 +3044,10 @@ section.intro {
         box-sizing: border-box;
         background: url('../img/arrow-down.png') 85px 8px no-repeat;
         cursor: pointer;
+
+        &.brown {
+            color: #444;
+        }
     }
 
     .language-separator {
@@ -3051,6 +3056,10 @@ section.intro {
         height: 1px;
         width: 80px;
         background: rgba(255,255,255,0.4);
+
+        &.wine-page {
+            background: rgb(162, 152, 152);
+        }
     }
 
     .language {
@@ -3080,11 +3089,16 @@ section.intro {
         top: 35px;
         right: 70px;
         color: #fff;
+
+        &.brown {
+            color: #444;
+        }
     }
 
     .country {
         display: flex;
         margin-bottom: 10px;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
         cursor: pointer;
     }

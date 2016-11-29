@@ -1,6 +1,24 @@
 ﻿<div class="wines-page">
     <section class="wine-selection" set-height>
         <div class="flex mobile-display" set-height>
+            <div class="language-wrapper" flag="dropdownVisible">
+                <div class="language-dropdown brown" ng-click="showDropdown($event)">
+                    <div class="flag {{activeLanguage}}"></div>
+                    <div class="language" ng-bind="activeLanguage"></div>
+                </div>
+                <div class="language-separator wine-page"></div>
+                <div class="countries-list brown" ng-show="dropdownVisible">
+                    <div class="country" ng-click="changeLanguage('srb',$event)" ng-show="activeLanguage =='eng'">
+                        <div class="flag srb"></div>
+                        <div class="language faq-top">SRB</div>
+                    </div>
+                    <div class="country" ng-click="changeLanguage('en',$event)" ng-show="activeLanguage =='srb'">
+                        <div class="flag eng"></div>
+                        <div class="language faq-top">ENG</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="red-wine" set-height>
                 <div class="logo" ui-sref="layout.home"></div>
                 <div class="hamburger-menu">
@@ -10,35 +28,35 @@
                             <ul ng-click="showMenu()">
                                 <li class="flex" ui-sref="layout.home">
                                     <div class="grey-line"></div>
-                                    <a>почетна</a>
+                                    <a>{{'home' | translate}}</a>
                                 </li>
                                 <li class="flex selected" ui-sref="layout.wines">
                                     <div class="grey-line"></div>
-                                    <a>вина</a>
+                                    <a>{{'wine' | translate}}</a>
                                 </li>
                                 <li class="flex" ui-sref="layout.winery">
                                     <div class="grey-line"></div>
-                                    <a>винарија</a>
+                                    <a>{{'winery' | translate}}</a>
                                 </li>
                                 <li class="flex" ui-sref="layout.vineyards">
                                     <div class="grey-line"></div>
-                                    <a>виногради</a>
+                                    <a>{{'vineyards' | translate}}</a>
                                 </li>
                                 <li class="flex" ui-sref="layout.visit-winery">
                                     <div class="grey-line"></div>
-                                    <a>посета винарији</a>
+                                    <a>{{'visit-winery' | translate}}</a>
                                 </li>
                                 <li class="flex" ui-sref="layout.actualities">
                                     <div class="grey-line"></div>
-                                    <a>актуелности</a>
+                                    <a>{{'news' | translate}}</a>
                                 </li>
                                 <li class="flex" ui-sref="layout.territory">
                                     <div class="grey-line"></div>
-                                    <a>делиблатска пешчара</a>
+                                    <a>{{'deliblato-sands' | translate}}</a>
                                 </li>
                                 <li class="flex" ng-class="{'selected' : $state.includes('layout.gallery')}" ui-sref="layout.gallery">
                                     <div class="grey-line"></div>
-                                    <a>Галерија</a>
+                                    <a>{{'gallery' | translate}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -49,14 +67,14 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="label">Мени</div>
+                    <div class="label">{{'menu' | translate}}</div>
                 </div>
                 <div class="wine-position">
-                    <div class="title">Црвена Вина</div>
+                    <div class="title">{{'red' | translate}} {{'wine' | translate}}</div>
                     <div class="red-bottle"></div>
                     <div class="read-more-box flex" ui-sref="layout.red-wines">
                         <div class="vertical-line"></div>
-                        <div class="read-more">прочитај још</div>
+                        <div class="read-more">{{'read-more' | translate}}</div>
                         <div class="vertical-line"></div>
                     </div>
                 </div>
@@ -64,11 +82,11 @@
 
             <div class="white-wine" set-height>
                 <div class="wine-position">
-                    <div class="title">Бела Вина</div>
+                    <div class="title">{{'white' | translate}} {{'wine' | translate}}</div>
                     <div class="white-bottle"></div>
                     <div class="read-more-box flex" ui-sref="layout.white-wines">
                         <div class="vertical-line"></div>
-                        <div class="read-more">прочитај још</div>
+                        <div class="read-more">{{'read-more' | translate}}</div>
                         <div class="vertical-line"></div>
                     </div>
                 </div>

@@ -2361,6 +2361,7 @@ section.intro .hamburger-menu-mobile {
   font-size: 36px;
   color: #333;
   font-family: 'Minion Pro-Regular';
+  text-transform: uppercase;
 }
 .change-text .content-position .subtitle {
   margin-bottom: 25px;
@@ -2695,12 +2696,18 @@ section.intro .hamburger-menu-mobile {
   background: url('../img/arrow-down.png') 85px 8px no-repeat;
   cursor: pointer;
 }
+.language-wrapper .language-dropdown.brown {
+  color: #444;
+}
 .language-wrapper .language-separator {
   position: absolute;
   bottom: -7px;
   height: 1px;
   width: 80px;
   background: rgba(255, 255, 255, 0.4);
+}
+.language-wrapper .language-separator.wine-page {
+  background: #a29898;
 }
 .language-wrapper .language {
   width: 35px;
@@ -2726,9 +2733,13 @@ section.intro .hamburger-menu-mobile {
   right: 70px;
   color: #fff;
 }
+.language-wrapper .countries-list.brown {
+  color: #444;
+}
 .language-wrapper .country {
   display: flex;
   margin-bottom: 10px;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   cursor: pointer;
 }
