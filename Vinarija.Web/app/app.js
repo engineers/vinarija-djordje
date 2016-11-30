@@ -139,3 +139,8 @@ app.constant('config', {
     baseAddress: 'http://localhost:53491/api/',
     contentAddress: 'http://localhost:53491/Content/'
 });
+
+//app.constant('config', {
+//    baseAddress: 'http://192.168.0.121:9091/api/',
+//    contentAddress: 'http://192.168.0.121:9091/Content/'
+//});

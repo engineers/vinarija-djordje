@@ -1817,13 +1817,13 @@ section.footer .engineers-logo {
 }
 .wines-page .wine-selection .red-wine .wine-position .red-bottle {
   height: 210px;
-  width: 85%;
+  width: 84%;
   background: url('../images/choose-wine-red.png') center right no-repeat;
 }
 .wines-page .wine-selection .red-wine .wine-position .read-more-box {
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
-  margin-right: 150px;
+  margin-right: 157px;
   margin-top: -10px;
 }
 .wines-page .wine-selection .red-wine .wine-position .read-more-box:hover .vertical-line {
