@@ -5,7 +5,8 @@
 </div>
 <section class="intro" set-height ng-if="!$state.includes('layout.wines') && !$state.includes('layout.red-wines') && !$state.includes('layout.white-wines') && !$state.includes('layout.gallery')">
     <img class="main-logo" src="../assets/images/logo.svg" ui-sref="layout.home" />
-    <img class="logo-headline" src="../assets/images/headline-logo.png" animation-settings="fadeInAnimation" scroll-trigger />
+    <img class="logo-headline" src="../assets/images/headline-logo.png" animation-settings="fadeInAnimation" scroll-trigger ng-show="activeLanguage =='srb'"/>
+    <img class="logo-headline" src="../assets/images/headline-logo-eng.png" animation-settings="fadeInAnimation" scroll-trigger ng-show="activeLanguage =='eng'"/>
 
     <slick-carousel dots="true" id="active-header-img" set-height>
         <div class="slide first" set-height></div>
