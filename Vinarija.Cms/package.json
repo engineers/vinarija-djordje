@@ -23,6 +23,15 @@
     "slick-carousel": "1.6.0",
     "angular-ui-sortable": "0.14.3"
   },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-ng-annotate": "latest",
+    "grunt-contrib-cssmin": "latest"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
