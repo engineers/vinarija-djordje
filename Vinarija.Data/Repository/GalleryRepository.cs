@@ -17,7 +17,7 @@ namespace Vinarija.Data.Repository
         public override void Insert(Gallery entity)
         {
             int? sortOrder = dbSet.Any() ? dbSet.Max(g => g.SortOrder) + 1 : 1;
-            entity.SortOrder = sortOrder;
+            entity.SortOrder = sortOrder.Value;
 
             base.Insert(entity);
         }

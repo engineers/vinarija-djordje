@@ -2,6 +2,8 @@
     [Id]          INT            IDENTITY (1, 1) NOT NULL,
     [Title]       NVARCHAR (100) NOT NULL,
     [Content]     NVARCHAR (MAX) NOT NULL,
+    [EnglishTitle] NVARCHAR(MAX) NULL, 
+	[EnglishContent] NVARCHAR(MAX) NULL, 
     [Date]        DATETIME       NOT NULL,
     [DateCreated] DATETIME       NOT NULL,
     [Active]      BIT            NOT NULL,

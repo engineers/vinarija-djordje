@@ -74,6 +74,15 @@ namespace Vinarija.Api.Controllers
 
         [ValidateModel]
         [TokenAuthorize]
+        [HttpPost]
+        public void Translate(TranslateModel input)
+        {
+            PostManager.Translate(input.Id, input.Title, input.Content);
+        }
+
+
+        [ValidateModel]
+        [TokenAuthorize]
         [HttpPut]
         public Post ActiveDeactive(PostActiveDeactiveModel model)
         {

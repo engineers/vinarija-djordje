@@ -74,4 +74,7 @@
     <Build Include="dbo\Tables\PostImage.sql" />
     <Build Include="dbo\Tables\Gallery.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Vinarija.Data.Sql.refactorlog" />
+  </ItemGroup>
 </Project>

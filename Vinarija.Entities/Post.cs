@@ -26,6 +26,8 @@ namespace Vinarija.Entities
         public System.DateTime Date { get; set; }
         public System.DateTime DateCreated { get; set; }
         public bool Active { get; set; }
+        public string EnglishTitle { get; set; }
+        public string EnglishContent { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PostImage> PostImages { get; set; }

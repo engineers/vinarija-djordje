@@ -85,6 +85,19 @@ namespace Vinarija.Core
             }
         }
 
+        public void Translate(int id, string title, string content)
+        {
+            using(UnitOfWork uow = new UnitOfWork())
+            {
+                Post post = uow.PostRepository.GetById(id);
+                ValidationHelper.ValidateNotNull(post);
+
+                post.EnglishTitle = title;
+                post.EnglishContent = content;
+                uow.Save();
+            }
+        }
+
         public Post ActiveDeactive(int postId, bool active)
         {
             using (UnitOfWork uow = new UnitOfWork())

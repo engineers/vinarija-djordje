@@ -16,6 +16,6 @@ namespace Vinarija.Entities
     {
         public int Id { get; set; }
         public string FilePath { get; set; }
-        public Nullable<int> SortOrder { get; set; }
+        public int SortOrder { get; set; }
     }
 }

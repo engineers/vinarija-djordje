@@ -41,6 +41,23 @@
 		});
     };
 
+    $scope.translationModal = function (post) {
+        $mdDialog.show({
+            controller: 'TranslateModalController',
+            templateUrl: 'app/sections/blog/modals/translateModal.html',
+            parent: angular.element(document.body),
+            size: 'lg',
+            clickOutsideToClose: true,
+            locals: {
+                post: angular.copy(post)
+            }
+        })
+		.then(function (data) {
+		    loadData();
+		}, function () {
+		});
+    };
+
     $scope.removeModal = function (ev, post) {
         var confirm = $mdDialog.confirm()
 		.title('Brisanje posta')
@@ -75,7 +92,7 @@
             $scope.posts = res.posts;
             $scope.totalItems = res.totalCount;
             $scope.loading = false;
-        }, function() {
+        }, function () {
             $scope.loading = false;
         });
 

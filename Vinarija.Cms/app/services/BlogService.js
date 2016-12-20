@@ -94,5 +94,20 @@
         });
     };
 
+    factory.translate = function (translation) {
+        return $http({
+            url: config.baseAddress + 'post/translate',
+            method: 'POST',
+            data: translation
+        })
+        .then(function (response) {
+            return response.data;
+        }, function (response) {
+            $rootScope.$emit('toast', { message: response.data.message, type: 'danger' });
+
+            throw 'blogService.translate: ' + response.data.message;
+        });
+    };
+
     return factory;
 });
