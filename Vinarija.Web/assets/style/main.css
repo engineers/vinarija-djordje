@@ -1231,6 +1231,7 @@ section.footer .engineers-logo {
 .home-page .ivent-calendar .calendar .month {
   font-size: 25px;
   text-align: center;
+  text-transform: lowercase;
 }
 .home-page .ivent-calendar .calendar-news {
   width: 30%;
