@@ -486,6 +486,18 @@
     width: 33%;
   }
 }
+@media screen and (max-width: 1200px) {
+  section.intro .slick-dots {
+    bottom: -25px;
+    left: 65px;
+  }
+  section.intro nav {
+    top: 55%;
+  }
+  section.intro nav li {
+    margin: 10px 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .logo {
     top: 30px;
