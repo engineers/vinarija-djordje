@@ -10,6 +10,7 @@
     $scope.posts = postsData.posts;
     $scope.initPosts = angular.copy($scope.posts);
     $scope.totalCount = postsData.totalCount;
+
     blogService.buildPreviewDate($scope.posts);
 
     $scope.showNewsPopUp = function (post) {
@@ -35,7 +36,6 @@
     }
 
     $scope.$watch('activeLanguage', function (newValue, oldValue) {
-        if (newValue == oldValue) return;
         if ($scope.activeLanguage == 'srb') {
             $scope.posts = $scope.initPosts;
             blogService.buildPreviewDate($scope.posts);
