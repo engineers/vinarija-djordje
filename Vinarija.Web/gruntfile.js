@@ -36,24 +36,40 @@
             }
         },
 
+        clean: ['assets/style/bundle.css'],
+
         cssmin: {
-        options: {
+            options: {
                 shorthandCompacting: false,
                 roundingPrecision: -1
-        },
-        target: {
+            },
+            target: {
                 files: {
-                    'assets/style/bundle.css': ['assets/style/**/*.css']
+                    'assets/style/bundle.css': ['assets/style/main.css', 'assets/style/responsive.css']
                 }
+            }
+        },
+
+        usebanner: {
+            taskName: {
+                options: {
+                    position: 'top',
+                    banner: '/*! <%= pkg.name %> <%= pkg.version %> <%= grunt.template.today("dd-mm-yyyy hh:mm:ss") %> */\n'
+                },
+                files: {
+                    src: ['assets/style/bundle.css']
+                }
+            }
         }
-    }
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ng-annotate');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-banner');
 
-    grunt.registerTask('default', ['concat', 'ngAnnotate', 'uglify', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'ngAnnotate', 'uglify', 'clean', 'cssmin', 'usebanner']);
 };

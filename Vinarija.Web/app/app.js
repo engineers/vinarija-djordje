@@ -1,5 +1,5 @@
 ﻿var app = angular.module('vinarija', ['ui.router', 'ngSanitize', 'angularUtils.directives.dirPagination', 'pascalprecht.translate', 'app.translations']);
-app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, paginationTemplateProvider, $translateProvider, translations) {
+app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider, paginationTemplateProvider, $translateProvider, translations, config) {
     $urlRouterProvider.otherwise(function ($injector) {
         var $state = $injector.get('$state');
         $state.go('layout.home');
@@ -9,13 +9,13 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
     $stateProvider
         .state('layout', {
             controller: 'LayoutController',
-            templateUrl: '/views/layout.html?v=1.0',
+            templateUrl: '/views/layout.html?v=' + config.version,
             pageName: 'Layout'
         })
         .state('layout.home', {
             url: '/pocetna',
             controller: 'HomeController',
-            templateUrl: '/views/home.html?v=1.0',
+            templateUrl: '/views/home.html?v=' + config.version,
             pageName: 'Почетна',
             resolve: {
                 postsData: function (blogService) {
@@ -34,19 +34,19 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
        .state('layout.visit-winery', {
            url: '/poseta-vinariji',
            controller: 'VisitWineryController',
-           templateUrl: '/views/visit-winery.html?v=1.0',
+           templateUrl: '/views/visit-winery.html?v=' + config.version,
            pageName: 'Посета винарији',
        })
        .state('layout.winery', {
            url: '/vinarija',
            controller: 'WineryController',
-           templateUrl: '/views/winery.html?v=1.0',
+           templateUrl: '/views/winery.html?v=' + config.version,
            pageName: 'Винарија',
        })
        .state('layout.actualities', {
            url: '/aktuelnosti',
            controller: 'ActualitiesController',
-           templateUrl: '/views/actualities.html?v=1.0',
+           templateUrl: '/views/actualities.html?v=' + config.version,
            resolve: {
                postsData: function (blogService) {
                    var params = {
@@ -62,37 +62,37 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
        .state('layout.vineyards', {
            url: '/vinogradi',
            controller: 'VineyardsController',
-           templateUrl: '/views/vineyards.html?v=1.0',
+           templateUrl: '/views/vineyards.html?v=' + config.version,
            pageName: 'Виногради',
        })
        .state('layout.wines', {
            url: '/vina',
            controller: 'WinesController',
-           templateUrl: '/views/wines.html?v=1.0',
+           templateUrl: '/views/wines.html?v=' + config.version,
            pageName: 'Вина',
        })
        .state('layout.territory', {
            url: '/deliblatska-pescara',
            controller: 'TerritoryController',
-           templateUrl: '/views/territory.html?v=1.0',
+           templateUrl: '/views/territory.html?v=' + config.version,
            pageName: 'Делиблатска пешчара'
        })
        .state('layout.red-wines', {
            url: '/crvena-vina',
            controller: 'RedWinesController',
-           templateUrl: '/views/red-wines.html?v=1.0',
+           templateUrl: '/views/red-wines.html?v=' + config.version,
            pageName: 'Црвена вина',
        })
        .state('layout.white-wines', {
            url: '/bela-vina',
            controller: 'WhiteWinesController',
-           templateUrl: '/views/white-wines.html?v=1.0',
+           templateUrl: '/views/white-wines.html?v=' + config.version,
            pageName: 'Бела вина',
        })
        .state('layout.gallery', {
            url: '/galerija',
            controller: 'GalleryController',
-           templateUrl: '/views/gallery.html?v=1.0',
+           templateUrl: '/views/gallery.html?v=' + config.version,
            pageName: 'Галерија',
            resolve: {
                gallery: function (galleryService) {
@@ -137,7 +137,8 @@ app.run(function ($rootScope, $state, $anchorScroll) {
 
 app.constant('config', {
     baseAddress: 'http://localhost:53491/api/',
-    contentAddress: 'http://localhost:53491/Content/'
+    contentAddress: 'http://localhost:53491/Content/',
+    version: '1.1'
 });
 
 //app.constant('config', {
