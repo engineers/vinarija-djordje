@@ -8,6 +8,7 @@
     $scope.monthsLocale = blogService.monthsLocale;
 
     $scope.posts = postsData.posts;
+    $scope.initPosts = angular.copy($scope.posts);
     $scope.totalCount = postsData.totalCount;
     blogService.buildPreviewDate($scope.posts);
 
@@ -31,5 +32,31 @@
             $scope.totalCount = reponse.totalCount;
             blogService.buildPreviewDate($scope.posts);
         });
+    }
+
+    $scope.$watch('activeLanguage', function (newValue, oldValue) {
+        if (newValue == oldValue) return;
+        if ($scope.activeLanguage == 'srb') {
+            $scope.posts = $scope.initPosts;
+            blogService.buildPreviewDate($scope.posts);
+        }
+        else {
+            translate();
+
+        }
+    })
+
+    function translate() {
+        _.each($scope.posts, function (post) {
+            if (post.englishTitle) post.title = post.englishTitle;
+            if (post.englishContent) post.content = post.englishContent;
+
+            for (var key in $scope.monthsLocale) {
+                if ($scope.monthsLocale[key] == post.dateMonth) {
+                    post.dateMonth = key;
+                    break;
+                }
+            }
+        })
     }
 });
