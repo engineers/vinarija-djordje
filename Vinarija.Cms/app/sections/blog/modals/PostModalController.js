@@ -10,7 +10,7 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
 
     $scope.uploader = new FileUploader({
         url: config.baseAddress + 'post/uploadImage',
-        headers : {
+        headers: {
             'Authorization': localStorageService.get('token')
         }
     });
@@ -30,9 +30,9 @@ app.controller('PostModalController', function ($scope, $mdDialog, blogService, 
     };
 
     $scope.uploader.onBeforeUploadItem = function (item) {
-        item.formData.push({'id': $scope.post.id});
+        item.formData.push({ 'id': $scope.post.id });
     };
-  
+
     $scope.uploader.onCompleteAll = function () {
         $scope.loading = false;
         $mdDialog.hide($scope.response);
