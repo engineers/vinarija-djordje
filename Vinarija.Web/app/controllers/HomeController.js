@@ -1,6 +1,6 @@
 ﻿app.controller('HomeController', function ($scope, $timeout, postsData, config, gallery, blogService) {
     $scope.posts = postsData.posts;
-    $scope.initPosts = angular.copy($scope.posts);
+    $scope.initPosts = _.cloneDeep(postsData.posts);
     $scope.totalCount = postsData.totalCount;
     $scope.activeIndex = 0;
     blogService.buildPreviewDate($scope.posts);
@@ -19,15 +19,15 @@
 
     $scope.$watch('activeLanguage', function (newValue, oldValue) {
         if ($scope.activeLanguage == 'srb') {
-            $scope.posts = $scope.initPosts;
+            $scope.posts = _.cloneDeep($scope.initPosts);
             blogService.buildPreviewDate($scope.posts);
         }
         else {
             translate();
 
         }
+        $scope.selectedPost = $scope.posts.length ? $scope.posts[0] : false;
     })
-
 
     function translate() {
         _.each($scope.posts, function (post) {
