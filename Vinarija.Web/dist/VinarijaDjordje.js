@@ -100,7 +100,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', '$locationP
                }]
            },
        });
-    console.log(config.version);
+
     $locationProvider.html5Mode(true);
 
     $translateProvider.useSanitizeValueStrategy(null);
@@ -130,16 +130,16 @@ app.run(['$rootScope', '$state', '$anchorScroll', function ($rootScope, $state, 
 
 }]);
 
-//app.constant('config', {
-//    baseAddress: 'http://enginee.rs:8122/api/',
-//    contentAddress: 'http://enginee.rs:8122/Content/'
-//});
-
 app.constant('config', {
-    baseAddress: 'http://localhost:53491/api/',
-    contentAddress: 'http://localhost:53491/Content/',
-    version: '1.1'
+    baseAddress: 'http://enginee.rs:8122/api/',
+    contentAddress: 'http://enginee.rs:8122/Content/',
+    version: '1.3'
 });
+
+//app.constant('config', {
+//    baseAddress: 'http://localhost:53491/api/',
+//    contentAddress: 'http://localhost:53491/Content/'
+//});
 
 //app.constant('config', {
 //    baseAddress: 'http://192.168.0.121:9091/api/',
@@ -155,7 +155,9 @@ app.controller('ActualitiesController', ['$scope', 'blogService', 'postsData', '
     $scope.monthsLocale = blogService.monthsLocale;
 
     $scope.posts = postsData.posts;
+    $scope.initPosts = angular.copy($scope.posts);
     $scope.totalCount = postsData.totalCount;
+
     blogService.buildPreviewDate($scope.posts);
 
     $scope.showNewsPopUp = function (post) {
@@ -179,6 +181,31 @@ app.controller('ActualitiesController', ['$scope', 'blogService', 'postsData', '
             blogService.buildPreviewDate($scope.posts);
         });
     }
+
+    $scope.$watch('activeLanguage', function (newValue, oldValue) {
+        if ($scope.activeLanguage == 'srb') {
+            $scope.posts = $scope.initPosts;
+            blogService.buildPreviewDate($scope.posts);
+        }
+        else {
+            translate();
+
+        }
+    })
+
+    function translate() {
+        _.each($scope.posts, function (post) {
+            if (post.englishTitle) post.title = post.englishTitle;
+            if (post.englishContent) post.content = post.englishContent;
+
+            for (var key in $scope.monthsLocale) {
+                if ($scope.monthsLocale[key] == post.dateMonth) {
+                    post.dateMonth = key;
+                    break;
+                }
+            }
+        })
+    }
 }]);
 app.controller('GalleryController', ['$scope', 'config', 'gallery', function ($scope, config, gallery) {
     $scope.contentAddress = config.contentAddress;
@@ -186,9 +213,12 @@ app.controller('GalleryController', ['$scope', 'config', 'gallery', function ($s
 }]);
 app.controller('HomeController', ['$scope', '$timeout', 'postsData', 'config', 'gallery', 'blogService', function ($scope, $timeout, postsData, config, gallery, blogService) {
     $scope.posts = postsData.posts;
+    $scope.initPosts = _.cloneDeep(postsData.posts);
     $scope.totalCount = postsData.totalCount;
     $scope.activeIndex = 0;
     blogService.buildPreviewDate($scope.posts);
+
+    $scope.monthsLocale = blogService.monthsLocale;
 
     $scope.contentAddress = config.contentAddress;
     $scope.gallery = gallery;
@@ -199,6 +229,32 @@ app.controller('HomeController', ['$scope', '$timeout', 'postsData', 'config', '
         $scope.selectedPost = post;
         $scope.activeIndex = index;
     };
+
+    $scope.$watch('activeLanguage', function (newValue, oldValue) {
+        if ($scope.activeLanguage == 'srb') {
+            $scope.posts = _.cloneDeep($scope.initPosts);
+            blogService.buildPreviewDate($scope.posts);
+        }
+        else {
+            translate();
+
+        }
+        $scope.selectedPost = $scope.posts.length ? $scope.posts[0] : false;
+    })
+
+    function translate() {
+        _.each($scope.posts, function (post) {
+            if (post.englishTitle) post.title = post.englishTitle;
+            if (post.englishContent) post.content = post.englishContent;
+
+            for (var key in $scope.monthsLocale) {
+                if ($scope.monthsLocale[key] == post.dateMonth) {
+                    post.dateMonth = key;
+                    break;
+                }
+            }
+        })
+    }
 }]);
 app.controller('LayoutController', ['$scope', 'contactService', '$translate', function ($scope, contactService, $translate) {
     $scope.homeLoader = true;
@@ -785,6 +841,8 @@ angular.module('app.translations', []).constant('translations', {
         'traminac-cont2': 'Може бити идеалан аперитив али се одлично слаже са плодовима мора, димљеном рибом, летњим салатама, белим месом, воћем и воћним десертима.',
         'sauvignon-cont1': 'Вино сламнато жуте боје, кристалне бистрине, са богатим ароматским комплексом. Свеже, елегантно вино у којем се на мирису истичу ароме виноградарске брескве, зове и цитруса. Савршено прија на високим летњим температурама. Вино је средњег тела, лако покретљиво у чаши, изузетно питко, са благим тоновима сласти, добро избалансираним киселинама и прелепом воћном завршницом.',
         'sauvignon-cont2': 'Препоручујемо га уз рибу, пасте са морским плодовима, летње салате, сиреве, суве смокве и суве колаче.',
+        'read-more': 'Прочитај још',
+        'djordje': 'Ђорђе'
     },
 
     en: {
@@ -882,7 +940,7 @@ angular.module('app.translations', []).constant('translations', {
         'berba': 'vintage',
         'order': 'order',
         'dry-wine': 'Dry red wine.',
-        'freska-cont1': 'Very fresh blend dominated by Frankovka (Blaufränkisch) with spicy notes of Reb. Wine of exquisite red colour with beautiful purple reflections. Wine of very strong aroma dominated by ripe cherry. The taste is seductive and smooth, medium bodied and of very rich extract. Beautiful gentle tannins, fruity consistency and pleasant fresh acid spill over in a very pleasant finish rich with berries.',
+        'freska-cont1': 'Very fresh blend dominated by Frankovka (Blaufränkisch) with spicy notes of Rebo. Wine of exquisite red colour with beautiful purple reflections. Wine of very strong aroma dominated by ripe cherry. The taste is seductive and smooth, medium bodied and of very rich extract. Beautiful gentle tannins, fruity consistency and pleasant fresh acid spill over in a very pleasant finish rich with berries.',
         'freska-cont2': 'It goes well with homemade stews and chowder, smoked and cured meats, aged cheeses, pasta with meat and tomatoes, duck and turkey.',
         'temp': 'Serving temperature:',
         'alcohol': 'Alcohol:',
@@ -901,5 +959,7 @@ angular.module('app.translations', []).constant('translations', {
         'traminac-cont2': 'It can be an ideal aperitif but goes well with seafood, smoked fish, summer salads, white meats, fruit and fruity desserts.',
         'sauvignon-cont1': 'The wine is of straw yellow colour, crystal clear, with a rich aromatic complex. Fresh, elegant wine in which the aromas of vineyard peach, elder and citrus stand out. Perfectly suited for high summer temperatures, the wine is medium bodied, moving easily in the glass, extremely smooth, with slight tones of sweetness, well-balanced acids and beautiful fruity finish.',
         'sauvignon-cont2': 'We recommend it with fish, seafood pasta, summer salads, cheeses, dried figs and dry cakes.',
+        'read-more': 'Read more',
+        'djordje': 'DJORDJE'
     }
 });

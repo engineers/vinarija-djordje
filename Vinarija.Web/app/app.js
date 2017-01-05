@@ -132,13 +132,13 @@ app.run(function ($rootScope, $state, $anchorScroll) {
 
 //app.constant('config', {
 //    baseAddress: 'http://enginee.rs:8122/api/',
-//    contentAddress: 'http://enginee.rs:8122/Content/'
+//    contentAddress: 'http://enginee.rs:8122/Content/',
+//    version: '1.3'
 //});
 
 app.constant('config', {
     baseAddress: 'http://localhost:53491/api/',
-    contentAddress: 'http://localhost:53491/Content/',
-    version: '1.1'
+    contentAddress: 'http://localhost:53491/Content/'
 });
 
 //app.constant('config', {
